@@ -1,0 +1,789 @@
+[
+  {
+    "id": "FH-TOPIC-12-01",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $h(t)=e^{-t}u(t)$ and input $x(t)=u(t)$, find y(ln2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Causal impulse response e⁻ᵗ",
+        "unit-step input",
+        "zero initial state"
+      ],
+      "asked": "Find the step-response value.",
+      "concept": "Convolution with a unit step",
+      "formula": "y(t)=\\int_0^t h(\\tau)d\\tau",
+      "steps": [
+        "For t≥0 the step selects impulse-response contributions from 0 to t.",
+        "Integrating e⁻τ gives y(t)=1−e⁻ᵗ.",
+        "At t=ln2 the output is 1−1/2=0.5."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "At t=ln2 the output is 1−1/2=0.5.",
+      "commonMistakes": [
+        "Impulse response and step response are different functions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which convolution with a unit step applies.",
+      "Start from $ y(t)=\\int_0^t h(\\tau)d\\tau $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct convolution quadrature. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-12-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For sequences x[0]=1, x[1]=2 and h[0]=1, h[1]=−1, with all other samples zero, find (x*h)[1].",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two length-2 sequences",
+        "zero elsewhere"
+      ],
+      "asked": "Find the n=1 convolution sample.",
+      "concept": "Discrete convolution",
+      "formula": "y[n]=\\sum_k x[k]h[n-k]",
+      "steps": [
+        "At n=1, only k=0 and k=1 contribute.",
+        "y[1]=x[0]h[1]+x[1]h[0]=1(−1)+2(1).",
+        "Therefore y[1]=1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "Therefore y[1]=1.",
+      "commonMistakes": [
+        "Convolution reverses one index; it is not pointwise multiplication."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which discrete convolution applies.",
+      "Start from $ y[n]=\\sum_k x[k]h[n-k] $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Discrete convolution summation over original support. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-12-03",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which continuous-time LTI impulse response is causal and BIBO stable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$e^t u(t)$"
+      },
+      {
+        "id": "B",
+        "text": "$e^{-2t}u(t)$"
+      },
+      {
+        "id": "C",
+        "text": "$u(t)$"
+      },
+      {
+        "id": "D",
+        "text": "$e^{-t}u(-t)$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Candidate impulse responses",
+        "standard causality and BIBO definitions"
+      ],
+      "asked": "Choose a causal stable response.",
+      "concept": "LTI stability test",
+      "formula": "h(t)=0\\ (t<0),\\quad\\int|h(t)|dt<\\infty",
+      "steps": [
+        "B is zero for negative time and has finite absolute integral 1/2.",
+        "A grows, C has infinite area, and D is noncausal and grows toward negative infinity.",
+        "Only B satisfies both required properties."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Only B satisfies both required properties.",
+      "commonMistakes": [
+        "Causality does not imply stability."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which lti stability test applies.",
+      "Start from $ h(t)=0\\ (t<0),\\quad\\int|h(t)|dt<\\infty $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Causal support and absolute-integral endpoint limits for all four candidates. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-12-04",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which systems are linear and time invariant?",
+    "options": [
+      {
+        "id": "A",
+        "text": "y(t)=2x(t)"
+      },
+      {
+        "id": "B",
+        "text": "y(t)=x²(t)"
+      },
+      {
+        "id": "C",
+        "text": "y(t)=t x(t)"
+      },
+      {
+        "id": "D",
+        "text": "y(t)=x(t−2)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Scalar signal-to-signal operators"
+      ],
+      "asked": "Select LTI mappings.",
+      "concept": "Superposition and time invariance",
+      "formula": "T[ax_1+bx_2]=aT[x_1]+bT[x_2]",
+      "steps": [
+        "A constant gain obeys superposition and commutes with time shifts.",
+        "Squaring violates linearity; multiplying by absolute time is linear but time varying.",
+        "A fixed delay commutes with shifts and is linear. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "A fixed delay commutes with shifts and is linear. Select A and D.",
+      "commonMistakes": [
+        "Linearity and time invariance are separate tests."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which superposition and time invariance applies.",
+      "Start from $ T[ax_1+bx_2]=aT[x_1]+bT[x_2] $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Superposition/time-shift checks plus square nonlinearity and absolute-time counterexamples. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-12-05",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A causal LTI system has $H(s)=1/(s+4)$. Find its DC gain.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Causal stable first-order transfer function"
+      ],
+      "asked": "Find H(0).",
+      "concept": "DC frequency response",
+      "formula": "H(0)=\\left.H(s)\\right|_{s=0}",
+      "steps": [
+        "The pole −4 lies in the left half-plane.",
+        "For a constant input, the steady gain is the transfer function at s=0.",
+        "H(0)=1/4=0.25."
+      ],
+      "finalAnswer": "0.25",
+      "explanation": "H(0)=1/4=0.25.",
+      "commonMistakes": [
+        "The gain is not the pole magnitude 4."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dc frequency response applies.",
+      "Start from $ H(0)=\\left.H(s)\\right|_{s=0} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate impulse response to obtain DC gain. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.2499999,
+      0.2500001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-12-06",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The impulse response is $h(t)=2\\delta(t)+3\\delta(t-1)$. For x(t)=1 at all real t, find the output amplitude.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two weighted impulses",
+        "input identically 1"
+      ],
+      "asked": "Find the constant output.",
+      "concept": "Impulse sifting in convolution",
+      "formula": "y(t)=2x(t)+3x(t-1)",
+      "steps": [
+        "Convolution with δ(t) returns the original signal and with δ(t−1) returns a delayed signal.",
+        "A constant signal remains 1 under a delay.",
+        "Thus y=2×1+3×1=5."
+      ],
+      "finalAnswer": "5",
+      "explanation": "Thus y=2×1+3×1=5.",
+      "commonMistakes": [
+        "The delayed impulse does not disappear for an input defined at every time."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which impulse sifting in convolution applies.",
+      "Start from $ y(t)=2x(t)+3x(t-1) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Delta-sifting response to the input constant at both required times. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      4.9999995,
+      5.0000005
+    ],
+    "numericalTolerance": 5e-7
+  },
+  {
+    "id": "FH-TOPIC-12-07",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a pure delay system $H(j\\omega)=e^{-j2\\omega}$, find the group delay in seconds.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Unwrapped phase −2ω radians"
+      ],
+      "asked": "Find −dφ/dω.",
+      "concept": "Group delay",
+      "formula": "\\tau_g=-\\frac{d\\phi}{d\\omega}",
+      "steps": [
+        "The phase is linear in angular frequency: φ=−2ω.",
+        "Differentiate to obtain dφ/dω=−2.",
+        "Negating yields group delay 2 s at every frequency."
+      ],
+      "finalAnswer": "2 s",
+      "explanation": "Negating yields group delay 2 s at every frequency.",
+      "commonMistakes": [
+        "Differentiate an unwrapped phase, not the discontinuous principal phase."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which group delay applies.",
+      "Start from $ \\tau_g=-\\frac{d\\phi}{d\\omega} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Finite-difference derivative of unwrapped phase. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-12-08",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Two causal first-order systems with h1(t)=e⁻ᵗu(t) and h2(t)=e⁻ᵗu(t) are cascaded. Find the overall impulse response at t=1.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Identical causal exponential impulse responses",
+        "cascade",
+        "zero initial state"
+      ],
+      "asked": "Find the convolution at t=1.",
+      "concept": "Cascade convolution",
+      "formula": "h(t)=\\int_0^t e^{-\\tau}e^{-(t-\\tau)}d\\tau",
+      "steps": [
+        "The product inside the integration simplifies to e⁻ᵗ, independent of τ.",
+        "Integrating over length t gives h(t)=te⁻ᵗu(t).",
+        "At t=1 this is e⁻¹≈0.3678794412."
+      ],
+      "finalAnswer": "0.36787944117144233",
+      "explanation": "At t=1 this is e⁻¹≈0.3678794412.",
+      "commonMistakes": [
+        "Cascade impulse responses convolve; they do not simply multiply in time."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cascade convolution applies.",
+      "Start from $ h(t)=\\int_0^t e^{-\\tau}e^{-(t-\\tau)}d\\tau $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct cascade convolution quadrature. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.367879341171,
+      0.367879541171
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-12-09",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A causal continuous-time rational LTI transfer function has no pole-zero cancellations. Which pole sets imply BIBO stability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "{−1, −2}"
+      },
+      {
+        "id": "B",
+        "text": "{0, −2}"
+      },
+      {
+        "id": "C",
+        "text": "{+1, −3}"
+      },
+      {
+        "id": "D",
+        "text": "{−1+j, −1−j}"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Causality",
+        "no hidden cancellations"
+      ],
+      "asked": "Select stable pole sets.",
+      "concept": "Causal rational stability",
+      "formula": "\\operatorname{Re}(p_i)<0\\quad\\text{for every pole}",
+      "steps": [
+        "For a causal rational response the ROC lies to the right of its rightmost pole.",
+        "BIBO stability requires the imaginary axis in the ROC, which occurs only when all poles are strictly left of it.",
+        "A and D qualify; the pole at zero in B and right-half-plane pole in C do not."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "A and D qualify; the pole at zero in B and right-half-plane pole in C do not.",
+      "commonMistakes": [
+        "A pole on the imaginary axis fails the strict BIBO condition."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which causal rational stability applies.",
+      "Start from $ \\operatorname{Re}(p_i)<0\\quad\\text{for every pole} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Test every real part of each pole set against strict negativity. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-12-10",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For h[n]=(1/2)ⁿu[n] and x[n]=δ[n]+δ[n−1], find y[2].",
+    "options": [],
+    "solution": {
+      "given": [
+        "Causal geometric impulse response",
+        "two unit impulses at n=0,1"
+      ],
+      "asked": "Find the output at n=2.",
+      "concept": "Shifted discrete impulses",
+      "formula": "y[n]=h[n]+h[n-1]",
+      "steps": [
+        "Linearity and time invariance map each shifted impulse to the correspondingly shifted h.",
+        "At n=2, h[2]=1/4 and h[1]=1/2.",
+        "Their sum is 3/4."
+      ],
+      "finalAnswer": "0.75",
+      "explanation": "Their sum is 3/4.",
+      "commonMistakes": [
+        "The delayed impulse adds h[n−1], not h[n+1]."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which shifted discrete impulses applies.",
+      "Start from $ y[n]=h[n]+h[n-1] $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Discrete shifted-impulse response sum. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.7499999,
+      0.7500001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-12-11",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "An LTI system has h(t)=u(t)−u(t−2). For x(t)=u(t)−u(t−3), find y(2.5).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Unit rectangles on [0,2) and [0,3)"
+      ],
+      "asked": "Find convolution overlap length at t=2.5.",
+      "concept": "Overlap geometry in convolution",
+      "formula": "y(t)=\\text{length}([0,3]\\cap[t-2,t])",
+      "steps": [
+        "The input-support variable τ lies in [0,3].",
+        "The impulse term is nonzero when τ lies in [t−2,t]=[0.5,2.5].",
+        "This interval is fully inside [0,3], so its length and the convolution value are 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "This interval is fully inside [0,3], so its length and the convolution value are 2.",
+      "commonMistakes": [
+        "Convolution uses a reflected and shifted interval, not the unchanged original overlap."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which overlap geometry in convolution applies.",
+      "Start from $ y(t)=\\text{length}([0,3]\\cap[t-2,t]) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute intersection bounds of the reflected translated supports. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-12-12",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "An LTI system has impulse response h(t)=δ(t+1). Which description is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Causal unit delay"
+      },
+      {
+        "id": "B",
+        "text": "Unstable time-varying system"
+      },
+      {
+        "id": "C",
+        "text": "BIBO-stable noncausal unit advance"
+      },
+      {
+        "id": "D",
+        "text": "Memoryless gain 1"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Impulse at t=−1"
+      ],
+      "asked": "Classify the shift system.",
+      "concept": "Advance, causality and stability",
+      "formula": "y(t)=x(t+1)",
+      "steps": [
+        "Sifting gives output x(t+1), so the system needs a future input sample.",
+        "It is noncausal and has memory, but any bounded input stays bounded with the same bound.",
+        "Therefore it is BIBO-stable, LTI, and a one-unit advance: C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Therefore it is BIBO-stable, LTI, and a one-unit advance: C.",
+      "commonMistakes": [
+        "A noncausal system can still be BIBO-stable."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which advance, causality and stability applies.",
+      "Start from $ y(t)=x(t+1) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate distributional convolution with advanced delta and bounded-input norm. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-12-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "C"
+  }
+]

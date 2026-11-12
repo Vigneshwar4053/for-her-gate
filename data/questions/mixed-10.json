@@ -1,0 +1,781 @@
+[
+  {
+    "id": "FH-MIXED-10-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A 3×4 real matrix has rank 2. Find the dimension of its right null space.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four columns",
+        "rank 2"
+      ],
+      "asked": "Find nullity of A acting on R⁴.",
+      "concept": "Rank–nullity theorem",
+      "formula": "\\dim\\ker A=n-\\operatorname{rank}A",
+      "steps": [
+        "The input space has dimension equal to the number of columns, 4.",
+        "Rank accounts for 2 independent image directions.",
+        "Nullity is 4−2=2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Nullity is 4−2=2.",
+      "commonMistakes": [
+        "Right-null-space dimension uses columns; the left null space uses rows."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which rank–nullity theorem applies.",
+      "Start from $ \\dim\\ker A=n-\\operatorname{rank}A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct rank-2 3×4 representative and verify rank/nullity dimensions. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-10-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "laplace-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For causal x(t)=e⁻²ᵗu(t), find its unilateral Laplace transform value X(1).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Exponential rate 2",
+        "real transform argument s=1"
+      ],
+      "asked": "Evaluate the Laplace integral at the specified s.",
+      "concept": "Exponential Laplace transform",
+      "formula": "X(s)=\\int_0^\\infty e^{-(s+2)t}dt",
+      "steps": [
+        "At s=1 the integrand becomes e⁻³ᵗ.",
+        "The integral over the positive half-line is 1/3.",
+        "Thus X(1)=1/3≈0.3333333333."
+      ],
+      "finalAnswer": "0.3333333333333333",
+      "explanation": "Thus X(1)=1/3≈0.3333333333.",
+      "commonMistakes": [
+        "The transform’s rate combines s and the signal decay coefficient."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which exponential laplace transform applies.",
+      "Start from $ X(s)=\\int_0^\\infty e^{-(s+2)t}dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerical Laplace integral of original signal times kernel. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.333333233333,
+      0.333333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-10-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "computer-organization",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A machine has 32-bit byte-addressed instructions and 4-byte instruction length. Starting at byte address 100, find the next sequential instruction address.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Byte addressing",
+        "current address 100",
+        "instruction occupies 4 bytes"
+      ],
+      "asked": "Advance by the instruction length.",
+      "concept": "Program-counter address units",
+      "formula": "PC_{next}=PC+L_{bytes}",
+      "steps": [
+        "Byte addressing increments by bytes rather than words.",
+        "The instruction consumes addresses 100 through 103.",
+        "The next instruction starts at 104."
+      ],
+      "finalAnswer": "104",
+      "explanation": "The next instruction starts at 104.",
+      "commonMistakes": [
+        "Bit width of a register does not make instruction addresses count in bits."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which program-counter address units applies.",
+      "Start from $ PC_{next}=PC+L_{bytes} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Convert instruction size from bits to byte-address increments. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      103.9999896,
+      104.0000104
+    ],
+    "numericalTolerance": 0.000010399999999999999
+  },
+  {
+    "id": "FH-MIXED-10-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "mosfet",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal long-channel MOSFET saturation law is ID=βVov²/2. With fixed β, doubling Vov changes ID by what factor?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Square-law saturation",
+        "β unchanged",
+        "both biases stay in saturation"
+      ],
+      "asked": "Find the current scaling ratio.",
+      "concept": "Square-law scaling",
+      "formula": "I_{D,2}/I_{D,1}=(V_{ov,2}/V_{ov,1})^2",
+      "steps": [
+        "The proportionality coefficient cancels in the ratio.",
+        "The overdrive ratio is 2.",
+        "Its square is 4, so drain current quadruples under the stated model."
+      ],
+      "finalAnswer": "4",
+      "explanation": "Its square is 4, so drain current quadruples under the stated model.",
+      "commonMistakes": [
+        "This ideal scaling excludes velocity saturation and output-region changes."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which square-law scaling applies.",
+      "Start from $ I_{D,2}/I_{D,1}=(V_{ov,2}/V_{ov,1})^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Ratio of two square-law currents at overdrives 2 and 1 with common coefficient. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-MIXED-10-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In a stable negative-feedback amplifier with large loop gain, its closed-loop gain is primarily set by:",
+    "options": [
+      {
+        "id": "A",
+        "text": "The open-loop gain alone"
+      },
+      {
+        "id": "B",
+        "text": "The sign of the supply voltage"
+      },
+      {
+        "id": "C",
+        "text": "The feedback factor"
+      },
+      {
+        "id": "D",
+        "text": "The number of transistors alone"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Stable loop",
+        "|Aβ|≫1",
+        "negative feedback"
+      ],
+      "asked": "Identify the dominant gain-setting network.",
+      "concept": "High-loop-gain approximation",
+      "formula": "A_f=\\frac{A}{1+A\\beta}\\simeq1/\\beta",
+      "steps": [
+        "When loop gain is much larger than unity, the 1 term is small relative to Aβ.",
+        "The open-loop A approximately cancels.",
+        "Closed-loop gain is then chiefly determined by the feedback factor β, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Closed-loop gain is then chiefly determined by the feedback factor β, option C.",
+      "commonMistakes": [
+        "The approximation assumes adequate loop gain and stable linear operation."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which high-loop-gain approximation applies.",
+      "Start from $ A_f=\\frac{A}{1+A\\beta}\\simeq1/\\beta $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Asymptotic cancellation of A in A/(1+Aβ) at large stable loop gain. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-MIXED-10-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "transfer-functions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A causal transfer function H(s)=(s+2)/[(s+1)(s+3)] has a zero at which real value of s?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Factored numerator and denominator"
+      ],
+      "asked": "Find the finite transmission zero.",
+      "concept": "Transfer-function zeros",
+      "formula": "H(s)=0\\iff\\text{numerator}=0\\quad\\text{when denominator}\\ne0",
+      "steps": [
+        "The numerator vanishes at s=−2.",
+        "Neither denominator factor is zero there.",
+        "Therefore the finite zero is −2, distinct from poles −1 and −3."
+      ],
+      "finalAnswer": "-2",
+      "explanation": "Therefore the finite zero is −2, distinct from poles −1 and −3.",
+      "commonMistakes": [
+        "Do not read a denominator root as a transmission zero."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which transfer-function zeros applies.",
+      "Start from $ H(s)=0\\iff\\text{numerator}=0\\quad\\text{when denominator}\\ne0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Check numerator vanishes and denominator does not at the proposed finite zero. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      -2.0000002,
+      -1.9999998
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-10-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "digital-communication",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 4-PSK transmitter carries uncoded binary data at 12 kbit/s. Find its symbol rate in ksymbol/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four phase symbols",
+        "two bits per symbol",
+        "no coding overhead"
+      ],
+      "asked": "Convert bit rate to symbol rate.",
+      "concept": "Modulation order and clock",
+      "formula": "R_s=R_b/\\log_2M",
+      "steps": [
+        "Four symbols represent log₂4=2 bits each.",
+        "Divide 12 kbit/s by 2 bits/symbol.",
+        "Symbol rate is 6 ksymbol/s."
+      ],
+      "finalAnswer": "6 ksymbol/s",
+      "explanation": "Symbol rate is 6 ksymbol/s.",
+      "commonMistakes": [
+        "Higher modulation order changes bits/symbol without by itself specifying BER."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which modulation order and clock applies.",
+      "Start from $ R_s=R_b/\\log_2M $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count two independent bit labels per four-phase symbol. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      5.9999994,
+      6.0000006
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-MIXED-10-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "wave-propagation",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A uniform dielectric has εr=9 and μr=1. What is its refractive index relative to free space under the lossless nondispersive approximation?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Relative constitutive constants 9 and 1"
+      ],
+      "asked": "Find c/vp.",
+      "concept": "Refractive index",
+      "formula": "n=\\sqrt{\\epsilon_r\\mu_r}",
+      "steps": [
+        "The phase-speed ratio c/vp is √(εrμr).",
+        "Substitute 9×1.",
+        "The refractive index is √9=3."
+      ],
+      "finalAnswer": "3",
+      "explanation": "The refractive index is √9=3.",
+      "commonMistakes": [
+        "This elementary relation assumes the stated medium model, not an arbitrary dispersive material."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which refractive index applies.",
+      "Start from $ n=\\sqrt{\\epsilon_r\\mu_r} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Relative εμ wave-speed ratio. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-MIXED-10-09",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "discrete-time-transforms",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which statements about causal discrete-time LTI systems with rational H(z) and no pole-zero cancellations are true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "All poles strictly inside the unit circle imply BIBO stability"
+      },
+      {
+        "id": "B",
+        "text": "A pole at z=1 is strictly BIBO stable"
+      },
+      {
+        "id": "C",
+        "text": "The causal ROC lies outside the outermost pole"
+      },
+      {
+        "id": "D",
+        "text": "All numerator zeros must lie inside the unit circle for BIBO stability"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Rational causal transfer",
+        "standard absolute-summability criterion"
+      ],
+      "asked": "Select valid causal ROC and stability conditions.",
+      "concept": "Discrete-time pole stability",
+      "formula": "|p_i|<1\\quad\\forall i",
+      "steps": [
+        "A causal ROC extends outward from the largest pole magnitude.",
+        "It contains the unit circle exactly when every pole is strictly inside that circle.",
+        "A boundary pole is not strictly stable; numerator zeros do not impose the claimed BIBO condition. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "A boundary pole is not strictly stable; numerator zeros do not impose the claimed BIBO condition. Select A and C.",
+      "commonMistakes": [
+        "Minimum-phase requirements on zeros are stronger and different from BIBO stability."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which discrete-time pole stability applies.",
+      "Start from $ |p_i|<1\\quad\\forall i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Causal ROC geometry and unit-circle inclusion; counterexample stable nonminimum-phase zeros. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-MIXED-10-10",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a differentiable real function on an open interval, which statements are valid?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An interior local extremum has derivative zero"
+      },
+      {
+        "id": "B",
+        "text": "A zero derivative at one point guarantees a local maximum"
+      },
+      {
+        "id": "C",
+        "text": "Every stationary point is a local minimum"
+      },
+      {
+        "id": "D",
+        "text": "A stationary point can be neither a maximum nor a minimum"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Differentiable function",
+        "interior points only"
+      ],
+      "asked": "Select necessary and non-sufficient extremum facts.",
+      "concept": "Stationary-point logic",
+      "formula": "\\text{interior extremum}\\Rightarrow f\\prime(c)=0",
+      "steps": [
+        "Fermat’s theorem gives derivative zero at a differentiable interior extremum.",
+        "The converse fails: x³ has derivative zero at 0 but is increasing through that point.",
+        "Thus stationary points can be inflections rather than extrema; select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "Thus stationary points can be inflections rather than extrema; select A and D.",
+      "commonMistakes": [
+        "Necessary conditions for an extremum are not sufficient conditions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which stationary-point logic applies.",
+      "Start from $ \\text{interior extremum}\\Rightarrow f\\prime(c)=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Fermat interior-extremum theorem with x³ stationary nonextremum counterexample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-10-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Five independent identical components each work with probability 0.9. A series system works only if all five work. Find its reliability.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Independent components",
+        "series success condition",
+        "p=0.9"
+      ],
+      "asked": "Find joint success probability.",
+      "concept": "Series reliability",
+      "formula": "R=\\prod_{i=1}^5p_i",
+      "steps": [
+        "Every component must work simultaneously.",
+        "Independence allows multiplication of their five success probabilities.",
+        "R=(0.9)⁵=0.59049."
+      ],
+      "finalAnswer": "0.59049",
+      "explanation": "R=(0.9)⁵=0.59049.",
+      "commonMistakes": [
+        "A series system requires intersection, not at least one working component."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which series reliability applies.",
+      "Start from $ R=\\prod_{i=1}^5p_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Multiply independent component-success probabilities in a series-reliability model. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.5904899,
+      0.5904901
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-10-12",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a stable unity-feedback system with G(s)=K/[s(s+2)], find K when its velocity error constant is Kv=5.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Type-1 open loop",
+        "Kv=5",
+        "stable positive-gain closed loop assumed"
+      ],
+      "asked": "Find gain from lim sG(s).",
+      "concept": "Velocity error constant design",
+      "formula": "K_v=\\lim_{s\\to0}sG(s)=K/2",
+      "steps": [
+        "Cancel the explicit integrator factor before taking the limit.",
+        "Kv=K/2=5 gives K=10.",
+        "The closed-loop denominator s²+2s+10 has negative-real-part poles, consistent with the stated stability."
+      ],
+      "finalAnswer": "10",
+      "explanation": "The closed-loop denominator s²+2s+10 has negative-real-part poles, consistent with the stated stability.",
+      "commonMistakes": [
+        "The extra pole at −2 contributes its finite DC factor to the velocity constant."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which velocity error constant design applies.",
+      "Start from $ K_v=\\lim_{s\\to0}sG(s)=K/2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Velocity-constant limit K/2 and positive-coefficient closed-loop stability check. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-10-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "subject-03",
+    "file": "data/questions/subject-03.json",
+    "title": "Electronic Devices \u00b7 Transport, Junctions & Transistors",
+    "batch": "004"
+  },
+  {
+    "testId": "subject-04",
+    "file": "data/questions/subject-04.json",
+    "title": "Analog Circuits \u00b7 Amplifiers, Feedback & Waveforms",
+    "batch": "004"
+  },
+  {
+    "testId": "subject-06",
+    "file": "data/questions/subject-06.json",
+    "title": "Control Systems \u00b7 Stability, Error & State Models",
+    "batch": "004"
+  },
+  {
+    "testId": "subject-07",
+    "file": "data/questions/subject-07.json",
+    "title": "Communications \u00b7 Information, Modulation & Detection",
+    "batch": "004"
+  },
+  {
+    "testId": "subject-08",
+    "file": "data/questions/subject-08.json",
+    "title": "Electromagnetics \u00b7 Lines, Waves & Fields",
+    "batch": "004"
+  }
+]

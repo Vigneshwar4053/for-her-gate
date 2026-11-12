@@ -1,0 +1,773 @@
+[
+  {
+    "id": "FH-MIXED-02-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For f(x)=ln x on x>0, find f′(2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Natural logarithm",
+        "positive-domain argument 2"
+      ],
+      "asked": "Find the local derivative.",
+      "concept": "Logarithmic derivative",
+      "formula": "\\frac{d}{dx}\\ln x=1/x",
+      "steps": [
+        "The logarithm is differentiable on the positive real domain.",
+        "Its derivative is the reciprocal of the argument.",
+        "At x=2, f′=1/2=0.5."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "At x=2, f′=1/2=0.5.",
+      "commonMistakes": [
+        "The derivative of ln x is not ln(1/x)."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which logarithmic derivative applies.",
+      "Start from $ \\frac{d}{dx}\\ln x=1/x $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Centered difference of the original logarithm. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-02-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "ac-steady-state",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 3 Ω resistor and a reactance +j4 Ω are in series at one sinusoidal frequency. Find the impedance magnitude in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Series impedance 3+j4 Ω"
+      ],
+      "asked": "Find |Z|.",
+      "concept": "Complex impedance magnitude",
+      "formula": "|Z|=\\sqrt{R^2+X^2}",
+      "steps": [
+        "Series impedances add as complex numbers, giving 3+j4.",
+        "Its magnitude is the Euclidean norm of the real and imaginary parts.",
+        "√(9+16)=5 Ω."
+      ],
+      "finalAnswer": "5 Ω",
+      "explanation": "√(9+16)=5 Ω.",
+      "commonMistakes": [
+        "Add R and X as orthogonal components, not scalar magnitudes."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex impedance magnitude applies.",
+      "Start from $ |Z|=\\sqrt{R^2+X^2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct complex impedance norm. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      4.9999995,
+      5.0000005
+    ],
+    "numericalTolerance": 5e-7
+  },
+  {
+    "id": "FH-MIXED-02-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "number-representations",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "An unsigned 6-bit word is 101101₂. Find its decimal value.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Binary digits 1,0,1,1,0,1 with place values 32,16,8,4,2,1"
+      ],
+      "asked": "Convert the unsigned word.",
+      "concept": "Binary weighted representation",
+      "formula": "N=\\sum_i b_i2^i",
+      "steps": [
+        "The high positions contribute 32,8,4 and 1.",
+        "The other two positions contribute zero.",
+        "The decimal value is 32+8+4+1=45."
+      ],
+      "finalAnswer": "45",
+      "explanation": "The decimal value is 32+8+4+1=45.",
+      "commonMistakes": [
+        "The word is explicitly unsigned; do not treat its leading bit as a sign."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which binary weighted representation applies.",
+      "Start from $ N=\\sum_i b_i2^i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Base-2 positional conversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      44.9999955,
+      45.0000045
+    ],
+    "numericalTolerance": 0.0000045
+  },
+  {
+    "id": "FH-MIXED-02-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "bjt",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal BJT has β=99 and emitter current 1 mA in forward active operation. Find base current in μA.",
+    "options": [],
+    "solution": {
+      "given": [
+        "β=IC/IB=99",
+        "IE=1 mA"
+      ],
+      "asked": "Find base current.",
+      "concept": "BJT current partition",
+      "formula": "I_E=(\\beta+1)I_B",
+      "steps": [
+        "Emitter current is collector plus base current.",
+        "With IC=99IB, emitter current is 100IB.",
+        "IB=1 mA/100=0.01 mA=10 μA."
+      ],
+      "finalAnswer": "10 μA",
+      "explanation": "IB=1 mA/100=0.01 mA=10 μA.",
+      "commonMistakes": [
+        "Do not divide emitter current by β alone."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bjt current partition applies.",
+      "Start from $ I_E=(\\beta+1)I_B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Conserve emitter=collector+base with collector=99base. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-MIXED-02-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A constant input is applied to an ideal inverting differentiator after all switching impulses have passed. Its output is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "A continuously rising ramp"
+      },
+      {
+        "id": "B",
+        "text": "A nonzero constant proportional to elapsed time"
+      },
+      {
+        "id": "C",
+        "text": "Zero"
+      },
+      {
+        "id": "D",
+        "text": "Always at a supply rail"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal differentiation",
+        "steady constant input",
+        "linear operation"
+      ],
+      "asked": "Find the steady derivative response.",
+      "concept": "Op-amp differentiation",
+      "formula": "V_o=-RC\\,dV_i/dt",
+      "steps": [
+        "A constant input has zero time derivative.",
+        "Multiplication by −RC therefore gives zero output after any initial transition.",
+        "The steady output is zero, option C. This statement excludes the switching impulse explicitly."
+      ],
+      "finalAnswer": "C",
+      "explanation": "The steady output is zero, option C. This statement excludes the switching impulse explicitly.",
+      "commonMistakes": [
+        "A differentiator responds to changes, unlike an integrator."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which op-amp differentiation applies.",
+      "Start from $ V_o=-RC\\,dV_i/dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Derivative of the stated steady constant input is identically zero. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-MIXED-02-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For characteristic polynomial s²+4s+8, find its damping ratio ζ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Standard second-order polynomial with ωn²=8"
+      ],
+      "asked": "Find ζ.",
+      "concept": "Second-order coefficient matching",
+      "formula": "2\\zeta\\omega_n=4,\\quad\\omega_n=\\sqrt8",
+      "steps": [
+        "Matching the constant coefficient gives ωn=√8.",
+        "The coefficient of s requires ζ=4/(2√8).",
+        "Hence ζ=1/√2≈0.7071067812."
+      ],
+      "finalAnswer": "0.7071067811865475",
+      "explanation": "Hence ζ=1/√2≈0.7071067812.",
+      "commonMistakes": [
+        "Do not set ωn to the constant coefficient before taking its square root."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which second-order coefficient matching applies.",
+      "Start from $ 2\\zeta\\omega_n=4,\\quad\\omega_n=\\sqrt8 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Match the s and constant polynomial coefficients independently. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.707106681187,
+      0.707106881187
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-02-07",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "data-converters",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A uniform 4-bit quantizer spans 0 to 2 V in equal-width bins. Find the bin width in millivolts using span/2ⁿ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Span 2 V",
+        "16 equal bins",
+        "specified bin convention"
+      ],
+      "asked": "Find quantization step.",
+      "concept": "Uniform quantization",
+      "formula": "\\Delta=V_{span}/2^n",
+      "steps": [
+        "Four bits define 16 bins.",
+        "Each bin has width 2/16=0.125 V.",
+        "Convert to millivolts: 0.125×1000=125 mV."
+      ],
+      "finalAnswer": "125 mV",
+      "explanation": "Convert to millivolts: 0.125×1000=125 mV.",
+      "commonMistakes": [
+        "Do not use 2ⁿ−1 when the prompt specifies equal-bin span/2ⁿ."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which uniform quantization applies.",
+      "Start from $ \\Delta=V_{span}/2^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Divide explicit full span into 16 bins and convert volts to millivolts. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      124.9999875,
+      125.0000125
+    ],
+    "numericalTolerance": 0.000012499999999999999
+  },
+  {
+    "id": "FH-MIXED-02-08",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "analog-communication",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 2 kHz sine message uses conventional double-sideband AM around a 100 kHz carrier. Find the separation between its lower and upper sideband frequencies in kHz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Single 2 kHz message tone",
+        "carrier 100 kHz"
+      ],
+      "asked": "Find fUSB−fLSB.",
+      "concept": "AM spectral sidebands",
+      "formula": "f_{USB}=f_c+f_m,\\quad f_{LSB}=f_c-f_m",
+      "steps": [
+        "The sidebands lie at 102 kHz and 98 kHz.",
+        "Their separation is 102−98.",
+        "The requested bandwidth between those components is 4 kHz."
+      ],
+      "finalAnswer": "4 kHz",
+      "explanation": "The requested bandwidth between those components is 4 kHz.",
+      "commonMistakes": [
+        "The sideband separation is twice the message frequency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which am spectral sidebands applies.",
+      "Start from $ f_{USB}=f_c+f_m,\\quad f_{LSB}=f_c-f_m $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate lower/upper sideband frequencies before subtracting. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-MIXED-02-09",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "wave-propagation",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A wave propagates at 2×10⁸ m/s with frequency 100 MHz. Find its wavelength in meters.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Phase speed 2×10⁸ m/s",
+        "frequency 10⁸ Hz"
+      ],
+      "asked": "Find λ.",
+      "concept": "Wave velocity relation",
+      "formula": "\\lambda=v_p/f",
+      "steps": [
+        "Each period advances the phase pattern by one wavelength.",
+        "Divide 2×10⁸ m/s by 10⁸ cycles/s.",
+        "The wavelength is 2 m."
+      ],
+      "finalAnswer": "2 m",
+      "explanation": "The wavelength is 2 m.",
+      "commonMistakes": [
+        "Use the propagation speed in the given medium rather than automatically using c."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which wave velocity relation applies.",
+      "Start from $ \\lambda=v_p/f $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Phase advance per cycle from speed and period. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-02-10",
+    "type": "MSQ",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which statements about a lossless, open-ended transmission line at its load plane hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The load voltage reflection coefficient is +1"
+      },
+      {
+        "id": "B",
+        "text": "The load current reflection coefficient is +1 using the same +z current reference for both waves"
+      },
+      {
+        "id": "C",
+        "text": "The total current at the open termination is zero"
+      },
+      {
+        "id": "D",
+        "text": "The load voltage must be zero"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal open termination",
+        "forward and backward current waves referenced to +z"
+      ],
+      "asked": "Select open-circuit standing-wave facts.",
+      "concept": "Traveling-wave termination conditions",
+      "formula": "\\Gamma_V=+1,\\quad\\Gamma_I=-1",
+      "steps": [
+        "An open end enforces zero net current.",
+        "The reflected current cancels the incident current, whereas reflected voltage adds to incident voltage.",
+        "Thus ΓV=+1 and current reflection is −1 with the stated common reference. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Thus ΓV=+1 and current reflection is −1 with the stated common reference. Select A and C.",
+      "commonMistakes": [
+        "Voltage and current reflection coefficients have opposite signs in a common propagation reference."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which traveling-wave termination conditions applies.",
+      "Start from $ \\Gamma_V=+1,\\quad\\Gamma_I=-1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve open-end condition Iincident+Ireflected=0 and corresponding wave-voltage signs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-MIXED-02-11",
+    "type": "MSQ",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For events A and B with P(A)=0.4, P(B)=0.5 and independence, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P(A∩B)=0.2"
+      },
+      {
+        "id": "B",
+        "text": "P(A∪B)=0.7"
+      },
+      {
+        "id": "C",
+        "text": "A and B are mutually exclusive"
+      },
+      {
+        "id": "D",
+        "text": "P(A|B)=0.4"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Independent events with nonzero probabilities"
+      ],
+      "asked": "Select the correct event probabilities.",
+      "concept": "Independence and inclusion–exclusion",
+      "formula": "P(A\\cap B)=P(A)P(B)",
+      "steps": [
+        "Independence gives intersection 0.4×0.5=0.2, so the events are not mutually exclusive.",
+        "The union probability is 0.4+0.5−0.2=0.7.",
+        "Conditional probability is intersection divided by 0.5, which returns 0.4. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Conditional probability is intersection divided by 0.5, which returns 0.4. Select A, B and D.",
+      "commonMistakes": [
+        "Mutual exclusivity and independence are different for events of positive probability."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which independence and inclusion–exclusion applies.",
+      "Start from $ P(A\\cap B)=P(A)P(B) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute intersection, union and conditional probabilities; reject zero-overlap claim. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-02-12",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A stable causal first-order system has H(s)=K/(s+a), with K,a positive. Its unit-step final value is 2 and |H(j3)|=1.6. Find K.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Positive a,K",
+        "step DC gain 2",
+        "magnitude 1.6 at 3 rad/s"
+      ],
+      "asked": "Determine numerator gain from both response constraints.",
+      "concept": "Identification from DC and frequency response",
+      "formula": "K/a=2,\\quad K/\\sqrt{a^2+9}=1.6",
+      "steps": [
+        "The final step value gives K=2a.",
+        "Substitute into the frequency constraint: 4a²=2.56(a²+9), so 1.44a²=23.04 and a²=16.",
+        "Stability/positivity selects a=4, hence K=8."
+      ],
+      "finalAnswer": "8",
+      "explanation": "Stability/positivity selects a=4, hence K=8.",
+      "commonMistakes": [
+        "The DC gain supplies an additional equation; the frequency magnitude alone cannot determine both unknowns."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which identification from dc and frequency response applies.",
+      "Start from $ K/a=2,\\quad K/\\sqrt{a^2+9}=1.6 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerical positive-parameter identification using DC constraint and original frequency magnitude. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-02-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      7.9999992,
+      8.0000008
+    ],
+    "numericalTolerance": 8e-7
+  }
+]

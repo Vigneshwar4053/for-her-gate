@@ -1,0 +1,43 @@
+{
+  "correct": 5,
+  "completion": 20,
+  "score80": 30,
+  "distinct": {
+    "5": 100,
+    "50": 500,
+    "150": 1500
+  },
+  "streak7": 150,
+  "levels": [
+    {
+      "name": "Little Spark",
+      "icon": "✨",
+      "threshold": 0
+    },
+    {
+      "name": "Rising Star",
+      "icon": "⭐",
+      "threshold": 100
+    },
+    {
+      "name": "Dream Chaser",
+      "icon": "🌸",
+      "threshold": 500
+    },
+    {
+      "name": "Circuit Queen",
+      "icon": "👑",
+      "threshold": 1200
+    },
+    {
+      "name": "Future Engineer",
+      "icon": "❤️",
+      "threshold": 2500
+    },
+    {
+      "name": "GATE Champion",
+      "icon": "🏆",
+      "threshold": 5000
+    }
+  ]
+}

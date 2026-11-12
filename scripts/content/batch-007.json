@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "topic-14",
+    "file": "data/questions/topic-14.json",
+    "title": "Semiconductor Physics \u00b7 Bands & Equilibrium",
+    "batch": "007"
+  },
+  {
+    "testId": "topic-15",
+    "file": "data/questions/topic-15.json",
+    "title": "Carrier Transport \u00b7 Currents, Lifetime & Fields",
+    "batch": "007"
+  },
+  {
+    "testId": "topic-16",
+    "file": "data/questions/topic-16.json",
+    "title": "PN Junctions \u00b7 Depletion, Bias & Charge Storage",
+    "batch": "007"
+  },
+  {
+    "testId": "mixed-09",
+    "file": "data/questions/mixed-09.json",
+    "title": "Mixed Revision \u00b7 Moments, Timing & Matching",
+    "batch": "007"
+  },
+  {
+    "testId": "mixed-10",
+    "file": "data/questions/mixed-10.json",
+    "title": "Mixed Revision \u00b7 Broad ECE Checkpoint",
+    "batch": "007"
+  }
+]

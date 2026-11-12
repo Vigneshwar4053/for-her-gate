@@ -1,0 +1,812 @@
+[
+  {
+    "id": "FH-TOPIC-03-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Solve $y\\prime+2y=4$, $y(0)=0$. Enter $y(\\ln2)$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "First-order linear ODE",
+        "initial value 0"
+      ],
+      "asked": "Find y at ln(2).",
+      "concept": "Integrating factor",
+      "formula": "y(t)=2+Ce^{-2t}",
+      "steps": [
+        "The constant particular solution is y = 2; the homogeneous solution is Ce⁻²ᵗ.",
+        "Apply y(0) = 0 to get C = −2, hence y = 2−2e⁻²ᵗ.",
+        "At t = ln2, e⁻²ᵗ = 1/4, so y = 2−1/2 = 1.5."
+      ],
+      "finalAnswer": "1.5",
+      "explanation": "At t = ln2, e⁻²ᵗ = 1/4, so y = 2−1/2 = 1.5.",
+      "commonMistakes": [
+        "The initial condition applies to the sum of complementary and particular solutions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which integrating factor applies.",
+      "Start from $ y(t)=2+Ce^{-2t} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Fourth-order Runge–Kutta integration of original initial-value equation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.49999985,
+      1.50000015
+    ],
+    "numericalTolerance": 1.5e-7
+  },
+  {
+    "id": "FH-TOPIC-03-02",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "If $y\\prime\\prime+3y\\prime+2y=0$, $y(0)=1$ and $y\\prime(0)=0$, find the coefficient of $e^{-t}$ in y(t).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Second-order homogeneous ODE",
+        "initial displacement 1 and slope 0"
+      ],
+      "asked": "Find the slow-mode coefficient.",
+      "concept": "Characteristic roots and initial conditions",
+      "formula": "y=Ae^{-t}+Be^{-2t}",
+      "steps": [
+        "The characteristic polynomial factors as (r+1)(r+2).",
+        "Initial conditions give A+B = 1 and −A−2B = 0.",
+        "Subtracting yields B = −1 and A = 2, so the e⁻ᵗ coefficient is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Subtracting yields B = −1 and A = 2, so the e⁻ᵗ coefficient is 2.",
+      "commonMistakes": [
+        "Both displacement and derivative initial conditions are required."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which characteristic roots and initial conditions applies.",
+      "Start from $ y=Ae^{-t}+Be^{-2t} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate second-order IVP numerically, then recover modal coefficients. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-03-03",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $y\\prime\\prime+4y=0$, $y(0)=0$, $y\\prime(0)=2$, which solution is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\cos(2t)$"
+      },
+      {
+        "id": "B",
+        "text": "$2\\sin(2t)$"
+      },
+      {
+        "id": "C",
+        "text": "$\\sin(2t)$"
+      },
+      {
+        "id": "D",
+        "text": "$\\sin(t)$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Undamped ODE",
+        "y(0)=0",
+        "y′(0)=2"
+      ],
+      "asked": "Choose the full initial-value solution.",
+      "concept": "Sinusoidal natural response",
+      "formula": "y=A\\cos2t+B\\sin2t",
+      "steps": [
+        "The characteristic roots ±2j give the stated sinusoidal form.",
+        "y(0)=0 makes A=0. Since y′(0)=2B=2, B=1.",
+        "Therefore y(t)=sin(2t); its derivative at zero is 2."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Therefore y(t)=sin(2t); its derivative at zero is 2.",
+      "commonMistakes": [
+        "The derivative contributes the angular-frequency factor 2."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sinusoidal natural response applies.",
+      "Start from $ y=A\\cos2t+B\\sin2t $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "RK4 trajectory comparison and explicit initial derivative checks for all candidates. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-03-04",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For $y\\prime=3t^2$ and $y(0)=2$, enter y(2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Derivative 3t²",
+        "initial value 2"
+      ],
+      "asked": "Find y at t=2.",
+      "concept": "Direct integration",
+      "formula": "y(t)=t^3+C",
+      "steps": [
+        "Integrate 3t² to obtain t³ plus a constant.",
+        "The condition at zero gives C=2.",
+        "At t=2, y=8+2=10."
+      ],
+      "finalAnswer": "10",
+      "explanation": "At t=2, y=8+2=10.",
+      "commonMistakes": [
+        "Do not drop the integration constant."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which direct integration applies.",
+      "Start from $ y(t)=t^3+C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "RK4 integration of derivative polynomial. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-TOPIC-03-05",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "On t > 0, solve $t y\\prime-y=t^2$ with y(1)=0. Enter y(2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "t>0",
+        "Euler-type first-order equation",
+        "y(1)=0"
+      ],
+      "asked": "Find y(2).",
+      "concept": "Euler equation and substitution",
+      "formula": "\\left(\\frac yt\\right)\\prime=\\frac{ty\\prime-y}{t^2}=1",
+      "steps": [
+        "Divide the equation by t² to identify the derivative of y/t.",
+        "Integrate: y/t=t+C; the condition y(1)=0 gives C=−1.",
+        "Thus y=t²−t and y(2)=4−2=2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Thus y=t²−t and y(2)=4−2=2.",
+      "commonMistakes": [
+        "The domain t>0 allows division by t without including a singular point."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which euler equation and substitution applies.",
+      "Start from $ \\left(\\frac yt\\right)\\prime=\\frac{ty\\prime-y}{t^2}=1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "RK4 from t=1 to 2 without using closed-form solution. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-03-06",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "The particular solution of $y\\prime\\prime-y=e^t$ is sought as $y_p=Cte^t$. Find C.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Resonant forcing eᵗ",
+        "trial Cteᵗ"
+      ],
+      "asked": "Find the particular-solution coefficient.",
+      "concept": "Resonance and undetermined coefficients",
+      "formula": "(D^2-1)(te^t)=2e^t",
+      "steps": [
+        "Differentiate: yₚ′=C(1+t)eᵗ and yₚ″=C(2+t)eᵗ.",
+        "Subtract yₚ to obtain 2Ceᵗ.",
+        "Match the forcing coefficient 1: 2C=1, hence C=1/2."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "Match the forcing coefficient 1: 2C=1, hence C=1/2.",
+      "commonMistakes": [
+        "A trial Ceᵗ fails because eᵗ is already a homogeneous solution."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which resonance and undetermined coefficients applies.",
+      "Start from $ (D^2-1)(te^t)=2e^t $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Differentiate the trial analytically and check residual at five distinct times. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-03-07",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $y\\prime\\prime+2y\\prime+y=0$, which functions individually solve the homogeneous equation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$e^{-t}$"
+      },
+      {
+        "id": "B",
+        "text": "$te^{-t}$"
+      },
+      {
+        "id": "C",
+        "text": "$e^t$"
+      },
+      {
+        "id": "D",
+        "text": "$\\sin t$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Repeated characteristic root −1"
+      ],
+      "asked": "Select every solution function.",
+      "concept": "Repeated roots",
+      "formula": "(D+1)^2y=0",
+      "steps": [
+        "The characteristic polynomial is (r+1)².",
+        "Repeated-root theory gives independent solutions e⁻ᵗ and te⁻ᵗ; direct substitution cancels each.",
+        "eᵗ gives 4eᵗ, while sin(t) gives 2cos(t), so C and D fail. Select A and B."
+      ],
+      "finalAnswer": "A, B",
+      "explanation": "eᵗ gives 4eᵗ, while sin(t) gives 2cos(t), so C and D fail. Select A and B.",
+      "commonMistakes": [
+        "Repeated roots require a t factor for the second independent solution."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which repeated roots applies.",
+      "Start from $ (D+1)^2y=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Polynomial operator (D+1)² applied to all candidates; explicit residuals. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "B"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-03-08",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For $y\\prime+3y=0$ and y(0)=5, find the time at which y first reaches 5/e.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Exponential decay",
+        "initial value 5",
+        "target 5/e"
+      ],
+      "asked": "Find the first crossing time.",
+      "concept": "Decay time constant",
+      "formula": "y=5e^{-3t}",
+      "steps": [
+        "The solution is y(t)=5e⁻³ᵗ.",
+        "Set 5e⁻³ᵗ=5/e and cancel 5 to get −3t=−1.",
+        "The crossing is t=1/3. Strict monotonic decay makes it the first and only crossing."
+      ],
+      "finalAnswer": "0.3333333333333333",
+      "explanation": "The crossing is t=1/3. Strict monotonic decay makes it the first and only crossing.",
+      "commonMistakes": [
+        "The time constant is the reciprocal of the exponential decay rate."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which decay time constant applies.",
+      "Start from $ y=5e^{-3t} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Root condition using logarithms and monotone decay. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.333333233333,
+      0.333333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-03-09",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Solve $y\\prime\\prime=6x$ with y(0)=0 and y(1)=2. Enter y(2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Boundary conditions at x=0 and x=1"
+      ],
+      "asked": "Find y(2).",
+      "concept": "Boundary-value integration",
+      "formula": "y=x^3+C_1x+C_2",
+      "steps": [
+        "Two integrations give y′=3x²+C₁ and y=x³+C₁x+C₂.",
+        "y(0)=0 implies C₂=0; y(1)=2 implies C₁=1.",
+        "Therefore y(2)=8+2=10."
+      ],
+      "finalAnswer": "10",
+      "explanation": "Therefore y(2)=8+2=10.",
+      "commonMistakes": [
+        "Conditions at distinct endpoints are boundary data, not two values at the same initial point."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which boundary-value integration applies.",
+      "Start from $ y=x^3+C_1x+C_2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Boundary-value shooting with two RK4 integrations. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-TOPIC-03-10",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For the PDE $u_t=2u_x$, the initial profile is $u(x,0)=\\sin x$. Enter the value of c in $u(x,t)=\\sin(x+ct)$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Transport equation",
+        "sinusoidal initial profile"
+      ],
+      "asked": "Find the profile translation coefficient.",
+      "concept": "Characteristic transport",
+      "formula": "u_t=c\\cos(x+ct),\\quad u_x=\\cos(x+ct)",
+      "steps": [
+        "Substitute the proposed function into both partial derivatives.",
+        "The PDE becomes c cos(x+ct)=2 cos(x+ct), valid for all x,t only when c=2.",
+        "The initial profile is recovered at t=0, so c=2 is the required coefficient."
+      ],
+      "finalAnswer": "2",
+      "explanation": "The initial profile is recovered at t=0, so c=2 is the required coefficient.",
+      "commonMistakes": [
+        "The profile sin(x+2t) moves left, despite its positive coefficient."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which characteristic transport applies.",
+      "Start from $ u_t=c\\cos(x+ct),\\quad u_x=\\cos(x+ct) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Substitute sin(x+ct), compare symbolic cos coefficients, and verify initial profile. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-03-11",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For $y\\prime\\prime-3y\\prime+2y=0$, which statement about its natural modes is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Both decay exponentially"
+      },
+      {
+        "id": "B",
+        "text": "There is a repeated root at −1"
+      },
+      {
+        "id": "C",
+        "text": "All modes are sinusoidal"
+      },
+      {
+        "id": "D",
+        "text": "Both characteristic roots are real and positive"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Constant-coefficient homogeneous equation"
+      ],
+      "asked": "Classify the characteristic modes.",
+      "concept": "Characteristic equation",
+      "formula": "r^2-3r+2=(r-1)(r-2)",
+      "steps": [
+        "Substitute y=eʳᵗ to get r²−3r+2=0.",
+        "Factoring gives roots 1 and 2.",
+        "Both are positive real roots; the independent natural modes grow as eᵗ and e²ᵗ. Select D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "Both are positive real roots; the independent natural modes grow as eᵗ and e²ᵗ. Select D.",
+      "commonMistakes": [
+        "The signs in the differential equation must be retained when forming the polynomial."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which characteristic equation applies.",
+      "Start from $ r^2-3r+2=(r-1)(r-2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Factor the characteristic quadratic and verify its two positive roots. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-03-12",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Let $y\\prime=y(1-y)$ and y(0)=1/2. Find y(ln3).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Logistic differential equation",
+        "initial value 1/2"
+      ],
+      "asked": "Find the state at ln(3).",
+      "concept": "Separation of variables",
+      "formula": "\\ln\\frac{y}{1-y}=t+C",
+      "steps": [
+        "Separate dy/[y(1−y)] = dt and integrate to log(y/(1−y))=t+C.",
+        "Initial y=1/2 gives C=0, so y=eᵗ/(1+eᵗ).",
+        "At t=ln3 the value is 3/(1+3)=3/4."
+      ],
+      "finalAnswer": "0.75",
+      "explanation": "At t=ln3 the value is 3/(1+3)=3/4.",
+      "commonMistakes": [
+        "The partial fractions integrate to log y − log(1−y), with the minus sign essential."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which separation of variables applies.",
+      "Start from $ \\ln\\frac{y}{1-y}=t+C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "RK4 integration of nonlinear logistic IVP. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-03-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.7499999,
+      0.7500001
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

@@ -1,0 +1,784 @@
+[
+  {
+    "id": "FH-SUBJECT-06-01",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "transfer-functions",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "With unity negative feedback and forward transfer G(s)=10/(s+2), find the closed-loop pole.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Unity negative feedback",
+        "G(s)=10/(s+2)"
+      ],
+      "asked": "Find the pole of G/(1+G).",
+      "concept": "Closed-loop characteristic equation",
+      "formula": "T(s)=\\frac{G(s)}{1+G(s)}",
+      "steps": [
+        "The denominator becomes s+2+10.",
+        "Thus T(s)=10/(s+12).",
+        "Its only pole is −12 s⁻¹."
+      ],
+      "finalAnswer": "-12",
+      "explanation": "Its only pole is −12 s⁻¹.",
+      "commonMistakes": [
+        "Negative feedback contributes a plus sign to the characteristic denominator."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which closed-loop characteristic equation applies.",
+      "Start from $ T(s)=\\frac{G(s)}{1+G(s)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Closed-loop denominator coefficient from the feedback KCL/block relation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -12.0000012,
+      -11.9999988
+    ],
+    "numericalTolerance": 0.0000012
+  },
+  {
+    "id": "FH-SUBJECT-06-02",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "The characteristic polynomial is s³+2s²+3s+K. For positive K, find the upper stability-boundary value of K (not included in the strictly stable interval).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Real cubic",
+        "K>0",
+        "strict asymptotic stability"
+      ],
+      "asked": "Find the boundary where the Routh first-column entry vanishes.",
+      "concept": "Routh–Hurwitz cubic criterion",
+      "formula": "K>0,\\quad2\\cdot3>K",
+      "steps": [
+        "The Routh first column is 1,2,(6−K)/2,K.",
+        "Strict positivity requires 0<K<6.",
+        "The upper boundary is K=6; equality is not strictly stable."
+      ],
+      "finalAnswer": "6",
+      "explanation": "The upper boundary is K=6; equality is not strictly stable.",
+      "commonMistakes": [
+        "The question asks for the boundary value, while the stable interval excludes it."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which routh–hurwitz cubic criterion applies.",
+      "Start from $ K>0,\\quad2\\cdot3>K $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct Routh first-column entries; zero of third entry gives upper boundary. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      5.9999994,
+      6.0000006
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-SUBJECT-06-03",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A stable unity-feedback type-1 system has velocity error constant Kv=10 s⁻¹. Find its steady-state error for a unit ramp.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Stable loop",
+        "type 1",
+        "Kv=10",
+        "ramp slope 1"
+      ],
+      "asked": "Find unit-ramp steady-state error.",
+      "concept": "Static error constants",
+      "formula": "e_{ss,ramp}=1/K_v",
+      "steps": [
+        "A unit ramp has transform 1/s².",
+        "Applying the final-value theorem to the error gives the reciprocal velocity constant.",
+        "ess=1/10=0.1."
+      ],
+      "finalAnswer": "0.1",
+      "explanation": "ess=1/10=0.1.",
+      "commonMistakes": [
+        "Type 1 has zero step error, but generally nonzero ramp error."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which static error constants applies.",
+      "Start from $ e_{ss,ramp}=1/K_v $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Final-value error limit for the specified stable type-1 velocity constant. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.0999999,
+      0.1000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-06-04",
+    "type": "MCQ",
+    "subject": "control",
+    "topic": "frequency-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The magnitude asymptote of H(s)=1/(1+s/10)² at frequencies well above 10 rad/s has slope:",
+    "options": [
+      {
+        "id": "A",
+        "text": "+40 dB/decade"
+      },
+      {
+        "id": "B",
+        "text": "+20 dB/decade"
+      },
+      {
+        "id": "C",
+        "text": "−20 dB/decade"
+      },
+      {
+        "id": "D",
+        "text": "−40 dB/decade"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Two coincident real poles",
+        "no finite zeros"
+      ],
+      "asked": "Find high-frequency Bode magnitude slope.",
+      "concept": "Bode pole contributions",
+      "formula": "20\\log_{10}|H(j\\omega)|\\simeq-40\\log_{10}(\\omega/10)",
+      "steps": [
+        "Each first-order pole contributes −20 dB/decade above its corner.",
+        "There are two such poles.",
+        "Adding their contributions gives −40 dB/decade, option D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "Adding their contributions gives −40 dB/decade, option D.",
+      "commonMistakes": [
+        "Pole multiplicity changes the asymptotic slope."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bode pole contributions applies.",
+      "Start from $ 20\\log_{10}|H(j\\omega)|\\simeq-40\\log_{10}(\\omega/10) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "High-frequency magnitude slope measured between frequencies a decade apart. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-SUBJECT-06-05",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "root-locus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a unity-feedback root locus of G(s)=K/[s(s+2)] with K≥0, find the real-axis asymptote centroid.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two open-loop poles at 0,−2",
+        "no finite zeros"
+      ],
+      "asked": "Find the root-locus asymptote centroid.",
+      "concept": "Root-locus asymptotes",
+      "formula": "\\sigma_a=\\frac{\\sum p_i-\\sum z_i}{n-m}",
+      "steps": [
+        "The sum of the poles is −2 and there are no zero contributions.",
+        "The number of asymptotes is n−m=2.",
+        "Their common centroid is −2/2=−1."
+      ],
+      "finalAnswer": "-1",
+      "explanation": "Their common centroid is −2/2=−1.",
+      "commonMistakes": [
+        "The centroid uses all poles and zeros, including multiplicities."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which root-locus asymptotes applies.",
+      "Start from $ \\sigma_a=\\frac{\\sum p_i-\\sum z_i}{n-m} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Sum of two open-loop poles divided by excess-pole count. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -1.0000001,
+      -0.9999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-06-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "state-space-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For the state equation xdot=diag(−1,−2)x with x(0)=(1,1)ᵀ, find x2(ln2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Diagonal state matrix",
+        "initial second state 1"
+      ],
+      "asked": "Find second-state value at ln2.",
+      "concept": "State transition matrix",
+      "formula": "x(t)=e^{At}x(0)",
+      "steps": [
+        "The second state obeys dx2/dt=−2x2 independently.",
+        "Its solution is x2=e⁻²ᵗ.",
+        "At t=ln2 this is e⁻²ˡⁿ²=1/4."
+      ],
+      "finalAnswer": "0.25",
+      "explanation": "At t=ln2 this is e⁻²ˡⁿ²=1/4.",
+      "commonMistakes": [
+        "A diagonal A decouples the states; use the eigenvalue associated with the second component."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which state transition matrix applies.",
+      "Start from $ x(t)=e^{At}x(0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically integrate both original diagonal state equations. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.2499999,
+      0.2500001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-06-07",
+    "type": "MSQ",
+    "subject": "control",
+    "topic": "state-space-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For the state model A=[[0,1],[−2,−3]], B=[0,1]ᵀ and C=[1,0], which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The controllability matrix has rank 2"
+      },
+      {
+        "id": "B",
+        "text": "The observability matrix has rank 2"
+      },
+      {
+        "id": "C",
+        "text": "A has an eigenvalue at +1"
+      },
+      {
+        "id": "D",
+        "text": "The unforced state dynamics are asymptotically stable"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Two-state LTI realization",
+        "D=0"
+      ],
+      "asked": "Assess controllability, observability and stability.",
+      "concept": "State realization tests",
+      "formula": "\\mathcal C=[B\\ AB],\\quad\\mathcal O=\\begin{bmatrix}C\\\\CA\\end{bmatrix}",
+      "steps": [
+        "AB=(1,−3)ᵀ, so det[B AB]=−1 and controllability rank is 2.",
+        "C and CA form the identity matrix, so observability rank is also 2.",
+        "The characteristic polynomial is s²+3s+2 with roots −1,−2. Thus D holds and C does not. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "The characteristic polynomial is s²+3s+2 with roots −1,−2. Thus D holds and C does not. Select A, B and D.",
+      "commonMistakes": [
+        "Full controllability does not by itself imply stability; the poles must also be checked."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which state realization tests applies.",
+      "Start from $ \\mathcal C=[B\\ AB],\\quad\\mathcal O=\\begin{bmatrix}C\\\\CA\\end{bmatrix} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct controllability and observability matrices, pivot ranks and characteristic roots. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-06-08",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "frequency-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A loop has magnitude |L(jωpc)|=0.25 at its relevant −180° phase crossover. Find its gain margin as a multiplicative factor.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Loop magnitude 0.25 at phase crossover"
+      ],
+      "asked": "Find the factor that brings magnitude to 1.",
+      "concept": "Gain margin",
+      "formula": "GM=1/|L(j\\omega_{pc})|",
+      "steps": [
+        "At phase −180°, multiplying loop gain by GM brings the Nyquist point to −1.",
+        "Required factor is 1/0.25.",
+        "The gain margin factor is 4, equivalent to about 12.04 dB."
+      ],
+      "finalAnswer": "4",
+      "explanation": "The gain margin factor is 4, equivalent to about 12.04 dB.",
+      "commonMistakes": [
+        "The factor and its decibel representation are different requested outputs."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which gain margin applies.",
+      "Start from $ GM=1/|L(j\\omega_{pc})| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve the scalar magnitude multiplier bringing the phase-crossover point to unity. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-SUBJECT-06-09",
+    "type": "MCQ",
+    "subject": "control",
+    "topic": "compensators",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which controller term produces an unbounded DC gain as s→0 and can eliminate constant-reference steady-state error in a stable suitable feedback loop?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Integral term Ki/s"
+      },
+      {
+        "id": "B",
+        "text": "Derivative term Kd s alone"
+      },
+      {
+        "id": "C",
+        "text": "A finite proportional term alone"
+      },
+      {
+        "id": "D",
+        "text": "A pure time delay alone"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Constant reference",
+        "closed-loop stability and regulation feasibility assumed"
+      ],
+      "asked": "Identify the internal-model term for a constant.",
+      "concept": "Integral control",
+      "formula": "C_I(s)=K_I/s",
+      "steps": [
+        "The integral term introduces a pole at the origin and arbitrarily large low-frequency gain.",
+        "In a stable loop with the required regulation path it accumulates persistent constant error until that error vanishes.",
+        "Derivative gain instead vanishes at DC, and finite proportional gain need not remove the error. Select A."
+      ],
+      "finalAnswer": "A",
+      "explanation": "Derivative gain instead vanishes at DC, and finite proportional gain need not remove the error. Select A.",
+      "commonMistakes": [
+        "Integral action is not a guarantee of stability or of avoiding actuator saturation."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which integral control applies.",
+      "Start from $ C_I(s)=K_I/s $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Zero-frequency limits of all four listed controller terms. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-SUBJECT-06-10",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A first-order system has transfer 5/(2s+1). Find its unit-step steady-state output.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Stable transfer function",
+        "unit step",
+        "zero initial state"
+      ],
+      "asked": "Find the final response value.",
+      "concept": "Final-value theorem",
+      "formula": "y(\\infty)=\\lim_{s\\to0}s\\,H(s)/s",
+      "steps": [
+        "The transfer pole is −1/2, so the relevant final-value condition is satisfied.",
+        "The unit step makes the final value equal the DC gain H(0).",
+        "H(0)=5."
+      ],
+      "finalAnswer": "5",
+      "explanation": "H(0)=5.",
+      "commonMistakes": [
+        "Check stability before applying the final-value theorem."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which final-value theorem applies.",
+      "Start from $ y(\\infty)=\\lim_{s\\to0}s\\,H(s)/s $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Long-time integration of the actual first-order step-response state equation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      4.9999995,
+      5.0000005
+    ],
+    "numericalTolerance": 5e-7
+  },
+  {
+    "id": "FH-SUBJECT-06-11",
+    "type": "MSQ",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about standard negative-feedback control are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The sensitivity to forward-path gain is reduced when a stable loop has large low-frequency loop gain"
+      },
+      {
+        "id": "B",
+        "text": "Negative feedback guarantees stability for every plant"
+      },
+      {
+        "id": "C",
+        "text": "A right-half-plane internal mode makes the closed-loop state dynamics unstable even if hidden by a measured-transfer cancellation"
+      },
+      {
+        "id": "D",
+        "text": "A phase margin alone gives the exact nonlinear saturation response"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ordinary finite-dimensional LTI closed-loop dynamics",
+        "no restriction to one hidden transfer path"
+      ],
+      "asked": "Select valid robustness/stability statements.",
+      "concept": "Feedback and internal stability",
+      "formula": "S(s)=\\frac1{1+L(s)}",
+      "steps": [
+        "A stable large-loop-gain region makes sensitivity 1/(1+L) small.",
+        "Loop phase and dynamics can cause negative feedback to destabilize a plant, so B is false.",
+        "A right-half-plane internal mode grows; hiding it by a particular transfer cancellation does not restore internal stability. Linear phase margin does not specify saturation behavior. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "A right-half-plane internal mode grows; hiding it by a particular transfer cancellation does not restore internal stability. Linear phase margin does not specify saturation behavior. Select A and C.",
+      "commonMistakes": [
+        "Input-output cancellation can hide an unstable internal state."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which feedback and internal stability applies.",
+      "Start from $ S(s)=\\frac1{1+L(s)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Sensitivity algebra and explicit exponentially growing internal-state counterexample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-06-12",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a canonical second-order system with ωn=5 rad/s and ζ=0.6, find its damped oscillation frequency in rad/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Natural frequency 5",
+        "damping ratio 0.6<1"
+      ],
+      "asked": "Find ωd.",
+      "concept": "Underdamped poles",
+      "formula": "\\omega_d=\\omega_n\\sqrt{1-\\zeta^2}",
+      "steps": [
+        "The imaginary part of the conjugate poles is ωn√(1−ζ²).",
+        "Here 1−0.36=0.64 and its square root is 0.8.",
+        "Therefore ωd=5×0.8=4 rad/s."
+      ],
+      "finalAnswer": "4 rad/s",
+      "explanation": "Therefore ωd=5×0.8=4 rad/s.",
+      "commonMistakes": [
+        "The oscillation frequency is smaller than the undamped natural frequency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which underdamped poles applies.",
+      "Start from $ \\omega_d=\\omega_n\\sqrt{1-\\zeta^2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute imaginary characteristic-root component from the second-order discriminant. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-06-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  }
+]

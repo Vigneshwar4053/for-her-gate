@@ -1,0 +1,12 @@
+{
+  "websiteTitle": "FOR HER",
+  "displayName": "",
+  "welcomeMessage": "A little closer to your dream, every day.",
+  "accentTheme": "#6366F1",
+  "specialMessage": "Whatever happens, I’m proud of you.",
+  "examDate": null,
+  "examDateLabel": "EC-specific date awaiting verification",
+  "examWindowStart": "2027-02-06",
+  "scheduleSource": "https://gate2027.iitm.ac.in/",
+  "scheduleNote": "Official general examination dates: February 6, 7, 13, 14, 20, 21, 2027. Countdown uses the start of this window; EC-specific date is not asserted."
+}

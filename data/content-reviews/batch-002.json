@@ -1,0 +1,585 @@
+{
+  "batch": "002",
+  "checkedAt": "2026-11-12T19:23:47.151Z",
+  "classification": "automatically-validated-and-recalculated",
+  "independentlyReviewed": false,
+  "humanReviewed": false,
+  "answerKeyVerified": false,
+  "method": "Offline numerical algorithms, exact enumerations and property checks in scripts/content/checks-002.mjs. Explanations authored by the same system; these are not an independent external or human review.",
+  "questions": [
+    {
+      "id": "FH-TOPIC-01-01",
+      "status": "passed",
+      "contentHash": "02539ec8ec8032ade7d311cddfd07103d9132b44b3d3a67f3723ab2fa2a64e62",
+      "computedValue": 2,
+      "method": "Gaussian elimination with pivoting",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-02",
+      "status": "passed",
+      "contentHash": "7f5349bdd7f34f7c999ac5d996d9002b99c58b5258083c08cee813ba411c6eff",
+      "computedValue": "B",
+      "method": "Augmented rank check: k=4 has rank 1; k=0,2 have augmented rank 2",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-03",
+      "status": "passed",
+      "contentHash": "db0370e13a14429d1195febf59c42970d7b887ee77405587c896310724857d88",
+      "computedValue": 56,
+      "method": "Direct matrix multiplication, not eigenvalue trace formula",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-04",
+      "status": "passed",
+      "contentHash": "ae5805e4b9d1ebd244f6e77c3cbf67d707e9b2b7dc01b35f80c3136bdebd1cf7",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Direct eigenvector multiplication; positive leading minors; determinant expansion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-05",
+      "status": "passed",
+      "contentHash": "b737c364400d38775fd30945a38140a02c45471868252ca853162e3d76bd4739",
+      "computedValue": -1,
+      "method": "Solve A x = e2; read x1 as the inverse column entry",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-06",
+      "status": "passed",
+      "contentHash": "dea8676a1238e394fc4e2852d227586d774dba13db59fbd61f79b7ae48af3956",
+      "computedValue": 3,
+      "method": "Idempotent polynomial λ(λ−1) has distinct roots; rank/trace check on canonical diag(1,1,1,0,0)",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-07",
+      "status": "passed",
+      "contentHash": "46bdc3798baeb2d5d5cc3c3291a7ed202eb18e06148c6545afc47915cfad907b",
+      "computedValue": "C",
+      "method": "Compute QᵀQ for all four candidate matrices",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-08",
+      "status": "passed",
+      "contentHash": "5a8046962f787f6792b9618c96930c28d22eca14e3ed801991011918286df64c",
+      "computedValue": 2,
+      "method": "Gaussian solution of coordinate matrix",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-09",
+      "status": "passed",
+      "contentHash": "34f60150b1ed82b6eb8e4b4788c64f8b6ae642a2f5abdf4c4bfb2c2c1e268b04",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Eigenvalue invariant identities checked arithmetically; full-rank nonzero spectrum",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-10",
+      "status": "passed",
+      "contentHash": "099b415a7f236ce423bcd338e5afb071b3e56bae6d61339b69670299bd0bdbc1",
+      "computedValue": 5,
+      "method": "Five explicit matrix multiplications",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-11",
+      "status": "passed",
+      "contentHash": "eb7aea2aa248f3df54c21ee673d372db0c46a59481de71831d15bff108062f17",
+      "computedValue": 2,
+      "method": "Root of affine determinant from independent cofactor evaluations at k=0 and k=1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-01-12",
+      "status": "passed",
+      "contentHash": "6bf4628202ccf66d41f5cf1a6df5e781699d29b1d14e8349297f609607775cbc",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Trace cyclicity and determinant product theorem; noncommuting example and additive-determinant counterexample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-01",
+      "status": "passed",
+      "contentHash": "31f0a0d120f4709f6534afcef21c44b55c91f5ef78b1bf8b6e3e3c264fa3c1ce",
+      "computedValue": 2.0000000133335583,
+      "method": "Centered finite-difference limit, independent from the Taylor derivation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-02",
+      "status": "passed",
+      "contentHash": "07ef47ee59857b3b4050aef8c2b6c8bbdcaded41cac604b4f46a64f0275c1b15",
+      "computedValue": 3.9999999999995595,
+      "method": "Centered finite difference of partial-x function",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-03",
+      "status": "passed",
+      "contentHash": "70a053b42f550f34ae0a0f18ea9d49c2f2d2cd1572fb4991b766f4557b4b11e3",
+      "computedValue": 4,
+      "method": "Dense bounded search including endpoints and stationary point",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-04",
+      "status": "passed",
+      "contentHash": "670fb9e974a490a1e45eb86c75a7118686d94e37a9bb40e9ceaf4e12be5b7482",
+      "computedValue": 0.8591409142295247,
+      "method": "Composite Simpson integration of original integrand",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-05",
+      "status": "passed",
+      "contentHash": "063cf0753b00d1f8e1766ab2ca29b665b3790a31740b873c6d725eda65563c4f",
+      "computedValue": 0.5,
+      "method": "Nested Simpson integration on the stated triangular bounds",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-06",
+      "status": "passed",
+      "contentHash": "abefd75623c1372451e247a2399ff8bde5a50813ebcadcb5530ec53b8462d00e",
+      "computedValue": "B",
+      "method": "Solve derivative(c)=secant slope numerically",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-07",
+      "status": "passed",
+      "contentHash": "dd56f7a0609b91debaa5795ac823905d9e7190f06a5f4424668674fee16426e0",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Power antiderivative endpoint limits: finite values 1 and 2; logarithmic and reciprocal divergences",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-08",
+      "status": "passed",
+      "contentHash": "989d922190fa68577026bba18c3bf8b930252f4a27e603426ce614800be0e34f",
+      "computedValue": 0.3333333333333333,
+      "method": "Coefficient recurrence from the differential identity (1+x)f′=1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-09",
+      "status": "passed",
+      "contentHash": "ce9481a3efe1e73d434f2e8640fa221ea171d9cd2ba108c55794a9dcec71586c",
+      "computedValue": 6,
+      "method": "Solve Lagrange multiplier linear system and check positive quadratic Hessian",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-10",
+      "status": "passed",
+      "contentHash": "8d110b095f4c21adfe44f627cfa3f69ea06fd5d89192e2809356127580d7f896",
+      "computedValue": 0.3333333333386581,
+      "method": "Direct improper-integral truncation; omitted tail below 3e−27",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-11",
+      "status": "passed",
+      "contentHash": "587ae9105258fe40e009158209e6eda382f623c3b85672ee83a38d65bf006ca9",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Solve gradient system and directly evaluate f and Hessian principal minors",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-02-12",
+      "status": "passed",
+      "contentHash": "1307db9ace2b57e54fa0c89d33ae696767729eff81072b38ba9842eddacc8013",
+      "computedValue": 4.000000003345772,
+      "method": "Differentiate numerical integral with a moving upper bound",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-01",
+      "status": "passed",
+      "contentHash": "02b7ccdcf7fdd28ac1c66c8f482a682d25e3f98cc19cd547ea2786d4b3bd8ce3",
+      "computedValue": 1.5000000000000002,
+      "method": "Fourth-order Runge–Kutta integration of original initial-value equation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-02",
+      "status": "passed",
+      "contentHash": "e202f81ac4eaf5fbc99c47db7a45b184949bfec905f32b7b21b237e69e67c4fc",
+      "computedValue": 2.0000000000000004,
+      "method": "Integrate second-order IVP numerically, then recover modal coefficients",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-03",
+      "status": "passed",
+      "contentHash": "843130b54ea64876675d2f5dbfa9d499e020ac3daac2b918cb8c9522ccd64c79",
+      "computedValue": "C",
+      "method": "RK4 trajectory comparison and explicit initial derivative checks for all candidates",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-04",
+      "status": "passed",
+      "contentHash": "ea9cf37482122b2496e779f7644f1ebd490ffd9d7ab8a0d795218b89f5cb14c0",
+      "computedValue": 10,
+      "method": "RK4 integration of derivative polynomial",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-05",
+      "status": "passed",
+      "contentHash": "18aee38ed9ba7c61b9cbbf8e8fceb6a18dd35aa88856fccb312216d15438afff",
+      "computedValue": 2,
+      "method": "RK4 from t=1 to 2 without using closed-form solution",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-06",
+      "status": "passed",
+      "contentHash": "534774be8cb908fcf40b7ff195801fe74b647b37b23a4d4177daf88e721400a1",
+      "computedValue": 0.5,
+      "method": "Differentiate the trial analytically and check residual at five distinct times",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-07",
+      "status": "passed",
+      "contentHash": "aa81016515b7c8ec9faf67bc8fcfdee4c1f805e53ac6e7504a73e4c780d02313",
+      "computedValue": [
+        "A",
+        "B"
+      ],
+      "method": "Polynomial operator (D+1)² applied to all candidates; explicit residuals",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-08",
+      "status": "passed",
+      "contentHash": "4af62693db9760df60028ad504971c1e897bbd1415eb17d0803d3afa0c61c7c2",
+      "computedValue": 0.3333333333333333,
+      "method": "Root condition using logarithms and monotone decay",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-09",
+      "status": "passed",
+      "contentHash": "bbc8b92477a77ff243630c449a4e1ee9874e7ebfc548e72da700d35eb78fc8e8",
+      "computedValue": 10,
+      "method": "Boundary-value shooting with two RK4 integrations",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-10",
+      "status": "passed",
+      "contentHash": "cc7a6d7202cb55c9d91693cdb5bd68e0a7fbf1a3c4ff2c748e6387787aa5e00b",
+      "computedValue": 2,
+      "method": "Substitute sin(x+ct), compare symbolic cos coefficients, and verify initial profile",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-11",
+      "status": "passed",
+      "contentHash": "e3899c0221dae2637d6846633d1c0e2fe40968979f1218c272336b093282bbb9",
+      "computedValue": "D",
+      "method": "Factor the characteristic quadratic and verify its two positive roots",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-03-12",
+      "status": "passed",
+      "contentHash": "e414e210ce7d2c0c222d5ff28774cc72212c1d1420afa4f07be87fcc96831e30",
+      "computedValue": 0.7500000000000022,
+      "method": "RK4 integration of nonlinear logistic IVP",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-01",
+      "status": "passed",
+      "contentHash": "2c04b92e98f608565c1e6e113481efabe0d93609ebd9562517f51013d7ef480c",
+      "computedValue": 2.000000000002,
+      "method": "Centered complex-polynomial real component derivative",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-02",
+      "status": "passed",
+      "contentHash": "629bdb628bfd0bbf12898564158bd881acb5c3877b2a27e93bef1e62966fb735",
+      "computedValue": "B",
+      "method": "Cauchy–Riemann partial-derivative identities for the polynomial; counterexamples for other functions",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-03",
+      "status": "passed",
+      "contentHash": "d15da9c89a06c099926b225b93f95edeb050bc9769925d0b8b7519c57c89efaf",
+      "computedValue": 6.28318530717957,
+      "method": "Direct complex trapezoidal contour integration, 32768 samples",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-04",
+      "status": "passed",
+      "contentHash": "78bb872f812310afa6fa6c1daa63bc8a5b33fb3d5113f6d8165bfc3cd8763c32",
+      "computedValue": 0.3333333333422889,
+      "method": "Symmetric simple-pole limit from both real sides",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-05",
+      "status": "passed",
+      "contentHash": "e8fc49f5c829875267bbc4d81ededc9a15482b33eb89a13ce65851de134ea60a",
+      "computedValue": 3,
+      "method": "Geometric-series ratio condition and singularity location",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-06",
+      "status": "passed",
+      "contentHash": "513269f82dd8c26d3177b6ae52dcfea39b640ec501b73fa302f5d550d15a0521",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Taylor/Laurent classification: finite limit; finite principal part; infinite principal part",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-07",
+      "status": "passed",
+      "contentHash": "5d88434fb26126cd11a9ae468e3ea89aab016b0f415e00d056100b8ebd15973a",
+      "computedValue": 2.999999999999987,
+      "method": "Direct contour integration around both poles",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-08",
+      "status": "passed",
+      "contentHash": "33b4676173ee02543bd35950081b8d334eead7470b3ca09af6b0e0f1a991af48",
+      "computedValue": 0.9999999999999993,
+      "method": "Direct contour integration isolates the Laurent coefficient",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-09",
+      "status": "passed",
+      "contentHash": "c715877fea3bfd74bab92fef42d33be36425ea341e4666a5ae886ec3956e84b4",
+      "computedValue": 4,
+      "method": "Integrate Cauchy–Riemann v_y at x=1 and apply zero constant",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-10",
+      "status": "passed",
+      "contentHash": "788baad0c0a83bd9447c0b155b32885209baadae3a1eaf2c2d3856fb5018bae9",
+      "computedValue": "C",
+      "method": "atan2 quadrant-aware angle evaluation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-11",
+      "status": "passed",
+      "contentHash": "0026d4ae0a0edfd1ba05b36920f4971999d68dab9c9580c579bb8fa8cdf50f85",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Direct contour integration of all four options",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-04-12",
+      "status": "passed",
+      "contentHash": "543e1180506e6dffe642774ed51f3e8d56ae44db2b41fcf56d7a5b0330fa8531",
+      "computedValue": 1.9999999999999993,
+      "method": "Direct contour quadrature independent of Cauchy derivative formula",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-01",
+      "status": "passed",
+      "contentHash": "6d466d6617b50dafd8f9c4548e8f279cb3ff13533cdbaf753b4cc0f80316c46e",
+      "computedValue": 0.6666666666666666,
+      "method": "Enumerate conditioned equally likely outcomes",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-02",
+      "status": "passed",
+      "contentHash": "1060f1f835b39709c9f6617ab469a5b23fe30df57c84d81d66ebc2502b45fa16",
+      "computedValue": 0.09600000000000003,
+      "method": "Enumerate all 8 independent Bernoulli outcome strings",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-03",
+      "status": "passed",
+      "contentHash": "4040aba7f5488fba5827d84ee2075064747547dff9a1157a58ca3689b32a5a25",
+      "computedValue": 0.1353352832366127,
+      "method": "Poisson zero-event survival e−λ; direct evaluation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-04",
+      "status": "passed",
+      "contentHash": "62100344636cb0c2a88c55ea8ef3a87ff5b558febfb761863289f217edee3ac3",
+      "computedValue": 1.9999999999537277,
+      "method": "Numerical first-moment integration with negligible exponential tail",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-05",
+      "status": "passed",
+      "contentHash": "26450b1dc8b86160ee6508c32973ba38ebf6a3436e809d3db4851e650d0bc59e",
+      "computedValue": 4,
+      "method": "Raw-to-central moment algebra",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-06",
+      "status": "passed",
+      "contentHash": "1ec6c8b35971a9cffe894821c2b667098e82ab694df2af2f8cedc42ccc865305",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Product joint-PMF enumeration plus general expectation factorization",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-07",
+      "status": "passed",
+      "contentHash": "39b58912f94a7ed27d5562bc97154b7d0b2e47ad163f74f75ad763d41322a2aa",
+      "computedValue": 0.08333333333333333,
+      "method": "Frequency-table construction: 100 diseased/9900 healthy out of 10000, 90+990 positives",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-08",
+      "status": "passed",
+      "contentHash": "0488d976af527dc43b78ca5d060338baf55614c7811b8fbe83349265c72b7ebf",
+      "computedValue": 3,
+      "method": "Integrate squared centered displacement against the uniform density",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-09",
+      "status": "passed",
+      "contentHash": "39c8905b528864cdc3cbd229979824b543063e96ada8fffdf6c8bc038a4d28af",
+      "computedValue": 0.5,
+      "method": "Enumerate transformed values weighted by PMF",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-10",
+      "status": "passed",
+      "contentHash": "a8427357198f34d5678403839bfc821434ecb73816a70015042649318509e088",
+      "computedValue": "D",
+      "method": "Gaussian reflection substitution z→−z; numerical tail-area agreement",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-11",
+      "status": "passed",
+      "contentHash": "b2b28e2ff66e3328bd5723b02e7facd732acfe341d29062d0beac4a4fd18886c",
+      "computedValue": 0.5,
+      "method": "Covariance normalized by root product of variances",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-05-12",
+      "status": "passed",
+      "contentHash": "bee35d0cf6ef47cd46d45f500cca04f67ac96543d546ccc4610c4a480a5b2371",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Survival-ratio algebra, integrated second central moment and support condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    }
+  ]
+}

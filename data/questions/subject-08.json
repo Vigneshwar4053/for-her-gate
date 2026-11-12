@@ -1,0 +1,773 @@
+[
+  {
+    "id": "FH-SUBJECT-08-01",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A lossless line has Z0=50 Ω and a purely resistive load ZL=100 Ω. Find the voltage reflection coefficient at the load.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Z0=50 Ω",
+        "ZL=100 Ω"
+      ],
+      "asked": "Find ΓL.",
+      "concept": "Load reflection",
+      "formula": "\\Gamma_L=\\frac{Z_L-Z_0}{Z_L+Z_0}",
+      "steps": [
+        "The mismatch numerator is 100−50=50 Ω.",
+        "The denominator is 100+50=150 Ω.",
+        "ΓL=50/150=1/3, real and positive."
+      ],
+      "finalAnswer": "0.3333333333333333",
+      "explanation": "ΓL=50/150=1/3, real and positive.",
+      "commonMistakes": [
+        "Voltage reflection coefficient is not the reflected power fraction."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which load reflection applies.",
+      "Start from $ \\Gamma_L=\\frac{Z_L-Z_0}{Z_L+Z_0} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve electric and magnetic boundary continuity with incident amplitude 1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.333333233333,
+      0.333333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-08-02",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "On a lossless line, the magnitude of voltage reflection coefficient is 0.5. Find VSWR.",
+    "options": [],
+    "solution": {
+      "given": [
+        "|Γ|=0.5",
+        "lossless standing wave"
+      ],
+      "asked": "Find the maximum/minimum voltage ratio.",
+      "concept": "Standing-wave ratio",
+      "formula": "S=\\frac{1+|\\Gamma|}{1-|\\Gamma|}",
+      "steps": [
+        "The voltage envelopes scale as 1+|Γ| and 1−|Γ|.",
+        "Substitute 0.5 into their ratio.",
+        "VSWR=1.5/0.5=3."
+      ],
+      "finalAnswer": "3",
+      "explanation": "VSWR=1.5/0.5=3.",
+      "commonMistakes": [
+        "Use the reflection magnitude, not its signed real part."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which standing-wave ratio applies.",
+      "Start from $ S=\\frac{1+|\\Gamma|}{1-|\\Gamma|} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Ratio of constructive and destructive traveling-wave envelope extrema. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-SUBJECT-08-03",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A lossless quarter-wave transformer matches a 100 Ω load to a 25 Ω source line at its design frequency. Find the transformer characteristic impedance in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Real source-line impedance 25 Ω",
+        "load 100 Ω",
+        "quarter wavelength"
+      ],
+      "asked": "Find the matching section impedance.",
+      "concept": "Quarter-wave impedance transformation",
+      "formula": "Z_{in}=Z_t^2/Z_L,\\quad Z_t=\\sqrt{Z_0Z_L}",
+      "steps": [
+        "A quarter-wave section transforms the resistive load to Zt²/ZL.",
+        "Set the transformed impedance to 25 Ω.",
+        "Zt=√(25×100)=50 Ω."
+      ],
+      "finalAnswer": "50 Ω",
+      "explanation": "Zt=√(25×100)=50 Ω.",
+      "commonMistakes": [
+        "The geometric mean, not arithmetic mean, is required."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which quarter-wave impedance transformation applies.",
+      "Start from $ Z_{in}=Z_t^2/Z_L,\\quad Z_t=\\sqrt{Z_0Z_L} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve quarter-wave real input-impedance equation for positive section impedance. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      49.999995,
+      50.000005
+    ],
+    "numericalTolerance": 0.0000049999999999999996
+  },
+  {
+    "id": "FH-SUBJECT-08-04",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "wave-propagation",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A uniform lossless nonmagnetic medium has relative permittivity 4. Using c=3×10⁸ m/s, find the plane-wave phase velocity in units of 10⁸ m/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "μr=1",
+        "εr=4",
+        "c=3×10⁸ m/s"
+      ],
+      "asked": "Find velocity divided by 10⁸ m/s.",
+      "concept": "Wave speed in a dielectric",
+      "formula": "v_p=\\frac{c}{\\sqrt{\\mu_r\\epsilon_r}}",
+      "steps": [
+        "The refractive-index factor is √4=2.",
+        "The phase velocity is 3×10⁸/2=1.5×10⁸ m/s.",
+        "In the requested units the numerical answer is 1.5."
+      ],
+      "finalAnswer": "1.5 ×10⁸ m/s",
+      "explanation": "In the requested units the numerical answer is 1.5.",
+      "commonMistakes": [
+        "The question requests scaled units; do not enter the full SI value."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which wave speed in a dielectric applies.",
+      "Start from $ v_p=\\frac{c}{\\sqrt{\\mu_r\\epsilon_r}} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Wave-equation εμ coefficient determines phase speed; scale requested units. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      1.49999985,
+      1.50000015
+    ],
+    "numericalTolerance": 1.5e-7
+  },
+  {
+    "id": "FH-SUBJECT-08-05",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "maxwell-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A uniform plane wave in a lossless medium has E-field peak magnitude 10 V/m and real intrinsic impedance 100 Ω. Find average power density in W/m².",
+    "options": [],
+    "solution": {
+      "given": [
+        "Peak E=10 V/m",
+        "intrinsic impedance η=100 Ω"
+      ],
+      "asked": "Find time-average Poynting magnitude.",
+      "concept": "Plane-wave power",
+      "formula": "\\langle S\\rangle=E_{peak}^2/(2\\eta)",
+      "steps": [
+        "For a traveling wave Hpeak=Epeak/η=0.1 A/m.",
+        "Sinusoidal field products average to one half of the peak product.",
+        "Average power density is 10×0.1/2=0.5 W/m²."
+      ],
+      "finalAnswer": "0.5 W/m²",
+      "explanation": "Average power density is 10×0.1/2=0.5 W/m².",
+      "commonMistakes": [
+        "The factor 1/2 is required for peak phasors; RMS phasors use a different convention."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which plane-wave power applies.",
+      "Start from $ \\langle S\\rangle=E_{peak}^2/(2\\eta) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct average of E(t)H(t) over one period using peak waveforms. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-08-06",
+    "type": "MCQ",
+    "subject": "electromagnetics",
+    "topic": "electromagnetic-waves",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A plane wave propagates in +z with electric field along +x in a lossless medium. Its magnetic field points along:",
+    "options": [
+      {
+        "id": "A",
+        "text": "+x"
+      },
+      {
+        "id": "B",
+        "text": "+y"
+      },
+      {
+        "id": "C",
+        "text": "−y"
+      },
+      {
+        "id": "D",
+        "text": "−z"
+      }
+    ],
+    "solution": {
+      "given": [
+        "E × H points in the propagation direction"
+      ],
+      "asked": "Find H direction.",
+      "concept": "Poynting-vector orientation",
+      "formula": "\\mathbf S=\\mathbf E\\times\\mathbf H",
+      "steps": [
+        "The right-handed Cartesian identity is x̂×ŷ=ẑ.",
+        "Since E is along +x and power propagation is +z, H must point along +y.",
+        "Therefore option B is correct."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Therefore option B is correct.",
+      "commonMistakes": [
+        "Reversing the cross-product order reverses the result."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which poynting-vector orientation applies.",
+      "Start from $ \\mathbf S=\\mathbf E\\times\\mathbf H $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Cartesian cross product ex×ey=ez; evaluate field orientation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-SUBJECT-08-07",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "wave-propagation",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a good conductor with skin depth δ at a fixed frequency, the frequency is increased by a factor of 4 while μ and σ remain constant. Find δnew/δold.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Good-conductor regime",
+        "unchanged permeability and conductivity",
+        "frequency quadrupled"
+      ],
+      "asked": "Find the skin-depth ratio.",
+      "concept": "Skin-effect scaling",
+      "formula": "\\delta=\\sqrt{\\frac{2}{\\omega\\mu\\sigma}}",
+      "steps": [
+        "Skin depth varies inversely with the square root of frequency.",
+        "A fourfold frequency increase multiplies the denominator square root by 2.",
+        "Thus δnew/δold=1/2."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "Thus δnew/δold=1/2.",
+      "commonMistakes": [
+        "Skin depth scales as 1/√f, not 1/f."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which skin-effect scaling applies.",
+      "Start from $ \\delta=\\sqrt{\\frac{2}{\\omega\\mu\\sigma}} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Skin-effect diffusion relation gives inverse-square-root frequency scaling. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-08-08",
+    "type": "MSQ",
+    "subject": "electromagnetics",
+    "topic": "maxwell-equations",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "At an interface with no free surface charge and no surface current, which boundary statements hold for ordinary finite fields?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tangential electric field is continuous"
+      },
+      {
+        "id": "B",
+        "text": "Normal magnetic flux density is continuous"
+      },
+      {
+        "id": "C",
+        "text": "Normal electric field is always identical across different permittivities"
+      },
+      {
+        "id": "D",
+        "text": "Normal electric displacement is continuous"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Interface without free surface sources"
+      ],
+      "asked": "Select valid Maxwell boundary conditions.",
+      "concept": "Electromagnetic boundary conditions",
+      "formula": "\\hat n\\times(\\mathbf E_2-\\mathbf E_1)=0,\\quad\\hat n\\cdot(\\mathbf D_2-\\mathbf D_1)=\\rho_s",
+      "steps": [
+        "Faraday’s law applied to a vanishing loop gives tangential E continuity for finite fields.",
+        "Magnetic Gauss law gives continuity of normal B. Electric Gauss law gives continuity of normal D when free surface charge is zero.",
+        "Normal E can change inversely with permittivity. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Normal E can change inversely with permittivity. Select A, B and D.",
+      "commonMistakes": [
+        "Continuity of Dn does not require continuity of En across unequal permittivities."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which electromagnetic boundary conditions applies.",
+      "Start from $ \\hat n\\times(\\mathbf E_2-\\mathbf E_1)=0,\\quad\\hat n\\cdot(\\mathbf D_2-\\mathbf D_1)=\\rho_s $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integral Maxwell equations on shrinking pillbox/loop with no free surface sources. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-08-09",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "waveguides-fibers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An air-filled rectangular waveguide has broad dimension a=3 cm. Find the TE10 cutoff frequency in GHz, using c=3×10⁸ m/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Air-filled rectangular guide",
+        "a=0.03 m",
+        "TE10 mode"
+      ],
+      "asked": "Find the dominant-mode cutoff.",
+      "concept": "Rectangular-waveguide cutoff",
+      "formula": "f_{c,10}=c/(2a)",
+      "steps": [
+        "For TE10 the transverse index is one along the broad dimension and zero along the narrow dimension.",
+        "fc=3×10⁸/(2×0.03)=5×10⁹ Hz.",
+        "Converting to GHz gives 5."
+      ],
+      "finalAnswer": "5 GHz",
+      "explanation": "Converting to GHz gives 5.",
+      "commonMistakes": [
+        "Use the broad dimension in meters and distinguish cutoff from operating frequency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which rectangular-waveguide cutoff applies.",
+      "Start from $ f_{c,10}=c/(2a) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "TE10 transverse-wavenumber condition β²=k²−(π/a)² at β=0. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      4.9999995,
+      5.0000005
+    ],
+    "numericalTolerance": 5e-7
+  },
+  {
+    "id": "FH-SUBJECT-08-10",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "antennas",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A half-wave dipole has radiation resistance 73 Ω and loss resistance 7 Ω at resonance. Find its radiation efficiency in percent.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rrad=73 Ω",
+        "Rloss=7 Ω",
+        "same antenna terminal current"
+      ],
+      "asked": "Find fraction of accepted power radiated.",
+      "concept": "Antenna radiation efficiency",
+      "formula": "\\eta_{rad}=\\frac{R_{rad}}{R_{rad}+R_{loss}}",
+      "steps": [
+        "Radiated and dissipated powers are proportional to the corresponding resistances for the same current.",
+        "The accepted-power resistance sum is 73+7=80 Ω.",
+        "Efficiency is 100×73/80=91.25%."
+      ],
+      "finalAnswer": "91.25",
+      "explanation": "Efficiency is 100×73/80=91.25%.",
+      "commonMistakes": [
+        "Radiation resistance represents radiated power, not heat loss."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which antenna radiation efficiency applies.",
+      "Start from $ \\eta_{rad}=\\frac{R_{rad}}{R_{rad}+R_{loss}} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute radiated and loss powers at unit peak current, then their ratio. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      91.249990875,
+      91.250009125
+    ],
+    "numericalTolerance": 0.000009125
+  },
+  {
+    "id": "FH-SUBJECT-08-11",
+    "type": "MSQ",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a passive lossless two-port with real equal reference impedances, which S-parameter statements necessarily hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its S matrix is unitary"
+      },
+      {
+        "id": "B",
+        "text": "It must have S11=0 at every frequency"
+      },
+      {
+        "id": "C",
+        "text": "For excitation at port 1 alone, |S11|²+|S21|²=1"
+      },
+      {
+        "id": "D",
+        "text": "It must amplify available power above unity"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Passive lossless network",
+        "normalized power waves",
+        "matched termination at unexcited port"
+      ],
+      "asked": "Select energy-conservation constraints.",
+      "concept": "Scattering power conservation",
+      "formula": "S^\\dagger S=I",
+      "steps": [
+        "Losslessness preserves the squared norm of incident and outgoing power waves.",
+        "Setting the port-2 incident wave to zero makes reflected plus transmitted power fractions sum to 1.",
+        "A lossless network may reflect, so matching is not automatic, and passive available power gain cannot exceed 1. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "A lossless network may reflect, so matching is not automatic, and passive available power gain cannot exceed 1. Select A and C.",
+      "commonMistakes": [
+        "Lossless and matched are different properties."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which scattering power conservation applies.",
+      "Start from $ S^\\dagger S=I $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Power-wave norm conservation for all incident vectors yields unitary scattering matrix. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-08-12",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "electromagnetic-waves",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "At normal incidence from medium 1 with real impedance η1=100 Ω to medium 2 with η2=200 Ω, find the electric-field transmission coefficient Et/Ei at the boundary.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Lossless media",
+        "normal incidence",
+        "electric-amplitude ratio at interface"
+      ],
+      "asked": "Find electric-field transmission coefficient.",
+      "concept": "Plane-wave interface matching",
+      "formula": "\\tau_E=1+\\Gamma_E=\\frac{2\\eta_2}{\\eta_1+\\eta_2}",
+      "steps": [
+        "The electric reflection coefficient is (200−100)/(200+100)=1/3.",
+        "Tangential E continuity gives transmitted field equal to incident plus reflected at the boundary.",
+        "Therefore Et/Ei=1+1/3=4/3. This amplitude above 1 does not imply power gain."
+      ],
+      "finalAnswer": "1.3333333333333333",
+      "explanation": "Therefore Et/Ei=1+1/3=4/3. This amplitude above 1 does not imply power gain.",
+      "commonMistakes": [
+        "Power transmission also includes the impedance ratio; it is not simply |τE|²."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which plane-wave interface matching applies.",
+      "Start from $ \\tau_E=1+\\Gamma_E=\\frac{2\\eta_2}{\\eta_1+\\eta_2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve simultaneous E/H boundary continuity for reflected and transmitted amplitudes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-08-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      1.3333332,
+      1.333333466667
+    ],
+    "numericalTolerance": 1.333333333333333e-7
+  }
+]

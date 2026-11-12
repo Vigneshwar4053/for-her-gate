@@ -1,0 +1,775 @@
+[
+  {
+    "id": "FH-TOPIC-16-01",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A planar abrupt junction has area 10⁻⁴ cm², permittivity 10⁻¹² F/cm and depletion width 10⁻⁴ cm. Find its depletion capacitance in pF.",
+    "options": [],
+    "solution": {
+      "given": [
+        "A=10⁻⁴ cm²",
+        "ε=10⁻¹² F/cm",
+        "W=10⁻⁴ cm"
+      ],
+      "asked": "Find εA/W.",
+      "concept": "Junction depletion capacitance",
+      "formula": "C_j=\\epsilon A/W",
+      "steps": [
+        "The permittivity-area product is 10⁻¹⁶ F·cm.",
+        "Divide by W=10⁻⁴ cm to obtain 10⁻¹² F.",
+        "This equals 1 pF."
+      ],
+      "finalAnswer": "1 pF",
+      "explanation": "This equals 1 pF.",
+      "commonMistakes": [
+        "All length and area units must use the same centimeter convention."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which junction depletion capacitance applies.",
+      "Start from $ C_j=\\epsilon A/W $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Permittivity-area-width dimensional capacitance calculation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-16-02",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an abrupt junction with built-in voltage Vbi=1 V, assume Cj(VR)=Cj(0)/sqrt(1+VR/Vbi). Find Cj(3 V)/Cj(0).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Abrupt-junction reverse-capacitance model",
+        "VR=3 V"
+      ],
+      "asked": "Find the normalized reverse-bias capacitance.",
+      "concept": "Reverse-bias depletion expansion",
+      "formula": "C_j(V_R)/C_j(0)=(1+V_R/V_{bi})^{-1/2}",
+      "steps": [
+        "Inside the square root the ratio is 1+3/1=4.",
+        "The square root is 2.",
+        "The capacitance ratio is 1/2, corresponding to twice the depletion width at fixed area."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "The capacitance ratio is 1/2, corresponding to twice the depletion width at fixed area.",
+      "commonMistakes": [
+        "Increasing reverse bias widens depletion and lowers junction capacitance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which reverse-bias depletion expansion applies.",
+      "Start from $ C_j(V_R)/C_j(0)=(1+V_R/V_{bi})^{-1/2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate the given abrupt-junction depletion-capacitance ratio. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-16-03",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal diode has IS=1 nA, η=1 and VT=25 mV. Find the forward voltage for I=10 μA, in millivolts, retaining the −1 term in the diode law.",
+    "options": [],
+    "solution": {
+      "given": [
+        "I/IS=10000",
+        "thermal voltage 25 mV"
+      ],
+      "asked": "Invert the full diode current relation.",
+      "concept": "Diode inverse exponential",
+      "formula": "V=\\eta V_T\\ln(1+I/I_S)",
+      "steps": [
+        "Rearrange I=IS(exp(V/VT)−1) to exp(V/VT)=10001.",
+        "Multiply ln10001 by 25 mV.",
+        "The required voltage is approximately 230.261009 mV."
+      ],
+      "finalAnswer": "230.26100917441286 mV",
+      "explanation": "The required voltage is approximately 230.261009 mV.",
+      "commonMistakes": [
+        "The exact logarithm argument is 1+I/IS, not simply I/IS."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which diode inverse exponential applies.",
+      "Start from $ V=\\eta V_T\\ln(1+I/I_S) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically invert the original diode current law with voltage measured in mV. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      230.260986148312,
+      230.261032200514
+    ],
+    "numericalTolerance": 0.000023026100917441287
+  },
+  {
+    "id": "FH-TOPIC-16-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In an abrupt junction depletion approximation, NA=10¹⁷ and ND=10¹⁶ cm⁻³. Find xp/xn.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Uniform ionized doping on each side",
+        "depletion charge neutrality"
+      ],
+      "asked": "Find the ratio of p-side to n-side widths.",
+      "concept": "Depletion charge balance",
+      "formula": "N_Ax_p=N_Dx_n",
+      "steps": [
+        "The integrated positive and negative depletion charges must have equal magnitude.",
+        "Divide the balance by NAxn to obtain xp/xn=ND/NA.",
+        "The ratio is 10¹⁶/10¹⁷=0.1."
+      ],
+      "finalAnswer": "0.1",
+      "explanation": "The ratio is 10¹⁶/10¹⁷=0.1.",
+      "commonMistakes": [
+        "Depletion extends farther into the more lightly doped side."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which depletion charge balance applies.",
+      "Start from $ N_Ax_p=N_Dx_n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enforce equal-magnitude integrated dopant charges on both sides. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.0999999,
+      0.1000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-16-05",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For NA=10¹⁷, ND=10¹⁶ and ni=10¹⁰ cm⁻³ at VT=0.025 V, find the equilibrium built-in voltage in volts using the nondegenerate model.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Abrupt equilibrium PN junction",
+        "fully ionized nondegenerate doping"
+      ],
+      "asked": "Find VT ln(NAND/ni²).",
+      "concept": "Built-in electrostatic potential",
+      "formula": "V_{bi}=V_T\\ln(N_AN_D/n_i^2)",
+      "steps": [
+        "The concentration ratio inside the logarithm is 10³³/10²⁰=10¹³.",
+        "Its natural logarithm is 13ln10≈29.93360621.",
+        "Multiply by 0.025 V to obtain 0.748340155 V."
+      ],
+      "finalAnswer": "0.7483401552230649 V",
+      "explanation": "Multiply by 0.025 V to obtain 0.748340155 V.",
+      "commonMistakes": [
+        "The built-in potential is an internal electrostatic difference, not a usable equilibrium battery EMF."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which built-in electrostatic potential applies.",
+      "Start from $ V_{bi}=V_T\\ln(N_AN_D/n_i^2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Invert Boltzmann built-in concentration ratio numerically. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.748340055223,
+      0.748340255223
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-16-06",
+    "type": "MCQ",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "At thermal equilibrium in an ideal PN junction, which statement is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The depletion electric field must vanish"
+      },
+      {
+        "id": "B",
+        "text": "There are no mobile carriers anywhere"
+      },
+      {
+        "id": "C",
+        "text": "Electron diffusion current alone must vanish everywhere"
+      },
+      {
+        "id": "D",
+        "text": "The net terminal current is zero because transport contributions balance"
+      }
+    ],
+    "solution": {
+      "given": [
+        "No applied bias",
+        "thermal equilibrium"
+      ],
+      "asked": "Identify the equilibrium current constraint.",
+      "concept": "Drift–diffusion balance",
+      "formula": "J_{total}=J_n+J_p=0",
+      "steps": [
+        "The built-in field and carrier gradients can both be nonzero.",
+        "Their corresponding transport contributions balance at equilibrium.",
+        "The net terminal current is zero, without requiring each individual drift or diffusion contribution to vanish. Select D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "The net terminal current is zero, without requiring each individual drift or diffusion contribution to vanish. Select D.",
+      "commonMistakes": [
+        "Equilibrium does not mean the absence of every microscopic transport component."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which drift–diffusion balance applies.",
+      "Start from $ J_{total}=J_n+J_p=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Equilibrium electrochemical balance with nonzero drift/diffusion components. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-16-07",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Using charge-control model Q=τI with constant transit-storage time τ=10 ns, forward current I=1 mA and ideality factor 1 at VT=25 mV, use the high-forward-bias approximation dI/dV≈I/VT to find diffusion capacitance dQ/dV in pF.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Q=τI",
+        "τ constant",
+        "exponential forward-current slope I/VT"
+      ],
+      "asked": "Find τ times incremental diode conductance.",
+      "concept": "Diffusion charge capacitance",
+      "formula": "C_d=\\tau\\,dI/dV\\simeq\\tau I/V_T",
+      "steps": [
+        "The stated forward-current slope is 0.001/0.025=0.04 S.",
+        "Multiply by storage time 10⁻⁸ s to get 4×10⁻¹⁰ F.",
+        "This is 400 pF. The model concerns stored minority charge rather than depletion width."
+      ],
+      "finalAnswer": "400 pF",
+      "explanation": "This is 400 pF. The model concerns stored minority charge rather than depletion width.",
+      "commonMistakes": [
+        "Depletion capacitance and diffusion capacitance represent different stored charges."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which diffusion charge capacitance applies.",
+      "Start from $ C_d=\\tau\\,dI/dV\\simeq\\tau I/V_T $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Finite-difference stored charge Q(V) in the explicitly stated high-forward-bias model. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      399.99996,
+      400.00004
+    ],
+    "numericalTolerance": 0.000039999999999999996
+  },
+  {
+    "id": "FH-TOPIC-16-08",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal diode follows I=IS(exp(V/VT)−1). At V=−10VT and IS=1 nA, find I in nA.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Reverse voltage −10VT",
+        "saturation current 1 nA",
+        "no breakdown"
+      ],
+      "asked": "Find the signed reverse current.",
+      "concept": "Reverse exponential limit",
+      "formula": "I/I_S=e^{-10}-1",
+      "steps": [
+        "The exponential is e⁻¹⁰≈0.00004539993.",
+        "Subtract 1 to obtain −0.9999546001.",
+        "Since IS=1 nA, current is −0.9999546001 nA, close to −IS."
+      ],
+      "finalAnswer": "-0.9999546000702375 nA",
+      "explanation": "Since IS=1 nA, current is −0.9999546001 nA, close to −IS.",
+      "commonMistakes": [
+        "The reverse current has negative sign in the forward-current reference."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which reverse exponential limit applies.",
+      "Start from $ I/I_S=e^{-10}-1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Full signed exponential reverse-current evaluation, not the approximate −IS limit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      -0.99995470007,
+      -0.99995450007
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-16-09",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A measured reverse-recovery current is a triangle with magnitude rising from zero to 2 mA and returning to zero over total duration 4 ns. Find the recovered charge magnitude in pC.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Triangular reverse-current magnitude",
+        "total base 4 ns",
+        "peak 2 mA"
+      ],
+      "asked": "Integrate the transient current magnitude.",
+      "concept": "Reverse-recovery charge area",
+      "formula": "Q_{rr}=\\int|i_r|dt=\\tfrac12 I_{pk}t_{base}",
+      "steps": [
+        "The magnitude-time area is half the triangle’s base times height.",
+        "½×2×10⁻³ A×4×10⁻⁹ s=4×10⁻¹² C.",
+        "The recovered charge magnitude is 4 pC."
+      ],
+      "finalAnswer": "4 pC",
+      "explanation": "The recovered charge magnitude is 4 pC.",
+      "commonMistakes": [
+        "Use the complete stated triangle duration, not one half of it."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which reverse-recovery charge area applies.",
+      "Start from $ Q_{rr}=\\int|i_r|dt=\\tfrac12 I_{pk}t_{base} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate triangular current in mA/ns; 1 mA·ns equals 1 pC. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-16-10",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about an ideal abrupt reverse-biased PN junction before breakdown are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Depletion width generally increases with reverse bias"
+      },
+      {
+        "id": "B",
+        "text": "The depletion region becomes perfectly conducting"
+      },
+      {
+        "id": "C",
+        "text": "Junction capacitance generally decreases as depletion widens"
+      },
+      {
+        "id": "D",
+        "text": "Space charge arises primarily from uncovered ionized dopants in the depletion approximation"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Abrupt junction",
+        "reverse bias below breakdown",
+        "depletion model"
+      ],
+      "asked": "Select valid depletion-region properties.",
+      "concept": "Reverse-bias depletion electrostatics",
+      "formula": "W\\propto\\sqrt{V_{bi}+V_R},\\quad C_j=\\epsilon A/W",
+      "steps": [
+        "Greater reverse potential requires a wider space-charge region in this model.",
+        "Its small-signal capacitance decreases because separation W increases.",
+        "The depleted mobile carriers leave fixed dopant ions; this is not a perfectly conducting region. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "The depleted mobile carriers leave fixed dopant ions; this is not a perfectly conducting region. Select A, C and D.",
+      "commonMistakes": [
+        "Depleted carrier density does not imply zero electric field."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which reverse-bias depletion electrostatics applies.",
+      "Start from $ W\\propto\\sqrt{V_{bi}+V_R},\\quad C_j=\\epsilon A/W $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Abrupt-junction Poisson depletion scaling and fixed-charge versus mobile-conduction distinction. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-16-11",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A junction has total depletion width W=1.1 μm and NA/ND=10. Find the n-side depletion width xn in μm.",
+    "options": [],
+    "solution": {
+      "given": [
+        "xp+xn=1.1 μm",
+        "NAxp=NDxn",
+        "doping ratio 10"
+      ],
+      "asked": "Find the more lightly doped side’s width.",
+      "concept": "Combined depletion width constraints",
+      "formula": "x_p=x_n/10,\\quad W=x_p+x_n",
+      "steps": [
+        "Charge balance gives xp=xn/10.",
+        "Substitute into total width: 1.1=1.1xn in μm.",
+        "Thus xn=1 μm and xp=0.1 μm."
+      ],
+      "finalAnswer": "1 μm",
+      "explanation": "Thus xn=1 μm and xp=0.1 μm.",
+      "commonMistakes": [
+        "Do not split the width equally for unequal dopings."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which combined depletion width constraints applies.",
+      "Start from $ x_p=x_n/10,\\quad W=x_p+x_n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Simultaneous total-width and dopant-charge constraints. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-16-12",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "At equilibrium in a semiconductor PN junction at uniform temperature, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The Fermi level is spatially constant"
+      },
+      {
+        "id": "B",
+        "text": "Built-in electric field can be nonzero"
+      },
+      {
+        "id": "C",
+        "text": "The net external short-circuit current is a sustained power source"
+      },
+      {
+        "id": "D",
+        "text": "The built-in field and diffusion effects can balance"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Thermal equilibrium",
+        "no illumination or applied excitation"
+      ],
+      "asked": "Select equilibrium-band-diagram properties.",
+      "concept": "Electrochemical equilibrium",
+      "formula": "\\nabla E_F=0\\quad\\text{at thermal equilibrium}",
+      "steps": [
+        "A constant equilibrium Fermi level reflects no net electrochemical driving force.",
+        "Band bending and an internal field can coexist with this equilibrium because diffusion balances drift.",
+        "Such a junction cannot deliver sustained external power at equilibrium. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Such a junction cannot deliver sustained external power at equilibrium. Select A, B and D.",
+      "commonMistakes": [
+        "An internal electrostatic barrier is not evidence of a perpetual DC source."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which electrochemical equilibrium applies.",
+      "Start from $ \\nabla E_F=0\\quad\\text{at thermal equilibrium} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Uniform equilibrium Fermi-level condition and drift/diffusion cancellation; no external power source. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-16-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  }
+]

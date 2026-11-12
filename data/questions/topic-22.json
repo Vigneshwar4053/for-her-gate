@@ -1,0 +1,773 @@
+[
+  {
+    "id": "FH-TOPIC-22-01",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal op-amp in stable linear operation holds its noninverting input at 2 V. Its inverting node connects to a 1 V source through 10 kΩ and to the output through 20 kΩ. Find output voltage in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Ideal input current zero",
+        "virtual equality at 2 V",
+        "resistive negative feedback"
+      ],
+      "asked": "Solve the shifted-reference summing-node KCL.",
+      "concept": "Nonzero virtual reference",
+      "formula": "\\frac{2-1}{10k}+\\frac{2-V_o}{20k}=0",
+      "steps": [
+        "The inverting voltage equals the specified noninverting reference, 2 V.",
+        "Multiply node KCL by 20 kΩ: 2+(2−Vo)=0.",
+        "This gives Vo=4 V, assuming available supply range contains it."
+      ],
+      "finalAnswer": "4 V",
+      "explanation": "This gives Vo=4 V, assuming available supply range contains it.",
+      "commonMistakes": [
+        "Virtual equality does not imply virtual ground when the other input is nonzero."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which nonzero virtual reference applies.",
+      "Start from $ \\frac{2-1}{10k}+\\frac{2-V_o}{20k}=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Two-branch summing-node KCL at the nonzero virtual reference. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-22-02",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal integrator has output y(0)=1 V and obeys dy/dt=−100x(t), with x(t)=2 V for 0≤t≤0.01 s. Find y(0.01) in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Initial output 1 V",
+        "constant slope −200 V/s over 10 ms"
+      ],
+      "asked": "Include the integration constant.",
+      "concept": "Integrator state accumulation",
+      "formula": "y(t)=y(0)-100\\int_0^t x(\\tau)d\\tau",
+      "steps": [
+        "The input area over the interval is 2×0.01=0.02 V·s.",
+        "The output change is −100×0.02=−2 V.",
+        "Add the initial 1 V to get y(0.01)=−1 V."
+      ],
+      "finalAnswer": "-1 V",
+      "explanation": "Add the initial 1 V to get y(0.01)=−1 V.",
+      "commonMistakes": [
+        "An integrator output includes its stored initial state."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which integrator state accumulation applies.",
+      "Start from $ y(t)=y(0)-100\\int_0^t x(\\tau)d\\tau $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerical integration including the nonzero stored initial condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -1.0000001,
+      -0.9999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-22-03",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal inverting differentiator has R=10 kΩ,C=10 nF and input vi(t)=0.1sin(1000t) V in sinusoidal steady state. Find vo(0) in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "RC=10⁻⁴ s",
+        "smooth sinusoidal input defined through t=0"
+      ],
+      "asked": "Find instantaneous output from the input derivative.",
+      "concept": "Differentiator phase and scale",
+      "formula": "v_o=-RC\\,dv_i/dt",
+      "steps": [
+        "The derivative of the input is 100cos(1000t) V/s.",
+        "Multiplication by −RC=−10⁻⁴ s gives vo=−0.01cos(1000t) V.",
+        "At t=0, vo=−0.01 V."
+      ],
+      "finalAnswer": "-0.01 V",
+      "explanation": "At t=0, vo=−0.01 V.",
+      "commonMistakes": [
+        "Differentiate the sinusoid’s argument too; there is a factor 1000."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which differentiator phase and scale applies.",
+      "Start from $ v_o=-RC\\,dv_i/dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Centered input-waveform derivative followed by physical RC scaling. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -0.0100001,
+      -0.0099999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-22-04",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An inverting Schmitt trigger has output levels ±5 V. Its positive input is βvo with β=0.2 and input is at the negative terminal. Find the hysteresis width in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Zero-centered thresholds",
+        "β=0.2",
+        "ideal hard output levels ±5 V"
+      ],
+      "asked": "Find upper threshold minus lower threshold.",
+      "concept": "Schmitt positive-feedback thresholds",
+      "formula": "V_{UT}=\\beta V_{OH},\\quad V_{LT}=\\beta V_{OL}",
+      "steps": [
+        "At output +5 V, the comparison reference is +1 V.",
+        "At output −5 V, the reference is −1 V.",
+        "The two switching levels are separated by 1−(−1)=2 V."
+      ],
+      "finalAnswer": "2 V",
+      "explanation": "The two switching levels are separated by 1−(−1)=2 V.",
+      "commonMistakes": [
+        "Hysteresis width uses both output-dependent thresholds."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which schmitt positive-feedback thresholds applies.",
+      "Start from $ V_{UT}=\\beta V_{OH},\\quad V_{LT}=\\beta V_{OL} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute both output-dependent Schmitt thresholds before subtracting. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-22-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal inverting amplifier has feedback Zf=Rf parallel with 1/(sC), and input resistor Rin. Its transfer is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "$-sR_fC$"
+      },
+      {
+        "id": "B",
+        "text": "$-R_{in}/R_f$"
+      },
+      {
+        "id": "C",
+        "text": "$-(R_f/R_{in})/(1+sR_fC)$"
+      },
+      {
+        "id": "D",
+        "text": "$+(R_f/R_{in})(1+sR_fC)$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Linear op-amp",
+        "grounded noninverting input",
+        "finite positive Rf,Rin,C"
+      ],
+      "asked": "Find the leaky-integrator transfer.",
+      "concept": "Feedback impedance",
+      "formula": "Z_f=\\frac{R_f}{1+sR_fC},\\quad H=-Z_f/R_{in}",
+      "steps": [
+        "The feedback resistor and capacitor have summed admittance 1/Rf+sC.",
+        "Invert that admittance to obtain Zf.",
+        "Applying inverting gain −Zf/Rin gives option C; its DC gain is finite rather than an ideal integrator’s infinity."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Applying inverting gain −Zf/Rin gives option C; its DC gain is finite rather than an ideal integrator’s infinity.",
+      "commonMistakes": [
+        "Parallel impedances combine as admittances first."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which feedback impedance applies.",
+      "Start from $ Z_f=\\frac{R_f}{1+sR_fC},\\quad H=-Z_f/R_{in} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Parallel feedback admittance inversion, then inverting nodal gain relation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-22-06",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For the leaky integrator with Rf=100 kΩ and C=10 nF, find its feedback pole in s⁻¹.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Parallel RC feedback",
+        "linear negative-feedback operation"
+      ],
+      "asked": "Find root of 1+sRfC.",
+      "concept": "Leaky-integrator pole",
+      "formula": "p=-1/(R_fC)",
+      "steps": [
+        "The feedback time constant is 10⁵×10⁻⁸=10⁻³ s.",
+        "Set 1+s×10⁻³=0.",
+        "The pole is −1000 s⁻¹."
+      ],
+      "finalAnswer": "-1000 s⁻¹",
+      "explanation": "The pole is −1000 s⁻¹.",
+      "commonMistakes": [
+        "The minus sign is required for a decaying passive feedback time constant."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which leaky-integrator pole applies.",
+      "Start from $ p=-1/(R_fC) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Find pole by zeroing the parallel-RC denominator. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -1000.0001,
+      -999.9999
+    ],
+    "numericalTolerance": 0.00009999999999999999
+  },
+  {
+    "id": "FH-TOPIC-22-07",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal difference-amplifier network has perfectly matched resistor ratios R2/R1=R4/R3=5 and transfer vo=5(v2−v1). For v2=1.2 V and v1=0.8 V, find vo.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Matched difference transfer explicitly given",
+        "differential input 0.4 V"
+      ],
+      "asked": "Find the output from the differential component.",
+      "concept": "Common-mode rejection in a matched subtractor",
+      "formula": "v_o=k(v_2-v_1)",
+      "steps": [
+        "The common contribution cancels because the ratios match.",
+        "Subtract the input voltages: 1.2−0.8=0.4 V.",
+        "Multiply by gain 5 to obtain 2 V."
+      ],
+      "finalAnswer": "2 V",
+      "explanation": "Multiply by gain 5 to obtain 2 V.",
+      "commonMistakes": [
+        "Use the input order in the specified transfer; swapping them reverses the sign."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which common-mode rejection in a matched subtractor applies.",
+      "Start from $ v_o=k(v_2-v_1) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Apply matched differential transfer to differential rather than common voltage. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-22-08",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An active first-order low-pass has H(s)=2/(1+0.001s). Find |H(j1000)|.",
+    "options": [],
+    "solution": {
+      "given": [
+        "DC gain 2",
+        "corner coefficient 0.001 s",
+        "ω=1000 rad/s"
+      ],
+      "asked": "Find corner magnitude including nonunit passband gain.",
+      "concept": "Active-filter magnitude",
+      "formula": "|H(j\\omega)|=\\frac2{\\sqrt{1+(0.001\\omega)^2}}",
+      "steps": [
+        "The normalized frequency is 0.001×1000=1.",
+        "The denominator magnitude is √(1+1)=√2.",
+        "Magnitude is 2/√2=√2≈1.414213562."
+      ],
+      "finalAnswer": "1.4142135623730951",
+      "explanation": "Magnitude is 2/√2=√2≈1.414213562.",
+      "commonMistakes": [
+        "The corner is 1/√2 times DC gain, not necessarily an absolute gain 0.707."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which active-filter magnitude applies.",
+      "Start from $ |H(j\\omega)|=\\frac2{\\sqrt{1+(0.001\\omega)^2}} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct complex-frequency evaluation and norm. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.414213420952,
+      1.414213703794
+    ],
+    "numericalTolerance": 1.4142135623730952e-7
+  },
+  {
+    "id": "FH-TOPIC-22-09",
+    "type": "MSQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements are valid for an ideal inverting summing amplifier in linear operation?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Each input contributes with weight −Rf/Ri"
+      },
+      {
+        "id": "B",
+        "text": "The input currents add at the summing node"
+      },
+      {
+        "id": "C",
+        "text": "The output is independent of input resistor values"
+      },
+      {
+        "id": "D",
+        "text": "Opposite-signed input voltages can cancel at the output"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Grounded noninverting pin",
+        "positive resistances",
+        "stable feedback"
+      ],
+      "asked": "Select consequences of summing-node KCL.",
+      "concept": "Weighted superposition",
+      "formula": "v_o=-R_f\\sum_i v_i/R_i",
+      "steps": [
+        "Zero input-pin current forces the sum of signal currents through feedback.",
+        "Each signal is weighted by its individual conductance and feedback resistance.",
+        "Properly weighted positive and negative inputs can cancel. Select A,B,D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Properly weighted positive and negative inputs can cancel. Select A,B,D.",
+      "commonMistakes": [
+        "Cancellation depends on weighted currents, not only raw input voltages."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which weighted superposition applies.",
+      "Start from $ v_o=-R_f\\sum_i v_i/R_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Input-current KCL weights and explicit signed-current cancellation example. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-22-10",
+    "type": "MSQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which assumptions are needed to use v+=v− in the ideal op-amp model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The device is operating in its linear unsaturated region"
+      },
+      {
+        "id": "B",
+        "text": "The circuit is necessarily open-loop"
+      },
+      {
+        "id": "C",
+        "text": "Appropriate stable negative feedback constrains a finite output"
+      },
+      {
+        "id": "D",
+        "text": "Positive feedback alone always enforces the equality"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal infinite-gain limit"
+      ],
+      "asked": "Identify the valid application domain of virtual equality.",
+      "concept": "Limits of ideal constraints",
+      "formula": "v_+-v_-=v_o/A\\to0\\quad(A\\to\\infty)",
+      "steps": [
+        "A finite unsaturated output allows the differential voltage to tend to zero as A grows.",
+        "A properly acting stable negative-feedback loop supplies that operating constraint.",
+        "Open-loop or positive-feedback operation does not generally do so. Select A,C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Open-loop or positive-feedback operation does not generally do so. Select A,C.",
+      "commonMistakes": [
+        "Do not apply the virtual-short equation to a saturated comparator."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which limits of ideal constraints applies.",
+      "Start from $ v_+-v_-=v_o/A\\to0\\quad(A\\to\\infty) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Finite unsaturated output in the ideal high-gain limit; counterexamples for comparator/positive-feedback operation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-22-11",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "An op-amp output is hard-clamped at −10 V. Its noninverting input is grounded; the inverting node connects through 10 kΩ to +1 V and through 200 kΩ to the output. Input-pin current is zero. Find the actual inverting-node voltage.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Saturated output specified",
+        "no virtual-short assumption",
+        "two resistive branches"
+      ],
+      "asked": "Solve the actual saturated summing-node voltage.",
+      "concept": "Consistency beyond the linear region",
+      "formula": "(v_- -1)/10k+(v_-+10)/200k=0",
+      "steps": [
+        "Multiply by 200 kΩ: 20(v−−1)+(v−+10)=0.",
+        "This gives 21v−=10 and v−=10/21≈0.476190476 V.",
+        "Since v+=0<v−, the negative output direction is consistent; assuming virtual ground here would be wrong."
+      ],
+      "finalAnswer": "0.47619047619047616 V",
+      "explanation": "Since v+=0<v−, the negative output direction is consistent; assuming virtual ground here would be wrong.",
+      "commonMistakes": [
+        "The ideal input-current constraint survives the clamp model, but virtual equality does not."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which consistency beyond the linear region applies.",
+      "Start from $ (v_- -1)/10k+(v_-+10)/200k=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve actual saturated circuit using resistor KCL without virtual equality. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.47619037619,
+      0.47619057619
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-22-12",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "An ideal inverting integrator obeys dy/dt=−100x. Starting at y=0, x=1 for 2 ms and then x=−2 for 1 ms. Find the final y in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two constant pulse areas of opposite sign",
+        "no saturation"
+      ],
+      "asked": "Sum both input areas before integrating.",
+      "concept": "Pulse-area cancellation",
+      "formula": "\\Delta y=-100\\sum_k x_k\\Delta t_k",
+      "steps": [
+        "The first input area is 1×0.002=0.002 V·s.",
+        "The second is −2×0.001=−0.002 V·s; total input area is zero.",
+        "The final output returns to its initial value, 0 V, despite nonzero intermediate excursion."
+      ],
+      "finalAnswer": "0 V",
+      "explanation": "The final output returns to its initial value, 0 V, despite nonzero intermediate excursion.",
+      "commonMistakes": [
+        "Different pulse amplitudes can cancel if their signed areas match."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which pulse-area cancellation applies.",
+      "Start from $ \\Delta y=-100\\sum_k x_k\\Delta t_k $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate both consecutive pulse intervals from the prior final state. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-22-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

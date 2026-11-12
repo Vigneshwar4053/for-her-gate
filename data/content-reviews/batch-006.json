@@ -1,0 +1,586 @@
+{
+  "batch": "006",
+  "checkedAt": "2026-11-12T19:53:33.801Z",
+  "classification": "automatically-validated-and-recalculated",
+  "independentlyReviewed": false,
+  "humanReviewed": false,
+  "answerKeyVerified": false,
+  "method": "Offline numerical algorithms, exact enumerations and property checks in scripts/content/checks-006.mjs. Explanations authored by the same system; these are not an independent external or human review.",
+  "questions": [
+    {
+      "id": "FH-MIXED-04-01",
+      "status": "passed",
+      "contentHash": "b91dc4cc3eeff23ab98fb9fa36b2e27dad72aed6d50bfb816e15e1e0ae26938e",
+      "computedValue": -6,
+      "method": "Recursive determinant expansion instead of triangular shortcut",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-02",
+      "status": "passed",
+      "contentHash": "ccd573a35e93f2e03d732caac26de373022672de48ba138bcb47eaffa5b781f4",
+      "computedValue": 4.000000000202063,
+      "method": "Integrate actual resistor dissipation using the RL current trajectory",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-03",
+      "status": "passed",
+      "contentHash": "99750e67003e0efca84e0e448e86dadc61d5e2b14e96ebd2c8aaaf1965bd22b2",
+      "computedValue": 1,
+      "method": "Evaluate each Boolean product term and combine by OR",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-04",
+      "status": "passed",
+      "contentHash": "08e41bb76f65ab83a7b674840a03ccb87d80e4cbdd1f05ec68466ae438fc3a02",
+      "computedValue": 7.999999999909122,
+      "method": "Numerically differentiate the locally calibrated square-law MOS current",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-05",
+      "status": "passed",
+      "contentHash": "7b16d6928765edf52fc93c60c8edd593be7e987c11a0f5de98c5af80fa334c78",
+      "computedValue": "A",
+      "method": "Positive open-loop gain sign and output-limiting condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-06",
+      "status": "passed",
+      "contentHash": "2fba5c3640d9153061a7d32284cae845d3950b2606dde055c332f1d8048219cd",
+      "computedValue": 2,
+      "method": "Characteristic roots from triangular state matrix; compare real decay exponents",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-07",
+      "status": "passed",
+      "contentHash": "3d1ddcd08e6bcd4935ac65c95f34f1947d157464c1fe4e47fa980043bb2049b1",
+      "computedValue": 0.5,
+      "method": "Recover carrier envelope amplitude Ac and modulating amplitude from extrema, then ratio",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-08",
+      "status": "passed",
+      "contentHash": "bffff90bc689a86bab906bcb05b132009f8d5295c38ca8fcc1efb8f9fd00813b",
+      "computedValue": 0.07999999999999985,
+      "method": "Convert RMS fields to waveforms and average instantaneous Poynting product",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-09",
+      "status": "passed",
+      "contentHash": "bc5577ea35c7fed36ffe745e063a7a76d0cd1f10c3c46925f4c9a20aa2cf31e7",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Enumerate both prior Q states for every proposed JK transition rule",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-10",
+      "status": "passed",
+      "contentHash": "e8d5d1b09b410296502c69839d2b7d18f69f15b45dcb1fc157cbd3576bc9d95e",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Convolution support proof and L1/L∞ norm inequality; finite-DC unstable counterexample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-11",
+      "status": "passed",
+      "contentHash": "b44e56f1dc986e37163535d03affb2034d0d59f42c7f55366911031f0c6969a5",
+      "computedValue": 0.3,
+      "method": "Enumerate distinguishable balls and all ordered draws without replacement",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-04-12",
+      "status": "passed",
+      "contentHash": "cfcac60c0cc4863b7417dcd338564cea49345842743482a1cf2cfd827abaacca",
+      "computedValue": 0.500000000000001,
+      "method": "Direct two-system impulse-response convolution quadrature",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-01",
+      "status": "passed",
+      "contentHash": "310607479e38b08377c065891262c7610dbedb59b41ac87e89ca47f7831e1e33",
+      "computedValue": 2,
+      "method": "Composite Simpson integration of the original polynomial",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-02",
+      "status": "passed",
+      "contentHash": "b49df52f06fada677cc05542287006523e72b14b66f1d0481b62c2e81717b404",
+      "computedValue": 0.8,
+      "method": "Complex-argument evaluation before cosine of impedance phase",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-03",
+      "status": "passed",
+      "contentHash": "c93dc01211b5fe54e0dd3bf15f3ddad302dbf4c3fd76babe3a81add36da95b51",
+      "computedValue": -3,
+      "method": "Signed place-weight evaluation of actual four-bit word",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-04",
+      "status": "passed",
+      "contentHash": "201f0b4bcbb6e648c71d96434a2aa13dc3a7d487614f8a93385c6e6d870f648d",
+      "computedValue": 10,
+      "method": "Compute delivered power in SI and convert to milliwatts",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-05",
+      "status": "passed",
+      "contentHash": "70922d2d07b7c502c930c8cca78fbe9aed8329ae2d9996755ad4ee6ab1ec6e6a",
+      "computedValue": "C",
+      "method": "Input-amplitude constraint from output saturation range",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-06",
+      "status": "passed",
+      "contentHash": "df89d6c6353ff49eb5bc59e9a417f5d5fb8b369195b3553e86db7cc52c7a4eeb",
+      "computedValue": 0.6,
+      "method": "Characteristic-coefficient matching",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-07",
+      "status": "passed",
+      "contentHash": "f82b5bc59e727e58da571297455d2f06a0caacde7c8f1bb0b23a9c8f7e129dbf",
+      "computedValue": 24,
+      "method": "Count two transmitted bits for every information bit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-08",
+      "status": "passed",
+      "contentHash": "15d04c46cb4692b779484572af9e6fe5a366e827ad464da360f153e9099fd652",
+      "computedValue": 1.5707963267948966,
+      "method": "Compute β directly from frequency/speed, then multiply by physical length",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-09",
+      "status": "passed",
+      "contentHash": "2e7af0edc723350f4b116054f18ae5ee359c9ae76fdf2ac20db132eb84a11442",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Hamming code dimension arithmetic and nonzero weight<dmin detection condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-10",
+      "status": "passed",
+      "contentHash": "e1efaa6ae9711bf349c10e82b69a146ccadb2ecf0f5c68005eeb8fbc92f60da7",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Parity identities and nonzero counterexamples tested for all candidate functions",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-11",
+      "status": "passed",
+      "contentHash": "70006edae868cd899b80af592f5ff4a1a139a70c745b8c7dd536f53a09c70d0c",
+      "computedValue": 40,
+      "method": "Explicit elapsed-time accounting across both equal-distance legs",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-05-12",
+      "status": "passed",
+      "contentHash": "e32e1521a7bc525b97d72385ee2b169783164894a887921026d832c31d836d73",
+      "computedValue": 6.283185307179586,
+      "method": "Enumerate common phase-repeat candidates from the first cosine and test the second",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-01",
+      "status": "passed",
+      "contentHash": "c32ccf0790658b3f3eedb68c9bf02b52268db70b53d6d4318fc8d18b4cd0d4d3",
+      "computedValue": 3.00000000000078,
+      "method": "Finite-difference z partial of the scalar field",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-02",
+      "status": "passed",
+      "contentHash": "e79f61dc2f3822b06be1677e5a0478305b5b418dc8532db1dcd20651229a4c82",
+      "computedValue": -1,
+      "method": "Full z-matrix multiplication with inward signed currents",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-03",
+      "status": "passed",
+      "contentHash": "1afdf99258cf5b318b3feaacbe3f25b31822995aa8f1eecfe91d3bbee51728c3",
+      "computedValue": 512,
+      "method": "Count bits over all words before conversion to bytes",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-04",
+      "status": "passed",
+      "contentHash": "ea776d5f233c28f9a92882a5aecda82fe87b368bcf16c4eb64da219abbd6a2fe",
+      "computedValue": 20,
+      "method": "Capacitance-density area product with squared unit prefix",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-05",
+      "status": "passed",
+      "contentHash": "252d80b8e929fa2af5ea05ec838e3c2c8e0da0b29c7136610b83b12d31860321",
+      "computedValue": "D",
+      "method": "Decompose equal input excitation into differential and common modes",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-06",
+      "status": "passed",
+      "contentHash": "9445a40814973d79318af62a0aa050b74799f7038b2cca2c323af1043defe9c8",
+      "computedValue": 1.0000000000000038,
+      "method": "Integrate both state differential equations with original initial vector",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-07",
+      "status": "passed",
+      "contentHash": "58a5b1a137a73bb5fd7a079775cc9388bc77c28d1071ce475558eccf49682ad4",
+      "computedValue": 2,
+      "method": "Noiseless output removes all conditional entropy; explicit input PMF entropy",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-08",
+      "status": "passed",
+      "contentHash": "a70faf34767ef7cd64cfb019544595b61db1925fb543e365d4c76a64afcee463",
+      "computedValue": -1,
+      "method": "Solve the tangential electric-field boundary condition at a perfect conductor",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-09",
+      "status": "passed",
+      "contentHash": "706d3b14537b3edeeb6e00832115541c14aec25277f1fd7ae7c28058bf9d6f1e",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Bistable-latch versus leaking-capacitor memory mechanisms; no numeric inference claimed",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-10",
+      "status": "passed",
+      "contentHash": "59cbd23a0d61dd2342c44e40e28590ba257de0ec647a8851acfd42f0a61105fe",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Symbolic mixed-partial cancellation; φ=x² and F=(1,0,0) counterexamples",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-11",
+      "status": "passed",
+      "contentHash": "67165c36b1c5a1971b2ca5baa2da073357ce76fce481aaae8af15bb780421326",
+      "computedValue": 9,
+      "method": "Area multiplier as the determinant of the uniform-scale transformation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-06-12",
+      "status": "passed",
+      "contentHash": "cf486219df99cc2c299bdbfe2ff41a753ef719fc11f698d41c6c1076bb9bae8f",
+      "computedValue": 13,
+      "method": "Enumerate completion cycles after 4-cycle first-instruction latency",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-01",
+      "status": "passed",
+      "contentHash": "458cd7892ee1c1d34a7b45de460d907ce7a0897d110b5df1049ba6fc7485043d",
+      "computedValue": 4,
+      "method": "Direct complex arithmetic with j²=−1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-02",
+      "status": "passed",
+      "contentHash": "a6b550a0ac986378ef398fdbd80d920a0a365d15cc6853a6b0f0300db5afc849",
+      "computedValue": 4,
+      "method": "Discrete two-tap convolution sum on the ramp sequence",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-03",
+      "status": "passed",
+      "contentHash": "ed66b1e6a9f6b73cbe17a2485cc3a71152c4a828a706bf65f27fdd768a0cce81",
+      "computedValue": 1,
+      "method": "Decode selector and read the one nonzero input line",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-04",
+      "status": "passed",
+      "contentHash": "550bf32519cdef68710275502e03cc6d9390f850531c49f058145d1737a13a9f",
+      "computedValue": 12.499999996652223,
+      "method": "Reciprocal finite-difference exponential I–V slope",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-05",
+      "status": "passed",
+      "contentHash": "75026d429e5683a87131dbfd93c6cc5c1055208758cbaebac17de64c42887bfc",
+      "computedValue": "B",
+      "method": "Differentiate gain magnitude gmRC/(1+gmRE) with respect to positive RE",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-06",
+      "status": "passed",
+      "contentHash": "6fc518b026b16c5831ca9f905b72a9cc8c9ac618ff40523140ff7c0b3dcf196e",
+      "computedValue": 0.8,
+      "method": "Feedback algebra as a scalar linear system",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-07",
+      "status": "passed",
+      "contentHash": "3558d0866e435d993cf2b06c3c1595461e376d3c9f1f9de5da8769ae939e3626",
+      "computedValue": 2,
+      "method": "Gaussian decision threshold distance normalized by σ",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-08",
+      "status": "passed",
+      "contentHash": "da0f52a17aa366af0b8fba533f18fd5d3782f730d6b0aac47949b42073442f00",
+      "computedValue": 300,
+      "method": "Direct E/H amplitude ratio in the unspecified lossless medium",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-09",
+      "status": "passed",
+      "contentHash": "c4092f15470919fe9faa4884ac1c55fd6ea60f3ab916aa2c549816ee6c85fb17",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Binary polynomial arithmetic over GF(2); nonzero remainder divisibility condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-10",
+      "status": "passed",
+      "contentHash": "40f9ba78478716d4c98bf5dce19f0d2ebfdc66a83ae50ce56c639fa564b95037",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Euler identity, unit-circle norm and exact phase-repeat condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-11",
+      "status": "passed",
+      "contentHash": "d0a6d7a48a6cf4b56e24002d4ba7401613502277a3dcceb6c2c4a0b4b0b053bb",
+      "computedValue": 21,
+      "method": "Solve perimeter constraint for the length, then compute area",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-07-12",
+      "status": "passed",
+      "contentHash": "d6e35ba7663701466e1adbc33007c2b53b52b3baf8529b457505cd08d3501b5f",
+      "computedValue": 0.5235987756004761,
+      "method": "RK4 solution and bisection of the original undamped oscillator IVP",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-01",
+      "status": "passed",
+      "contentHash": "57e9d957ec2cab1f62e3c8fbdf44dc49637c01c8a818db1eabfe3be8fb40bda8",
+      "computedValue": 9.000000000014552,
+      "method": "Finite-difference divergence of each original component",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-02",
+      "status": "passed",
+      "contentHash": "231a4408046b5bf3284784bf29fcdcdd6c4ed8abcaa300ce7e7736ca7606fe83",
+      "computedValue": 6,
+      "method": "Direct parallel-network nodal solve",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-03",
+      "status": "passed",
+      "contentHash": "a8a5595facd3c0c1c712981e0ebcb780621ef88b564222551f7f58089d2da2b8",
+      "computedValue": 8,
+      "method": "Construct launch/propagation/setup timeline in ns",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-04",
+      "status": "passed",
+      "contentHash": "b54555cd4d611096867eddeb4381fd5067601d68ae398ca95585392830addc40",
+      "computedValue": 4,
+      "method": "Reciprocal material-property equation σρ=1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-05",
+      "status": "passed",
+      "contentHash": "c90091f70960bd2e34e901d26838900fa48fa1b32f690a843b5c7c2c429dd295",
+      "computedValue": "D",
+      "method": "Matched-device control-voltage relation and unit area/size ratio",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-06",
+      "status": "passed",
+      "contentHash": "be7d0729e3cbdf7ef511495d23d19e5b10439c222f49c6ac255433a01aab9c66",
+      "computedValue": -2,
+      "method": "Characteristic quadratic discriminant zero and root −b/2",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-07",
+      "status": "passed",
+      "contentHash": "8124741fdfbf03c3b4e7662c97e71a58658ab4631803d3af7b009f049a3278dd",
+      "computedValue": 3,
+      "method": "Enumerate binary label capacities until all eight outcomes fit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-08",
+      "status": "passed",
+      "contentHash": "6e42539a7abdd6853928fabcabf57cbbf7d080c5799b678b5b7555e5e6392dae",
+      "computedValue": 0.8,
+      "method": "Accepted-power conservation: radiated plus internal heat",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-09",
+      "status": "passed",
+      "contentHash": "28f21188b769702fb3b06c5416b2a29a36c889ab899c5f7c916464d286fd34d9",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Inverting KCL and virtual-ground source-current expression",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-10",
+      "status": "passed",
+      "contentHash": "e78f0413872410521065281a6c4af85a1eb30c32fbc581ab5e3b5b6d4d40ae4b",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Static Faraday law plus simply-connected potential existence; constant offset freedom",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-11",
+      "status": "passed",
+      "contentHash": "90bc9924612275d69153d853ede7c600a2fc374402e68ef1cce41d61f3005128",
+      "computedValue": 5.5,
+      "method": "Select actual two central order statistics of the sorted even sample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-08-12",
+      "status": "passed",
+      "contentHash": "57f522e34f3dc5db6eddb2755aa6e3f5fae76cc518dce124118bd47dc2fc59c6",
+      "computedValue": -2,
+      "method": "Solve and compare both roots of λ²+5λ+6",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    }
+  ]
+}

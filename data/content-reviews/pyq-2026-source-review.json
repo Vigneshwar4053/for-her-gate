@@ -1,0 +1,633 @@
+{
+  "year": 2026,
+  "paperCode": "EC",
+  "keySession": 7,
+  "reviewStage": "key-metadata-inspected-paper-inaccessible",
+  "paperUrlsTried": [
+    "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
+    "https://gate2027.iitm.ac.in/static/doc/download/2026/QPs/EC.pdf"
+  ],
+  "keyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
+  "paperFetch": "Both official web mirrors rejected 14,137,852-byte PDF as too large. Shell curl cannot resolve official host. No paper downloaded.",
+  "keyDerivedQuestionCount": 65,
+  "keyDerivedMarks": 100,
+  "questionTypes": {
+    "MCQ": 42,
+    "MSQ": 10,
+    "NAT": 13
+  },
+  "keyRows": [
+    {
+      "number": 1,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "B",
+      "marks": 1
+    },
+    {
+      "number": 2,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "A",
+      "marks": 1
+    },
+    {
+      "number": 3,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "D",
+      "marks": 1
+    },
+    {
+      "number": 4,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "B",
+      "marks": 1
+    },
+    {
+      "number": 5,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "B",
+      "marks": 1
+    },
+    {
+      "number": 6,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "A",
+      "marks": 2
+    },
+    {
+      "number": 7,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 8,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 9,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 10,
+      "session": 7,
+      "type": "MCQ",
+      "section": "GA",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 11,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 1
+    },
+    {
+      "number": 12,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "D",
+      "marks": 1
+    },
+    {
+      "number": 13,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "D",
+      "marks": 1
+    },
+    {
+      "number": 14,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 1
+    },
+    {
+      "number": 15,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "D",
+      "marks": 1
+    },
+    {
+      "number": 16,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 1
+    },
+    {
+      "number": 17,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 1
+    },
+    {
+      "number": 18,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "D",
+      "marks": 1
+    },
+    {
+      "number": 19,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 1
+    },
+    {
+      "number": 20,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 1
+    },
+    {
+      "number": 21,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 1
+    },
+    {
+      "number": 22,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 1
+    },
+    {
+      "number": 23,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 1
+    },
+    {
+      "number": 24,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 1
+    },
+    {
+      "number": 25,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "A"
+      ],
+      "marks": 1
+    },
+    {
+      "number": 26,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "B",
+        "D"
+      ],
+      "marks": 1
+    },
+    {
+      "number": 27,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "B"
+      ],
+      "marks": 1
+    },
+    {
+      "number": 28,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "A",
+        "B"
+      ],
+      "marks": 1
+    },
+    {
+      "number": 29,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "C",
+        "D"
+      ],
+      "marks": 1
+    },
+    {
+      "number": 30,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        0.95,
+        1.05
+      ],
+      "marks": 1
+    },
+    {
+      "number": 31,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        71.5,
+        72.5
+      ],
+      "marks": 1
+    },
+    {
+      "number": 32,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        0.95,
+        1.05
+      ],
+      "marks": 1
+    },
+    {
+      "number": 33,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        20.5,
+        21.5
+      ],
+      "marks": 1
+    },
+    {
+      "number": 34,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        20,
+        21
+      ],
+      "marks": 1
+    },
+    {
+      "number": 35,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        4.9,
+        5.1
+      ],
+      "marks": 1
+    },
+    {
+      "number": 36,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 2
+    },
+    {
+      "number": 37,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 2
+    },
+    {
+      "number": 38,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 2
+    },
+    {
+      "number": 39,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 2
+    },
+    {
+      "number": 40,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 2
+    },
+    {
+      "number": 41,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 42,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 43,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 44,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 2
+    },
+    {
+      "number": 45,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 2
+    },
+    {
+      "number": 46,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 2
+    },
+    {
+      "number": 47,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 2
+    },
+    {
+      "number": 48,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 49,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 2
+    },
+    {
+      "number": 50,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "A",
+      "marks": 2
+    },
+    {
+      "number": 51,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "D",
+      "marks": 2
+    },
+    {
+      "number": 52,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "B",
+      "marks": 2
+    },
+    {
+      "number": 53,
+      "session": 7,
+      "type": "MCQ",
+      "section": "EC",
+      "key": "C",
+      "marks": 2
+    },
+    {
+      "number": 54,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "A",
+        "B",
+        "D"
+      ],
+      "marks": 2
+    },
+    {
+      "number": 55,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "C"
+      ],
+      "marks": 2
+    },
+    {
+      "number": 56,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "A",
+        "D"
+      ],
+      "marks": 2
+    },
+    {
+      "number": 57,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "A",
+        "B",
+        "C"
+      ],
+      "marks": 2
+    },
+    {
+      "number": 58,
+      "session": 7,
+      "type": "MSQ",
+      "section": "EC",
+      "key": [
+        "A",
+        "C",
+        "D"
+      ],
+      "marks": 2
+    },
+    {
+      "number": 59,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        1386,
+        1386
+      ],
+      "marks": 2
+    },
+    {
+      "number": 60,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        2.5,
+        2.6
+      ],
+      "marks": 2
+    },
+    {
+      "number": 61,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        0.6,
+        0.7
+      ],
+      "marks": 2
+    },
+    {
+      "number": 62,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        2.9,
+        3.1
+      ],
+      "marks": 2
+    },
+    {
+      "number": 63,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        0.1,
+        0.2
+      ],
+      "marks": 2
+    },
+    {
+      "number": 64,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        [
+          -36.5,
+          -34.5
+        ],
+        [
+          34.5,
+          36.5
+        ]
+      ],
+      "marks": 2
+    },
+    {
+      "number": 65,
+      "session": 7,
+      "type": "NAT",
+      "section": "EC",
+      "key": [
+        3.7,
+        4.3
+      ],
+      "marks": 2
+    }
+  ],
+  "rights": {
+    "status": "unresolved",
+    "finding": "Official pages show All Rights Reserved. Research did not establish a license for full paper/diagram reproduction. This is not a determination that permission is impossible; documentary clearance is required by the project.",
+    "contactNotSent": true
+  },
+  "blockers": [
+    "Original paper text and diagrams unavailable to this execution",
+    "Full-paper reproduction grant not established",
+    "All original question statements, numbering and section structure require paper inspection",
+    "All 65 original worked solutions and diagram checks pending"
+  ],
+  "inputWorkflow": "source-input/README.md",
+  "humanReviewed": false,
+  "independentlyReviewed": false,
+  "resolvedEngineeringIssues": [
+    "The application now supports acceptedRanges (multiple intervals) in addition to legacy acceptedRange, with inclusive endpoints and no acceptance inside gaps. Q64 remains unpublished pending paper, rights and solution verification."
+  ]
+}

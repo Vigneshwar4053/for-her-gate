@@ -1,0 +1,777 @@
+[
+  {
+    "id": "FH-TOPIC-34-01",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "How many right-half-plane roots does s³−2s²−s+2 have?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Real cubic polynomial"
+      ],
+      "asked": "Count roots with positive real part.",
+      "concept": "Factoring and pole location",
+      "formula": "s^3-2s^2-s+2=(s-2)(s-1)(s+1)",
+      "steps": [
+        "Group terms as s²(s−2)−(s−2).",
+        "Factor to (s−2)(s−1)(s+1).",
+        "Roots 2 and 1 lie in the right half-plane; −1 lies in the left. The count is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Roots 2 and 1 lie in the right half-plane; −1 lies in the left. The count is 2.",
+      "commonMistakes": [
+        "Count roots by real part, not by polynomial coefficient signs alone."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which factoring and pole location applies.",
+      "Start from $ s^3-2s^2-s+2=(s-2)(s-1)(s+1) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Rational-root search and original-polynomial substitution; three distinct roots exhaust the cubic. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-34-02",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For s⁴+2s³+3s²+4s+K with K>0, find the upper boundary of the strictly stable K interval.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Quartic polynomial",
+        "K positive"
+      ],
+      "asked": "Find the parameter boundary from the Routh array.",
+      "concept": "Quartic Routh conditions",
+      "formula": "\\text{first column}=1,2,1,4-2K,K",
+      "steps": [
+        "The s² first entry is (2×3−4)/2=1, with second entry K.",
+        "The s¹ first entry is 4−2K.",
+        "Strict positivity requires 0<K<2, so the upper excluded boundary is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Strict positivity requires 0<K<2, so the upper excluded boundary is 2.",
+      "commonMistakes": [
+        "Positive coefficients alone are insufficient; the intermediate Routh entries also constrain K."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which quartic routh conditions applies.",
+      "Start from $ \\text{first column}=1,2,1,4-2K,K $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Build quartic Routh arrays at two K values and solve affine boundary entry; check remaining first-column signs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-34-03",
+    "type": "MCQ",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Which causal ordinary transfer function is BIBO stable?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$1/(s^2+1)$"
+      },
+      {
+        "id": "B",
+        "text": "$1/(s+2)^2$"
+      },
+      {
+        "id": "C",
+        "text": "$1/s$"
+      },
+      {
+        "id": "D",
+        "text": "$1/(s-2)$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "No cancellations",
+        "continuous-time causal rational systems"
+      ],
+      "asked": "Choose a response with absolutely integrable impulse response.",
+      "concept": "Strict pole stability",
+      "formula": "\\operatorname{Re}p_i<0",
+      "steps": [
+        "B has only the repeated pole −2; its impulse response te⁻²ᵗ decays integrably.",
+        "A and C have imaginary-axis poles, while D has a right-half-plane pole.",
+        "Only B meets the strict BIBO condition."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Only B meets the strict BIBO condition.",
+      "commonMistakes": [
+        "Repeated poles are allowed in the left half-plane."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which strict pole stability applies.",
+      "Start from $ \\operatorname{Re}p_i<0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Candidate pole locations; repeated negative pole yields integrable t exp(−2t). Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-34-04",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The first column of a valid Routh array is 1,−2,−3,4,5. Assuming no zero-row special case, how many roots lie in the right half-plane?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Five nonzero first-column entries"
+      ],
+      "asked": "Count sign changes.",
+      "concept": "Routh sign-change count",
+      "formula": "N_{RHP}=\\#\\text{sign changes in first column}",
+      "steps": [
+        "The signs are +,−,−,+,+.",
+        "Sign changes occur from the first to second and third to fourth entries.",
+        "There are 2 right-half-plane roots."
+      ],
+      "finalAnswer": "2",
+      "explanation": "There are 2 right-half-plane roots.",
+      "commonMistakes": [
+        "Count sign transitions rather than the number of negative entries."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which routh sign-change count applies.",
+      "Start from $ N_{RHP}=\\#\\text{sign changes in first column} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count actual adjacent sign transitions in the supplied nonzero Routh column. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-34-05",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For A=[[0,1],[0,0]], x(0)=(0,1)ᵀ, find x1(3).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Nilpotent state matrix",
+        "initial second state 1"
+      ],
+      "asked": "Find first state and recognize internal growth.",
+      "concept": "Jordan block at the origin",
+      "formula": "e^{At}=I+At\\quad(A^2=0)",
+      "steps": [
+        "The equations are xdot2=0 and xdot1=x2.",
+        "Therefore x2=1 and x1=t from the stated initial condition.",
+        "At t=3, x1=3, demonstrating unbounded growth despite both eigenvalues being zero."
+      ],
+      "finalAnswer": "3",
+      "explanation": "At t=3, x1=3, demonstrating unbounded growth despite both eigenvalues being zero.",
+      "commonMistakes": [
+        "Nonpositive eigenvalue real parts alone do not guarantee bounded dynamics when boundary Jordan blocks occur."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which jordan block at the origin applies.",
+      "Start from $ e^{At}=I+At\\quad(A^2=0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate the original nilpotent state equations. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-34-06",
+    "type": "MSQ",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a real 2×2 state matrix A, which conditions together are necessary and sufficient for asymptotic stability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "trace(A)<0"
+      },
+      {
+        "id": "B",
+        "text": "trace(A)>0"
+      },
+      {
+        "id": "C",
+        "text": "det(A)>0"
+      },
+      {
+        "id": "D",
+        "text": "det(A)<0"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Continuous-time state system with real coefficients"
+      ],
+      "asked": "Select the two required strict inequalities.",
+      "concept": "Second-order Hurwitz criterion",
+      "formula": "\\lambda^2-\\operatorname{tr}(A)\\lambda+\\det A=0",
+      "steps": [
+        "A real monic quadratic is Hurwitz exactly when its linear and constant coefficients are positive.",
+        "Here those coefficients are −trace(A) and det(A).",
+        "Thus trace(A)<0 and det(A)>0 are required together: A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Thus trace(A)<0 and det(A)>0 are required together: A and C.",
+      "commonMistakes": [
+        "Each inequality alone is insufficient; use both for a real second-order system."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which second-order hurwitz criterion applies.",
+      "Start from $ \\lambda^2-\\operatorname{tr}(A)\\lambda+\\det A=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Real monic quadratic Hurwitz theorem mapped to trace and determinant. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-34-07",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A Nyquist convention defines Z=P+N, with N the net clockwise encirclements of −1. If P=1 and closed-loop stability requires Z=0, find N.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Specified Nyquist sign convention",
+        "one open-loop RHP pole"
+      ],
+      "asked": "Compute the necessary net encirclement count.",
+      "concept": "Nyquist accounting convention",
+      "formula": "Z=P+N",
+      "steps": [
+        "Substitute target Z=0 and open-loop P=1.",
+        "Rearranging gives N=0−1.",
+        "N=−1 means one net counterclockwise encirclement under the convention explicitly stated."
+      ],
+      "finalAnswer": "-1",
+      "explanation": "N=−1 means one net counterclockwise encirclement under the convention explicitly stated.",
+      "commonMistakes": [
+        "Encirclement sign conventions vary; always use the stated one."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which nyquist accounting convention applies.",
+      "Start from $ Z=P+N $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve explicitly stated Nyquist count identity for stable Z=0. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -1.0000001,
+      -0.9999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-34-08",
+    "type": "MCQ",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statement about a pole-zero cancellation at a positive real pole is safest for internal stability?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cancellation always stabilizes every state"
+      },
+      {
+        "id": "B",
+        "text": "Any canceled mode becomes left-half-plane"
+      },
+      {
+        "id": "C",
+        "text": "Output cancellation proves all internal modes decay"
+      },
+      {
+        "id": "D",
+        "text": "A measured transfer can hide a growing internal mode"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Finite-dimensional realization may contain unobservable/uncontrollable states"
+      ],
+      "asked": "Identify what transfer cancellation does not guarantee.",
+      "concept": "Internal versus input-output stability",
+      "formula": "\\dot x=Ax\\quad\\text{is governed by all eigenvalues of }A",
+      "steps": [
+        "An unstable state may not appear in a particular measured transfer when it is unobservable or not excited through that input.",
+        "Algebraic transfer cancellation does not physically move that eigenvalue.",
+        "It can therefore hide a growing internal mode, option D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "It can therefore hide a growing internal mode, option D.",
+      "commonMistakes": [
+        "A simplified transfer should not replace an internal-state stability audit."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which internal versus input-output stability applies.",
+      "Start from $ \\dot x=Ax\\quad\\text{is governed by all eigenvalues of }A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct hidden state xdot=x with zero measured-output coupling to demonstrate cancellation risk. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-34-09",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For H(s)=1/(s²+1) and input sin t applied from t=0 with zero state, write the output as y(t)=a sin t+b t cos t. Find the magnitude |b|.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Undamped resonant transfer",
+        "unit sine input",
+        "zero initial state"
+      ],
+      "asked": "Find secular growth coefficient.",
+      "concept": "Resonance and BIBO failure",
+      "formula": "Y(s)=1/(s^2+1)^2",
+      "steps": [
+        "The inverse transform is y(t)=(sin t−t cos t)/2 for t≥0.",
+        "The term proportional to t cos t grows without a constant bound.",
+        "Its coefficient is −1/2 and its magnitude is 0.5, demonstrating failure of BIBO stability."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "Its coefficient is −1/2 and its magnitude is 0.5, demonstrating failure of BIBO stability.",
+      "commonMistakes": [
+        "A bounded sinusoidal input can cause resonance at an imaginary-axis pole."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which resonance and bibo failure applies.",
+      "Start from $ Y(s)=1/(s^2+1)^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct impulse/input convolution at two times and recover sine/secular coefficients via linear solve. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-34-10",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A characteristic polynomial is s³+s²+s+10. Find its number of right-half-plane roots.",
+    "options": [],
+    "solution": {
+      "given": [
+        "All coefficients positive",
+        "cubic Routh array"
+      ],
+      "asked": "Test whether coefficient positivity suffices.",
+      "concept": "Routh intermediate entry",
+      "formula": "\\text{first column}=1,1,-9,10",
+      "steps": [
+        "The s¹ entry is (1×1−10)/1=−9.",
+        "The first-column signs are +,+,−,+.",
+        "There are 2 sign changes and therefore 2 right-half-plane roots despite positive polynomial coefficients."
+      ],
+      "finalAnswer": "2",
+      "explanation": "There are 2 sign changes and therefore 2 right-half-plane roots despite positive polynomial coefficients.",
+      "commonMistakes": [
+        "Positive coefficients are necessary in a monic Hurwitz polynomial but not sufficient for degree three or higher."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which routh intermediate entry applies.",
+      "Start from $ \\text{first column}=1,1,-9,10 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct full cubic Routh array, then count its first-column sign changes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-34-11",
+    "type": "MSQ",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about stable continuous-time LTI dynamics are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Polynomial factors multiplying a strictly decaying exponential still tend to zero"
+      },
+      {
+        "id": "B",
+        "text": "A pole repeated at −1 can remain asymptotically stable"
+      },
+      {
+        "id": "C",
+        "text": "Every repeated pole is unstable"
+      },
+      {
+        "id": "D",
+        "text": "A simple pole at zero does not satisfy strict asymptotic stability"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Finite-dimensional ordinary LTI modes"
+      ],
+      "asked": "Select valid modal-decay facts.",
+      "concept": "Exponential dominance",
+      "formula": "t^m e^{-at}\\to0\\quad(a>0)",
+      "steps": [
+        "Exponential decay dominates every finite polynomial factor.",
+        "Thus repeated negative-real-part poles are allowed in a stable system.",
+        "A zero pole leaves a nondecaying mode, so it is outside strict asymptotic stability. Select A,B,D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "A zero pole leaves a nondecaying mode, so it is outside strict asymptotic stability. Select A,B,D.",
+      "commonMistakes": [
+        "Multiplicity must be considered together with pole location."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which exponential dominance applies.",
+      "Start from $ t^m e^{-at}\\to0\\quad(a>0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Polynomial-times-negative-exponential limit and zero-mode nondecay. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-34-12",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For s²+2as+9 with a real, find the boundary value of a separating the strictly stable region a>0 from non-Hurwitz cases.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Monic real second-order polynomial",
+        "fixed positive constant 9"
+      ],
+      "asked": "Find where the linear coefficient ceases to be strictly positive.",
+      "concept": "Second-order stability boundary",
+      "formula": "2a>0,\\quad9>0",
+      "steps": [
+        "Hurwitz stability requires positive linear and constant coefficients.",
+        "Only the linear coefficient depends on a.",
+        "The boundary is a=0, giving imaginary-axis roots ±3j; strict stability requires a>0."
+      ],
+      "finalAnswer": "0",
+      "explanation": "The boundary is a=0, giving imaginary-axis roots ±3j; strict stability requires a>0.",
+      "commonMistakes": [
+        "The boundary itself is not included in the strictly stable region."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which second-order stability boundary applies.",
+      "Start from $ 2a>0,\\quad9>0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve strict quadratic coefficient condition 2a>0 at its excluded boundary. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-34-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

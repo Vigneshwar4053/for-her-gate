@@ -1,0 +1,14 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {acceptedRanges,isValidNATRanges,inAcceptedRanges} from '../js/nat-ranges.js';
+import {scoreQuestion} from '../js/scoring-engine.js';
+import {correctLabel} from '../js/solution-viewer.js';
+const q={id:'multi',type:'NAT',marks:2,acceptedRanges:[[-36.5,-34.5],[34.5,36.5]]};
+test('NAT union accepts either interval and every inclusive boundary',()=>{for(const n of [-36.5,-35,-34.5,34.5,35,36.5])assert.equal(scoreQuestion(q,String(n)).marks,2);});
+test('NAT union rejects the gap and values outside the outer bounds without penalty',()=>{for(const n of [-37,-34,0,34,37]){const r=scoreQuestion(q,String(n));assert.equal(r.status,'incorrect');assert.equal(r.marks,0);}});
+test('legacy single range remains backward compatible with roundoff tolerance',()=>{assert.deepEqual(acceptedRanges({acceptedRange:[.3,.3]}),[[.3,.3]]);assert.equal(scoreQuestion({id:'legacy',type:'NAT',marks:1,acceptedRange:[.3,.3]},'.3').marks,1);});
+test('legacy range scoring, isolated exact ranges, decimals and scientific notation',()=>{const old={id:'old',type:'NAT',marks:1,acceptedRange:[.3,.3]};assert.equal(scoreQuestion(old,.1+.2).marks,1);const exact={...q,acceptedRanges:[[-2,-2],[2,2]]};assert.equal(scoreQuestion(exact,'-2e0').marks,2);assert.equal(scoreQuestion(exact,'2.00001').marks,0);});
+test('explicit acceptedRanges is authoritative and malformed unions never fall back silently',()=>{assert.ok(inAcceptedRanges({...q,acceptedRange:[0,100]},-35));assert.ok(!inAcceptedRanges({...q,acceptedRange:[0,100]},1));for(const ranges of [undefined,null,[],[[]],[[2,1]],[[0,Infinity]],[[NaN,1]],[['1',2]],[[1,2,3]]]){assert.ok(!isValidNATRanges({...q,acceptedRanges:ranges,acceptedRange:[0,1]}));assert.throws(()=>acceptedRanges({...q,acceptedRanges:ranges}));}});
+test('large intervals do not loosen the tolerance of a near-zero lower bound',()=>{assert.ok(!inAcceptedRanges({acceptedRange:[0,1e20]},-1));assert.ok(!inAcceptedRanges({acceptedRange:[0,1]},-1e-20));});
+test('normalization does not mutate question data and labels show every interval',()=>{const copy=structuredClone(q),r=acceptedRanges(q);r[0][0]=0;assert.deepEqual(q,copy);assert.equal(correctLabel(q),'-36.5 to -34.5 OR 34.5 to 36.5');});
+test('invalid text and empty responses do not earn marks for disjoint ranges',()=>{for(const v of ['NaN','Infinity','35abc','0x23'])assert.equal(scoreQuestion(q,v).marks,0);assert.equal(scoreQuestion(q,'').status,'unattempted');});

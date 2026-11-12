@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "topic-07",
+    "file": "data/questions/topic-07.json",
+    "title": "Network Theorems \u00b7 Equivalents, Sources & Power",
+    "batch": "003"
+  },
+  {
+    "testId": "topic-08",
+    "file": "data/questions/topic-08.json",
+    "title": "Transients \u00b7 Initial Conditions, Poles & Energy",
+    "batch": "003"
+  },
+  {
+    "testId": "topic-10",
+    "file": "data/questions/topic-10.json",
+    "title": "Fourier Analysis \u00b7 Spectra, Symmetry & Parseval",
+    "batch": "003"
+  },
+  {
+    "testId": "topic-12",
+    "file": "data/questions/topic-12.json",
+    "title": "LTI Systems \u00b7 Convolution, Stability & Delay",
+    "batch": "003"
+  },
+  {
+    "testId": "topic-13",
+    "file": "data/questions/topic-13.json",
+    "title": "Sampling \u00b7 Reconstruction & Aliasing",
+    "batch": "003"
+  }
+]

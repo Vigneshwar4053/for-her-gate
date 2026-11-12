@@ -1,0 +1,777 @@
+[
+  {
+    "id": "FH-MIXED-08-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "vector-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For F=(2x,3y,4z), find div F.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Linear vector field with Cartesian components"
+      ],
+      "asked": "Find sum of same-coordinate partial derivatives.",
+      "concept": "Divergence",
+      "formula": "\\nabla\\cdot F=\\partial_xF_x+\\partial_yF_y+\\partial_zF_z",
+      "steps": [
+        "Differentiate each component with respect to its own coordinate.",
+        "The three derivatives are 2,3,4.",
+        "Their sum is 9."
+      ],
+      "finalAnswer": "9",
+      "explanation": "Their sum is 9.",
+      "commonMistakes": [
+        "Divergence is scalar; do not return the three derivative components as a vector."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which divergence applies.",
+      "Start from $ \\nabla\\cdot F=\\partial_xF_x+\\partial_yF_y+\\partial_zF_z $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Finite-difference divergence of each original component. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      8.9999991,
+      9.0000009
+    ],
+    "numericalTolerance": 9e-7
+  },
+  {
+    "id": "FH-MIXED-08-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 2 A ideal current source feeds two parallel resistors 4 Ω and 12 Ω. Find the voltage across both branches in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Total injected current 2 A",
+        "shunt resistances 4 Ω,12 Ω"
+      ],
+      "asked": "Find common node voltage.",
+      "concept": "Norton nodal conductance",
+      "formula": "I=v(1/R_1+1/R_2)",
+      "steps": [
+        "Total conductance is 1/4+1/12=1/3 S.",
+        "KCL gives 2=v/3.",
+        "Therefore v=6 V; branch currents 1.5 A and 0.5 A sum to 2 A."
+      ],
+      "finalAnswer": "6 V",
+      "explanation": "Therefore v=6 V; branch currents 1.5 A and 0.5 A sum to 2 A.",
+      "commonMistakes": [
+        "Parallel branches share voltage, not equal current when resistances differ."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which norton nodal conductance applies.",
+      "Start from $ I=v(1/R_1+1/R_2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct parallel-network nodal solve. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      5.9999994,
+      6.0000006
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-MIXED-08-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A synchronous path has clock-to-Q delay 1 ns, combinational maximum delay 5 ns and setup time 2 ns. Ignoring skew, find the minimum clock period in ns.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Clock-to-Q 1 ns",
+        "combinational delay 5 ns",
+        "setup 2 ns",
+        "zero skew"
+      ],
+      "asked": "Find setup-limited clock period.",
+      "concept": "Synchronous critical-path timing",
+      "formula": "T_{clk}\\ge t_{cq}+t_{comb,max}+t_{setup}",
+      "steps": [
+        "The launched value appears after 1 ns, then propagates for 5 ns.",
+        "It must arrive a further 2 ns before the next capture edge.",
+        "The period must be at least 1+5+2=8 ns. Hold timing is a separate constraint."
+      ],
+      "finalAnswer": "8 ns",
+      "explanation": "The period must be at least 1+5+2=8 ns. Hold timing is a separate constraint.",
+      "commonMistakes": [
+        "Setup uses maximum path delay; hold analysis uses minimum path delay."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which synchronous critical-path timing applies.",
+      "Start from $ T_{clk}\\ge t_{cq}+t_{comb,max}+t_{setup} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct launch/propagation/setup timeline in ns. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      7.9999992,
+      8.0000008
+    ],
+    "numericalTolerance": 8e-7
+  },
+  {
+    "id": "FH-MIXED-08-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A semiconductor has conductivity 0.25 S/cm. Find its resistivity in Ω·cm.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Uniform isotropic material",
+        "σ=0.25 S/cm"
+      ],
+      "asked": "Find reciprocal conductivity.",
+      "concept": "Resistivity",
+      "formula": "\\rho=1/\\sigma",
+      "steps": [
+        "Conductivity and resistivity are reciprocal material parameters.",
+        "Compute 1/0.25.",
+        "The resistivity is 4 Ω·cm in the matching centimeter-based units."
+      ],
+      "finalAnswer": "4 Ω·cm",
+      "explanation": "The resistivity is 4 Ω·cm in the matching centimeter-based units.",
+      "commonMistakes": [
+        "Do not change to Ω·m without the corresponding length-unit conversion."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which resistivity applies.",
+      "Start from $ \\rho=1/\\sigma $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Reciprocal material-property equation σρ=1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-MIXED-08-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal current mirror has matched transistors with equal effective size and equal relevant bias voltages. Ignoring output modulation and base-current errors, its output current equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zero for every reference"
+      },
+      {
+        "id": "B",
+        "text": "Twice the reference necessarily"
+      },
+      {
+        "id": "C",
+        "text": "Half the reference necessarily"
+      },
+      {
+        "id": "D",
+        "text": "The reference current"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Matched 1:1 ideal current mirror"
+      ],
+      "asked": "Choose the copied current.",
+      "concept": "Matched transistor current replication",
+      "formula": "I_{out}/I_{ref}=\\text{device size ratio}=1",
+      "steps": [
+        "Matched device laws at matched control bias give equal currents.",
+        "Equal effective sizes make the geometry ratio unity.",
+        "Under the explicitly neglected nonidealities, Iout=Iref, option D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "Under the explicitly neglected nonidealities, Iout=Iref, option D.",
+      "commonMistakes": [
+        "Practical output compliance and modulation can invalidate the ideal copying assumption."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which matched transistor current replication applies.",
+      "Start from $ I_{out}/I_{ref}=\\text{device size ratio}=1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Matched-device control-voltage relation and unit area/size ratio. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-MIXED-08-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "root-locus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For unity feedback with G(s)=K/[s(s+4)] and K=4, find the repeated closed-loop pole.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Unity negative feedback",
+        "K=4"
+      ],
+      "asked": "Factor the closed-loop characteristic polynomial.",
+      "concept": "Root-locus breakaway value",
+      "formula": "s(s+4)+4=s^2+4s+4",
+      "steps": [
+        "The denominator is s²+4s+4=(s+2)².",
+        "Both closed-loop poles coincide.",
+        "The repeated pole is −2."
+      ],
+      "finalAnswer": "-2",
+      "explanation": "The repeated pole is −2.",
+      "commonMistakes": [
+        "Open-loop poles at 0 and −4 are not the closed-loop poles at positive K."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which root-locus breakaway value applies.",
+      "Start from $ s(s+4)+4=s^2+4s+4 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Characteristic quadratic discriminant zero and root −b/2. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      -2.0000002,
+      -1.9999998
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-08-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "digital-communication",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A uniform 3-bit PCM quantizer has eight levels with equal probability. A fixed-length code labels every level. Find the minimum bits per sample for distinct binary labels.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Eight distinct quantizer outputs",
+        "fixed-length binary labels"
+      ],
+      "asked": "Find the minimum integer label length.",
+      "concept": "Fixed-length source labeling",
+      "formula": "2^b\\ge M",
+      "steps": [
+        "Two bits can label only four outcomes, which is insufficient.",
+        "Three bits label eight outcomes exactly.",
+        "Thus the minimum fixed label length is 3 bits/sample."
+      ],
+      "finalAnswer": "3 bits/sample",
+      "explanation": "Thus the minimum fixed label length is 3 bits/sample.",
+      "commonMistakes": [
+        "A fixed-length label count is distinct from a variable-length coding design."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fixed-length source labeling applies.",
+      "Start from $ 2^b\\ge M $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate binary label capacities until all eight outcomes fit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-MIXED-08-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "antennas",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An antenna radiates 8 W while dissipating 2 W internally. Find its radiation efficiency as a fraction.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Radiated power 8 W",
+        "internal loss 2 W",
+        "no reflected-power contribution included"
+      ],
+      "asked": "Find radiated/accepted power.",
+      "concept": "Antenna efficiency power balance",
+      "formula": "\\eta=P_{rad}/(P_{rad}+P_{loss})",
+      "steps": [
+        "The accepted power is radiated plus dissipated: 8+2=10 W.",
+        "Divide useful radiated power by that total.",
+        "The efficiency is 8/10=0.8."
+      ],
+      "finalAnswer": "0.8",
+      "explanation": "The efficiency is 8/10=0.8.",
+      "commonMistakes": [
+        "Radiation efficiency excludes a separate mismatch factor unless that factor is explicitly included."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which antenna efficiency power balance applies.",
+      "Start from $ \\eta=P_{rad}/(P_{rad}+P_{loss}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Accepted-power conservation: radiated plus internal heat. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.7999999,
+      0.8000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-08-09",
+    "type": "MSQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For an ordinary ideal inverting amplifier with finite positive input and feedback resistors, which linear-region properties hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its signal gain is negative"
+      },
+      {
+        "id": "B",
+        "text": "Its input resistance is necessarily infinite"
+      },
+      {
+        "id": "C",
+        "text": "Its input resistance seen by the signal is the input resistor when the summing node is at virtual ground"
+      },
+      {
+        "id": "D",
+        "text": "Its output must have the same phase as the input at low frequency"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal op-amp",
+        "stable negative feedback",
+        "low-frequency resistive network"
+      ],
+      "asked": "Select valid gain and input-port conclusions.",
+      "concept": "Inverting input-port resistance",
+      "formula": "A_v=-R_f/R_{in},\\quad i_{in}=v_{in}/R_{in}",
+      "steps": [
+        "Virtual ground makes the source current vin/Rin, giving input resistance Rin rather than infinite.",
+        "The output/input ratio is −Rf/Rin for positive resistors.",
+        "Thus the stage inverts phase at low frequency and A,C hold."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Thus the stage inverts phase at low frequency and A,C hold.",
+      "commonMistakes": [
+        "Infinite op-amp pin resistance does not imply infinite resistance looking into the whole inverting stage."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which inverting input-port resistance applies.",
+      "Start from $ A_v=-R_f/R_{in},\\quad i_{in}=v_{in}/R_{in} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Inverting KCL and virtual-ground source-current expression. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-MIXED-08-10",
+    "type": "MSQ",
+    "subject": "electromagnetics",
+    "topic": "maxwell-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For electrostatics in a simply connected region with sufficiently smooth fields, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "curl E=0"
+      },
+      {
+        "id": "B",
+        "text": "A scalar potential can be chosen with E=−grad V"
+      },
+      {
+        "id": "C",
+        "text": "The potential must be zero everywhere"
+      },
+      {
+        "id": "D",
+        "text": "The line integral of E along any closed contour in the region is zero"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Static fields",
+        "simply connected smooth-field region"
+      ],
+      "asked": "Select conservative-field properties.",
+      "concept": "Electrostatic potential",
+      "formula": "\\mathbf E=-\\nabla V,\\quad\\nabla\\times\\mathbf E=0",
+      "steps": [
+        "Static Faraday law gives zero electric-field curl.",
+        "In the stated domain this permits a scalar potential and path-independent line integrals.",
+        "The potential is determined only up to a constant and need not vanish. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "The potential is determined only up to a constant and need not vanish. Select A, B and D.",
+      "commonMistakes": [
+        "The domain and static assumptions matter when relating zero curl to a global potential."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which electrostatic potential applies.",
+      "Start from $ \\mathbf E=-\\nabla V,\\quad\\nabla\\times\\mathbf E=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Static Faraday law plus simply-connected potential existence; constant offset freedom. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-08-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Find the median of the sorted data 1,2,2,9,10,11.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Six ordered observations"
+      ],
+      "asked": "Find the even-sample median.",
+      "concept": "Order-statistic median",
+      "formula": "\\operatorname{median}=\\frac{x_{n/2}+x_{n/2+1}}2",
+      "steps": [
+        "For n=6, the two central positions are 3 and 4.",
+        "Their values are 2 and 9.",
+        "The median is (2+9)/2=5.5."
+      ],
+      "finalAnswer": "5.5",
+      "explanation": "The median is (2+9)/2=5.5.",
+      "commonMistakes": [
+        "The sample median need not itself be an observed data value."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which order-statistic median applies.",
+      "Start from $ \\operatorname{median}=\\frac{x_{n/2}+x_{n/2+1}}2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Select actual two central order statistics of the sorted even sample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      5.49999945,
+      5.50000055
+    ],
+    "numericalTolerance": 5.5e-7
+  },
+  {
+    "id": "FH-MIXED-08-12",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A real two-state matrix has trace −5 and determinant 6. Both characteristic roots are real. Find the larger root.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Characteristic polynomial λ²+5λ+6"
+      ],
+      "asked": "Find the less negative eigenvalue.",
+      "concept": "Trace–determinant pole reconstruction",
+      "formula": "\\lambda^2-\\operatorname{tr}(A)\\lambda+\\det A=0",
+      "steps": [
+        "The characteristic polynomial is λ²+5λ+6.",
+        "It factors as (λ+2)(λ+3).",
+        "The roots are −2 and −3, so the larger is −2."
+      ],
+      "finalAnswer": "-2",
+      "explanation": "The roots are −2 and −3, so the larger is −2.",
+      "commonMistakes": [
+        "For negative roots, the larger algebraic value has the smaller magnitude."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which trace–determinant pole reconstruction applies.",
+      "Start from $ \\lambda^2-\\operatorname{tr}(A)\\lambda+\\det A=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve and compare both roots of λ²+5λ+6. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-08-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      -2.0000002,
+      -1.9999998
+    ],
+    "numericalTolerance": 2e-7
+  }
+]

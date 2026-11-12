@@ -1,0 +1,15 @@
+{
+  "name": "for-her-gate",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4173",
+    "test": "node --test --test-isolation=none",
+    "validate": "node scripts/validate-content.mjs",
+    "check": "node scripts/check-site.mjs",
+    "build": "node scripts/build.mjs",
+    "content:progress": "node scripts/content/progress.mjs",
+    "content:release": "node scripts/content/release-batch.mjs"
+  }
+}

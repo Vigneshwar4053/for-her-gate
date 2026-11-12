@@ -1,0 +1,782 @@
+[
+  {
+    "id": "FH-SUBJECT-02-01",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Two nodes v1,v2 have nodal equations 3v1−v2=5 and −v1+2v2=0, with currents in mA and conductances in mS. Find v1 in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Linear nodal system",
+        "consistent mS/mA units"
+      ],
+      "asked": "Solve for v1.",
+      "concept": "Coupled nodal analysis",
+      "formula": "Gv=i",
+      "steps": [
+        "The second equation gives v2=v1/2.",
+        "Substitute into the first: (3−1/2)v1=5.",
+        "Thus 2.5v1=5 and v1=2 V; v2=1 V also satisfies both equations."
+      ],
+      "finalAnswer": "2 V",
+      "explanation": "Thus 2.5v1=5 and v1=2 V; v2=1 V also satisfies both equations.",
+      "commonMistakes": [
+        "Use simultaneous node equations; grounding the second node changes the circuit."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which coupled nodal analysis applies.",
+      "Start from $ Gv=i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Pivoted Gaussian solution of the original two-node conductance matrix. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-SUBJECT-02-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "ac-steady-state",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Under the passive sign convention, a load has RMS phasors V=10∠0° V and I=2∠−60° A. Find its average absorbed power in watts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "RMS V=10",
+        "RMS I=2",
+        "current lags voltage by 60°"
+      ],
+      "asked": "Find Re(VI*).",
+      "concept": "Complex power",
+      "formula": "S=V_{rms}I_{rms}^*,\\quad P=VI\\cos\\phi",
+      "steps": [
+        "The current is conjugated in complex power, giving phase +60°.",
+        "The apparent-power magnitude is 10×2=20 VA.",
+        "Its real part is 20cos60°=10 W."
+      ],
+      "finalAnswer": "10 W",
+      "explanation": "Its real part is 20cos60°=10 W.",
+      "commonMistakes": [
+        "RMS phasors do not require a further factor 1/2."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex power applies.",
+      "Start from $ S=V_{rms}I_{rms}^*,\\quad P=VI\\cos\\phi $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Complex RMS voltage times conjugate current, real component. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-SUBJECT-02-03",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-parameters",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A delta network has each side 9 Ω. Find each resistance in its equivalent balanced star in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Balanced delta",
+        "three identical 9 Ω sides"
+      ],
+      "asked": "Find one star arm.",
+      "concept": "Delta-to-star conversion",
+      "formula": "R_Y=R_\\Delta^2/(3R_\\Delta)",
+      "steps": [
+        "Each star arm is the product of its two adjoining delta sides divided by the sum of all three sides.",
+        "Here that is 9×9/(9+9+9).",
+        "The result is 81/27=3 Ω."
+      ],
+      "finalAnswer": "3 Ω",
+      "explanation": "The result is 81/27=3 Ω.",
+      "commonMistakes": [
+        "For a balanced network the delta resistance is three times a star arm."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which delta-to-star conversion applies.",
+      "Start from $ R_Y=R_\\Delta^2/(3R_\\Delta) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Delta-to-star product/sum formula; equal-terminal equivalent resistance checked. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-SUBJECT-02-04",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "laplace-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For the unilateral Laplace transform with initial value x(0−)=3, the transform of dx/dt is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "$sX(s)-3$"
+      },
+      {
+        "id": "B",
+        "text": "$sX(s)+3$"
+      },
+      {
+        "id": "C",
+        "text": "$X(s)/s$"
+      },
+      {
+        "id": "D",
+        "text": "$sX(s)$ always"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Unilateral transform starting at 0−",
+        "initial state 3"
+      ],
+      "asked": "Include the derivative initial-condition term.",
+      "concept": "Unilateral derivative transform",
+      "formula": "\\mathcal L_u\\{x\\prime\\}=sX(s)-x(0^-)",
+      "steps": [
+        "Integration by parts moves the derivative to the exponential kernel.",
+        "The lower-limit boundary contributes −x(0−).",
+        "Substituting the given initial value yields sX(s)−3, option A."
+      ],
+      "finalAnswer": "A",
+      "explanation": "Substituting the given initial value yields sX(s)−3, option A.",
+      "commonMistakes": [
+        "A nonzero initial condition cannot be discarded."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which unilateral derivative transform applies.",
+      "Start from $ \\mathcal L_u\\{x\\prime\\}=sX(s)-x(0^-) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integration-by-parts boundary term in the unilateral derivative transform. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-SUBJECT-02-05",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "laplace-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A causal continuous-time signal has Laplace transform X(s)=1/[(s+1)(s+3)]. Find x(0+).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Strictly proper rational transform",
+        "causal ordinary exponential response"
+      ],
+      "asked": "Find initial signal value.",
+      "concept": "Initial-value theorem",
+      "formula": "x(0^+)=\\lim_{s\\to\\infty}sX(s)",
+      "steps": [
+        "There is no impulse term because X is strictly proper with denominator degree 2.",
+        "sX(s)=s/(s²+4s+3).",
+        "The ratio tends to zero, so x(0+)=0."
+      ],
+      "finalAnswer": "0",
+      "explanation": "The ratio tends to zero, so x(0+)=0.",
+      "commonMistakes": [
+        "Apply the initial-value theorem only after checking that an impulse does not make the ordinary value undefined."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which initial-value theorem applies.",
+      "Start from $ x(0^+)=\\lim_{s\\to\\infty}sX(s) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Inverse transform difference of exponentials evaluated at zero; large-s initial-value limit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-02-06",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "digital-filter-design",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A two-tap FIR filter is y[n]=x[n]−x[n−1]. Find |H(eʲΩ)| at Ω=π/2.",
+    "options": [],
+    "solution": {
+      "given": [
+        "FIR taps 1,−1",
+        "Ω=π/2 rad/sample"
+      ],
+      "asked": "Find frequency-response magnitude.",
+      "concept": "Discrete-time frequency response",
+      "formula": "H(e^{j\\Omega})=1-e^{-j\\Omega}",
+      "steps": [
+        "At Ω=π/2 the delayed exponential is −j.",
+        "Thus H=1+j.",
+        "Its magnitude is √(1²+1²)=√2≈1.414213562."
+      ],
+      "finalAnswer": "1.4142135623730951",
+      "explanation": "Its magnitude is √(1²+1²)=√2≈1.414213562.",
+      "commonMistakes": [
+        "Do not subtract magnitudes before combining complex contributions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which discrete-time frequency response applies.",
+      "Start from $ H(e^{j\\Omega})=1-e^{-j\\Omega} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate complex FIR frequency response from tap-weighted phasors. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.414213420952,
+      1.414213703794
+    ],
+    "numericalTolerance": 1.4142135623730952e-7
+  },
+  {
+    "id": "FH-SUBJECT-02-07",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "discrete-time-transforms",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The 4-point DFT uses X[k]=Σₙ₌₀³x[n]exp(−j2πkn/4). For x=[1,0,−1,0], find the real part of X[1].",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four-point sequence [1,0,−1,0]",
+        "forward DFT convention"
+      ],
+      "asked": "Find Re X[1].",
+      "concept": "DFT evaluation",
+      "formula": "X[k]=\\sum_{n=0}^{N-1}x[n]e^{-j2\\pi kn/N}",
+      "steps": [
+        "Only n=0 and n=2 contribute.",
+        "At k=1 their terms are 1 and (−1)e⁻ʲπ=1.",
+        "X[1]=2, purely real."
+      ],
+      "finalAnswer": "2",
+      "explanation": "X[1]=2, purely real.",
+      "commonMistakes": [
+        "The negative time-domain sample multiplies a negative complex exponential at this bin."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dft evaluation applies.",
+      "Start from $ X[k]=\\sum_{n=0}^{N-1}x[n]e^{-j2\\pi kn/N} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct DFT summation, including all zero entries. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-SUBJECT-02-08",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "network-parameters",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a passive reciprocal two-port described by finite z-parameters, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "z12 = z21"
+      },
+      {
+        "id": "B",
+        "text": "z11 = z22 is required by reciprocity alone"
+      },
+      {
+        "id": "C",
+        "text": "An open-circuit output measurement is used to determine z11 and z21 from port-1 excitation"
+      },
+      {
+        "id": "D",
+        "text": "The short-circuit input current always directly equals z11"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Finite open-circuit impedance parameters",
+        "reciprocity"
+      ],
+      "asked": "Identify z-parameter definitions and symmetry.",
+      "concept": "Two-port impedance parameters",
+      "formula": "\\begin{pmatrix}V_1\\\\V_2\\end{pmatrix}=\\begin{pmatrix}z_{11}&z_{12}\\\\z_{21}&z_{22}\\end{pmatrix}\\begin{pmatrix}I_1\\\\I_2\\end{pmatrix}",
+      "steps": [
+        "With I2=0, the ratios V1/I1 and V2/I1 define z11 and z21.",
+        "Reciprocity imposes z12=z21 but does not imply geometrical symmetry z11=z22.",
+        "A z-parameter has resistance units, not current units. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "A z-parameter has resistance units, not current units. Select A and C.",
+      "commonMistakes": [
+        "Reciprocity and port symmetry are not identical conditions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which two-port impedance parameters applies.",
+      "Start from $ \\begin{pmatrix}V_1\\\\V_2\\end{pmatrix}=\\begin{pmatrix}z_{11}&z_{12}\\\\z_{21}&z_{22}\\end{pmatrix}\\begin{pmatrix}I_1\\\\I_2\\end{pmatrix} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Open-circuit z definitions and reciprocal symmetric off-diagonal property; units check. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-02-09",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "discrete-time-transforms",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For x[n]=(1/3)ⁿu[n], find the radius of the inner boundary of the causal bilateral z-transform ROC.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Right-sided geometric sequence",
+        "bilateral z transform"
+      ],
+      "asked": "Find the pole magnitude bounding the causal ROC.",
+      "concept": "Z-transform ROC",
+      "formula": "X(z)=\\sum_{n=0}^{\\infty}(1/(3z))^n",
+      "steps": [
+        "The geometric series converges when |1/(3z)|<1.",
+        "This is equivalent to |z|>1/3.",
+        "The inner-boundary radius is 1/3; the boundary itself is excluded."
+      ],
+      "finalAnswer": "0.3333333333333333",
+      "explanation": "The inner-boundary radius is 1/3; the boundary itself is excluded.",
+      "commonMistakes": [
+        "A rational expression alone does not specify the ROC or causality."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which z-transform roc applies.",
+      "Start from $ X(z)=\\sum_{n=0}^{\\infty}(1/(3z))^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Geometric-series ratio convergence boundary for causal z-transform. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.333333233333,
+      0.333333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-02-10",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An initially charged RC circuit has v(0)=1 V, final voltage 4 V, and τ=2 s. Find v(2 ln3) in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Initial voltage 1 V",
+        "final 4 V",
+        "positive first-order time constant 2 s"
+      ],
+      "asked": "Find the response at the stated time.",
+      "concept": "General first-order state transition",
+      "formula": "v(t)=v_\\infty+(v_0-v_\\infty)e^{-t/\\tau}",
+      "steps": [
+        "The initial deviation from the final state is 1−4=−3 V.",
+        "At t=2 ln3, the decay factor is 1/3.",
+        "The voltage is 4−3/3=3 V."
+      ],
+      "finalAnswer": "3 V",
+      "explanation": "The voltage is 4−3/3=3 V.",
+      "commonMistakes": [
+        "Natural and forced response must combine to satisfy the nonzero initial state."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which general first-order state transition applies.",
+      "Start from $ v(t)=v_\\infty+(v_0-v_\\infty)e^{-t/\\tau} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "RK4 integration of charged-to-final RC differential equation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-SUBJECT-02-11",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "digital-filter-design",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For discrete-time causal FIR filters with a finite number of finite-valued taps, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "They are BIBO stable"
+      },
+      {
+        "id": "B",
+        "text": "Their impulse response is absolutely summable"
+      },
+      {
+        "id": "C",
+        "text": "Every such filter has a nonzero DC gain"
+      },
+      {
+        "id": "D",
+        "text": "Their output is a finite weighted sum of present/past input samples"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Causal finite impulse response",
+        "finite coefficients"
+      ],
+      "asked": "Select necessary FIR properties.",
+      "concept": "FIR support and summability",
+      "formula": "y[n]=\\sum_{k=0}^{M}b_kx[n-k]",
+      "steps": [
+        "A finite sum of finite tap magnitudes is finite, satisfying the LTI BIBO condition.",
+        "The causal convolution uses only present and previous input samples.",
+        "DC gain is the tap sum, which can be zero (for example [1,−1]). Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "DC gain is the tap sum, which can be zero (for example [1,−1]). Select A, B and D.",
+      "commonMistakes": [
+        "A stable filter can reject DC entirely."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fir support and summability applies.",
+      "Start from $ y[n]=\\sum_{k=0}^{M}b_kx[n-k] $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Finite coefficient-sum bound plus explicit DC-null filter [1,−1]. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-02-12",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "discrete-time-transforms",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A real sequence x=[1,2,3,4] has a 4-point DFT under the unnormalized forward convention. Find (1/4)Σₖ₌₀³|X[k]|².",
+    "options": [],
+    "solution": {
+      "given": [
+        "DFT forward unnormalized",
+        "sequence values 1,2,3,4"
+      ],
+      "asked": "Find the normalized frequency-energy sum.",
+      "concept": "DFT Parseval identity",
+      "formula": "\\sum_n|x[n]|^2=\\frac1N\\sum_k|X[k]|^2",
+      "steps": [
+        "The DFT orthogonality makes the stated normalized spectral energy equal to time-domain energy.",
+        "Sum 1²+2²+3²+4².",
+        "The result is 1+4+9+16=30."
+      ],
+      "finalAnswer": "30",
+      "explanation": "The result is 1+4+9+16=30.",
+      "commonMistakes": [
+        "Normalization depends on the DFT convention; the factor 1/4 is given."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dft parseval identity applies.",
+      "Start from $ \\sum_n|x[n]|^2=\\frac1N\\sum_k|X[k]|^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute every DFT bin and sum spectral magnitudes directly. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-02-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      29.999997,
+      30.000003
+    ],
+    "numericalTolerance": 0.000003
+  }
+]

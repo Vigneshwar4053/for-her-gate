@@ -1,0 +1,786 @@
+[
+  {
+    "id": "FH-TOPIC-08-01",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "An initially uncharged 2 μF capacitor is charged by a 10 V step through 5 kΩ. Find the time constant in milliseconds.",
+    "options": [],
+    "solution": {
+      "given": [
+        "R=5 kΩ",
+        "C=2 μF",
+        "zero initial voltage"
+      ],
+      "asked": "Find RC in ms.",
+      "concept": "RC time constant",
+      "formula": "\\tau=RC",
+      "steps": [
+        "Convert values: R=5000 Ω and C=2×10⁻⁶ F.",
+        "Their product is 0.01 s.",
+        "Multiplying by 1000 gives a time constant of 10 ms."
+      ],
+      "finalAnswer": "10 ms",
+      "explanation": "Multiplying by 1000 gives a time constant of 10 ms.",
+      "commonMistakes": [
+        "Keep kilo and micro prefixes consistent."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which rc time constant applies.",
+      "Start from $ \\tau=RC $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "SI prefix conversion and dimensional RC product. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-TOPIC-08-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A capacitor initially at 8 V discharges through a resistor with RC=2 s. Find its voltage at t=2 ln2 seconds.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Initial voltage 8 V",
+        "natural time constant 2 s"
+      ],
+      "asked": "Find the discharging voltage.",
+      "concept": "First-order natural response",
+      "formula": "v(t)=V_0e^{-t/\\tau}",
+      "steps": [
+        "The circuit has no sustaining source, so its final voltage is zero.",
+        "At t=2 ln2, t/τ=ln2 and the exponential factor is 1/2.",
+        "The voltage is 8/2=4 V."
+      ],
+      "finalAnswer": "4 V",
+      "explanation": "The voltage is 8/2=4 V.",
+      "commonMistakes": [
+        "For natural discharge, the exponential multiplies the initial voltage."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which first-order natural response applies.",
+      "Start from $ v(t)=V_0e^{-t/\\tau} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "RK4 solve of source-free capacitor differential equation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-08-03",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "An initially unenergized 3 H inductor is connected to 12 V DC through 6 Ω. Find its steady-state current in amperes.",
+    "options": [],
+    "solution": {
+      "given": [
+        "L=3 H",
+        "R=6 Ω",
+        "source 12 V",
+        "t→∞"
+      ],
+      "asked": "Find final inductor current.",
+      "concept": "DC RL steady state",
+      "formula": "i(\\infty)=V/R",
+      "steps": [
+        "At DC steady state, an ideal inductor has zero voltage.",
+        "The entire 12 V appears across the 6 Ω resistor.",
+        "The final current is 12/6=2 A, independent of L."
+      ],
+      "finalAnswer": "2 A",
+      "explanation": "The final current is 12/6=2 A, independent of L.",
+      "commonMistakes": [
+        "The inductor controls the transient speed, not the final DC current."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dc rl steady state applies.",
+      "Start from $ i(\\infty)=V/R $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate original RL state equation for 40 time constants. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-08-04",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a source-free series RL circuit with R=4 Ω and L=2 H, enter the natural pole in s⁻¹.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Series source-free RL",
+        "R=4 Ω",
+        "L=2 H"
+      ],
+      "asked": "Find the exponential pole.",
+      "concept": "RL natural pole",
+      "formula": "L\\frac{di}{dt}+Ri=0,\\quad p=-R/L",
+      "steps": [
+        "KVL gives 2 di/dt+4i=0.",
+        "Writing di/dt=−2i identifies the exponent coefficient.",
+        "The pole is −2 s⁻¹ and the time constant is 0.5 s."
+      ],
+      "finalAnswer": "-2 s⁻¹",
+      "explanation": "The pole is −2 s⁻¹ and the time constant is 0.5 s.",
+      "commonMistakes": [
+        "A passive source-free RL circuit has a negative real pole."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which rl natural pole applies.",
+      "Start from $ L\\frac{di}{dt}+Ri=0,\\quad p=-R/L $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Characteristic coefficient from L di/dt + R i = 0. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      -2.0000002,
+      -1.9999998
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-08-05",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A finite current is applied to an ideal capacitor at switching. Which quantity must remain continuous across that instant?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Capacitor current"
+      },
+      {
+        "id": "B",
+        "text": "Capacitor voltage"
+      },
+      {
+        "id": "C",
+        "text": "Resistor voltage in every circuit"
+      },
+      {
+        "id": "D",
+        "text": "Time derivative of capacitor voltage"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Capacitor driven without an impulse of current"
+      ],
+      "asked": "Identify the continuous state variable.",
+      "concept": "Capacitor state continuity",
+      "formula": "\\Delta v_C=\\frac1C\\int_{0^-}^{0^+}i_C(t)dt",
+      "steps": [
+        "The integral of bounded current over a vanishing interval is zero.",
+        "Therefore the capacitor voltage cannot change instantaneously under the stated condition.",
+        "Current or voltage derivative may jump, so only B is guaranteed."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Current or voltage derivative may jump, so only B is guaranteed.",
+      "commonMistakes": [
+        "An impulse current would invalidate the bounded-current condition."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which capacitor state continuity applies.",
+      "Start from $ \\Delta v_C=\\frac1C\\int_{0^-}^{0^+}i_C(t)dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate bounded capacitor current over a shrinking interval; charge-continuity identity. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-08-06",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal 1 F capacitor has v(0+)=2 V. It is connected through 2 Ω to a 10 V source. Find dv/dt at 0+ in V/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "C=1 F",
+        "v(0+)=2 V",
+        "source 10 V",
+        "R=2 Ω"
+      ],
+      "asked": "Find initial voltage slope.",
+      "concept": "Initial-value capacitor KCL",
+      "formula": "C\\frac{dv}{dt}=\\frac{V_s-v}{R}",
+      "steps": [
+        "The initial resistor voltage is 10−2=8 V.",
+        "Its current into the capacitor is 8/2=4 A.",
+        "Dividing by C=1 F gives initial slope 4 V/s."
+      ],
+      "finalAnswer": "4 V/s",
+      "explanation": "Dividing by C=1 F gives initial slope 4 V/s.",
+      "commonMistakes": [
+        "Use the capacitor’s initial voltage rather than assuming it is uncharged."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which initial-value capacitor kcl applies.",
+      "Start from $ C\\frac{dv}{dt}=\\frac{V_s-v}{R} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Initial nodal capacitor-current balance. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-08-07",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a series RLC circuit with R=4 Ω, L=1 H and C=1 F, find the damping ratio ζ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Series RLC",
+        "R=4 Ω",
+        "L=1 H",
+        "C=1 F"
+      ],
+      "asked": "Find ζ in the standard second-order denominator.",
+      "concept": "Second-order damping",
+      "formula": "\\omega_n=1/\\sqrt{LC},\\quad\\zeta=\\frac{R}{2}\\sqrt{C/L}",
+      "steps": [
+        "The characteristic equation is s²+(R/L)s+1/(LC)=s²+4s+1.",
+        "Match with s²+2ζωn s+ωn²; ωn=1 rad/s.",
+        "Then 2ζ=4, so ζ=2 and the response is overdamped."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Then 2ζ=4, so ζ=2 and the response is overdamped.",
+      "commonMistakes": [
+        "The damping ratio is dimensionless; α and ζ differ by ωn."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which second-order damping applies.",
+      "Start from $ \\omega_n=1/\\sqrt{LC},\\quad\\zeta=\\frac{R}{2}\\sqrt{C/L} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Coefficient matching of state-equation characteristic polynomial. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-08-08",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements hold for source-free passive ideal RLC networks with positive R,L,C and no impulses?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Stored energy cannot increase because of resistive dissipation"
+      },
+      {
+        "id": "B",
+        "text": "An ideal inductor current can jump under bounded voltage"
+      },
+      {
+        "id": "C",
+        "text": "Capacitor voltage is continuous under bounded current"
+      },
+      {
+        "id": "D",
+        "text": "An underdamped second-order response has complex-conjugate poles"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Passive source-free network",
+        "bounded switch waveforms"
+      ],
+      "asked": "Select valid energy and continuity statements.",
+      "concept": "Energy and natural modes",
+      "formula": "W=\\tfrac12Cv^2+\\tfrac12Li^2,\\quad\\frac{dW}{dt}=-P_R",
+      "steps": [
+        "With no source, resistor power removes stored energy, so dW/dt≤0.",
+        "Integrating the inductor voltage law under bounded voltage makes current continuous, so B is false.",
+        "Capacitor voltage is likewise continuous; underdamping corresponds to conjugate poles. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Capacitor voltage is likewise continuous; underdamping corresponds to conjugate poles. Select A, C and D.",
+      "commonMistakes": [
+        "A source-free system can exchange energy between L and C without increasing total stored energy."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which energy and natural modes applies.",
+      "Start from $ W=\\tfrac12Cv^2+\\tfrac12Li^2,\\quad\\frac{dW}{dt}=-P_R $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Energy balance derivative and integrated state continuity; conjugate-root discriminant. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-08-09",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A first-order RC step response starts at 0 V and approaches 5 V with τ=1 s. Find the time to first reach 4 V, in seconds.",
+    "options": [],
+    "solution": {
+      "given": [
+        "v(0)=0",
+        "v∞=5 V",
+        "τ=1 s",
+        "target 4 V"
+      ],
+      "asked": "Find the crossing time.",
+      "concept": "Settling to a specified fraction",
+      "formula": "v(t)=V_\\infty(1-e^{-t/\\tau})",
+      "steps": [
+        "Set 4=5(1−e⁻ᵗ).",
+        "Rearrange to e⁻ᵗ=1/5.",
+        "Taking natural logarithms gives t=ln5≈1.609437912 s."
+      ],
+      "finalAnswer": "1.6094379124341003 s",
+      "explanation": "Taking natural logarithms gives t=ln5≈1.609437912 s.",
+      "commonMistakes": [
+        "Use the remaining error fraction 1/5 rather than the reached fraction 4/5."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which settling to a specified fraction applies.",
+      "Start from $ v(t)=V_\\infty(1-e^{-t/\\tau}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Bisection on an RK4 trajectory to reach 4 V. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.60943775149,
+      1.609438073378
+    ],
+    "numericalTolerance": 1.6094379124341003e-7
+  },
+  {
+    "id": "FH-TOPIC-08-10",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 2 F capacitor changes from 3 V to 1 V during passive discharge. Find the energy released in joules.",
+    "options": [],
+    "solution": {
+      "given": [
+        "C=2 F",
+        "initial voltage 3 V",
+        "final voltage 1 V"
+      ],
+      "asked": "Find the decrease in stored energy.",
+      "concept": "Capacitor energy difference",
+      "formula": "\\Delta W=\\tfrac12 C(V_i^2-V_f^2)",
+      "steps": [
+        "Initial stored energy is ½×2×9=9 J.",
+        "Final stored energy is ½×2×1=1 J.",
+        "The capacitor releases 9−1=8 J."
+      ],
+      "finalAnswer": "8 J",
+      "explanation": "The capacitor releases 9−1=8 J.",
+      "commonMistakes": [
+        "Square each voltage before taking their difference."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which capacitor energy difference applies.",
+      "Start from $ \\Delta W=\\tfrac12 C(V_i^2-V_f^2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate capacitor voltage against differential charge C dv. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      7.9999992,
+      8.0000008
+    ],
+    "numericalTolerance": 8e-7
+  },
+  {
+    "id": "FH-TOPIC-08-11",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "The response $v(t)=e^{-t}-e^{-2t}$ for t≥0 reaches its maximum at t = ln2. Find the maximum value.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Difference of two decaying modes",
+        "specified extremum time"
+      ],
+      "asked": "Find the peak value and verify it is a maximum.",
+      "concept": "Two-mode transient peak",
+      "formula": "v\\prime(t)=-e^{-t}+2e^{-2t}",
+      "steps": [
+        "The derivative is zero when eᵗ=2, at t=ln2.",
+        "There e⁻ᵗ=1/2 and e⁻²ᵗ=1/4.",
+        "The peak is 1/2−1/4=1/4; the second derivative there is −1/2<0."
+      ],
+      "finalAnswer": "0.25",
+      "explanation": "The peak is 1/2−1/4=1/4; the second derivative there is −1/2<0.",
+      "commonMistakes": [
+        "A sum of decaying terms need not decay monotonically if coefficients have opposite signs."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which two-mode transient peak applies.",
+      "Start from $ v\\prime(t)=-e^{-t}+2e^{-2t} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Dense peak search over two-mode trajectory; derivative sign checked near ln2. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.2499999,
+      0.2500001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-08-12",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A series RLC circuit has characteristic polynomial $s^2+6s+9$. Its natural response is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Underdamped"
+      },
+      {
+        "id": "B",
+        "text": "Undamped"
+      },
+      {
+        "id": "C",
+        "text": "Critically damped"
+      },
+      {
+        "id": "D",
+        "text": "Unstable"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Characteristic polynomial s²+6s+9"
+      ],
+      "asked": "Classify the damping.",
+      "concept": "Repeated real natural poles",
+      "formula": "s^2+6s+9=(s+3)^2",
+      "steps": [
+        "The polynomial has a repeated pole at −3.",
+        "Comparing with s²+2ζωn s+ωn² gives ωn=3 and ζ=1.",
+        "A stable repeated second-order pole at ζ=1 is the critically damped case."
+      ],
+      "finalAnswer": "C",
+      "explanation": "A stable repeated second-order pole at ζ=1 is the critically damped case.",
+      "commonMistakes": [
+        "A repeated negative pole is not an oscillatory complex pair."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which repeated real natural poles applies.",
+      "Start from $ s^2+6s+9=(s+3)^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Quadratic discriminant is zero; repeated negative root −3. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-08-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "C"
+  }
+]

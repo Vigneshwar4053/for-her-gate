@@ -1,0 +1,765 @@
+[
+  {
+    "id": "FH-TOPIC-50-01",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Two student groups have sizes 10 and 30 and mean scores 60 and 80 respectively. Find their combined mean score.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Group sizes 10,30",
+        "group means 60,80"
+      ],
+      "asked": "Find weighted average by total score.",
+      "concept": "Weighted mean",
+      "formula": "\\bar x=(n_1\\bar x_1+n_2\\bar x_2)/(n_1+n_2)",
+      "steps": [
+        "The groups contribute total scores 600 and 2400.",
+        "Total score is 3000 over 40 students.",
+        "The combined mean is 3000/40=75."
+      ],
+      "finalAnswer": "75",
+      "explanation": "The combined mean is 3000/40=75.",
+      "commonMistakes": [
+        "The unweighted mean of group means is valid only for equal group sizes."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which weighted mean applies.",
+      "Start from $ \\bar x=(n_1\\bar x_1+n_2\\bar x_2)/(n_1+n_2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct total score and total population before division. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      74.9999925,
+      75.0000075
+    ],
+    "numericalTolerance": 0.000007499999999999999
+  },
+  {
+    "id": "FH-TOPIC-50-02",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A machine produces 120 items on Monday and 180 on Tuesday. Defect rates are 5% and 10% respectively. Find the combined defect percentage.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Daily counts and corresponding defect fractions"
+      ],
+      "asked": "Find total defects divided by total output.",
+      "concept": "Weighted rate from data",
+      "formula": "p_{total}=\\frac{N_1p_1+N_2p_2}{N_1+N_2}",
+      "steps": [
+        "Defects are 120×0.05=6 and 180×0.10=18.",
+        "The total is 24 defective items out of 300.",
+        "The fraction is 24/300=0.08, or 8%."
+      ],
+      "finalAnswer": "8 %",
+      "explanation": "The fraction is 24/300=0.08, or 8%.",
+      "commonMistakes": [
+        "Averaging 5% and 10% without their output weights gives the wrong rate."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which weighted rate from data applies.",
+      "Start from $ p_{total}=\\frac{N_1p_1+N_2p_2}{N_1+N_2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute actual defective counts for both production days, then combine. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      7.9999992,
+      8.0000008
+    ],
+    "numericalTolerance": 8e-7
+  },
+  {
+    "id": "FH-TOPIC-50-03",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "If a:b=2:3 and b:c=4:5, find a/c.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two linked ratios with common b"
+      ],
+      "asked": "Eliminate the shared variable.",
+      "concept": "Ratio chaining",
+      "formula": "a/c=(a/b)(b/c)",
+      "steps": [
+        "The shared b cancels when ratios multiply.",
+        "(2/3)(4/5)=8/15.",
+        "The required ratio is approximately 0.5333333333."
+      ],
+      "finalAnswer": "0.5333333333333333",
+      "explanation": "The required ratio is approximately 0.5333333333.",
+      "commonMistakes": [
+        "Match or cancel the common variable before comparing a and c."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which ratio chaining applies.",
+      "Start from $ a/c=(a/b)(b/c) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Cancel the shared middle quantity in chained ratios. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.533333233333,
+      0.533333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-50-04",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Find the sum 1+2+…+50.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Arithmetic sequence of first 50 positive integers"
+      ],
+      "asked": "Find the finite series sum.",
+      "concept": "Arithmetic-series sum",
+      "formula": "S_n=n(n+1)/2",
+      "steps": [
+        "Pair first and last terms to get 51 per pair.",
+        "There are 25 such pairs.",
+        "The sum is 25×51=1275."
+      ],
+      "finalAnswer": "1275",
+      "explanation": "The sum is 25×51=1275.",
+      "commonMistakes": [
+        "Count the number of terms rather than using only the largest value."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which arithmetic-series sum applies.",
+      "Start from $ S_n=n(n+1)/2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Explicitly sum every original integer term. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1274.9998725,
+      1275.0001275
+    ],
+    "numericalTolerance": 0.00012749999999999998
+  },
+  {
+    "id": "FH-TOPIC-50-05",
+    "type": "MCQ",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For positive x, log₂x=5 implies x equals:",
+    "options": [
+      {
+        "id": "A",
+        "text": "10"
+      },
+      {
+        "id": "B",
+        "text": "25"
+      },
+      {
+        "id": "C",
+        "text": "64"
+      },
+      {
+        "id": "D",
+        "text": "32"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Base-2 logarithm",
+        "positive domain"
+      ],
+      "asked": "Invert the logarithm.",
+      "concept": "Exponent–log inverse",
+      "formula": "\\log_2x=5\\iff x=2^5",
+      "steps": [
+        "A logarithm reports the exponent needed for its base.",
+        "Here x is 2 raised to the fifth power.",
+        "2⁵=32, so option D is correct."
+      ],
+      "finalAnswer": "D",
+      "explanation": "2⁵=32, so option D is correct.",
+      "commonMistakes": [
+        "The log base is 2, not e or 10."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which exponent–log inverse applies.",
+      "Start from $ \\log_2x=5\\iff x=2^5 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate inverse base-two exponent and compare with all numeric options. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-50-06",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "How many 3-member committees can be formed from 6 distinct people if order within the committee does not matter?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Six available people",
+        "choose three",
+        "no ordering roles"
+      ],
+      "asked": "Count combinations.",
+      "concept": "Unordered selection",
+      "formula": "\\binom63=6!/(3!3!)",
+      "steps": [
+        "Ordered selections would count 6×5×4=120.",
+        "Each committee appears 3!=6 times under those orderings.",
+        "Divide to get 120/6=20 committees."
+      ],
+      "finalAnswer": "20",
+      "explanation": "Divide to get 120/6=20 committees.",
+      "commonMistakes": [
+        "Use permutations only when member roles or order matter."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which unordered selection applies.",
+      "Start from $ \\binom63=6!/(3!3!) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate increasing-index three-person subsets. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      19.999998,
+      20.000002
+    ],
+    "numericalTolerance": 0.000002
+  },
+  {
+    "id": "FH-TOPIC-50-07",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A box has 4 good and 1 defective device. Two are chosen without replacement. Find the probability of at least one defective device.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Five distinct devices",
+        "one defective",
+        "two sampled"
+      ],
+      "asked": "Use complement or direct combinations.",
+      "concept": "Sampling without replacement",
+      "formula": "P(\\ge1D)=1-\\binom42/\\binom52",
+      "steps": [
+        "There are C(5,2)=10 unordered samples.",
+        "Six samples use only the four good devices.",
+        "The complement probability is 1−6/10=0.4."
+      ],
+      "finalAnswer": "0.4",
+      "explanation": "The complement probability is 1−6/10=0.4.",
+      "commonMistakes": [
+        "Do not treat two draws without replacement as independent."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sampling without replacement applies.",
+      "Start from $ P(\\ge1D)=1-\\binom42/\\binom52 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all unordered two-device samples and test the defect flag. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.3999999,
+      0.4000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-50-08",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A square and a circle have equal perimeter. Find the ratio of the square’s area to the circle’s area.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Common perimeter P>0"
+      ],
+      "asked": "Express both areas using the common perimeter.",
+      "concept": "Isoperimetric comparison",
+      "formula": "A_{sq}=P^2/16,\\quad A_{circ}=P^2/(4\\pi)",
+      "steps": [
+        "The square side is P/4, giving area P²/16.",
+        "The circle radius is P/(2π), giving area P²/(4π).",
+        "Their ratio is π/4≈0.7853981634."
+      ],
+      "finalAnswer": "0.7853981633974483",
+      "explanation": "Their ratio is π/4≈0.7853981634.",
+      "commonMistakes": [
+        "Equal perimeter does not imply equal area."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which isoperimetric comparison applies.",
+      "Start from $ A_{sq}=P^2/16,\\quad A_{circ}=P^2/(4\\pi) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct actual equal-perimeter square/circle dimensions and compare their areas. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.785398063397,
+      0.785398263397
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-50-09",
+    "type": "MSQ",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For nonnegative data values, which transformations necessarily produce the stated effect?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Adding 5 to every value adds 5 to the mean"
+      },
+      {
+        "id": "B",
+        "text": "Adding 5 to every value adds 5 to the standard deviation"
+      },
+      {
+        "id": "C",
+        "text": "Multiplying every value by 2 multiplies standard deviation by 2"
+      },
+      {
+        "id": "D",
+        "text": "Multiplying every value by 2 multiplies variance by 2"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Finite data set with population variance convention"
+      ],
+      "asked": "Select valid location and scale rules.",
+      "concept": "Statistics under affine transformations",
+      "formula": "E[aX+b]=aE[X]+b,\\quad Var(aX+b)=a^2Var(X)",
+      "steps": [
+        "A constant shift moves the mean but leaves all centered deviations unchanged.",
+        "A factor 2 doubles deviations and standard deviation, while quadrupling variance.",
+        "Therefore A,C hold."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Therefore A,C hold.",
+      "commonMistakes": [
+        "Variance scales quadratically, whereas standard deviation scales linearly."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which statistics under affine transformations applies.",
+      "Start from $ E[aX+b]=aE[X]+b,\\quad Var(aX+b)=a^2Var(X) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Affine central-moment algebra; explicit shifted/scaled nonconstant data checks. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-50-10",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A train 150 m long passes a fixed point in 10 s at constant speed. Find its speed in km/h.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Train length 150 m",
+        "full pass time 10 s",
+        "point observer"
+      ],
+      "asked": "Convert length/time into km/h.",
+      "concept": "Speed unit conversion",
+      "formula": "v=(150/10)\\cdot3.6",
+      "steps": [
+        "The entire train must advance its own length past the point.",
+        "Speed is 150/10=15 m/s.",
+        "Multiply by 3.6 to obtain 54 km/h."
+      ],
+      "finalAnswer": "54 km/h",
+      "explanation": "Multiply by 3.6 to obtain 54 km/h.",
+      "commonMistakes": [
+        "For passing a platform, its length would also matter; the observer here is a fixed point."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which speed unit conversion applies.",
+      "Start from $ v=(150/10)\\cdot3.6 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Distance/time calculation followed by meter-to-km and seconds-to-hour conversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      53.9999946,
+      54.0000054
+    ],
+    "numericalTolerance": 0.0000054
+  },
+  {
+    "id": "FH-TOPIC-50-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A positive number is selected uniformly from integers 1 to 30. Find the probability it is divisible by 2 or by 3.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Uniform finite integer set",
+        "union of two divisibility events"
+      ],
+      "asked": "Count the union without double-counting multiples of 6.",
+      "concept": "Divisibility inclusion–exclusion",
+      "formula": "N=\\lfloor30/2\\rfloor+\\lfloor30/3\\rfloor-\\lfloor30/6\\rfloor",
+      "steps": [
+        "There are 15 multiples of 2 and 10 multiples of 3.",
+        "Their overlap contains 5 multiples of 6.",
+        "Union count is 15+10−5=20, so probability is 20/30=2/3."
+      ],
+      "finalAnswer": "0.6666666666666666",
+      "explanation": "Union count is 15+10−5=20, so probability is 20/30=2/3.",
+      "commonMistakes": [
+        "Inclusive “or” includes numbers satisfying both conditions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which divisibility inclusion–exclusion applies.",
+      "Start from $ N=\\lfloor30/2\\rfloor+\\lfloor30/3\\rfloor-\\lfloor30/6\\rfloor $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate the original finite sample space and apply both divisibility tests. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.666666566667,
+      0.666666766667
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-50-12",
+    "type": "MSQ",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A population has mean 10 and population variance 4. Which statements follow for the transformed variable Y=3X−2?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mean(Y)=28"
+      },
+      {
+        "id": "B",
+        "text": "Variance(Y)=36"
+      },
+      {
+        "id": "C",
+        "text": "Standard deviation(Y)=12"
+      },
+      {
+        "id": "D",
+        "text": "Standard deviation(Y)=6"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Affine transformation with slope 3"
+      ],
+      "asked": "Propagate mean, variance and standard deviation.",
+      "concept": "Affine moment transformation",
+      "formula": "\\mu_Y=3\\mu_X-2,\\quad\\sigma_Y^2=9\\sigma_X^2",
+      "steps": [
+        "The mean is 3×10−2=28.",
+        "Variance is 9×4=36; taking its square root gives standard deviation 6.",
+        "Thus A,B,D hold, while 12 incorrectly scales the variance as if it were standard deviation."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Thus A,B,D hold, while 12 incorrectly scales the variance as if it were standard deviation.",
+      "commonMistakes": [
+        "A constant offset affects the mean but not centered variation."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which affine moment transformation applies.",
+      "Start from $ \\mu_Y=3\\mu_X-2,\\quad\\sigma_Y^2=9\\sigma_X^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Transform representative data [8,12] with mean10 and variance4, recompute all transformed moments. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-50-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  }
+]

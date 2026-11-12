@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "checkedAt": "2026-11-13",
+  "technicalStatus": "official-pdf-inspected",
+  "technicalSource": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+  "note": "Both pages accessible through web PDF extraction on continuation. Factual topic hierarchy reconciled to eight official sections. Existing IDs retained; overlapping app categories are cross-mappings, not extra official sections.",
+  "aptitudeSource": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf",
+  "aptitudeStatus": "inspected",
+  "aptitudeCoverage": {
+    "Verbal Aptitude": [
+      "Grammar",
+      "Vocabulary in context",
+      "Reading comprehension",
+      "Narrative sequencing"
+    ],
+    "Quantitative Aptitude": [
+      "Data interpretation including graphs, plots, maps and tables",
+      "Numerical computation and estimation",
+      "Ratios, percentages, powers, exponents, logarithms",
+      "Permutations, combinations and series",
+      "Mensuration and geometry",
+      "Elementary statistics and probability"
+    ],
+    "Analytical Aptitude": [
+      "Deduction and induction",
+      "Analogy",
+      "Numerical relations and reasoning"
+    ],
+    "Spatial Aptitude": [
+      "Translation, rotation, scaling and mirroring",
+      "Assembling and grouping",
+      "Paper folding, cutting and 2D/3D patterns"
+    ]
+  },
+  "technicalCoverage": [
+    {
+      "section": 1,
+      "subject": "mathematics",
+      "topics": [
+        "linear-algebra",
+        "calculus",
+        "differential-equations",
+        "vector-analysis",
+        "complex-analysis",
+        "probability-and-statistics"
+      ]
+    },
+    {
+      "section": 2,
+      "subject": "networks",
+      "topics": [
+        "circuit-analysis",
+        "network-theorems",
+        "ac-steady-state",
+        "network-parameters",
+        "transient-analysis",
+        "laplace-transform",
+        "signals-and-systems",
+        "lti-systems",
+        "fourier-transform",
+        "sampling",
+        "discrete-time-transforms",
+        "digital-filter-design"
+      ]
+    },
+    {
+      "section": 3,
+      "subject": "devices",
+      "topics": [
+        "semiconductor-physics",
+        "carrier-transport",
+        "pn-junctions",
+        "diodes",
+        "bjt",
+        "mos-capacitor",
+        "mosfet",
+        "optoelectronic-devices"
+      ]
+    },
+    {
+      "section": 4,
+      "subject": "analog",
+      "topics": [
+        "diode-circuits",
+        "amplifiers",
+        "operational-amplifiers",
+        "feedback",
+        "oscillators"
+      ]
+    },
+    {
+      "section": 5,
+      "subject": "digital",
+      "topics": [
+        "number-representations",
+        "boolean-algebra",
+        "logic-gates",
+        "karnaugh-maps",
+        "combinational-circuits",
+        "sequential-circuits",
+        "flip-flops",
+        "data-converters",
+        "semiconductor-memories",
+        "computer-organization"
+      ]
+    },
+    {
+      "section": 6,
+      "subject": "control",
+      "topics": [
+        "control-components",
+        "transfer-functions",
+        "time-response",
+        "stability",
+        "root-locus",
+        "frequency-response",
+        "compensators",
+        "state-space-analysis"
+      ]
+    },
+    {
+      "section": 7,
+      "subject": "communications",
+      "topics": [
+        "random-processes",
+        "analog-communication",
+        "digital-communication",
+        "modulation",
+        "information-theory",
+        "noise",
+        "probability-of-error",
+        "error-control-coding"
+      ]
+    },
+    {
+      "section": 8,
+      "subject": "electromagnetics",
+      "topics": [
+        "maxwell-equations",
+        "electromagnetic-waves",
+        "wave-propagation",
+        "transmission-lines",
+        "waveguides-fibers",
+        "antennas"
+      ]
+    }
+  ]
+}

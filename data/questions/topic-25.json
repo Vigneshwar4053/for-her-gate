@@ -1,0 +1,804 @@
+[
+  {
+    "id": "FH-TOPIC-25-01",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Which expression is equivalent to F=A+AB for every Boolean A,B?",
+    "options": [
+      {
+        "id": "A",
+        "text": "B"
+      },
+      {
+        "id": "B",
+        "text": "AB"
+      },
+      {
+        "id": "C",
+        "text": "A"
+      },
+      {
+        "id": "D",
+        "text": "A XOR B"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Boolean OR as +",
+        "AND as multiplication"
+      ],
+      "asked": "Simplify F.",
+      "concept": "Absorption law",
+      "formula": "A+AB=A(1+B)=A",
+      "steps": [
+        "Factor A using distributivity.",
+        "In Boolean algebra 1+B=1 for either value of B.",
+        "Thus F=A, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Thus F=A, option C.",
+      "commonMistakes": [
+        "Boolean identities use idempotent OR rather than arithmetic addition."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which absorption law applies.",
+      "Start from $ A+AB=A(1+B)=A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all four input pairs for original expression and every simplification option. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-25-02",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For F=A XOR B XOR C, how many of the eight three-bit input words produce F=1?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three-input odd-parity function"
+      ],
+      "asked": "Count its high truth-table rows.",
+      "concept": "Parity population",
+      "formula": "F=1\\iff A+B+C\\text{ is odd}",
+      "steps": [
+        "One-high words contribute C(3,1)=3 cases.",
+        "The all-high word contributes one more odd-count case.",
+        "Total high rows are 3+1=4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "Total high rows are 3+1=4.",
+      "commonMistakes": [
+        "Three-input XOR means odd parity, not exactly one input high."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which parity population applies.",
+      "Start from $ F=1\\iff A+B+C\\text{ is odd} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustive eight-row odd-parity truth table. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-25-03",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which expressions are identically equal to NOT(A OR B)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "(NOT A) AND (NOT B)"
+      },
+      {
+        "id": "B",
+        "text": "(NOT A) OR (NOT B)"
+      },
+      {
+        "id": "C",
+        "text": "A AND B"
+      },
+      {
+        "id": "D",
+        "text": "NOT A AND NOT B AND 1"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Two-input Boolean functions"
+      ],
+      "asked": "Select equivalent De Morgan forms.",
+      "concept": "Complement of a sum",
+      "formula": "\\overline{A+B}=\\bar A\\bar B",
+      "steps": [
+        "De Morgan’s law changes OR to AND and complements both inputs.",
+        "Multiplying the resulting expression by 1 does not change it.",
+        "Therefore A and D are equivalent, whereas B complements an AND instead and C uses uninverted inputs."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "Therefore A and D are equivalent, whereas B complements an AND instead and C uses uninverted inputs.",
+      "commonMistakes": [
+        "Complement both inputs and reverse the logical operator."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complement of a sum applies.",
+      "Start from $ \\overline{A+B}=\\bar A\\bar B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustive equivalence check for every proposed De Morgan expression. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-25-04",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For F(A,B,C)=AB+ĀC, find the number of input words on which the cofactor F|A=1 equals 1, counting only free inputs B,C.",
+    "options": [],
+    "solution": {
+      "given": [
+        "A fixed to 1",
+        "B,C remain Boolean"
+      ],
+      "asked": "Count high rows of the two-variable cofactor.",
+      "concept": "Shannon cofactor",
+      "formula": "F|_{A=1}=B",
+      "steps": [
+        "Setting A=1 eliminates ĀC and leaves B.",
+        "B is 1 for (B,C)=(1,0),(1,1).",
+        "There are 2 high rows over the four free-input combinations."
+      ],
+      "finalAnswer": "2",
+      "explanation": "There are 2 high rows over the four free-input combinations.",
+      "commonMistakes": [
+        "Once a variable is fixed, do not count both values of it."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which shannon cofactor applies.",
+      "Start from $ F|_{A=1}=B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate both free cofactor inputs with A fixed to 1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-25-05",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The dual of F=A+BC, formed by swapping AND and OR and interchanging constants 0 and 1, is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ā(B̄+C̄)"
+      },
+      {
+        "id": "B",
+        "text": "A(B+C)"
+      },
+      {
+        "id": "C",
+        "text": "A+ B+ C"
+      },
+      {
+        "id": "D",
+        "text": "AB+C"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Boolean algebraic duality",
+        "no constants present"
+      ],
+      "asked": "Find the dual without complementing variables.",
+      "concept": "Boolean duality",
+      "formula": "+\\ \\leftrightarrow\\ \\cdot",
+      "steps": [
+        "The outer OR becomes AND.",
+        "The inner product BC becomes the sum B+C.",
+        "The dual is A(B+C), option B. Duality does not complement the variables."
+      ],
+      "finalAnswer": "B",
+      "explanation": "The dual is A(B+C), option B. Duality does not complement the variables.",
+      "commonMistakes": [
+        "Dual and complement are different operations."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which boolean duality applies.",
+      "Start from $ +\\ \\leftrightarrow\\ \\cdot $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Structural AND/OR operator interchange, without applying variable complements. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-25-06",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which are true Boolean identities?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A XOR A = 0"
+      },
+      {
+        "id": "B",
+        "text": "A XOR 0 = 0"
+      },
+      {
+        "id": "C",
+        "text": "A XOR 1 = NOT A"
+      },
+      {
+        "id": "D",
+        "text": "A AND (B OR C) = (A AND B) OR (A AND C)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ordinary two-valued Boolean algebra"
+      ],
+      "asked": "Select all identities.",
+      "concept": "XOR and distributivity",
+      "formula": "A\\oplus A=0,\\quad A\\oplus1=\\bar A",
+      "steps": [
+        "Equal bits have zero XOR; XOR with zero preserves the input, so B is false.",
+        "XOR with one complements a bit.",
+        "AND distributes over OR. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "AND distributes over OR. Select A, C and D.",
+      "commonMistakes": [
+        "An XOR identity cannot be substituted for an AND or OR identity indiscriminately."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which xor and distributivity applies.",
+      "Start from $ A\\oplus A=0,\\quad A\\oplus1=\\bar A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustively test both values of A and all eight distributive combinations. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-25-07",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For F=(A+B)(A+B̄), how many input combinations of A,B produce F=1?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Product of two Boolean sums"
+      ],
+      "asked": "Simplify then count high rows.",
+      "concept": "Consensus-style product identity",
+      "formula": "(A+B)(A+\\bar B)=A+B\\bar B=A",
+      "steps": [
+        "Expand or apply (X+Y)(X+Z)=X+YZ.",
+        "Since BB̄=0, the function reduces to A.",
+        "A=1 permits either B value, giving 2 high rows."
+      ],
+      "finalAnswer": "2",
+      "explanation": "A=1 permits either B value, giving 2 high rows.",
+      "commonMistakes": [
+        "A product of sums is not evaluated by adding truth values as integers."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which consensus-style product identity applies.",
+      "Start from $ (A+B)(A+\\bar B)=A+B\\bar B=A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate high cases of the original product of sums. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-25-08",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Find the number of input words for which (A XOR B) AND C equals 1.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three Boolean inputs",
+        "odd parity of A,B gated by C"
+      ],
+      "asked": "Count satisfying assignments.",
+      "concept": "Constraint factorization",
+      "formula": "F=1\\iff A\\ne B\\text{ and }C=1",
+      "steps": [
+        "A,B must be (0,1) or (1,0).",
+        "C is then fixed to 1.",
+        "There are exactly 2 satisfying three-bit words."
+      ],
+      "finalAnswer": "2",
+      "explanation": "There are exactly 2 satisfying three-bit words.",
+      "commonMistakes": [
+        "The enable input C reduces the parity count by fixing one degree of freedom."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which constraint factorization applies.",
+      "Start from $ F=1\\iff A\\ne B\\text{ and }C=1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all three-input assignments and apply the gated-XOR function. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-25-09",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For F=AB+ĀC+BC, which term is redundant under the consensus theorem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "AB"
+      },
+      {
+        "id": "B",
+        "text": "ĀC"
+      },
+      {
+        "id": "C",
+        "text": "All three"
+      },
+      {
+        "id": "D",
+        "text": "BC"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Three-product SOP",
+        "usual complemented A term"
+      ],
+      "asked": "Identify the removable consensus term.",
+      "concept": "Consensus theorem",
+      "formula": "XY+\\bar XZ+YZ=XY+\\bar XZ",
+      "steps": [
+        "If B=C=1, then either A=1 makes AB=1 or A=0 makes ĀC=1.",
+        "Thus every high case covered by BC is already covered by another product.",
+        "Removing BC leaves the same truth table, so D is correct."
+      ],
+      "finalAnswer": "D",
+      "explanation": "Removing BC leaves the same truth table, so D is correct.",
+      "commonMistakes": [
+        "Logically redundant terms can still be useful for hazard suppression in a physical implementation."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which consensus theorem applies.",
+      "Start from $ XY+\\bar XZ+YZ=XY+\\bar XZ $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Remove each proposed product and compare all eight truth-table rows. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-25-10",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Given F(A,B)=ĀB+AB̄+AB, find the number of zero rows in its truth table.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three minterms cover all input words except one"
+      ],
+      "asked": "Count zeros after simplification.",
+      "concept": "Minterm coverage",
+      "formula": "F=A+B",
+      "steps": [
+        "The three products cover input pairs 01,10,11.",
+        "Only 00 makes all products zero.",
+        "The number of zero rows is 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The number of zero rows is 1.",
+      "commonMistakes": [
+        "An OR of minterms counts covered rows, not the number of product symbols."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which minterm coverage applies.",
+      "Start from $ F=A+B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate OFF rows after union of the specified minterms. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-25-11",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For any Boolean F with variable A, which Shannon-expansion statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "F=A F|A=1 + Ā F|A=0"
+      },
+      {
+        "id": "B",
+        "text": "The two cofactors can be implemented as mux data inputs selected by A"
+      },
+      {
+        "id": "C",
+        "text": "F must equal the XOR of its cofactors without any selection variable"
+      },
+      {
+        "id": "D",
+        "text": "If the two cofactors are identical, F is independent of A"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Arbitrary finite Boolean function"
+      ],
+      "asked": "Select correct cofactor consequences.",
+      "concept": "Shannon expansion",
+      "formula": "F=A F_1+\\bar A F_0",
+      "steps": [
+        "For A=1 only the F1 branch survives, and for A=0 only F0 survives.",
+        "This is the behavior of a 2:1 multiplexer.",
+        "Identical cofactors remove dependence on A; their unselected XOR is not generally F. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Identical cofactors remove dependence on A; their unselected XOR is not generally F. Select A, B and D.",
+      "commonMistakes": [
+        "Cofactors are functions of the remaining variables and must be selected appropriately."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which shannon expansion applies.",
+      "Start from $ F=A F_1+\\bar A F_0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Shannon identity verified for every possible two-cofactor output pair and both selector values. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-25-12",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For the two-bit Boolean function F=A OR B, find the Hamming distance between its truth-table output vector and that of G=A AND B, using input order 00,01,10,11.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Output vectors for OR and AND under common input ordering"
+      ],
+      "asked": "Count positions at which outputs differ.",
+      "concept": "Boolean truth-vector distance",
+      "formula": "d_H(F,G)=\\#\\{x:F(x)\\ne G(x)\\}",
+      "steps": [
+        "OR has vector (0,1,1,1), while AND has (0,0,0,1).",
+        "They differ on inputs 01 and 10 only.",
+        "Their truth-vector Hamming distance is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Their truth-vector Hamming distance is 2.",
+      "commonMistakes": [
+        "This distance compares function output vectors, not the input bit strings."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which boolean truth-vector distance applies.",
+      "Start from $ d_H(F,G)=\\#\\{x:F(x)\\ne G(x)\\} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compare OR and AND output bits in a common four-row ordering. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-25-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  }
+]

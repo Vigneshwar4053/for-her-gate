@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "topic-01",
+    "file": "data/questions/topic-01.json",
+    "title": "Linear Algebra \u00b7 Rank, Eigenstructure & Linear Systems",
+    "batch": "002"
+  },
+  {
+    "testId": "topic-02",
+    "file": "data/questions/topic-02.json",
+    "title": "Calculus \u00b7 Limits, Extrema & Integration",
+    "batch": "002"
+  },
+  {
+    "testId": "topic-03",
+    "file": "data/questions/topic-03.json",
+    "title": "Differential Equations \u00b7 Initial Values & Boundary Conditions",
+    "batch": "002"
+  },
+  {
+    "testId": "topic-04",
+    "file": "data/questions/topic-04.json",
+    "title": "Complex Analysis \u00b7 Analyticity, Contours & Series",
+    "batch": "002"
+  },
+  {
+    "testId": "topic-05",
+    "file": "data/questions/topic-05.json",
+    "title": "Probability \u00b7 Conditioning, Distributions & Moments",
+    "batch": "002"
+  }
+]

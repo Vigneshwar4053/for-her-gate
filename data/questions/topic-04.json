@@ -1,0 +1,827 @@
+[
+  {
+    "id": "FH-TOPIC-04-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For $f(z)=z^2$, find the real part of $f\\prime(1+j)$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Analytic polynomial z²",
+        "point 1+j"
+      ],
+      "asked": "Find Re f′(1+j).",
+      "concept": "Complex differentiation",
+      "formula": "f\\prime(z)=2z",
+      "steps": [
+        "The complex derivative of z² is 2z.",
+        "At z=1+j this equals 2+2j.",
+        "Its real part is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Its real part is 2.",
+      "commonMistakes": [
+        "The derivative is complex; select its real component only."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex differentiation applies.",
+      "Start from $ f\\prime(z)=2z $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Centered complex-polynomial real component derivative. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-04-02",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which function is analytic everywhere in the complex plane?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\overline z$"
+      },
+      {
+        "id": "B",
+        "text": "$z^3$"
+      },
+      {
+        "id": "C",
+        "text": "$|z|^2$"
+      },
+      {
+        "id": "D",
+        "text": "$\\operatorname{Re}z$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Four complex-valued functions"
+      ],
+      "asked": "Select the entire function.",
+      "concept": "Cauchy–Riemann conditions",
+      "formula": "u_x=v_y,\\quad u_y=-v_x",
+      "steps": [
+        "A polynomial in z is complex differentiable at every finite z, so z³ is entire.",
+        "Conjugation fails the Cauchy–Riemann equations, and Re z has incompatible derivatives.",
+        "|z|² satisfies them only at an isolated point, not on an open domain. Only B is analytic everywhere."
+      ],
+      "finalAnswer": "B",
+      "explanation": "|z|² satisfies them only at an isolated point, not on an open domain. Only B is analytic everywhere.",
+      "commonMistakes": [
+        "Complex differentiability at one point does not imply analyticity on a neighborhood."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cauchy–riemann conditions applies.",
+      "Start from $ u_x=v_y,\\quad u_y=-v_x $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Cauchy–Riemann partial-derivative identities for the polynomial; counterexamples for other functions. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-04-03",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a counterclockwise circle |z|=2, let $I=\\oint dz/(z-1)$. Enter the imaginary part of I.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Simple pole at 1 inside the radius-2 circle",
+        "counterclockwise orientation"
+      ],
+      "asked": "Find Im(I).",
+      "concept": "Cauchy integral formula",
+      "formula": "\\oint_C\\frac{dz}{z-a}=2\\pi j",
+      "steps": [
+        "The point z=1 lies strictly inside the contour.",
+        "The residue is 1; positive orientation gives I=2πj.",
+        "Its imaginary part is 2π ≈ 6.283185307."
+      ],
+      "finalAnswer": "6.283185307179586",
+      "explanation": "Its imaginary part is 2π ≈ 6.283185307.",
+      "commonMistakes": [
+        "A clockwise contour reverses the sign; the prompt specifies counterclockwise."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cauchy integral formula applies.",
+      "Start from $ \\oint_C\\frac{dz}{z-a}=2\\pi j $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct complex trapezoidal contour integration, 32768 samples. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      6.283184678861,
+      6.283185935498
+    ],
+    "numericalTolerance": 6.283185307179586e-7
+  },
+  {
+    "id": "FH-TOPIC-04-04",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Find the residue of $1/[(z-1)(z+2)]$ at z=1.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rational function",
+        "simple pole z=1"
+      ],
+      "asked": "Find the residue at 1.",
+      "concept": "Simple-pole residue",
+      "formula": "\\operatorname{Res}(f,a)=\\lim_{z\\to a}(z-a)f(z)",
+      "steps": [
+        "Cancel the pole factor z−1 after multiplying by it.",
+        "Evaluate the remaining factor 1/(z+2) at z=1.",
+        "The residue is 1/3."
+      ],
+      "finalAnswer": "0.3333333333333333",
+      "explanation": "The residue is 1/3.",
+      "commonMistakes": [
+        "Evaluate the remaining regular factor at the chosen pole, not at the other pole."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which simple-pole residue applies.",
+      "Start from $ \\operatorname{Res}(f,a)=\\lim_{z\\to a}(z-a)f(z) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Symmetric simple-pole limit from both real sides. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.333333233333,
+      0.333333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-04-05",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Find the radius of convergence about z=0 of $1/(3-z)$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Function 1/(3−z)",
+        "expansion center 0"
+      ],
+      "asked": "Find the Taylor radius.",
+      "concept": "Nearest singularity and geometric series",
+      "formula": "\\frac1{3-z}=\\frac13\\sum_{n=0}^{\\infty}(z/3)^n",
+      "steps": [
+        "Factor the denominator to express the function as (1/3)/(1−z/3).",
+        "The geometric series converges when |z/3|<1.",
+        "The radius is therefore 3, the distance to the only pole."
+      ],
+      "finalAnswer": "3",
+      "explanation": "The radius is therefore 3, the distance to the only pole.",
+      "commonMistakes": [
+        "The radius is not the constant term 1/3."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which nearest singularity and geometric series applies.",
+      "Start from $ \\frac1{3-z}=\\frac13\\sum_{n=0}^{\\infty}(z/3)^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Geometric-series ratio condition and singularity location. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-04-06",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which singularity classifications are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$(\\sin z)/z$ has a removable singularity at 0"
+      },
+      {
+        "id": "B",
+        "text": "$e^{1/z}$ has a simple pole at 0"
+      },
+      {
+        "id": "C",
+        "text": "$1/z^3$ has a pole of order 3 at 0"
+      },
+      {
+        "id": "D",
+        "text": "$e^{1/z}$ has an essential singularity at 0"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Three functions near z=0"
+      ],
+      "asked": "Select valid isolated-singularity classifications.",
+      "concept": "Laurent principal part",
+      "formula": "f(z)=\\sum_{n=-\\infty}^{\\infty}a_nz^n",
+      "steps": [
+        "sin(z)/z tends to 1 and its series contains no negative powers after cancellation, so the point is removable.",
+        "z⁻³ has a finite principal part ending at power −3, a third-order pole.",
+        "exp(1/z) has infinitely many negative-power terms, so its singularity is essential. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "exp(1/z) has infinitely many negative-power terms, so its singularity is essential. Select A, C and D.",
+      "commonMistakes": [
+        "An exponential of a reciprocal is not a finite-order pole."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which laurent principal part applies.",
+      "Start from $ f(z)=\\sum_{n=-\\infty}^{\\infty}a_nz^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Taylor/Laurent classification: finite limit; finite principal part; infinite principal part. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-04-07",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For counterclockwise |z|=3, compute $J=(1/(2\\pi j))\\oint z^2/[(z-1)(z-2)]\\,dz$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two simple poles inside |z|=3"
+      ],
+      "asked": "Find the normalized contour integral.",
+      "concept": "Residue theorem",
+      "formula": "\\frac1{2\\pi j}\\oint f(z)dz=\\sum\\operatorname{Res}f",
+      "steps": [
+        "At z=1 the residue is 1²/(1−2)=−1.",
+        "At z=2 the residue is 2²/(2−1)=4.",
+        "Both poles are enclosed, so the normalized integral is −1+4=3."
+      ],
+      "finalAnswer": "3",
+      "explanation": "Both poles are enclosed, so the normalized integral is −1+4=3.",
+      "commonMistakes": [
+        "Both enclosed poles contribute; enclosing a pole does not mean its residue is positive."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which residue theorem applies.",
+      "Start from $ \\frac1{2\\pi j}\\oint f(z)dz=\\sum\\operatorname{Res}f $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct contour integration around both poles. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-04-08",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $f(z)=e^z/z^2$, enter the residue at z=0.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Second-order denominator",
+        "numerator analytic at 0"
+      ],
+      "asked": "Find residue at 0.",
+      "concept": "Laurent coefficient extraction",
+      "formula": "e^z=1+z+z^2/2+\\cdots",
+      "steps": [
+        "Divide the exponential series by z².",
+        "The leading terms are z⁻²+z⁻¹+1/2+⋯.",
+        "The residue is the coefficient of z⁻¹, which is 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The residue is the coefficient of z⁻¹, which is 1.",
+      "commonMistakes": [
+        "A second-order pole does not make the residue equal to the z⁻² coefficient."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which laurent coefficient extraction applies.",
+      "Start from $ e^z=1+z+z^2/2+\\cdots $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct contour integration isolates the Laurent coefficient. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-04-09",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Let $f(z)=u+jv$ be analytic with $u(x,y)=x^2-y^2$ and $v(0,0)=0$. Find v(1,2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "u=x²−y²",
+        "analytic f",
+        "v(0,0)=0"
+      ],
+      "asked": "Find the harmonic conjugate value.",
+      "concept": "Cauchy–Riemann reconstruction",
+      "formula": "v_y=u_x=2x,\\quad v_x=-u_y=2y",
+      "steps": [
+        "Integrating vᵧ=2x in y gives v=2xy+g(x).",
+        "Enforcing vₓ=2y implies g′=0, so g is constant.",
+        "The origin condition makes it zero. Thus v(1,2)=4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "The origin condition makes it zero. Thus v(1,2)=4.",
+      "commonMistakes": [
+        "A function of x can appear during the first integration and must be checked."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cauchy–riemann reconstruction applies.",
+      "Start from $ v_y=u_x=2x,\\quad v_x=-u_y=2y $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate Cauchy–Riemann v_y at x=1 and apply zero constant. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-04-10",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The principal argument of $-1+j$ in radians is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\pi/4$"
+      },
+      {
+        "id": "B",
+        "text": "$-\\pi/4$"
+      },
+      {
+        "id": "C",
+        "text": "$3\\pi/4$"
+      },
+      {
+        "id": "D",
+        "text": "$-3\\pi/4$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Complex point in quadrant II",
+        "principal argument in (−π,π]"
+      ],
+      "asked": "Find the principal argument.",
+      "concept": "Complex polar angle",
+      "formula": "\\arg z=\\operatorname{atan2}(\\operatorname{Im}z,\\operatorname{Re}z)",
+      "steps": [
+        "The real part is negative and imaginary part positive, placing the point in quadrant II.",
+        "Equal magnitudes give a reference angle π/4.",
+        "The principal angle is π−π/4=3π/4, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "The principal angle is π−π/4=3π/4, option C.",
+      "commonMistakes": [
+        "atan(y/x) alone loses the quadrant information."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex polar angle applies.",
+      "Start from $ \\arg z=\\operatorname{atan2}(\\operatorname{Im}z,\\operatorname{Re}z) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "atan2 quadrant-aware angle evaluation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-04-11",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For counterclockwise |z|=1, which integrals are zero?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\oint z^2dz$"
+      },
+      {
+        "id": "B",
+        "text": "$\\oint dz/z$"
+      },
+      {
+        "id": "C",
+        "text": "$\\oint e^z dz/z$"
+      },
+      {
+        "id": "D",
+        "text": "$\\oint dz/(z-2)$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Unit-circle contour",
+        "no pole on the contour"
+      ],
+      "asked": "Select all vanishing integrals.",
+      "concept": "Cauchy theorem and residues",
+      "formula": "\\oint_C f(z)dz=0\\quad\\text{if }f\\text{ is analytic inside and on }C",
+      "steps": [
+        "z² is entire and 1/(z−2) has its only pole outside the unit circle, so A and D vanish.",
+        "1/z has residue 1 inside, giving 2πj.",
+        "eᶻ/z also has residue e⁰=1, so C does not vanish. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "eᶻ/z also has residue e⁰=1, so C does not vanish. Select A and D.",
+      "commonMistakes": [
+        "A closed contour integral is zero only under the required analyticity conditions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cauchy theorem and residues applies.",
+      "Start from $ \\oint_C f(z)dz=0\\quad\\text{if }f\\text{ is analytic inside and on }C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct contour integration of all four options. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-04-12",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For counterclockwise |z|=1, find the real value of $K=(1/(2\\pi j))\\oint e^{2z}/z^3\\,dz$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Third-order denominator at 0",
+        "analytic numerator e²ᶻ"
+      ],
+      "asked": "Find the normalized integral.",
+      "concept": "Higher-order Cauchy formula",
+      "formula": "\\frac1{2\\pi j}\\oint\\frac{f(z)}{z^{n+1}}dz=\\frac{f^{(n)}(0)}{n!}",
+      "steps": [
+        "Here n=2 and f(z)=e²ᶻ.",
+        "The second derivative at zero is 4.",
+        "Divide by 2! to get K=4/2=2; equivalently this is the z² coefficient of e²ᶻ."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Divide by 2! to get K=4/2=2; equivalently this is the z² coefficient of e²ᶻ.",
+      "commonMistakes": [
+        "The factorial in the Cauchy derivative formula is essential."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which higher-order cauchy formula applies.",
+      "Start from $ \\frac1{2\\pi j}\\oint\\frac{f(z)}{z^{n+1}}dz=\\frac{f^{(n)}(0)}{n!} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct contour quadrature independent of Cauchy derivative formula. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-04-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  }
+]

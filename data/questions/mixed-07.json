@@ -1,0 +1,781 @@
+[
+  {
+    "id": "FH-MIXED-07-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Find the real part of (2+j)(1−2j).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two complex factors",
+        "j²=−1"
+      ],
+      "asked": "Find the real component of the product.",
+      "concept": "Complex multiplication",
+      "formula": "(a+jb)(c+jd)=(ac-bd)+j(ad+bc)",
+      "steps": [
+        "Expanding gives 2−4j+j−2j².",
+        "Since j²=−1, the last term is +2.",
+        "The product is 4−3j, whose real part is 4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "The product is 4−3j, whose real part is 4.",
+      "commonMistakes": [
+        "The sign from j² changes the real cross term."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex multiplication applies.",
+      "Start from $ (a+jb)(c+jd)=(ac-bd)+j(ad+bc) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct complex arithmetic with j²=−1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-MIXED-07-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A causal sequence h[n]=δ[n]+δ[n−2] is driven by x[n]=n u[n]. Find y[3].",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two impulse taps at delays 0,2",
+        "causal ramp input"
+      ],
+      "asked": "Find the output sample.",
+      "concept": "Discrete-time convolution with delays",
+      "formula": "y[n]=x[n]+x[n-2]",
+      "steps": [
+        "At n=3 the taps select x[3] and x[1].",
+        "The ramp values are 3 and 1.",
+        "Their sum is 4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "Their sum is 4.",
+      "commonMistakes": [
+        "The delayed impulse selects an earlier input sample."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which discrete-time convolution with delays applies.",
+      "Start from $ y[n]=x[n]+x[n-2] $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Discrete two-tap convolution sum on the ramp sequence. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-MIXED-07-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "An 8-to-1 multiplexer has input D5=1 and all other inputs zero. Select code S2S1S0=101₂ is applied. Find the output bit.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Conventional binary input indexing 0–7",
+        "D5=1"
+      ],
+      "asked": "Decode the selected input.",
+      "concept": "Multiplexer addressing",
+      "formula": "index=4S_2+2S_1+S_0",
+      "steps": [
+        "The select code 101 represents 4+0+1=5.",
+        "The multiplexer routes input D5.",
+        "Since D5=1, the output is 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "Since D5=1, the output is 1.",
+      "commonMistakes": [
+        "Use the explicitly stated conventional input index mapping."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which multiplexer addressing applies.",
+      "Start from $ index=4S_2+2S_1+S_0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Decode selector and read the one nonzero input line. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-07-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "bjt",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A diode-connected ideal BJT carries 2 mA at VT=25 mV. Ignore base current and series resistance. Find its incremental resistance in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Exponential BJT current",
+        "IC=2 mA",
+        "VT=25 mV"
+      ],
+      "asked": "Find reciprocal small-signal conductance.",
+      "concept": "Diode-connected exponential slope",
+      "formula": "r_d=1/g_m=V_T/I_C",
+      "steps": [
+        "The small-signal current derivative is gm=IC/VT.",
+        "Its reciprocal is 0.025/0.002.",
+        "The incremental resistance is 12.5 Ω, unrelated to the DC V/I ratio unless further voltage data are given."
+      ],
+      "finalAnswer": "12.5 Ω",
+      "explanation": "The incremental resistance is 12.5 Ω, unrelated to the DC V/I ratio unless further voltage data are given.",
+      "commonMistakes": [
+        "Incremental resistance is a slope, not generally the large-signal resistance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which diode-connected exponential slope applies.",
+      "Start from $ r_d=1/g_m=V_T/I_C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Reciprocal finite-difference exponential I–V slope. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      12.49999875,
+      12.50000125
+    ],
+    "numericalTolerance": 0.0000012499999999999999
+  },
+  {
+    "id": "FH-MIXED-07-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a BJT common-emitter stage with an unbypassed positive emitter resistor, increasing that resistor generally produces which small-signal effect, all other bias/model parameters held fixed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Higher gain magnitude without feedback"
+      },
+      {
+        "id": "B",
+        "text": "Lower gain magnitude with emitter degeneration"
+      },
+      {
+        "id": "C",
+        "text": "Zero input resistance"
+      },
+      {
+        "id": "D",
+        "text": "Positive voltage feedback at the emitter"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Midband small-signal model",
+        "fixed gm, collector load and bias assumptions"
+      ],
+      "asked": "Identify the local-feedback effect.",
+      "concept": "Emitter degeneration",
+      "formula": "A_v\\simeq-\\frac{g_mR_C}{1+g_mR_E}",
+      "steps": [
+        "The emitter voltage rises when current increases, reducing the base-emitter drive.",
+        "The denominator 1+gmRE grows with positive RE while the numerator stays fixed.",
+        "Gain magnitude decreases through local negative feedback, option B."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Gain magnitude decreases through local negative feedback, option B.",
+      "commonMistakes": [
+        "The question holds the bias parameters fixed to isolate the small-signal feedback effect."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which emitter degeneration applies.",
+      "Start from $ A_v\\simeq-\\frac{g_mR_C}{1+g_mR_E} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Differentiate gain magnitude gmRC/(1+gmRE) with respect to positive RE. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-MIXED-07-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "transfer-functions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A unity negative-feedback loop has G(s)=K/(s+1) with K=4. Find its closed-loop DC gain.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Forward K=4",
+        "stable first-order plant",
+        "unity negative feedback"
+      ],
+      "asked": "Find T(0).",
+      "concept": "Closed-loop finite static gain",
+      "formula": "T(0)=\\frac{G(0)}{1+G(0)}",
+      "steps": [
+        "The forward DC gain is 4.",
+        "Negative feedback divides it by 1+4.",
+        "Closed-loop DC gain is 4/5=0.8."
+      ],
+      "finalAnswer": "0.8",
+      "explanation": "Closed-loop DC gain is 4/5=0.8.",
+      "commonMistakes": [
+        "Unity feedback does not imply unity closed-loop gain at finite loop gain."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which closed-loop finite static gain applies.",
+      "Start from $ T(0)=\\frac{G(0)}{1+G(0)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Feedback algebra as a scalar linear system. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.7999999,
+      0.8000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-07-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "probability-of-error",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A coherent antipodal binary detector has decision means ±2 and Gaussian decision-noise standard deviation 1. Express its BER as Q(a), and enter a.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Symmetric means ±2",
+        "threshold 0",
+        "noise σ=1",
+        "equal priors"
+      ],
+      "asked": "Find the normalized threshold distance.",
+      "concept": "Gaussian-tail detection",
+      "formula": "P_e=Q(d/\\sigma)",
+      "steps": [
+        "Either symbol mean is distance 2 from the zero threshold.",
+        "Normalize that distance by noise standard deviation 1.",
+        "The BER is Q(2), so a=2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "The BER is Q(2), so a=2.",
+      "commonMistakes": [
+        "Normalize by standard deviation rather than variance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which gaussian-tail detection applies.",
+      "Start from $ P_e=Q(d/\\sigma) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Gaussian decision threshold distance normalized by σ. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-07-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "electromagnetic-waves",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A plane wave in a lossless medium has Epeak=6 V/m and Hpeak=0.02 A/m, in phase. Find the ratio Epeak/Hpeak in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "In-phase peak wave fields",
+        "stated numeric field ratio"
+      ],
+      "asked": "Find the measured field-wave impedance.",
+      "concept": "Field impedance ratio",
+      "formula": "\\eta=E/H",
+      "steps": [
+        "The field impedance is defined as the electric amplitude divided by the magnetic amplitude.",
+        "Compute 6/0.02.",
+        "The ratio is 300 Ω. This is the intrinsic impedance of the stated medium; it need not equal the free-space impedance."
+      ],
+      "finalAnswer": "300",
+      "explanation": "The ratio is 300 Ω. This is the intrinsic impedance of the stated medium; it need not equal the free-space impedance.",
+      "commonMistakes": [
+        "The field ratio is set by the propagation medium, so do not assume the free-space value."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which field impedance ratio applies.",
+      "Start from $ \\eta=E/H $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct E/H amplitude ratio in the unspecified lossless medium. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      299.99997,
+      300.00003
+    ],
+    "numericalTolerance": 0.000029999999999999997
+  },
+  {
+    "id": "FH-MIXED-07-09",
+    "type": "MSQ",
+    "subject": "communications",
+    "topic": "error-control-coding",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which statements about binary CRC polynomial checking are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Polynomial division uses XOR rather than ordinary carry-based subtraction"
+      },
+      {
+        "id": "B",
+        "text": "A zero remainder guarantees no possible error occurred"
+      },
+      {
+        "id": "C",
+        "text": "A nonzero remainder proves the received word is not divisible by the chosen generator"
+      },
+      {
+        "id": "D",
+        "text": "A generator polynomial must be ignored during checking"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Binary polynomial arithmetic",
+        "fixed nonzero generator"
+      ],
+      "asked": "Select CRC mechanism facts.",
+      "concept": "GF(2) polynomial divisibility",
+      "formula": "r(x)=v(x)\\bmod g(x)",
+      "steps": [
+        "GF(2) addition and subtraction are both bitwise XOR.",
+        "A nonzero remainder violates the transmitted-codeword divisibility condition.",
+        "A zero remainder can also arise from an undetected error divisible by the generator, so it is not an absolute no-error guarantee. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "A zero remainder can also arise from an undetected error divisible by the generator, so it is not an absolute no-error guarantee. Select A and C.",
+      "commonMistakes": [
+        "Error detection has undetectable patterns; a zero syndrome is not proof of perfect transmission."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which gf(2) polynomial divisibility applies.",
+      "Start from $ r(x)=v(x)\\bmod g(x) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Binary polynomial arithmetic over GF(2); nonzero remainder divisibility condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-MIXED-07-10",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "signals-and-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a pure complex exponential x(t)=eʲ³ᵗ, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its magnitude is 1"
+      },
+      {
+        "id": "B",
+        "text": "Its period is 2π/3"
+      },
+      {
+        "id": "C",
+        "text": "Its phase is constant for all t"
+      },
+      {
+        "id": "D",
+        "text": "Its real part is cos(3t)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Continuous-time complex sinusoid"
+      ],
+      "asked": "Identify amplitude, phase and repetition properties.",
+      "concept": "Euler representation",
+      "formula": "e^{j\\theta}=\\cos\\theta+j\\sin\\theta",
+      "steps": [
+        "cos²(3t)+sin²(3t)=1 makes the magnitude unity.",
+        "A 2π phase increase requires time 2π/3.",
+        "Its real part is cos(3t) and its unwrapped phase grows as 3t, so select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Its real part is cos(3t) and its unwrapped phase grows as 3t, so select A, B and D.",
+      "commonMistakes": [
+        "A constant magnitude does not imply constant phase."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which euler representation applies.",
+      "Start from $ e^{j\\theta}=\\cos\\theta+j\\sin\\theta $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Euler identity, unit-circle norm and exact phase-repeat condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-07-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A rectangle has perimeter 20 m and width 3 m. Find its area in m².",
+    "options": [],
+    "solution": {
+      "given": [
+        "Perimeter 20 m",
+        "width 3 m"
+      ],
+      "asked": "Find the other side then area.",
+      "concept": "Geometry constraints",
+      "formula": "2(l+w)=P,\\quad A=lw",
+      "steps": [
+        "Half the perimeter is l+w=10 m.",
+        "Therefore l=10−3=7 m.",
+        "Area is 7×3=21 m²."
+      ],
+      "finalAnswer": "21 m²",
+      "explanation": "Area is 7×3=21 m².",
+      "commonMistakes": [
+        "Perimeter constrains a sum of lengths, whereas area is their product."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which geometry constraints applies.",
+      "Start from $ 2(l+w)=P,\\quad A=lw $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve perimeter constraint for the length, then compute area. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      20.9999979,
+      21.0000021
+    ],
+    "numericalTolerance": 0.0000021
+  },
+  {
+    "id": "FH-MIXED-07-12",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For y″+ω0²y=0 with y(0)=1,y′(0)=0 and ω0=3 rad/s, find the first positive zero crossing time in seconds.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Undamped oscillator",
+        "initial displacement 1 and zero velocity"
+      ],
+      "asked": "Find earliest positive zero of its response.",
+      "concept": "Initial-condition sinusoid phase",
+      "formula": "y(t)=\\cos(3t)",
+      "steps": [
+        "The initial conditions select cosine with amplitude 1.",
+        "The earliest positive cosine zero occurs at phase π/2.",
+        "Thus 3t=π/2 and t=π/6≈0.523598776 s."
+      ],
+      "finalAnswer": "0.5235987755982988 s",
+      "explanation": "Thus 3t=π/2 and t=π/6≈0.523598776 s.",
+      "commonMistakes": [
+        "The first zero crossing occurs after a quarter period, not a half period."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which initial-condition sinusoid phase applies.",
+      "Start from $ y(t)=\\cos(3t) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "RK4 solution and bisection of the original undamped oscillator IVP. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-07-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.523598675598,
+      0.523598875598
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

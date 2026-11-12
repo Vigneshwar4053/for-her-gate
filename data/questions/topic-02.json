@@ -1,0 +1,809 @@
+[
+  {
+    "id": "FH-TOPIC-02-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Evaluate $\\lim_{x\\to0}(e^{2x}-1)/x$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "x tends to 0"
+      ],
+      "asked": "Find the stated limit.",
+      "concept": "Taylor expansion",
+      "formula": "e^{u}=1+u+O(u^2)",
+      "steps": [
+        "Substitute u = 2x into the local exponential series.",
+        "The numerator becomes 2x + O(x²).",
+        "Division by x gives 2 + O(x), whose limit is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Division by x gives 2 + O(x), whose limit is 2.",
+      "commonMistakes": [
+        "Using e⁰−1 = 0 does not justify dividing by zero."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which taylor expansion applies.",
+      "Start from $ e^{u}=1+u+O(u^2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Centered finite-difference limit, independent from the Taylor derivation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-02-02",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Find $\\partial f/\\partial x$ at (1,2) for $f(x,y)=x^2y+\\sin y$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "f(x,y) = x²y + sin(y)",
+        "point (1,2)"
+      ],
+      "asked": "Find the partial derivative with respect to x.",
+      "concept": "Partial differentiation",
+      "formula": "\\frac{\\partial}{\\partial x}(x^2y+\\sin y)=2xy",
+      "steps": [
+        "Hold y constant while differentiating with respect to x.",
+        "The sin(y) term has derivative zero; the other term gives 2xy.",
+        "At (1,2), the value is 2×1×2 = 4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "At (1,2), the value is 2×1×2 = 4.",
+      "commonMistakes": [
+        "Do not differentiate sin(y) with respect to y in an x-partial."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which partial differentiation applies.",
+      "Start from $ \\frac{\\partial}{\\partial x}(x^2y+\\sin y)=2xy $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Centered finite difference of partial-x function. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-02-03",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Find the maximum value of $f(x)=x(4-x)$ on $0\\le x\\le4$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Closed interval [0,4]",
+        "f(x) = 4x − x²"
+      ],
+      "asked": "Find the global maximum value.",
+      "concept": "Stationary points and endpoints",
+      "formula": "f\\prime(x)=0,\\quad f\\prime\\prime(x)<0",
+      "steps": [
+        "The derivative is 4−2x, zero at x = 2.",
+        "The second derivative is −2, so this is a local maximum; endpoint values are both 0.",
+        "f(2) = 2×2 = 4 is therefore the interval maximum."
+      ],
+      "finalAnswer": "4",
+      "explanation": "f(2) = 2×2 = 4 is therefore the interval maximum.",
+      "commonMistakes": [
+        "The maximizing x and the maximum function value are different outputs."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which stationary points and endpoints applies.",
+      "Start from $ f\\prime(x)=0,\\quad f\\prime\\prime(x)<0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Dense bounded search including endpoints and stationary point. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-02-04",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Evaluate $\\int_0^1 x e^{x^2}\\,dx$. Give a decimal answer.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Integral from 0 to 1 of x exp(x²)"
+      ],
+      "asked": "Evaluate the integral.",
+      "concept": "Substitution in integration",
+      "formula": "u=x^2,\\quad du=2x\\,dx",
+      "steps": [
+        "The substitution u = x² changes limits 0,1 to 0,1.",
+        "The integral becomes ½∫₀¹eᵘdu = (e−1)/2.",
+        "Using e ≈ 2.718281828 gives 0.8591409142."
+      ],
+      "finalAnswer": "0.8591409142295225",
+      "explanation": "Using e ≈ 2.718281828 gives 0.8591409142.",
+      "commonMistakes": [
+        "Remember the factor 1/2 from du = 2x dx."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which substitution in integration applies.",
+      "Start from $ u=x^2,\\quad du=2x\\,dx $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Composite Simpson integration of original integrand. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.85914081423,
+      0.85914101423
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-02-05",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Evaluate $\\int_0^1\\int_0^x (x+y)\\,dy\\,dx$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Triangular region 0 ≤ y ≤ x ≤ 1"
+      ],
+      "asked": "Evaluate the double integral.",
+      "concept": "Iterated integration",
+      "formula": "\\int_0^x(x+y)\\,dy=\\frac32x^2",
+      "steps": [
+        "Integrate with respect to y while treating x as constant: xy+y²/2.",
+        "Evaluate y = 0 to x to obtain x²+x²/2 = 3x²/2.",
+        "The outer integral is (3/2)(1/3) = 1/2."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "The outer integral is (3/2)(1/3) = 1/2.",
+      "commonMistakes": [
+        "Do not replace the triangular region by a unit square."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which iterated integration applies.",
+      "Start from $ \\int_0^x(x+y)\\,dy=\\frac32x^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Nested Simpson integration on the stated triangular bounds. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-02-06",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $f(x)=x^2$ on [1,3], what value of c satisfies the Lagrange mean value theorem?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "2"
+      },
+      {
+        "id": "C",
+        "text": "3"
+      },
+      {
+        "id": "D",
+        "text": "4"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Continuous and differentiable f(x) = x²",
+        "interval [1,3]"
+      ],
+      "asked": "Find c in (1,3).",
+      "concept": "Mean value theorem",
+      "formula": "f\\prime(c)=\\frac{f(b)-f(a)}{b-a}",
+      "steps": [
+        "The secant slope is (9−1)/(3−1) = 4.",
+        "f′(c) = 2c must equal 4.",
+        "Hence c = 2, which lies inside the interval."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Hence c = 2, which lies inside the interval.",
+      "commonMistakes": [
+        "The theorem locates a derivative value at an interior point."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mean value theorem applies.",
+      "Start from $ f\\prime(c)=\\frac{f(b)-f(a)}{b-a} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve derivative(c)=secant slope numerically. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-02-07",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which improper integrals converge?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\int_1^\\infty x^{-2}dx$"
+      },
+      {
+        "id": "B",
+        "text": "$\\int_1^\\infty x^{-1}dx$"
+      },
+      {
+        "id": "C",
+        "text": "$\\int_0^1 x^{-1/2}dx$"
+      },
+      {
+        "id": "D",
+        "text": "$\\int_0^1 x^{-2}dx$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Four power-law improper integrals"
+      ],
+      "asked": "Select all convergent integrals.",
+      "concept": "Power-integral convergence",
+      "formula": "\\int_1^\\infty x^{-p}dx<\\infty\\iff p>1",
+      "steps": [
+        "At infinity, x⁻ᵖ is integrable exactly when p > 1, so A converges and B diverges.",
+        "Near zero, x⁻ᵖ is integrable exactly when p < 1, so C converges and D diverges.",
+        "Select A and C; the endpoint being improper changes the criterion."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Select A and C; the endpoint being improper changes the criterion.",
+      "commonMistakes": [
+        "Do not use the infinity criterion at the zero endpoint."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which power-integral convergence applies.",
+      "Start from $ \\int_1^\\infty x^{-p}dx<\\infty\\iff p>1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Power antiderivative endpoint limits: finite values 1 and 2; logarithmic and reciprocal divergences. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-02-08",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Find the coefficient of $x^3$ in the Taylor series of $\\ln(1+x)$ about x = 0.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Expansion about 0",
+        "|x| < 1"
+      ],
+      "asked": "Find the cubic coefficient.",
+      "concept": "Taylor series coefficients",
+      "formula": "\\ln(1+x)=\\sum_{n=1}^{\\infty}\\frac{(-1)^{n+1}}n x^n",
+      "steps": [
+        "The first terms are x − x²/2 + x³/3.",
+        "The coefficient multiplies x³; it is not the third derivative itself.",
+        "Therefore the required coefficient is 1/3 ≈ 0.3333333333."
+      ],
+      "finalAnswer": "0.3333333333333333",
+      "explanation": "Therefore the required coefficient is 1/3 ≈ 0.3333333333.",
+      "commonMistakes": [
+        "Taylor coefficients divide the nth derivative by n!."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which taylor series coefficients applies.",
+      "Start from $ \\ln(1+x)=\\sum_{n=1}^{\\infty}\\frac{(-1)^{n+1}}n x^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Coefficient recurrence from the differential identity (1+x)f′=1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.333333233333,
+      0.333333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-02-09",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For $f(x,y)=x^2+2y^2$ constrained by $x+y=3$, find the minimum value.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Quadratic f",
+        "linear equality x+y = 3"
+      ],
+      "asked": "Find the constrained minimum value.",
+      "concept": "Constrained quadratic minimization",
+      "formula": "f(x,3-x)=3x^2-12x+18",
+      "steps": [
+        "Eliminate y using y = 3−x and expand to 3x²−12x+18.",
+        "Differentiating gives 6x−12 = 0, so x = 2 and y = 1.",
+        "The second derivative is 6 > 0. The minimum value is 4+2 = 6."
+      ],
+      "finalAnswer": "6",
+      "explanation": "The second derivative is 6 > 0. The minimum value is 4+2 = 6.",
+      "commonMistakes": [
+        "The unconstrained origin is infeasible because x+y must equal 3."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which constrained quadratic minimization applies.",
+      "Start from $ f(x,3-x)=3x^2-12x+18 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve Lagrange multiplier linear system and check positive quadratic Hessian. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      5.9999994,
+      6.0000006
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-TOPIC-02-10",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Evaluate $\\int_0^{\\infty}e^{-3x}\\,dx$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Positive decay coefficient 3"
+      ],
+      "asked": "Evaluate the improper integral.",
+      "concept": "Exponential tail integration",
+      "formula": "\\int_0^R e^{-ax}dx=\\frac{1-e^{-aR}}a",
+      "steps": [
+        "Integrate on the finite interval [0,R] to obtain (1−e⁻³ᴿ)/3.",
+        "As R tends to infinity, the exponential term tends to zero.",
+        "The integral is 1/3."
+      ],
+      "finalAnswer": "0.3333333333333333",
+      "explanation": "The integral is 1/3.",
+      "commonMistakes": [
+        "Exponential decay, rather than growth, is needed at the infinite endpoint."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which exponential tail integration applies.",
+      "Start from $ \\int_0^R e^{-ax}dx=\\frac{1-e^{-aR}}a $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct improper-integral truncation; omitted tail below 3e−27. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.333333233333,
+      0.333333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-02-11",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $f(x,y)=x^2+y^2-2x-4y$, which statements are true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The only stationary point is (1,2)"
+      },
+      {
+        "id": "B",
+        "text": "The Hessian has determinant −4"
+      },
+      {
+        "id": "C",
+        "text": "The stationary point is a strict minimum"
+      },
+      {
+        "id": "D",
+        "text": "The minimum value is −5"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Real quadratic in x,y"
+      ],
+      "asked": "Classify the stationary point.",
+      "concept": "Hessian test",
+      "formula": "\\nabla f=0,\\quad H=\\begin{pmatrix}2&0\\\\0&2\\end{pmatrix}",
+      "steps": [
+        "The gradient equations 2x−2 = 0 and 2y−4 = 0 give (1,2).",
+        "The Hessian has positive eigenvalues 2 and 2 and determinant 4; the point is a strict minimum.",
+        "Completing squares gives f = (x−1)²+(y−2)²−5, so its minimum is −5. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Completing squares gives f = (x−1)²+(y−2)²−5, so its minimum is −5. Select A, C and D.",
+      "commonMistakes": [
+        "A positive Hessian determinant alone does not establish a minimum without a positive leading minor."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which hessian test applies.",
+      "Start from $ \\nabla f=0,\\quad H=\\begin{pmatrix}2&0\\\\0&2\\end{pmatrix} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve gradient system and directly evaluate f and Hessian principal minors. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-02-12",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Let $F(a)=\\int_0^a x^2 dx$. Find $F\\prime(2)$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "F is an integral with variable upper limit"
+      ],
+      "asked": "Find derivative of F at 2.",
+      "concept": "Fundamental theorem of calculus",
+      "formula": "\\frac{d}{da}\\int_0^a f(x)dx=f(a)",
+      "steps": [
+        "The integrand x² is continuous.",
+        "By the fundamental theorem, F′(a) = a².",
+        "At a = 2, the derivative is 4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "At a = 2, the derivative is 4.",
+      "commonMistakes": [
+        "Do not evaluate the integral at 2 when asked for its derivative."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fundamental theorem of calculus applies.",
+      "Start from $ \\frac{d}{da}\\int_0^a f(x)dx=f(a) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Differentiate numerical integral with a moving upper bound. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-02-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  }
+]

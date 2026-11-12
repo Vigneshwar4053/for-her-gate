@@ -1,0 +1,795 @@
+[
+  {
+    "id": "FH-TOPIC-13-01",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A real baseband signal has spectral support |f|≤3 kHz. Find its Nyquist rate in samples/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Highest spectral frequency 3000 Hz"
+      ],
+      "asked": "Find twice the highest frequency.",
+      "concept": "Nyquist rate",
+      "formula": "f_N=2f_{max}",
+      "steps": [
+        "The Nyquist rate is twice the upper baseband frequency.",
+        "3 kHz is 3000 Hz.",
+        "The rate is 2×3000=6000 samples/s; practical ideal-reconstruction sampling is taken strictly above it to avoid endpoint ambiguity."
+      ],
+      "finalAnswer": "6000 samples/s",
+      "explanation": "The rate is 2×3000=6000 samples/s; practical ideal-reconstruction sampling is taken strictly above it to avoid endpoint ambiguity.",
+      "commonMistakes": [
+        "A Nyquist rate is a boundary; sampling exactly there can lose a component with an unfortunate phase."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which nyquist rate applies.",
+      "Start from $ f_N=2f_{max} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Nyquist spectral-replica spacing condition with Hz conversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      5999.9994,
+      6000.0006
+    ],
+    "numericalTolerance": 0.0006
+  },
+  {
+    "id": "FH-TOPIC-13-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 900 Hz cosine is sampled at fs=1000 samples/s. Find its aliased frequency in [0,fs/2], in hertz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Input cosine 900 Hz",
+        "sample rate 1000 Hz"
+      ],
+      "asked": "Find the baseband alias.",
+      "concept": "Spectral folding",
+      "formula": "f_a=|f-kf_s|\\quad\\text{folded into }[0,f_s/2]",
+      "steps": [
+        "Subtract one sampling frequency: 900−1000=−100 Hz.",
+        "For a real cosine, negative and positive frequencies represent the same cosine samples.",
+        "The baseband alias is 100 Hz."
+      ],
+      "finalAnswer": "100 Hz",
+      "explanation": "The baseband alias is 100 Hz.",
+      "commonMistakes": [
+        "The alias must lie within the first Nyquist interval."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which spectral folding applies.",
+      "Start from $ f_a=|f-kf_s|\\quad\\text{folded into }[0,f_s/2] $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Modulo-frequency folding into the first Nyquist zone. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      99.99999,
+      100.00001
+    ],
+    "numericalTolerance": 0.000009999999999999999
+  },
+  {
+    "id": "FH-TOPIC-13-03",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For ideal reconstruction of every baseband signal with |f|≤4 kHz, which proposed rate safely satisfies the strict sampling condition?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 ksample/s"
+      },
+      {
+        "id": "B",
+        "text": "6 ksample/s"
+      },
+      {
+        "id": "C",
+        "text": "8 ksample/s"
+      },
+      {
+        "id": "D",
+        "text": "10 ksample/s"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Arbitrary signals up to and including 4 kHz"
+      ],
+      "asked": "Choose a rate strictly greater than twice the bandwidth.",
+      "concept": "Strict anti-alias sampling condition",
+      "formula": "f_s>2B",
+      "steps": [
+        "Twice the maximum frequency is 8 ksample/s.",
+        "Sampling exactly at 8 can fail for a sinusoid at the endpoint with suitable phase.",
+        "Of the options, only 10 ksample/s is strictly greater than 8."
+      ],
+      "finalAnswer": "D",
+      "explanation": "Of the options, only 10 ksample/s is strictly greater than 8.",
+      "commonMistakes": [
+        "Do not regard a boundary rate as safe for every possible endpoint phase."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which strict anti-alias sampling condition applies.",
+      "Start from $ f_s>2B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Strictly compare every rate with the full two-sided support width 8000 Hz. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-13-04",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A signal is sampled every 0.25 ms. Find the sample rate in hertz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Sampling period Ts=0.25 ms"
+      ],
+      "asked": "Find fs in Hz.",
+      "concept": "Sampling-period conversion",
+      "formula": "f_s=1/T_s",
+      "steps": [
+        "Convert 0.25 ms to 0.00025 s.",
+        "Take the reciprocal.",
+        "The rate is 1/0.00025=4000 Hz."
+      ],
+      "finalAnswer": "4000 Hz",
+      "explanation": "The rate is 1/0.00025=4000 Hz.",
+      "commonMistakes": [
+        "Convert milliseconds to seconds before taking the reciprocal."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sampling-period conversion applies.",
+      "Start from $ f_s=1/T_s $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "SI sampling-period reciprocal. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      3999.9996,
+      4000.0004
+    ],
+    "numericalTolerance": 0.00039999999999999996
+  },
+  {
+    "id": "FH-TOPIC-13-05",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which actions can help avoid irreversible aliasing when sampling an unknown analog baseband input?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Low-pass filter the analog signal before sampling"
+      },
+      {
+        "id": "B",
+        "text": "Apply a digital low-pass filter only after aliasing has already occurred"
+      },
+      {
+        "id": "C",
+        "text": "Increase the sample rate above twice the passed analog bandwidth"
+      },
+      {
+        "id": "D",
+        "text": "Keep any sample rate and recover lost frequencies by zero padding"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Unknown baseband analog signal",
+        "no prior sparse-frequency model"
+      ],
+      "asked": "Select measures that prevent aliasing.",
+      "concept": "Analog anti-alias protection",
+      "formula": "\\operatorname{supp}X(f)\\subset(-f_s/2,f_s/2)",
+      "steps": [
+        "Analog low-pass filtering can remove energy that would overlap spectral replicas.",
+        "A sufficiently high sampling rate separates those replicas.",
+        "Digital filtering or zero padding cannot generally reverse overlap that already merged unknown analog components. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Digital filtering or zero padding cannot generally reverse overlap that already merged unknown analog components. Select A and C.",
+      "commonMistakes": [
+        "Prevention before sampling is different from smoothing aliased samples later."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which analog anti-alias protection applies.",
+      "Start from $ \\operatorname{supp}X(f)\\subset(-f_s/2,f_s/2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Pre-sampling spectrum-support criterion; post-sampling ambiguity counterexample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-13-06",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The sampled sequence is x[n]=cos(πn/3), with fs=1200 Hz. Find the smallest nonnegative analog cosine frequency that produces it.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Discrete angular frequency π/3 rad/sample",
+        "fs=1200 Hz"
+      ],
+      "asked": "Find the baseband analog frequency.",
+      "concept": "Discrete and continuous frequency mapping",
+      "formula": "\\Omega=2\\pi f/f_s",
+      "steps": [
+        "Rearrange the frequency relation to f=Ωfs/(2π).",
+        "Substitute Ω=π/3 and fs=1200.",
+        "The smallest nonnegative solution is 1200/6=200 Hz; higher aliases also produce the same sequence."
+      ],
+      "finalAnswer": "200 Hz",
+      "explanation": "The smallest nonnegative solution is 1200/6=200 Hz; higher aliases also produce the same sequence.",
+      "commonMistakes": [
+        "Rad/sample is not rad/second."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which discrete and continuous frequency mapping applies.",
+      "Start from $ \\Omega=2\\pi f/f_s $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Match cosine phase increment to one sixth of a discrete turn per sample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      199.99998,
+      200.00002
+    ],
+    "numericalTolerance": 0.000019999999999999998
+  },
+  {
+    "id": "FH-TOPIC-13-07",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A finite observation lasts 0.1 seconds and contains exactly 500 uniformly spaced samples on the half-open interval [0,0.1). Find fs in samples/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "500 samples",
+        "duration 0.1 s",
+        "endpoint excluded"
+      ],
+      "asked": "Find the sample rate.",
+      "concept": "Uniform sample counting",
+      "formula": "N=f_sT",
+      "steps": [
+        "The half-open interval contains n=0 through N−1 without a duplicate endpoint.",
+        "Therefore fs=N/T.",
+        "fs=500/0.1=5000 samples/s."
+      ],
+      "finalAnswer": "5000 samples/s",
+      "explanation": "fs=500/0.1=5000 samples/s.",
+      "commonMistakes": [
+        "Including both endpoints would change the sample-count convention."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which uniform sample counting applies.",
+      "Start from $ N=f_sT $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count sample indices on a half-open interval. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      4999.9995,
+      5000.0005
+    ],
+    "numericalTolerance": 0.0005
+  },
+  {
+    "id": "FH-TOPIC-13-08",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 300 Hz cosine is sampled initially at 2000 samples/s. Keeping every fourth sample without filtering produces a new sequence. Find its folded baseband frequency in hertz, measured at the new sample rate.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Original tone 300 Hz",
+        "original fs=2000 Hz",
+        "decimation factor 4",
+        "no prefilter"
+      ],
+      "asked": "Find the alias after decimation.",
+      "concept": "Sample-rate reduction",
+      "formula": "f_{s,new}=f_s/M",
+      "steps": [
+        "Keeping every fourth sample reduces the sample rate to 2000/4=500 Hz.",
+        "The new Nyquist interval ends at 250 Hz, so the original 300 Hz tone folds.",
+        "Its baseband alias is |300−500|=200 Hz."
+      ],
+      "finalAnswer": "200 Hz",
+      "explanation": "Its baseband alias is |300−500|=200 Hz.",
+      "commonMistakes": [
+        "A signal that was safe at the original rate may alias after decimation."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sample-rate reduction applies.",
+      "Start from $ f_{s,new}=f_s/M $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute the decimated clock, then fold the tone. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      199.99998,
+      200.00002
+    ],
+    "numericalTolerance": 0.000019999999999999998
+  },
+  {
+    "id": "FH-TOPIC-13-09",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Using sinc(x)=sin(πx)/(πx), what is sinc(0) by continuous extension?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "π"
+      },
+      {
+        "id": "D",
+        "text": "Undefined even by limit"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Normalized sinc",
+        "removable expression 0/0 at zero"
+      ],
+      "asked": "Find the reconstructed interpolation kernel value at its origin.",
+      "concept": "Sinc interpolation kernel",
+      "formula": "\\lim_{x\\to0}\\frac{\\sin\\pi x}{\\pi x}=1",
+      "steps": [
+        "Use sin u/u→1 as u→0.",
+        "Set u=πx.",
+        "The continuous extension has sinc(0)=1, which allows exact interpolation of a sample at its own grid point."
+      ],
+      "finalAnswer": "B",
+      "explanation": "The continuous extension has sinc(0)=1, which allows exact interpolation of a sample at its own grid point.",
+      "commonMistakes": [
+        "The apparent 0/0 is removable rather than an infinite singularity."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sinc interpolation kernel applies.",
+      "Start from $ \\lim_{x\\to0}\\frac{\\sin\\pi x}{\\pi x}=1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct removable-limit evaluation at a small symmetric argument and matching to option 1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-13-10",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For ideal uniform sampling of a baseband bandlimited signal, which statements are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The sampled spectrum contains shifted replicas spaced fs apart"
+      },
+      {
+        "id": "B",
+        "text": "Avoiding overlap requires a sufficient sampling rate relative to bandwidth"
+      },
+      {
+        "id": "C",
+        "text": "Sampling preserves all analog signals regardless of bandwidth"
+      },
+      {
+        "id": "D",
+        "text": "Ideal sinc reconstruction uses infinitely supported interpolation kernels"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal impulse sampling",
+        "ordinary baseband reconstruction"
+      ],
+      "asked": "Select all valid spectral and interpolation statements.",
+      "concept": "Sampling spectrum and reconstruction",
+      "formula": "X_s(f)=f_s\\sum_kX(f-kf_s)",
+      "steps": [
+        "Multiplication by an impulse train creates shifted spectral replicas at multiples of fs.",
+        "Adequate spacing separates their support; an arbitrary unlimited-bandwidth signal cannot meet that condition at finite fs.",
+        "Ideal low-pass reconstruction corresponds to an infinite-duration sinc kernel. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Ideal low-pass reconstruction corresponds to an infinite-duration sinc kernel. Select A, B and D.",
+      "commonMistakes": [
+        "Finite-duration practical interpolators approximate the ideal sinc kernel."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sampling spectrum and reconstruction applies.",
+      "Start from $ X_s(f)=f_s\\sum_kX(f-kf_s) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Impulse-train Fourier-series multiplication and ideal-lowpass inverse transform properties. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-13-11",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Two real tones at 600 Hz and 1400 Hz are sampled at 2000 Hz. How many distinct nonnegative baseband frequencies do their samples occupy?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two tones",
+        "fs=2000 Hz",
+        "phases arbitrary"
+      ],
+      "asked": "Count distinct folded frequency locations.",
+      "concept": "Alias collision",
+      "formula": "f\\sim|f-kf_s|",
+      "steps": [
+        "The 600 Hz tone already lies below fs/2=1000 Hz.",
+        "The 1400 Hz tone folds to |1400−2000|=600 Hz.",
+        "Both occupy one frequency location; their phases/amplitudes can combine but cannot make them separately identifiable from sampling alone."
+      ],
+      "finalAnswer": "1",
+      "explanation": "Both occupy one frequency location; their phases/amplitudes can combine but cannot make them separately identifiable from sampling alone.",
+      "commonMistakes": [
+        "Two analog tones can collapse to one sampled frequency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which alias collision applies.",
+      "Start from $ f\\sim|f-kf_s| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate and deduplicate both folded frequencies. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-13-12",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "sampling",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "An analog signal contains tones only at 1 kHz and 4 kHz. A prefilter passes 1 kHz unchanged and completely rejects 4 kHz, followed by fs=3 ksample/s sampling. What is the highest tone frequency retained in the reconstructed baseband signal, in kHz?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Ideal prefilter removes 4 kHz tone",
+        "1 kHz passes",
+        "fs=3 kHz"
+      ],
+      "asked": "Find the highest retained reconstructed tone.",
+      "concept": "Prefiltering before sampling",
+      "formula": "f_{pass,max}<f_s/2",
+      "steps": [
+        "After the analog filter, only the 1 kHz component remains.",
+        "The Nyquist interval extends to 1.5 kHz, so this passed tone does not alias.",
+        "Ideal reconstruction retains the 1 kHz tone. The rejected 4 kHz component contributes nothing."
+      ],
+      "finalAnswer": "1 kHz",
+      "explanation": "Ideal reconstruction retains the 1 kHz tone. The rejected 4 kHz component contributes nothing.",
+      "commonMistakes": [
+        "Analyze the analog filter before computing aliases of the remaining spectrum."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which prefiltering before sampling applies.",
+      "Start from $ f_{pass,max}<f_s/2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Remove stopped component first, then verify the passed component is below Nyquist. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-13-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

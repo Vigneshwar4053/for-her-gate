@@ -1,0 +1,676 @@
+[
+  {
+    "id": "FH-NETWORKS-001",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "An ideal 12 V DC source is connected across a 6 Ω resistor. Enter the current in amperes.",
+    "options": [],
+    "solution": {
+      "given": [
+        "V = 12 V",
+        "R = 6 Ω"
+      ],
+      "asked": "Find resistor current.",
+      "concept": "Ohm’s law",
+      "formula": "I=V/R",
+      "steps": [
+        "Ohm’s law relates voltage, current and resistance.",
+        "Rearrange V = IR to I = V/R.",
+        "Substitute I = 12/6 = 2 A. The units are volts per ohm, or amperes."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Substitute I = 12/6 = 2 A. The units are volts per ohm, or amperes.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about ohm’s law.",
+      "Use $ I=V/R $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-001"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      1.99999999,
+      2.00000001
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-002",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the equivalent resistance of 4 Ω and 8 Ω connected in series?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 Ω"
+      },
+      {
+        "id": "B",
+        "text": "4 Ω"
+      },
+      {
+        "id": "C",
+        "text": "12 Ω"
+      },
+      {
+        "id": "D",
+        "text": "32 Ω"
+      }
+    ],
+    "solution": {
+      "given": [
+        "R₁ = 4 Ω",
+        "R₂ = 8 Ω"
+      ],
+      "asked": "Find series resistance.",
+      "concept": "Series resistance",
+      "formula": "R_{eq}=R_1+R_2",
+      "steps": [
+        "Series resistors carry the same current.",
+        "Their voltage drops add, so their resistances add.",
+        "4 + 8 = 12 Ω, corresponding to C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "4 + 8 = 12 Ω, corresponding to C.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about series resistance.",
+      "Use $ R_{eq}=R_1+R_2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-002"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-NETWORKS-003",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Two resistors, each 6 Ω, are connected in parallel. Enter equivalent resistance in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "R₁ = R₂ = 6 Ω"
+      ],
+      "asked": "Find parallel resistance.",
+      "concept": "Parallel resistance",
+      "formula": "\\frac1{R_{eq}}=\\frac1{R_1}+\\frac1{R_2}",
+      "steps": [
+        "Parallel branch conductances add.",
+        "$1/R_{eq}=1/6+1/6=1/3$.",
+        "Taking the reciprocal gives 3 Ω."
+      ],
+      "finalAnswer": "3",
+      "explanation": "Taking the reciprocal gives 3 Ω.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about parallel resistance.",
+      "Use $ \\frac1{R_{eq}}=\\frac1{R_1}+\\frac1{R_2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-003"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      2.99999999,
+      3.00000001
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-004",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A 5 Ω resistor carries 2 A DC. Enter the dissipated power in watts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "I = 2 A",
+        "R = 5 Ω"
+      ],
+      "asked": "Find power.",
+      "concept": "Resistive power",
+      "formula": "P=I^2R",
+      "steps": [
+        "Resistor power is current squared times resistance.",
+        "Square the current: 2² = 4 A².",
+        "Multiply by 5 Ω: P = 4 × 5 = 20 W."
+      ],
+      "finalAnswer": "20",
+      "explanation": "Multiply by 5 Ω: P = 4 × 5 = 20 W.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about resistive power.",
+      "Use $ P=I^2R $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-004"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      19.99999999,
+      20.00000001
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-005",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "An ideal 10 V source drives series resistors 2 Ω and 3 Ω. What is the voltage across the 3 Ω resistor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 V"
+      },
+      {
+        "id": "B",
+        "text": "6 V"
+      },
+      {
+        "id": "C",
+        "text": "10 V"
+      },
+      {
+        "id": "D",
+        "text": "15 V"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Vₛ = 10 V",
+        "R₁ = 2 Ω, R₂ = 3 Ω"
+      ],
+      "asked": "Find voltage across R₂.",
+      "concept": "Voltage division",
+      "formula": "V_2=V_s\\frac{R_2}{R_1+R_2}",
+      "steps": [
+        "Total resistance is 2 + 3 = 5 Ω.",
+        "The common current is 10/5 = 2 A.",
+        "Across 3 Ω the drop is 2 × 3 = 6 V, corresponding to B."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Across 3 Ω the drop is 2 × 3 = 6 V, corresponding to B.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about voltage division.",
+      "Use $ V_2=V_s\\frac{R_2}{R_1+R_2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-005"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-NETWORKS-006",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which statements hold for ideal passive resistors with positive resistance?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Power absorption is nonnegative"
+      },
+      {
+        "id": "B",
+        "text": "Doubling resistance doubles current at fixed voltage"
+      },
+      {
+        "id": "C",
+        "text": "Series resistance is less than each component"
+      },
+      {
+        "id": "D",
+        "text": "Doubling resistance halves current at fixed voltage"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal positive resistances"
+      ],
+      "asked": "Select correct statements.",
+      "concept": "Resistor laws",
+      "formula": "P=I^2R,\\quad I=V/R",
+      "steps": [
+        "For positive resistance, P = I²R is nonnegative.",
+        "At fixed voltage I = V/R, so doubling R halves I.",
+        "Series resistance is a sum, not a reciprocal sum. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "Series resistance is a sum, not a reciprocal sum. Select A and D.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about resistor laws.",
+      "Use $ P=I^2R,\\quad I=V/R $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-006"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-007",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "At a node, currents 2 A and 3 A enter. A current of 1 A leaves through one branch. Enter the current leaving through the only other branch in amperes.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Entering 2 A and 3 A",
+        "Known leaving 1 A"
+      ],
+      "asked": "Find unknown leaving current.",
+      "concept": "Kirchhoff’s current law",
+      "formula": "\\sum I_{in}=\\sum I_{out}",
+      "steps": [
+        "KCL requires total entering current equal total leaving current.",
+        "Entering current is 2 + 3 = 5 A.",
+        "The unknown outward current is 5 − 1 = 4 A."
+      ],
+      "finalAnswer": "4",
+      "explanation": "The unknown outward current is 5 − 1 = 4 A.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about kirchhoff’s current law.",
+      "Use $ \\sum I_{in}=\\sum I_{out} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-007"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      3.99999999,
+      4.00000001
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-008",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "A 2 μF ideal capacitor has 3 V across it. Enter stored charge in μC.",
+    "options": [],
+    "solution": {
+      "given": [
+        "C = 2 μF",
+        "V = 3 V"
+      ],
+      "asked": "Find charge in μC.",
+      "concept": "Capacitance",
+      "formula": "Q=CV",
+      "steps": [
+        "Charge equals capacitance times voltage.",
+        "In SI units, Q = 2 × 10⁻⁶ × 3 = 6 × 10⁻⁶ C.",
+        "Convert to microcoulombs: Q = 6 μC."
+      ],
+      "finalAnswer": "6",
+      "explanation": "Convert to microcoulombs: Q = 6 μC.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about capacitance.",
+      "Use $ Q=CV $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-008"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      5.99999999,
+      6.00000001
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-009",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An ideal 2 H inductor carries 3 A. Enter its stored energy in joules.",
+    "options": [],
+    "solution": {
+      "given": [
+        "L = 2 H",
+        "I = 3 A"
+      ],
+      "asked": "Find magnetic energy.",
+      "concept": "Inductance",
+      "formula": "W_L=\\tfrac12 LI^2",
+      "steps": [
+        "Inductor energy equals half the inductance times current squared.",
+        "Current squared is 9 A².",
+        "W = 0.5 × 2 × 9 = 9 J."
+      ],
+      "finalAnswer": "9",
+      "explanation": "W = 0.5 × 2 × 9 = 9 J.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about inductance.",
+      "Use $ W_L=\\tfrac12 LI^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-009"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      8.99999999,
+      9.00000001
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-010",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An ideal 2 F capacitor carries a constant current of 4 A. What is dv/dt?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 V/s"
+      },
+      {
+        "id": "B",
+        "text": "8 V/s"
+      },
+      {
+        "id": "C",
+        "text": "0.5 V/s"
+      },
+      {
+        "id": "D",
+        "text": "4 V/s"
+      }
+    ],
+    "solution": {
+      "given": [
+        "C = 2 F",
+        "i = 4 A"
+      ],
+      "asked": "Find voltage slope.",
+      "concept": "Capacitor current law",
+      "formula": "i=C\\frac{dv}{dt}",
+      "steps": [
+        "The capacitor law is i = C dv/dt.",
+        "Divide current by capacitance.",
+        "dv/dt = 4/2 = 2 V/s, corresponding to A."
+      ],
+      "finalAnswer": "A",
+      "explanation": "dv/dt = 4/2 = 2 V/s, corresponding to A.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about capacitor current law.",
+      "Use $ i=C\\frac{dv}{dt} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-010"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-NETWORKS-011",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Two ideal voltage sources of 10 V and 4 V are connected in series opposition across a 3 Ω resistor. Enter the magnitude of current in amperes.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Opposing sources 10 V and 4 V",
+        "R = 3 Ω"
+      ],
+      "asked": "Find current magnitude.",
+      "concept": "Kirchhoff’s voltage law",
+      "formula": "I=|V_1-V_2|/R",
+      "steps": [
+        "Opposing source voltages subtract.",
+        "Net source magnitude is |10 − 4| = 6 V.",
+        "Ohm’s law gives current magnitude 6/3 = 2 A."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Ohm’s law gives current magnitude 6/3 = 2 A.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about kirchhoff’s voltage law.",
+      "Use $ I=|V_1-V_2|/R $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-011"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      1.99999999,
+      2.00000001
+    ]
+  },
+  {
+    "id": "FH-NETWORKS-012",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An ideal 5 Ω resistor carries 2 A DC. Which pairs correctly give voltage and power?",
+    "options": [
+      {
+        "id": "A",
+        "text": "V = 5 V, P = 10 W"
+      },
+      {
+        "id": "B",
+        "text": "V = 10 V, P = 20 W"
+      },
+      {
+        "id": "C",
+        "text": "V = 10 V, P = I²R = 20 W"
+      },
+      {
+        "id": "D",
+        "text": "V = 20 V, P = 40 W"
+      }
+    ],
+    "solution": {
+      "given": [
+        "R = 5 Ω",
+        "I = 2 A"
+      ],
+      "asked": "Select all correct value pairs.",
+      "concept": "Voltage and power",
+      "formula": "V=IR,\\quad P=VI=I^2R",
+      "steps": [
+        "Voltage is V = IR = 2 × 5 = 10 V.",
+        "Power is P = VI = 10 × 2 = 20 W.",
+        "P = I²R = 4 × 5 also gives 20 W. Select B and C."
+      ],
+      "finalAnswer": "B, C",
+      "explanation": "P = I²R = 4 × 5 also gives 20 W. Select B and C.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about voltage and power.",
+      "Use $ V=IR,\\quad P=VI=I^2R $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-NETWORKS-012"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": [
+      "B",
+      "C"
+    ]
+  }
+]

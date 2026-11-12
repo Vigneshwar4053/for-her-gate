@@ -1,0 +1,976 @@
+[
+  {
+    "id": "linear-algebra",
+    "subject": "mathematics",
+    "title": "Linear Algebra",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Vector spaces and bases",
+      "Linear dependence and independence",
+      "Matrix algebra",
+      "Eigenvalues and eigenvectors",
+      "Rank",
+      "Existence and uniqueness of linear-system solutions"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 1,
+    "sourcePage": 1
+  },
+  {
+    "id": "calculus",
+    "subject": "mathematics",
+    "title": "Calculus",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Mean value theorems",
+      "Integral calculus theorems",
+      "Definite and improper integration",
+      "Partial derivatives",
+      "Extrema",
+      "Multiple integrals",
+      "Line, surface and volume integration",
+      "Taylor expansion"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 1,
+    "sourcePage": 1
+  },
+  {
+    "id": "differential-equations",
+    "subject": "mathematics",
+    "title": "Differential Equations",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Linear ODEs",
+      "Euler–Cauchy equations",
+      "Nonhomogeneous equations",
+      "Variation of parameters",
+      "Complementary functions and particular integrals",
+      "PDEs",
+      "Separation of variables",
+      "Initial and boundary conditions"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 1,
+    "sourcePage": 1
+  },
+  {
+    "id": "complex-analysis",
+    "subject": "mathematics",
+    "title": "Complex Analysis",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Analytic functions",
+      "Cauchy integral theorem and formula",
+      "Sequences and series",
+      "Convergence tests",
+      "Taylor and Laurent expansions",
+      "Residues"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 1,
+    "sourcePage": 1
+  },
+  {
+    "id": "probability-and-statistics",
+    "subject": "mathematics",
+    "title": "Probability and Statistics",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Mean, median and mode",
+      "Standard deviation",
+      "Combinatorial probability",
+      "Probability distributions",
+      "Binomial, Poisson, exponential and normal laws",
+      "Joint and conditional probability",
+      "Correlation",
+      "Regression"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 1,
+    "sourcePage": 1
+  },
+  {
+    "id": "circuit-analysis",
+    "subject": "networks",
+    "title": "Circuit Analysis",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Nodal analysis",
+      "Mesh analysis",
+      "Linear network equations"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "network-theorems",
+    "subject": "networks",
+    "title": "Network Theorems",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Superposition",
+      "Thevenin equivalents",
+      "Norton equivalents",
+      "Reciprocity",
+      "Maximum power transfer"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "transient-analysis",
+    "subject": "networks",
+    "title": "Transient Analysis",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "RL circuits",
+      "RC circuits",
+      "RLC circuits",
+      "Time-domain linear-circuit responses"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "laplace-transform",
+    "subject": "networks",
+    "title": "Laplace Transform",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Laplace solution of circuit equations"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "fourier-transform",
+    "subject": "networks",
+    "title": "Fourier Transform",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Continuous-time Fourier transform",
+      "Fourier series"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "signals-and-systems",
+    "subject": "networks",
+    "title": "Signals and Systems",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Continuous-time signal representations",
+      "Discrete-time signal representations"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "lti-systems",
+    "subject": "networks",
+    "title": "LTI Systems",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "LTI definition and properties",
+      "Causality",
+      "BIBO stability",
+      "Impulse response",
+      "Convolution",
+      "Poles and zeros",
+      "Frequency response",
+      "Phase and group delay"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "sampling",
+    "subject": "networks",
+    "title": "Sampling",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Nyquist sampling",
+      "Reconstruction"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "semiconductor-physics",
+    "subject": "devices",
+    "title": "Semiconductor Physics",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Energy bands in solids",
+      "Intrinsic and doped semiconductors",
+      "Equilibrium concentrations",
+      "Direct and indirect band gaps"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "carrier-transport",
+    "subject": "devices",
+    "title": "Carrier Transport",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Drift",
+      "Diffusion",
+      "Mobility",
+      "Resistivity",
+      "Generation and recombination",
+      "Poisson equation",
+      "Continuity equation"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "pn-junctions",
+    "subject": "devices",
+    "title": "PN Junctions",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "P–N junction electrostatics and operation"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "diodes",
+    "subject": "devices",
+    "title": "Diodes",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Zener diode"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "bjt",
+    "subject": "devices",
+    "title": "BJT",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Bipolar junction transistor"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "mosfet",
+    "subject": "devices",
+    "title": "MOSFET",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "MOSFET operation",
+      "MOSFET scaling"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "diode-circuits",
+    "subject": "analog",
+    "title": "Diode Circuits",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Clippers",
+      "Clampers",
+      "Rectifiers"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 4,
+    "sourcePage": 1
+  },
+  {
+    "id": "amplifiers",
+    "subject": "analog",
+    "title": "Amplifiers",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "BJT biasing and amplifiers",
+      "MOSFET biasing and amplifiers",
+      "AC coupling",
+      "Small-signal models",
+      "Frequency response",
+      "Current mirrors",
+      "Differential amplifiers"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 4,
+    "sourcePage": 2
+  },
+  {
+    "id": "operational-amplifiers",
+    "subject": "analog",
+    "title": "Operational Amplifiers",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Amplifiers",
+      "Summing circuits",
+      "Differentiation",
+      "Integration",
+      "Active filters",
+      "Schmitt triggers"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 4,
+    "sourcePage": 2
+  },
+  {
+    "id": "feedback",
+    "subject": "analog",
+    "title": "Feedback",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Dominant-pole and Miller compensation",
+      "Phase margin"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 4,
+    "sourcePage": 2
+  },
+  {
+    "id": "oscillators",
+    "subject": "analog",
+    "title": "Oscillators",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Op-amp oscillators"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 4,
+    "sourcePage": 2
+  },
+  {
+    "id": "boolean-algebra",
+    "subject": "digital",
+    "title": "Boolean Algebra",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Boolean identities and minimization"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "logic-gates",
+    "subject": "digital",
+    "title": "Logic Gates",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Logic gates",
+      "Static CMOS implementation"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "karnaugh-maps",
+    "subject": "digital",
+    "title": "Karnaugh Maps",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Karnaugh-map minimization"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "combinational-circuits",
+    "subject": "digital",
+    "title": "Combinational Circuits",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Arithmetic logic",
+      "Code conversion",
+      "Multiplexers",
+      "Decoders"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "sequential-circuits",
+    "subject": "digital",
+    "title": "Sequential Circuits",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Latches",
+      "Counters",
+      "Shift registers",
+      "Finite-state machines",
+      "Propagation delay",
+      "Setup and hold constraints",
+      "Critical-path timing"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "flip-flops",
+    "subject": "digital",
+    "title": "Flip-Flops",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Flip-flop operation"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "data-converters",
+    "subject": "digital",
+    "title": "Data Converters",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Sample-and-hold",
+      "ADC",
+      "DAC"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "transfer-functions",
+    "subject": "control",
+    "title": "Transfer Functions",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Transfer function"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "time-response",
+    "subject": "control",
+    "title": "Time Response",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "LTI transient analysis",
+      "LTI steady state"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "stability",
+    "subject": "control",
+    "title": "Stability",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Routh–Hurwitz criterion",
+      "Nyquist criterion"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "root-locus",
+    "subject": "control",
+    "title": "Root Locus",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Root-locus construction and interpretation"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "frequency-response",
+    "subject": "control",
+    "title": "Frequency Response",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Frequency response",
+      "Bode diagrams"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "state-space-analysis",
+    "subject": "control",
+    "title": "State-Space Analysis",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "State-variable model",
+      "LTI state-equation solution"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "analog-communication",
+    "subject": "communications",
+    "title": "Analog Communication",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "AM generation and detection",
+      "Angle modulation and detection",
+      "AM/FM spectra",
+      "Superheterodyne receivers"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "digital-communication",
+    "subject": "communications",
+    "title": "Digital Communication",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "PCM",
+      "DPCM",
+      "ASK",
+      "PSK",
+      "FSK",
+      "QAM",
+      "Bandwidth",
+      "Intersymbol interference",
+      "MAP and ML detection",
+      "Matched filters"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "modulation",
+    "subject": "communications",
+    "title": "Modulation",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Analog and digital modulation families; classification aid"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "information-theory",
+    "subject": "communications",
+    "title": "Information Theory",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Entropy",
+      "Source coding",
+      "Mutual information",
+      "Channel capacity"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "noise",
+    "subject": "communications",
+    "title": "Noise",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Signal-to-noise ratio",
+      "White-noise properties"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "probability-of-error",
+    "subject": "communications",
+    "title": "Probability of Error",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Bit-error rate",
+      "Detection error probability"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "maxwell-equations",
+    "subject": "electromagnetics",
+    "title": "Maxwell Equations",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Differential and integral Maxwell equations",
+      "Interpretation",
+      "Boundary conditions",
+      "Wave equation",
+      "Poynting vector"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 8,
+    "sourcePage": 2
+  },
+  {
+    "id": "electromagnetic-waves",
+    "subject": "electromagnetics",
+    "title": "Electromagnetic Waves",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Plane waves",
+      "Reflection",
+      "Refraction",
+      "Polarization"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 8,
+    "sourcePage": 2
+  },
+  {
+    "id": "transmission-lines",
+    "subject": "electromagnetics",
+    "title": "Transmission Lines",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Line equations",
+      "Characteristic impedance",
+      "Matching",
+      "Impedance transformation",
+      "S-parameters",
+      "Smith chart"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 8,
+    "sourcePage": 2
+  },
+  {
+    "id": "wave-propagation",
+    "subject": "electromagnetics",
+    "title": "Wave Propagation",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Phase and group velocities",
+      "Propagation in media",
+      "Skin depth"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 8,
+    "sourcePage": 2
+  },
+  {
+    "id": "antennas",
+    "subject": "electromagnetics",
+    "title": "Antennas",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Dipoles",
+      "Monopoles",
+      "Linear arrays"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 8,
+    "sourcePage": 2
+  },
+  {
+    "id": "verbal-aptitude",
+    "subject": "aptitude",
+    "title": "Verbal Aptitude",
+    "status": "official-2027",
+    "subtopics": [
+      "Grammar",
+      "Vocabulary in context",
+      "Reading comprehension",
+      "Narrative sequencing"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf",
+    "sourceSection": 1,
+    "sourcePage": 1
+  },
+  {
+    "id": "quantitative-aptitude",
+    "subject": "aptitude",
+    "title": "Quantitative Aptitude",
+    "status": "official-2027",
+    "subtopics": [
+      "Data interpretation including graphs, plots, maps and tables",
+      "Numerical computation and estimation",
+      "Ratios, percentages, powers, exponents, logarithms",
+      "Permutations, combinations and series",
+      "Mensuration and geometry",
+      "Elementary statistics and probability"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "analytical-aptitude",
+    "subject": "aptitude",
+    "title": "Analytical Aptitude",
+    "status": "official-2027",
+    "subtopics": [
+      "Deduction and induction",
+      "Analogy",
+      "Numerical relations and reasoning"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "spatial-aptitude",
+    "subject": "aptitude",
+    "title": "Spatial Aptitude",
+    "status": "official-2027",
+    "subtopics": [
+      "Translation, rotation, scaling and mirroring",
+      "Assembling and grouping",
+      "Paper folding, cutting and 2D/3D patterns"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf",
+    "sourceSection": 4,
+    "sourcePage": 1
+  },
+  {
+    "id": "vector-analysis",
+    "subject": "mathematics",
+    "title": "Vector Analysis",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Planar and spatial vectors",
+      "Vector operations",
+      "Gradient",
+      "Divergence",
+      "Curl",
+      "Gauss theorem",
+      "Green theorem",
+      "Stokes theorem"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 1,
+    "sourcePage": 1
+  },
+  {
+    "id": "ac-steady-state",
+    "subject": "networks",
+    "title": "Ac Steady State",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Phasors",
+      "Sinusoidal steady state",
+      "Complex power"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "network-parameters",
+    "subject": "networks",
+    "title": "Network Parameters",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Two-port representations",
+      "Wye–delta conversion"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "discrete-time-transforms",
+    "subject": "networks",
+    "title": "Discrete Time Transforms",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "DTFT",
+      "DFT",
+      "Z-transform"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "digital-filter-design",
+    "subject": "networks",
+    "title": "Digital Filter Design",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "FIR filters",
+      "IIR filters"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 2,
+    "sourcePage": 1
+  },
+  {
+    "id": "mos-capacitor",
+    "subject": "devices",
+    "title": "Mos Capacitor",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "MOS capacitor"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "optoelectronic-devices",
+    "subject": "devices",
+    "title": "Optoelectronic Devices",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "LED",
+      "Photodiode",
+      "Solar cell"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 3,
+    "sourcePage": 1
+  },
+  {
+    "id": "number-representations",
+    "subject": "digital",
+    "title": "Number Representations",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Binary encodings",
+      "Integer encodings",
+      "Floating-point encodings"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "semiconductor-memories",
+    "subject": "digital",
+    "title": "Semiconductor Memories",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "ROM",
+      "SRAM",
+      "DRAM"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "computer-organization",
+    "subject": "digital",
+    "title": "Computer Organization",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Instructions",
+      "Addressing modes",
+      "ALU",
+      "Datapath",
+      "Control unit",
+      "Instruction pipelining"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 5,
+    "sourcePage": 2
+  },
+  {
+    "id": "control-components",
+    "subject": "control",
+    "title": "Control Components",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Basic components",
+      "Feedback principle",
+      "Block diagrams",
+      "Signal-flow graphs"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "compensators",
+    "subject": "control",
+    "title": "Compensators",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Compensator design",
+      "PID controllers"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 6,
+    "sourcePage": 2
+  },
+  {
+    "id": "random-processes",
+    "subject": "communications",
+    "title": "Random Processes",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Autocorrelation",
+      "Power spectral density",
+      "White noise",
+      "LTI filtering of random signals"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "error-control-coding",
+    "subject": "communications",
+    "title": "Error Control Coding",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Error correction fundamentals",
+      "Hamming codes",
+      "CRC"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 7,
+    "sourcePage": 2
+  },
+  {
+    "id": "waveguides-fibers",
+    "subject": "electromagnetics",
+    "title": "Waveguides Fibers",
+    "status": "official-2027-mapped",
+    "subtopics": [
+      "Rectangular waveguides",
+      "Circular waveguides",
+      "Optical-fiber light propagation"
+    ],
+    "sourceUrl": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+    "sourceSection": 8,
+    "sourcePage": 2
+  }
+]

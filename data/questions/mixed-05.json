@@ -1,0 +1,778 @@
+[
+  {
+    "id": "FH-MIXED-05-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Evaluate ∫₀¹(3x²+2x)dx.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Polynomial integrand",
+        "limits 0 and 1"
+      ],
+      "asked": "Find the definite integral.",
+      "concept": "Polynomial integration",
+      "formula": "\\int(3x^2+2x)dx=x^3+x^2+C",
+      "steps": [
+        "An antiderivative is x³+x².",
+        "Its upper-limit value is 1+1=2 and its lower-limit value is 0.",
+        "The definite integral is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "The definite integral is 2.",
+      "commonMistakes": [
+        "Integrate each power with its own new exponent and denominator."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which polynomial integration applies.",
+      "Start from $ \\int(3x^2+2x)dx=x^3+x^2+C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Composite Simpson integration of the original polynomial. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-05-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "ac-steady-state",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A series RC impedance is 4−j3 Ω at a given frequency. Find the power factor magnitude.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Resistive part 4 Ω",
+        "capacitive reactance −3 Ω"
+      ],
+      "asked": "Find |cosφ|.",
+      "concept": "Power factor from impedance",
+      "formula": "|\\cos\\phi|=R/|Z|",
+      "steps": [
+        "The magnitude is √(4²+3²)=5 Ω.",
+        "Power factor magnitude is the real part divided by magnitude.",
+        "It is 4/5=0.8; the current leads for the capacitive sign."
+      ],
+      "finalAnswer": "0.8",
+      "explanation": "It is 4/5=0.8; the current leads for the capacitive sign.",
+      "commonMistakes": [
+        "Power factor magnitude and leading/lagging classification are separate outputs."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which power factor from impedance applies.",
+      "Start from $ |\\cos\\phi|=R/|Z| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Complex-argument evaluation before cosine of impedance phase. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.7999999,
+      0.8000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-05-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "number-representations",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For a 4-bit two’s-complement representation, find the signed decimal value of 1101₂.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four-bit two’s-complement encoding"
+      ],
+      "asked": "Decode the signed word.",
+      "concept": "Two’s-complement weight",
+      "formula": "N=-b_32^3+\\sum_{i=0}^2b_i2^i",
+      "steps": [
+        "The most significant bit has weight −8.",
+        "The remaining bits contribute 4+0+1=5.",
+        "Total is −8+5=−3."
+      ],
+      "finalAnswer": "-3",
+      "explanation": "Total is −8+5=−3.",
+      "commonMistakes": [
+        "The same bit pattern interpreted unsigned would instead be 13."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which two’s-complement weight applies.",
+      "Start from $ N=-b_32^3+\\sum_{i=0}^2b_i2^i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Signed place-weight evaluation of actual four-bit word. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      -3.0000003,
+      -2.9999997
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-MIXED-05-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "optoelectronic-devices",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A solar cell delivers 0.5 V at 20 mA under load. Find its delivered electrical power in milliwatts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Output voltage 0.5 V",
+        "delivered current 20 mA"
+      ],
+      "asked": "Find positive load power.",
+      "concept": "Photovoltaic output power",
+      "formula": "P=VI",
+      "steps": [
+        "Multiply terminal voltage by delivered current using the stated power-delivery direction.",
+        "0.5×20 gives 10 in V·mA.",
+        "The electrical output power is 10 mW."
+      ],
+      "finalAnswer": "10 mW",
+      "explanation": "The electrical output power is 10 mW.",
+      "commonMistakes": [
+        "Delivered electrical power is distinct from incident optical power or efficiency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which photovoltaic output power applies.",
+      "Start from $ P=VI $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute delivered power in SI and convert to milliwatts. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-MIXED-05-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An amplifier has ideal sinusoidal gain 5 until clipping at output ±10 V. What is the largest sinusoidal input peak that avoids clipping?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.5 V"
+      },
+      {
+        "id": "B",
+        "text": "1 V"
+      },
+      {
+        "id": "C",
+        "text": "2 V"
+      },
+      {
+        "id": "D",
+        "text": "5 V"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Output peak limit 10 V",
+        "gain magnitude 5",
+        "centered zero-DC sinusoid"
+      ],
+      "asked": "Find allowable input peak.",
+      "concept": "Linear range and clipping",
+      "formula": "V_{in,pk}\\le V_{out,max}/|A_v|",
+      "steps": [
+        "The linear output peak is five times the input peak.",
+        "Requiring that peak to be at most 10 V gives Vin,pk≤10/5.",
+        "The largest input peak is 2 V. No RMS conversion is needed because both quantities are peaks."
+      ],
+      "finalAnswer": "C",
+      "explanation": "The largest input peak is 2 V. No RMS conversion is needed because both quantities are peaks.",
+      "commonMistakes": [
+        "Do not compare an input RMS value against an output peak constraint."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which linear range and clipping applies.",
+      "Start from $ V_{in,pk}\\le V_{out,max}/|A_v| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Input-amplitude constraint from output saturation range. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-MIXED-05-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A stable second-order closed-loop system has characteristic polynomial s²+6s+25. Find ζ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "ωn²=25",
+        "coefficient of s is 6"
+      ],
+      "asked": "Find the damping ratio.",
+      "concept": "Second-order canonical form",
+      "formula": "s^2+2\\zeta\\omega_ns+\\omega_n^2",
+      "steps": [
+        "The natural frequency is √25=5 rad/s.",
+        "Match the coefficient of s: 2ζ×5=6.",
+        "ζ=6/10=0.6."
+      ],
+      "finalAnswer": "0.6",
+      "explanation": "ζ=6/10=0.6.",
+      "commonMistakes": [
+        "The constant coefficient is ωn² rather than ωn."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which second-order canonical form applies.",
+      "Start from $ s^2+2\\zeta\\omega_ns+\\omega_n^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Characteristic-coefficient matching. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.5999999,
+      0.6000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-05-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "error-control-coding",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A rate-1/2 channel code encodes an information stream of 12 kbit/s with no extra overhead. Find the coded bit rate in kbit/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Code rate k/n=1/2",
+        "information rate 12 kbit/s"
+      ],
+      "asked": "Find the channel-coded output rate.",
+      "concept": "Coding redundancy rate",
+      "formula": "R_{coded}=R_{info}/r",
+      "steps": [
+        "Rate 1/2 means one information bit for every two transmitted coded bits.",
+        "Divide 12 by 0.5.",
+        "The coded stream rate is 24 kbit/s."
+      ],
+      "finalAnswer": "24 kbit/s",
+      "explanation": "The coded stream rate is 24 kbit/s.",
+      "commonMistakes": [
+        "Coding rate is information bits divided by coded bits."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which coding redundancy rate applies.",
+      "Start from $ R_{coded}=R_{info}/r $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count two transmitted bits for every information bit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      23.9999976,
+      24.0000024
+    ],
+    "numericalTolerance": 0.0000024
+  },
+  {
+    "id": "FH-MIXED-05-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A wave in air at 300 MHz has wavelength λ. Find the electrical length βl in radians of a 0.25 m line, using c=3×10⁸ m/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Air velocity 3×10⁸ m/s",
+        "frequency 3×10⁸ Hz",
+        "physical length 0.25 m"
+      ],
+      "asked": "Find propagation phase length.",
+      "concept": "Electrical length",
+      "formula": "\\beta l=2\\pi l/\\lambda",
+      "steps": [
+        "The wavelength is c/f=1 m.",
+        "The line is one quarter wavelength.",
+        "Its phase length is 2π×0.25=π/2≈1.570796327 rad."
+      ],
+      "finalAnswer": "1.5707963267948966 rad",
+      "explanation": "Its phase length is 2π×0.25=π/2≈1.570796327 rad.",
+      "commonMistakes": [
+        "Physical length and electrical length use different units."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which electrical length applies.",
+      "Start from $ \\beta l=2\\pi l/\\lambda $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute β directly from frequency/speed, then multiply by physical length. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      1.570796169715,
+      1.570796483875
+    ],
+    "numericalTolerance": 1.5707963267948966e-7
+  },
+  {
+    "id": "FH-MIXED-05-09",
+    "type": "MSQ",
+    "subject": "communications",
+    "topic": "error-control-coding",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which statements about a binary (7,4) Hamming code with dmin=3 are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "There are 4 information bits per codeword"
+      },
+      {
+        "id": "B",
+        "text": "There are 3 redundancy bits per codeword"
+      },
+      {
+        "id": "C",
+        "text": "It guarantees correction of every two-bit error"
+      },
+      {
+        "id": "D",
+        "text": "It can detect every two-bit error when used for detection rather than single-error correction"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Binary length 7",
+        "dimension 4",
+        "distance 3"
+      ],
+      "asked": "Select coding-parameter consequences.",
+      "concept": "Hamming-code distance",
+      "formula": "r=k/n,\\quad t_{corr}=\\lfloor(d_{min}-1)/2\\rfloor",
+      "steps": [
+        "The code has 7 total bits, including 4 information bits, leaving 3 parity bits.",
+        "Minimum distance 3 guarantees correction of one arbitrary error, not two.",
+        "Used as a detector, a nonzero pattern of fewer than 3 bit errors cannot turn one valid codeword into another, so all two-bit errors are detectable. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Used as a detector, a nonzero pattern of fewer than 3 bit errors cannot turn one valid codeword into another, so all two-bit errors are detectable. Select A, B and D.",
+      "commonMistakes": [
+        "A correcting decoder can miscorrect two-bit patterns; detection and correction modes differ."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which hamming-code distance applies.",
+      "Start from $ r=k/n,\\quad t_{corr}=\\lfloor(d_{min}-1)/2\\rfloor $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Hamming code dimension arithmetic and nonzero weight<dmin detection condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-05-10",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which functions are even on their real domains?",
+    "options": [
+      {
+        "id": "A",
+        "text": "cos x"
+      },
+      {
+        "id": "B",
+        "text": "sin x"
+      },
+      {
+        "id": "C",
+        "text": "x²"
+      },
+      {
+        "id": "D",
+        "text": "x³"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Parity defined by f(−x)=f(x)"
+      ],
+      "asked": "Select all even functions.",
+      "concept": "Function parity",
+      "formula": "f(-x)=f(x)",
+      "steps": [
+        "Cosine obeys cos(−x)=cosx and squaring removes the sign of x.",
+        "Sine and cubing change sign for nonzero x.",
+        "Thus cosx and x² are even: A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Thus cosx and x² are even: A and C.",
+      "commonMistakes": [
+        "Being zero at the origin does not determine a function’s parity."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which function parity applies.",
+      "Start from $ f(-x)=f(x) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Parity identities and nonzero counterexamples tested for all candidate functions. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-MIXED-05-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An object moves 60 km at 30 km/h and then 60 km at 60 km/h. Find its average speed for the whole trip in km/h.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Equal leg distances",
+        "speeds 30 and 60 km/h"
+      ],
+      "asked": "Find total distance divided by total time.",
+      "concept": "Average rate over unequal times",
+      "formula": "v_{avg}=D_{total}/T_{total}",
+      "steps": [
+        "The first leg takes 60/30=2 hours and the second takes 60/60=1 hour.",
+        "The total distance is 120 km and total time is 3 hours.",
+        "Average speed is 120/3=40 km/h, not the arithmetic mean 45."
+      ],
+      "finalAnswer": "40 km/h",
+      "explanation": "Average speed is 120/3=40 km/h, not the arithmetic mean 45.",
+      "commonMistakes": [
+        "Equal distances do not imply equal time weights."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which average rate over unequal times applies.",
+      "Start from $ v_{avg}=D_{total}/T_{total} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Explicit elapsed-time accounting across both equal-distance legs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      39.999996,
+      40.000004
+    ],
+    "numericalTolerance": 0.000004
+  },
+  {
+    "id": "FH-MIXED-05-12",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a real periodic signal x(t)=cos(2t)+cos(3t), find the smallest positive fundamental period in seconds.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two angular frequencies 2 and 3 rad/s"
+      ],
+      "asked": "Find their common repetition period.",
+      "concept": "Commensurate sinusoidal periods",
+      "formula": "2T=2\\pi m,\\quad3T=2\\pi n",
+      "steps": [
+        "The simultaneous phase conditions require 3m=2n.",
+        "The smallest positive integer choice is m=2,n=3.",
+        "Both conditions then give T=2π seconds."
+      ],
+      "finalAnswer": "6.283185307179586 s",
+      "explanation": "Both conditions then give T=2π seconds.",
+      "commonMistakes": [
+        "The fundamental period of the sum need not equal either component’s period."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which commensurate sinusoidal periods applies.",
+      "Start from $ 2T=2\\pi m,\\quad3T=2\\pi n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate common phase-repeat candidates from the first cosine and test the second. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-05-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      6.283184678861,
+      6.283185935498
+    ],
+    "numericalTolerance": 6.283185307179586e-7
+  }
+]

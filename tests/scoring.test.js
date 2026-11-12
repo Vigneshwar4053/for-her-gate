@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {scoreQuestion,scoreTest,numericAnswer} from '../js/scoring-engine.js';
+const mcq={id:'q',type:'MCQ',marks:1,correctAnswer:'B'},msq={...mcq,type:'MSQ',correctAnswer:['A','C']},nat={...mcq,type:'NAT',acceptedRange:[1.95,2.05]};
+test('MCQ full marks and one-third penalties for both mark values',()=>{for(const marks of [1,2]){assert.equal(scoreQuestion({...mcq,marks},'B').marks,marks);assert.equal(scoreQuestion({...mcq,marks},'A').marks,-marks/3);}});
+test('unattempted answers of all types score zero',()=>{for(const q of [mcq,msq,nat])for(const value of [null,undefined,'',[]])assert.equal(scoreQuestion(q,value).marks,0);});
+test('MSQ requires exact set, with no partial marks or penalty',()=>{assert.equal(scoreQuestion(msq,['C','A']).marks,1);for(const a of [['A'],['A','C','D'],['B'],['A','C','C']])assert.equal(scoreQuestion(msq,a).marks,0);});
+test('NAT accepts inclusive limits, signs, decimals and scientific notation',()=>{for(const a of ['2','+2.0','2e0','1.95','2.05'])assert.equal(scoreQuestion(nat,a).marks,1);assert.equal(scoreQuestion({...nat,acceptedRange:[-2,-1]},'-1.5').marks,1);for(const a of ['2.1','1.9','0x2','Infinity','NaN','2abc','2,0'])assert.equal(scoreQuestion(nat,a).marks,0);assert.equal(numericAnswer(' .5e+2 '),50);});
+test('NAT boundary comparison tolerates machine roundoff without a broad acceptance gap',()=>{assert.equal(scoreQuestion({...nat,acceptedRange:[.3,.3]},.1+.2).marks,1);assert.equal(scoreQuestion({...nat,acceptedRange:[.3,.3]},.3000001).marks,0);});
+test('historical marking requires verified configuration and uses per-question penalties',()=>{assert.throws(()=>scoreQuestion(mcq,'A',{mode:'historical'}));assert.equal(scoreQuestion({...mcq,originalMarking:{incorrectPenalty:.5}},'A',{mode:'historical',verified:true}).marks,-.5);});
+test('test marks, accuracy and percentage have distinct denominators',()=>{const r=scoreTest([mcq,{...mcq,id:'q2',marks:2},{...nat,id:'q3'}],{q:'B',q2:'A'},{mode:'current'});assert.equal(r.correct,1);assert.equal(r.incorrect,1);assert.equal(r.unattempted,1);assert.equal(r.accuracy,50);assert.equal(r.maxMarks,4);assert.ok(Math.abs(r.percentage-100/12)<1e-10);});

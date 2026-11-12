@@ -1,0 +1,781 @@
+[
+  {
+    "id": "FH-TOPIC-14-01",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For a nondegenerate semiconductor, n/ni=exp[(EF−Ei)/(kT)]. If EF−Ei=kT ln10, find n/ni.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Nondegenerate approximation",
+        "specified Fermi-level shift"
+      ],
+      "asked": "Find normalized electron concentration.",
+      "concept": "Boltzmann carrier concentration",
+      "formula": "n/n_i=e^{(E_F-E_i)/(kT)}",
+      "steps": [
+        "The dimensionless exponent is ln10.",
+        "Exponentiation reverses the natural logarithm.",
+        "The concentration ratio is 10."
+      ],
+      "finalAnswer": "10",
+      "explanation": "The concentration ratio is 10.",
+      "commonMistakes": [
+        "Use the natural logarithm with an exponential base e."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which boltzmann carrier concentration applies.",
+      "Start from $ n/n_i=e^{(E_F-E_i)/(kT)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate Boltzmann density ratio at the stated dimensionless Fermi shift. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-TOPIC-14-02",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "At equilibrium with complete donor ionization, n−p=1.5×10¹⁰ cm⁻³ and np=10²⁰ cm⁻⁶. Find n in units of 10¹⁰ cm⁻³.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Charge-neutrality difference 1.5×10¹⁰",
+        "mass-action product 10²⁰"
+      ],
+      "asked": "Find the positive majority-electron solution in scaled units.",
+      "concept": "Exact carrier neutrality",
+      "formula": "n^2-N_Dn-n_i^2=0",
+      "steps": [
+        "Write n=a×10¹⁰ and p=b×10¹⁰, so a−b=1.5 and ab=1.",
+        "Substituting b=a−1.5 gives a²−1.5a−1=0, with roots 2 and −0.5.",
+        "Only the positive root is physical: n=2×10¹⁰ cm⁻³ and p=0.5×10¹⁰ cm⁻³."
+      ],
+      "finalAnswer": "2 ×10¹⁰ cm⁻³",
+      "explanation": "Only the positive root is physical: n=2×10¹⁰ cm⁻³ and p=0.5×10¹⁰ cm⁻³.",
+      "commonMistakes": [
+        "Do not approximate n by donor density when donor density is comparable to ni."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which exact carrier neutrality applies.",
+      "Start from $ n^2-N_Dn-n_i^2=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Bracket physical positive solution of simultaneous neutrality and mass action. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-14-03",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Use ni=sqrt(NcNv) exp[−Eg/(2kT)]. For Nc=4×10¹⁹ cm⁻³, Nv=10¹⁹ cm⁻³ and Eg=20kT, find ni in units of 10¹⁴ cm⁻³.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Stated Boltzmann density model",
+        "Eg/(2kT)=10"
+      ],
+      "asked": "Find intrinsic concentration in requested scaled units.",
+      "concept": "Intrinsic density from band edges",
+      "formula": "n_i=\\sqrt{N_cN_v}e^{-E_g/(2kT)}",
+      "steps": [
+        "The geometric-mean density is √(4×10³⁸)=2×10¹⁹ cm⁻³.",
+        "Multiply by e⁻¹⁰≈4.539992976×10⁻⁵ to obtain 9.079985952×10¹⁴ cm⁻³.",
+        "The requested numerical value is 9.079985952."
+      ],
+      "finalAnswer": "9.07998595249697 ×10¹⁴ cm⁻³",
+      "explanation": "The requested numerical value is 9.079985952.",
+      "commonMistakes": [
+        "The band gap appears divided by 2kT for intrinsic concentration, not kT."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which intrinsic density from band edges applies.",
+      "Start from $ n_i=\\sqrt{N_cN_v}e^{-E_g/(2kT)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Effective-density geometric mean and numerical activation exponential. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      9.079985044498,
+      9.079986860496
+    ],
+    "numericalTolerance": 9.079985952496971e-7
+  },
+  {
+    "id": "FH-TOPIC-14-04",
+    "type": "MCQ",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "The Fermi–Dirac occupation probability at energy E=EF at a positive temperature is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "1/2"
+      },
+      {
+        "id": "C",
+        "text": "1"
+      },
+      {
+        "id": "D",
+        "text": "Temperature in kelvin"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Fermi–Dirac distribution",
+        "E equals chemical potential"
+      ],
+      "asked": "Find the occupation probability.",
+      "concept": "Fermi occupation",
+      "formula": "f(E)=1/(1+e^{(E-E_F)/(kT)})",
+      "steps": [
+        "The exponent is zero at E=EF.",
+        "Its exponential is 1.",
+        "Occupation is 1/(1+1)=1/2."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Occupation is 1/(1+1)=1/2.",
+      "commonMistakes": [
+        "Occupation probability is not the total density of available states."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fermi occupation applies.",
+      "Start from $ f(E)=1/(1+e^{(E-E_F)/(kT)}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Fermi–Dirac occupation at zero energy offset is 1/(1+exp0). Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-14-05",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Using the Fermi–Dirac law, find the occupation probability at E−EF=kT ln3.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Positive dimensionless energy offset ln3"
+      ],
+      "asked": "Evaluate the occupation function.",
+      "concept": "Fermi–Dirac denominator",
+      "formula": "f=1/(1+e^{(E-E_F)/(kT)})",
+      "steps": [
+        "The exponential term is exp(ln3)=3.",
+        "The full denominator is 1+3=4.",
+        "Thus f=1/4=0.25."
+      ],
+      "finalAnswer": "0.25",
+      "explanation": "Thus f=1/4=0.25.",
+      "commonMistakes": [
+        "The Boltzmann approximation would omit the 1; this question asks for the exact stated law."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fermi–dirac denominator applies.",
+      "Start from $ f=1/(1+e^{(E-E_F)/(kT)}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate the full Fermi–Dirac denominator, without Boltzmann approximation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.2499999,
+      0.2500001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-14-06",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A compensated n-type semiconductor has fully ionized ND=5×10¹⁶ and NA=2×10¹⁶ cm⁻³. Neglect holes in charge neutrality. Find n in units of 10¹⁶ cm⁻³.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Complete dopant ionization",
+        "holes explicitly neglected"
+      ],
+      "asked": "Find net majority concentration.",
+      "concept": "Donor–acceptor compensation",
+      "formula": "n\\simeq N_D-N_A",
+      "steps": [
+        "Positive donor charge is partly balanced by negatively ionized acceptors.",
+        "The remainder is balanced by conduction electrons: 5×10¹⁶−2×10¹⁶.",
+        "n≈3×10¹⁶ cm⁻³, so enter 3."
+      ],
+      "finalAnswer": "3 ×10¹⁶ cm⁻³",
+      "explanation": "n≈3×10¹⁶ cm⁻³, so enter 3.",
+      "commonMistakes": [
+        "Use net ionized doping rather than total dopant count."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which donor–acceptor compensation applies.",
+      "Start from $ n\\simeq N_D-N_A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Charge-neutrality balance including ionized compensation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-14-07",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which descriptions of semiconductor energy bands are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "An intrinsic semiconductor can thermally generate electron–hole pairs"
+      },
+      {
+        "id": "B",
+        "text": "The forbidden gap contains a continuum of allowed bulk Bloch states in an ideal perfect crystal"
+      },
+      {
+        "id": "C",
+        "text": "A direct-gap material has conduction minimum and valence maximum at the same crystal wavevector"
+      },
+      {
+        "id": "D",
+        "text": "Band-gap energy is an energy separation, not a carrier concentration"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal bulk band picture",
+        "no defect levels in the forbidden gap"
+      ],
+      "asked": "Select valid band-structure facts.",
+      "concept": "Band gap and thermal excitation",
+      "formula": "E_g=E_{c,min}-E_{v,max}",
+      "steps": [
+        "Thermal excitation can move an electron from a valence state into a conduction state, leaving a hole.",
+        "A forbidden ideal bulk gap lacks the claimed allowed-state continuum.",
+        "Direct-gap extrema share wavevector, and Eg is an energy difference. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Direct-gap extrema share wavevector, and Eg is an energy difference. Select A, C and D.",
+      "commonMistakes": [
+        "Defect states are not the same as an allowed-band continuum in an ideal perfect crystal."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which band gap and thermal excitation applies.",
+      "Start from $ E_g=E_{c,min}-E_{v,max} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Ideal band-state definitions, direct-gap wavevector relation and pair generation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-14-08",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A material has absorption threshold wavelength λg=1240 nm under Eg(eV)=1240/λg(nm). Find Eg in eV.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Threshold relation hc=1240 eV·nm",
+        "λg=1240 nm"
+      ],
+      "asked": "Find the optical gap.",
+      "concept": "Photon energy threshold",
+      "formula": "E_g=hc/\\lambda_g",
+      "steps": [
+        "The threshold photon energy equals the band-gap energy in the stated approximation.",
+        "Divide 1240 eV·nm by 1240 nm.",
+        "Eg=1 eV."
+      ],
+      "finalAnswer": "1 eV",
+      "explanation": "Eg=1 eV.",
+      "commonMistakes": [
+        "A longer threshold wavelength corresponds to a smaller gap, not a larger gap."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which photon energy threshold applies.",
+      "Start from $ E_g=hc/\\lambda_g $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Photon threshold energy using the explicitly provided hc unit relation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-14-09",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In a nondegenerate n-type semiconductor n/ni=100 and VT=kT/q=0.026 V. Find (EF−Ei)/q in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Electron density ratio 100",
+        "thermal voltage 0.026 V"
+      ],
+      "asked": "Find normalized Fermi-level displacement.",
+      "concept": "Fermi-level logarithmic shift",
+      "formula": "(E_F-E_i)/q=V_T\\ln(n/n_i)",
+      "steps": [
+        "Take natural logarithms of the Boltzmann concentration relation.",
+        "ln100≈4.605170186.",
+        "Multiply by 0.026 V to obtain approximately 0.119734425 V."
+      ],
+      "finalAnswer": "0.1197344248356904 V",
+      "explanation": "Multiply by 0.026 V to obtain approximately 0.119734425 V.",
+      "commonMistakes": [
+        "The logarithm is natural; VT already includes division by electron charge."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fermi-level logarithmic shift applies.",
+      "Start from $ (E_F-E_i)/q=V_T\\ln(n/n_i) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically invert electron concentration versus Fermi-level voltage. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.119734324836,
+      0.119734524836
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-14-10",
+    "type": "MCQ",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In ordinary n-type material with complete donor ionization and negligible compensation, the majority carriers are:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Holes only"
+      },
+      {
+        "id": "B",
+        "text": "Ionized donors moving through the lattice"
+      },
+      {
+        "id": "C",
+        "text": "Conduction electrons"
+      },
+      {
+        "id": "D",
+        "text": "Valence-band vacancies counted as negative ions"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Standard n-type majority-carrier terminology"
+      ],
+      "asked": "Identify mobile majority carriers.",
+      "concept": "Doping and mobile charge",
+      "formula": "n\\gg p",
+      "steps": [
+        "Donors provide electrons that can occupy mobile conduction-band states.",
+        "The ionized donor atoms remain bound to lattice sites in the ordinary model.",
+        "The majority mobile carriers are therefore conduction electrons, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "The majority mobile carriers are therefore conduction electrons, option C.",
+      "commonMistakes": [
+        "Fixed ionized dopants contribute space charge but are not ordinary mobile current carriers."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which doping and mobile charge applies.",
+      "Start from $ n\\gg p $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Mobile conduction electrons versus fixed ionized donor charge distinction. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-14-11",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which assumptions are used when writing n≈ND for a uniformly donor-doped semiconductor?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Donors are substantially ionized"
+      },
+      {
+        "id": "B",
+        "text": "Compensation by acceptors is negligible"
+      },
+      {
+        "id": "C",
+        "text": "Intrinsic carriers must dominate the doping"
+      },
+      {
+        "id": "D",
+        "text": "Minority holes are negligible in the charge-neutrality balance"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Uniform equilibrium sample",
+        "approximate majority relation"
+      ],
+      "asked": "Select required approximation conditions.",
+      "concept": "Majority-carrier approximation",
+      "formula": "n+N_A^-=p+N_D^+",
+      "steps": [
+        "The exact charge-neutrality relation balances mobile and dopant charges.",
+        "To reduce it to n≈ND, take ND+≈ND, NA−≈0 and p≪n.",
+        "Intrinsic domination would invalidate the approximation, so select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Intrinsic domination would invalidate the approximation, so select A, B and D.",
+      "commonMistakes": [
+        "Check the ionization and intrinsic regimes before using the common n≈ND shortcut."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which majority-carrier approximation applies.",
+      "Start from $ n+N_A^-=p+N_D^+ $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Reduce exact neutrality equation only under ionization, compensation and minority approximations. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-14-12",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "At fixed temperature in the nondegenerate model, raising EF by kT ln4 changes n by a factor 4. By what factor does p change?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Thermal equilibrium",
+        "same temperature and ni",
+        "Fermi shift kTln4"
+      ],
+      "asked": "Find new-hole/old-hole concentration ratio.",
+      "concept": "Equilibrium mass-action compensation",
+      "formula": "np=n_i^2\\quad(T\\text{ fixed})",
+      "steps": [
+        "The intrinsic product remains constant when temperature and material are unchanged.",
+        "If n increases fourfold, p must decrease fourfold to keep np fixed.",
+        "Therefore pnew/pold=1/4=0.25."
+      ],
+      "finalAnswer": "0.25",
+      "explanation": "Therefore pnew/pold=1/4=0.25.",
+      "commonMistakes": [
+        "Increasing both electron and hole equilibrium densities independently would violate mass action."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which equilibrium mass-action compensation applies.",
+      "Start from $ np=n_i^2\\quad(T\\text{ fixed}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Hole Boltzmann factor under the same Fermi shift; product-conservation check. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-14-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.2499999,
+      0.2500001
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

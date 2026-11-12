@@ -1,0 +1,800 @@
+[
+  {
+    "id": "FH-SUBJECT-04-01",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The shown ideal inverting op-amp uses Rin=10 kΩ and Rf=30 kΩ, with the noninverting terminal grounded. For Vin=1 V and ±12 V supplies, find Vout in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Ideal op-amp",
+        "negative feedback",
+        "Rin=10 kΩ",
+        "Rf=30 kΩ",
+        "input 1 V",
+        "unsaturated output"
+      ],
+      "asked": "Find the closed-loop output.",
+      "concept": "Virtual ground and inverting gain",
+      "formula": "V_o=-\\frac{R_f}{R_{in}}V_i",
+      "steps": [
+        "Negative feedback holds the inverting node at virtual ground in linear operation.",
+        "KCL gives (1−0)/10k=(0−Vo)/30k.",
+        "Vo=−3 V, within the ±12 V supply limits, so the assumed operating region is consistent."
+      ],
+      "finalAnswer": "-3 V",
+      "explanation": "Vo=−3 V, within the ±12 V supply limits, so the assumed operating region is consistent.",
+      "commonMistakes": [
+        "Virtual ground is a voltage condition, not a direct physical connection."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which virtual ground and inverting gain applies.",
+      "Start from $ V_o=-\\frac{R_f}{R_{in}}V_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve ideal feedback constraint and summing-node KCL as a two-variable system. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -3.0000003,
+      -2.9999997
+    ],
+    "numericalTolerance": 3e-7,
+    "diagrams": [
+      {
+        "src": "assets/diagrams/inverting-amplifier.svg",
+        "alt": "Ideal inverting amplifier with 10 kΩ input, 30 kΩ feedback, grounded noninverting input, ±12 V supplies."
+      }
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-04-02",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal inverting summer has two input resistors of 10 kΩ, feedback resistance 20 kΩ, and inputs 1 V and 2 V. Assuming linear operation, find Vout in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Equal input resistors 10 kΩ",
+        "Rf=20 kΩ",
+        "two DC inputs 1 V,2 V"
+      ],
+      "asked": "Find the summed output voltage.",
+      "concept": "Op-amp summing node",
+      "formula": "V_o=-R_f\\left(\\frac{V_1}{R_1}+\\frac{V_2}{R_2}\\right)",
+      "steps": [
+        "The input currents into virtual ground are 0.1 mA and 0.2 mA.",
+        "Their sum 0.3 mA must flow through the feedback resistor.",
+        "Vo=−(0.3 mA)(20 kΩ)=−6 V."
+      ],
+      "finalAnswer": "-6 V",
+      "explanation": "Vo=−(0.3 mA)(20 kΩ)=−6 V.",
+      "commonMistakes": [
+        "Add input currents with their resistor weights before applying the feedback resistance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which op-amp summing node applies.",
+      "Start from $ V_o=-R_f\\left(\\frac{V_1}{R_1}+\\frac{V_2}{R_2}\\right) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Nodal KCL with both independent signal sources. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -6.0000006,
+      -5.9999994
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-SUBJECT-04-03",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal inverting integrator has RC=0.01 s, constant input 1 V from t=0, and Vout(0)=0. Find Vout at t=1 ms, in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "RC=0.01 s",
+        "constant 1 V input",
+        "zero initial output"
+      ],
+      "asked": "Find the integrated output after 1 ms.",
+      "concept": "Op-amp integration",
+      "formula": "V_o(t)=V_o(0)-\\frac1{RC}\\int_0^t V_i(\\tau)d\\tau",
+      "steps": [
+        "The input integral over 1 ms is 1×0.001 V·s.",
+        "Divide by RC=0.01 s and apply the inverting sign.",
+        "Vout=−0.001/0.01=−0.1 V."
+      ],
+      "finalAnswer": "-0.1 V",
+      "explanation": "Vout=−0.001/0.01=−0.1 V.",
+      "commonMistakes": [
+        "Include both the integration interval and the initial capacitor/output state."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which op-amp integration applies.",
+      "Start from $ V_o(t)=V_o(0)-\\frac1{RC}\\int_0^t V_i(\\tau)d\\tau $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate ideal integrator state equation using RK4. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -0.1000001,
+      -0.0999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-04-04",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A common-emitter small-signal amplifier has gm=40 mS and RC=2.5 kΩ. Ignore transistor output resistance and emitter degeneration, and assume an ideal AC voltage drive vbe. Find vo/vbe.",
+    "options": [],
+    "solution": {
+      "given": [
+        "gm=0.04 S",
+        "RC=2500 Ω",
+        "collector supply is AC ground"
+      ],
+      "asked": "Find midband small-signal gain.",
+      "concept": "Common-emitter transconductance gain",
+      "formula": "A_v=-g_mR_C",
+      "steps": [
+        "The collector current increment is gm vbe.",
+        "Its drop through RC reduces collector voltage, so vo=−gmRC vbe.",
+        "Gain is −0.04×2500=−100."
+      ],
+      "finalAnswer": "-100",
+      "explanation": "Gain is −0.04×2500=−100.",
+      "commonMistakes": [
+        "The gain is negative because a larger base drive pulls the collector voltage downward."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which common-emitter transconductance gain applies.",
+      "Start from $ A_v=-g_mR_C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "One-volt vbe test: collector nodal KCL and controlled-current source. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -100.00001,
+      -99.99999
+    ],
+    "numericalTolerance": 0.000009999999999999999
+  },
+  {
+    "id": "FH-SUBJECT-04-05",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A matched BJT differential pair has an ideal tail source, gm=2 mS per transistor and RC=10 kΩ per collector. For differential input vd=vb1−vb2, find vo1/vd in differential mode, neglecting ro.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Matched pair",
+        "ideal tail",
+        "equal collector resistors",
+        "single-ended collector-1 output"
+      ],
+      "asked": "Find single-ended differential gain.",
+      "concept": "Differential half-circuit",
+      "formula": "v_{be1}=v_d/2,\\quad A_{d,1}=-g_mR_C/2",
+      "steps": [
+        "Odd-mode symmetry makes the shared emitter node an AC virtual ground.",
+        "Transistor 1 receives half the differential input, giving ic1=gm vd/2.",
+        "Its collector output is −RC ic1, so gain=−0.002×10000/2=−10."
+      ],
+      "finalAnswer": "-10",
+      "explanation": "Its collector output is −RC ic1, so gain=−0.002×10000/2=−10.",
+      "commonMistakes": [
+        "Single-ended differential gain is half the collector-to-collector gain magnitude."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which differential half-circuit applies.",
+      "Start from $ v_{be1}=v_d/2,\\quad A_{d,1}=-g_mR_C/2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Differential symmetry constraint and collector controlled-current KCL. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -10.000001,
+      -9.999999
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-SUBJECT-04-06",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A negative-feedback amplifier has real open-loop gain A=1000 and feedback factor β=0.1 at low frequency. Find its exact closed-loop gain.",
+    "options": [],
+    "solution": {
+      "given": [
+        "A=1000",
+        "β=0.1",
+        "negative feedback"
+      ],
+      "asked": "Find A/(1+Aβ).",
+      "concept": "Closed-loop feedback",
+      "formula": "A_f=\\frac{A}{1+A\\beta}",
+      "steps": [
+        "The error is vi−βvo and output is A times that error.",
+        "Rearranging vo=A(vi−βvo) yields vo/vi=A/(1+Aβ).",
+        "Substitution gives 1000/101≈9.900990099, slightly below 1/β=10."
+      ],
+      "finalAnswer": "9.900990099009901",
+      "explanation": "Substitution gives 1000/101≈9.900990099, slightly below 1/β=10.",
+      "commonMistakes": [
+        "The approximation 1/β is not exact at finite loop gain."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which closed-loop feedback applies.",
+      "Start from $ A_f=\\frac{A}{1+A\\beta} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve vo=A(vi−βvo) at vi=1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      9.900989108911,
+      9.900991089109
+    ],
+    "numericalTolerance": 9.9009900990099e-7
+  },
+  {
+    "id": "FH-SUBJECT-04-07",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a negative-feedback loop with a single relevant unity-gain crossover, the unwrapped loop phase there is −135°. What is its phase margin?",
+    "options": [
+      {
+        "id": "A",
+        "text": "−45°"
+      },
+      {
+        "id": "B",
+        "text": "0°"
+      },
+      {
+        "id": "C",
+        "text": "45°"
+      },
+      {
+        "id": "D",
+        "text": "135°"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Unity loop-magnitude crossover",
+        "loop phase −135°"
+      ],
+      "asked": "Find the angular separation from −180°.",
+      "concept": "Phase margin",
+      "formula": "PM=180^\\circ+\\angle L(j\\omega_{gc})",
+      "steps": [
+        "At unity loop gain, the critical feedback phase is −180°.",
+        "The measured phase is −135°, which is 45° away from that point.",
+        "PM=180−135=45°, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "PM=180−135=45°, option C.",
+      "commonMistakes": [
+        "Use loop phase at gain crossover, not gain at phase crossover."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which phase margin applies.",
+      "Start from $ PM=180^\\circ+\\angle L(j\\omega_{gc}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Distance between crossover phase −135° and critical phase −180°. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-SUBJECT-04-08",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "oscillators",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An equal-R equal-C Wien network uses R=10 kΩ and C=10 nF. Find its zero-phase frequency in hertz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Equal Wien lead-lag components",
+        "R=10⁴ Ω",
+        "C=10⁻⁸ F"
+      ],
+      "asked": "Find the oscillation-selection frequency.",
+      "concept": "Wien-network frequency",
+      "formula": "f_0=\\frac1{2\\pi RC}",
+      "steps": [
+        "The equal-component network has zero phase when ω0RC=1.",
+        "RC=10⁻⁴ s, hence ω0=10000 rad/s.",
+        "Divide by 2π to obtain f0≈1591.549431 Hz."
+      ],
+      "finalAnswer": "1591.5494309189535 Hz",
+      "explanation": "Divide by 2π to obtain f0≈1591.549431 Hz.",
+      "commonMistakes": [
+        "Angular frequency and cyclic frequency differ by 2π."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which wien-network frequency applies.",
+      "Start from $ f_0=\\frac1{2\\pi RC} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Zero-imaginary-part frequency condition of equal-RC Wien transfer. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      1591.54927176401,
+      1591.549590073897
+    ],
+    "numericalTolerance": 0.00015915494309189535
+  },
+  {
+    "id": "FH-SUBJECT-04-09",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "diode-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal half-wave rectifier with resistive load and input 10 sin(ωt) V, what is the average output voltage over a complete period?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$10$ V"
+      },
+      {
+        "id": "B",
+        "text": "$10/\\pi$ V"
+      },
+      {
+        "id": "C",
+        "text": "$20/\\pi$ V"
+      },
+      {
+        "id": "D",
+        "text": "$5\\sqrt2$ V"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal diode passes positive half-cycles",
+        "no smoothing capacitor"
+      ],
+      "asked": "Find the DC component of the rectified waveform.",
+      "concept": "Half-wave average",
+      "formula": "V_{avg}=\\frac1{2\\pi}\\int_0^\\pi V_m\\sin\\theta\\,d\\theta",
+      "steps": [
+        "The output is 10sinθ on the positive half-cycle and zero on the negative half.",
+        "The positive-half integral is 20; dividing by the whole-period length 2π gives 10/π.",
+        "This is the average, not the peak or RMS voltage."
+      ],
+      "finalAnswer": "B",
+      "explanation": "This is the average, not the peak or RMS voltage.",
+      "commonMistakes": [
+        "Use the full-period denominator even though conduction occurs for only half a period."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which half-wave average applies.",
+      "Start from $ V_{avg}=\\frac1{2\\pi}\\int_0^\\pi V_m\\sin\\theta\\,d\\theta $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically integrate actual clipped sinusoid over the entire period. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-SUBJECT-04-10",
+    "type": "MSQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal op-amp operating linearly with stable negative feedback, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Input currents are zero"
+      },
+      {
+        "id": "B",
+        "text": "The two input voltages are equal in the ideal infinite-gain limit"
+      },
+      {
+        "id": "C",
+        "text": "Output voltage must always be zero"
+      },
+      {
+        "id": "D",
+        "text": "Input differential voltage is approximately zero for sufficiently large finite open-loop gain"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Linear operation",
+        "stable negative feedback",
+        "ideal input resistance"
+      ],
+      "asked": "Select valid operating constraints.",
+      "concept": "Ideal op-amp constraints",
+      "formula": "V_o=A(V_+-V_-)",
+      "steps": [
+        "Infinite input resistance makes each input current zero.",
+        "A finite unsaturated output with ideal infinite gain requires V+=V−; for large finite A the difference is Vo/A.",
+        "The output can take a nonzero value set by feedback, so C is false. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "The output can take a nonzero value set by feedback, so C is false. Select A, B and D.",
+      "commonMistakes": [
+        "The equal-input rule cannot be applied unconditionally to saturated comparators."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which ideal op-amp constraints applies.",
+      "Start from $ V_o=A(V_+-V_-) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Ideal input-admittance limit and Vo=A(V+−V−) finite-output limit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-04-11",
+    "type": "MSQ",
+    "subject": "analog",
+    "topic": "feedback",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which modifications generally improve the low-frequency accuracy of a voltage-feedback amplifier while it remains stable and linear?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Increase loop gain magnitude without changing its sign or compromising stability"
+      },
+      {
+        "id": "B",
+        "text": "Remove negative feedback altogether"
+      },
+      {
+        "id": "C",
+        "text": "Increase the amplifier’s actual input resistance to reduce loading of a finite-resistance source"
+      },
+      {
+        "id": "D",
+        "text": "Force the output into a supply rail"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Stable linear operation",
+        "accuracy refers to feedback-set gain and source loading"
+      ],
+      "asked": "Choose valid gain/impedance design directions.",
+      "concept": "Feedback error and loading",
+      "formula": "A_f=\\frac{1/\\beta}{1+1/(A\\beta)}",
+      "steps": [
+        "The fractional deviation from 1/β decreases as a properly phased stable loop gain grows.",
+        "A higher input resistance draws less current from a finite-resistance signal source.",
+        "Removing feedback or saturating the output destroys these conditions. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Removing feedback or saturating the output destroys these conditions. Select A and C.",
+      "commonMistakes": [
+        "Increasing loop gain is useful only while the stability and linear-operation assumptions remain valid."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which feedback error and loading applies.",
+      "Start from $ A_f=\\frac{1/\\beta}{1+1/(A\\beta)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Feedback fractional-error expression and voltage-divider loading monotonicity. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-04-12",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "feedback",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A dominant-pole amplifier has unity-gain frequency 1 MHz and open-loop transfer approximately A0/(1+s/ωp). Well above its dominant pole, estimate its closed-loop bandwidth for noninverting noise gain 20, in kHz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "One dominant pole",
+        "unity-gain frequency 1000 kHz",
+        "noise gain 20"
+      ],
+      "asked": "Estimate closed-loop −3 dB bandwidth under the gain-bandwidth approximation.",
+      "concept": "Dominant-pole gain-bandwidth product",
+      "formula": "NG\\,f_{BW}\\simeq f_T",
+      "steps": [
+        "For a dominant-pole response, the gain-bandwidth product is approximately constant.",
+        "Use the noninverting noise gain of 20 for the loop crossover estimate.",
+        "fBW≈1000/20=50 kHz. The approximation requires separation from the dominant pole and higher poles."
+      ],
+      "finalAnswer": "50 kHz",
+      "explanation": "fBW≈1000/20=50 kHz. The approximation requires separation from the dominant pole and higher poles.",
+      "commonMistakes": [
+        "Use noise gain rather than an inverting signal-gain magnitude when the two differ."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dominant-pole gain-bandwidth product applies.",
+      "Start from $ NG\\,f_{BW}\\simeq f_T $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Dominant-pole approximate noise-gain/crossover equality; stated approximation only. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-04-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      49.999995,
+      50.000005
+    ],
+    "numericalTolerance": 0.0000049999999999999996
+  }
+]

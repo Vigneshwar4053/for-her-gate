@@ -1,0 +1,56 @@
+[
+  {
+    "id": "mathematics",
+    "title": "Engineering Mathematics",
+    "icon": "sigma",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "networks",
+    "title": "Networks, Signals and Systems",
+    "icon": "activity",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "devices",
+    "title": "Electronic Devices",
+    "icon": "cpu",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "analog",
+    "title": "Analog Circuits",
+    "icon": "audio-lines",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "digital",
+    "title": "Digital Circuits",
+    "icon": "binary",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "control",
+    "title": "Control Systems",
+    "icon": "sliders-horizontal",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "communications",
+    "title": "Communications",
+    "icon": "radio",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "electromagnetics",
+    "title": "Electromagnetics",
+    "icon": "waves",
+    "status": "official-2027-mapped"
+  },
+  {
+    "id": "aptitude",
+    "title": "General Aptitude",
+    "icon": "brain",
+    "status": "official-2027-mapped"
+  }
+]

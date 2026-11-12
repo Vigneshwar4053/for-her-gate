@@ -1,0 +1,784 @@
+[
+  {
+    "id": "FH-MIXED-01-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The matrix A=[[0,−2],[1,3]] has two real eigenvalues. Find the larger eigenvalue.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Real 2 × 2 matrix",
+        "trace 3",
+        "determinant 2"
+      ],
+      "asked": "Find the larger characteristic root.",
+      "concept": "Matrix characteristic polynomial",
+      "formula": "\\lambda^2-\\operatorname{tr}(A)\\lambda+\\det A=0",
+      "steps": [
+        "The trace is 3 and determinant is 2.",
+        "The characteristic polynomial is λ²−3λ+2=(λ−1)(λ−2).",
+        "The eigenvalues are 1 and 2, so the larger is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "The eigenvalues are 1 and 2, so the larger is 2.",
+      "commonMistakes": [
+        "Eigenvalues are not generally equal to diagonal entries for a nondiagonal matrix."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which matrix characteristic polynomial applies.",
+      "Start from $ \\lambda^2-\\operatorname{tr}(A)\\lambda+\\det A=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Characteristic polynomial roots 1,2; verify original matrix eigen-equations. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-01-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A DC node connects to a 6 V source through 2 kΩ and to ground through 1 kΩ. With no other branches, find node voltage in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Source 6 V",
+        "source-side resistor 2 kΩ",
+        "ground-side resistor 1 kΩ"
+      ],
+      "asked": "Find the unloaded divider voltage.",
+      "concept": "Nodal current balance",
+      "formula": "(v-6)/2+v/1=0",
+      "steps": [
+        "Using kΩ and mA, KCL is (v−6)/2+v=0.",
+        "Multiply by 2: 3v−6=0.",
+        "Thus v=2 V."
+      ],
+      "finalAnswer": "2 V",
+      "explanation": "Thus v=2 V.",
+      "commonMistakes": [
+        "The voltage is measured across the ground-side resistor."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which nodal current balance applies.",
+      "Start from $ (v-6)/2+v/1=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Nodal solve at the divider output. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-01-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "An ideal binary 5-bit counter cycles through all states and returns to its starting state. How many clock edges occur in one complete cycle?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Five flip-flops",
+        "full binary state cycle"
+      ],
+      "asked": "Find the modulus of the counter.",
+      "concept": "Binary state capacity",
+      "formula": "M=2^n",
+      "steps": [
+        "Each bit has two possible values, so five bits represent 2⁵ distinct states.",
+        "A binary counter visits one state per clock edge and repeats after all states.",
+        "Its cycle therefore spans 32 active clock edges."
+      ],
+      "finalAnswer": "32",
+      "explanation": "Its cycle therefore spans 32 active clock edges.",
+      "commonMistakes": [
+        "Five bits do not imply only five states."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which binary state capacity applies.",
+      "Start from $ M=2^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all distinct five-bit counter states. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      31.9999968,
+      32.0000032
+    ],
+    "numericalTolerance": 0.0000032
+  },
+  {
+    "id": "FH-MIXED-01-04",
+    "type": "MCQ",
+    "subject": "devices",
+    "topic": "mosfet",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal NMOS with VGS>VTH, which condition defines the long-channel triode region?",
+    "options": [
+      {
+        "id": "A",
+        "text": "VDS≥VGS−VTH"
+      },
+      {
+        "id": "B",
+        "text": "VGS<VTH"
+      },
+      {
+        "id": "C",
+        "text": "0≤VDS<VGS−VTH"
+      },
+      {
+        "id": "D",
+        "text": "VDS must be zero only"
+      }
+    ],
+    "solution": {
+      "given": [
+        "NMOS",
+        "positive drain voltage",
+        "long-channel model"
+      ],
+      "asked": "Choose the channel-present unsaturated region.",
+      "concept": "MOS region conditions",
+      "formula": "0\\le V_{DS}<V_{GS}-V_{TH}",
+      "steps": [
+        "Positive gate overdrive forms an inversion channel.",
+        "When drain voltage remains below the overdrive, that channel has not pinched off at the drain.",
+        "This is the triode region, option C; larger VDS leads to the ideal saturation condition."
+      ],
+      "finalAnswer": "C",
+      "explanation": "This is the triode region, option C; larger VDS leads to the ideal saturation condition.",
+      "commonMistakes": [
+        "Gate overdrive must first be positive; the drain inequality alone is insufficient."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mos region conditions applies.",
+      "Start from $ 0\\le V_{DS}<V_{GS}-V_{TH} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Long-channel channel-pinch-off threshold with positive gate overdrive. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-MIXED-01-05",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal noninverting amplifier has 9 kΩ from output to its inverting input and 1 kΩ from that input to ground. Find its closed-loop voltage gain.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Ideal op-amp",
+        "stable negative feedback",
+        "Rf=9 kΩ",
+        "Rg=1 kΩ"
+      ],
+      "asked": "Find vo/vi.",
+      "concept": "Noninverting feedback divider",
+      "formula": "A_v=1+R_f/R_g",
+      "steps": [
+        "The feedback node is vo×1/(9+1)=vo/10.",
+        "Ideal linear feedback sets it equal to the noninverting input vi.",
+        "Thus vo=10vi and gain is 10."
+      ],
+      "finalAnswer": "10",
+      "explanation": "Thus vo=10vi and gain is 10.",
+      "commonMistakes": [
+        "The noninverting gain includes the unity term."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which noninverting feedback divider applies.",
+      "Start from $ A_v=1+R_f/R_g $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Feedback-divider equality; direct nodal relation vi=vo/10. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-MIXED-01-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A stable system has H(s)=2/(s+2). For a unit impulse input, find output at t=ln2.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Causal transfer",
+        "impulse input",
+        "zero initial state"
+      ],
+      "asked": "Find the impulse response at ln2.",
+      "concept": "Inverse Laplace transform",
+      "formula": "h(t)=2e^{-2t}u(t)",
+      "steps": [
+        "The transform pair 1/(s+a) ↔ e⁻ᵃᵗu(t) gives h=2e⁻²ᵗu(t).",
+        "At t=ln2, the exponential is 1/4.",
+        "The output is 2×1/4=0.5."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "The output is 2×1/4=0.5.",
+      "commonMistakes": [
+        "A unit impulse produces the impulse response, not the unit-step response."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which inverse laplace transform applies.",
+      "Start from $ h(t)=2e^{-2t}u(t) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Inverse-transform exponential evaluation with correct impulse numerator. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-01-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An equiprobable 8-symbol source emits 2000 symbols/s. Find its entropy rate in kbit/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Eight equally likely choices per independent source symbol",
+        "2000 symbols/s"
+      ],
+      "asked": "Find source information rate.",
+      "concept": "Entropy of an equiprobable alphabet",
+      "formula": "H=\\log_2M,\\quad R_H=R_sH",
+      "steps": [
+        "Each source symbol has log₂8=3 bits of entropy.",
+        "At 2000 symbols/s this is 6000 bits/s.",
+        "The entropy rate is 6 kbit/s."
+      ],
+      "finalAnswer": "6 kbit/s",
+      "explanation": "The entropy rate is 6 kbit/s.",
+      "commonMistakes": [
+        "Entropy rate assumes the stated independence; correlations could lower it."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which entropy of an equiprobable alphabet applies.",
+      "Start from $ H=\\log_2M,\\quad R_H=R_sH $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Explicit weighted source-entropy sum and symbol clock. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      5.9999994,
+      6.0000006
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-MIXED-01-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A lossless line has a purely resistive load matched to Z0=75 Ω. Find its voltage reflection coefficient.",
+    "options": [],
+    "solution": {
+      "given": [
+        "ZL=Z0=75 Ω"
+      ],
+      "asked": "Find Γ at a matched termination.",
+      "concept": "Impedance matching",
+      "formula": "\\Gamma=(Z_L-Z_0)/(Z_L+Z_0)",
+      "steps": [
+        "The load equals the characteristic impedance.",
+        "The numerator of Γ is 75−75=0 while its denominator is nonzero.",
+        "Therefore Γ=0 and no reflected traveling voltage wave is produced."
+      ],
+      "finalAnswer": "0",
+      "explanation": "Therefore Γ=0 and no reflected traveling voltage wave is produced.",
+      "commonMistakes": [
+        "A matched load need not be a short circuit."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which impedance matching applies.",
+      "Start from $ \\Gamma=(Z_L-Z_0)/(Z_L+Z_0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve matched-load traveling-wave boundary equations; mismatch numerator zero. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-01-09",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which Boolean expressions are identically equal to A XOR B?",
+    "options": [
+      {
+        "id": "A",
+        "text": "(A AND NOT B) OR (NOT A AND B)"
+      },
+      {
+        "id": "B",
+        "text": "A OR B"
+      },
+      {
+        "id": "C",
+        "text": "A AND B"
+      },
+      {
+        "id": "D",
+        "text": "(A OR B) AND NOT(A AND B)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Two Boolean inputs"
+      ],
+      "asked": "Select every equivalent XOR form.",
+      "concept": "Boolean equivalence",
+      "formula": "A\\oplus B=A\\bar B+\\bar A B",
+      "steps": [
+        "XOR is 1 exactly when the inputs differ.",
+        "A explicitly enumerates the two unequal input cases.",
+        "D admits at least one high input but excludes both high. OR and AND alone do not match XOR. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "D admits at least one high input but excludes both high. OR and AND alone do not match XOR. Select A and D.",
+      "commonMistakes": [
+        "Test the input pair (1,1), which distinguishes OR from XOR."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which boolean equivalence applies.",
+      "Start from $ A\\oplus B=A\\bar B+\\bar A B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustive 2-input truth tables for all four XOR candidates. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-01-10",
+    "type": "MSQ",
+    "subject": "control",
+    "topic": "stability",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which causal continuous-time transfer functions are BIBO stable without cancellations?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$1/(s+1)$"
+      },
+      {
+        "id": "B",
+        "text": "$1/(s-1)$"
+      },
+      {
+        "id": "C",
+        "text": "$1/(s^2+2s+2)$"
+      },
+      {
+        "id": "D",
+        "text": "$1/s$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Causal rational systems",
+        "no hidden cancellations"
+      ],
+      "asked": "Select stable pole sets.",
+      "concept": "Left-half-plane stability",
+      "formula": "\\operatorname{Re}p_i<0",
+      "steps": [
+        "A has pole −1. C has poles −1±j, both with negative real part.",
+        "B has pole +1 and D has a pole at zero.",
+        "Strict BIBO stability holds only for A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Strict BIBO stability holds only for A and C.",
+      "commonMistakes": [
+        "A pole on the stability boundary does not satisfy strict BIBO stability."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which left-half-plane stability applies.",
+      "Start from $ \\operatorname{Re}p_i<0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Characteristic roots: −1, +1, −1±j, 0 respectively; strict negative-real-part selection. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-MIXED-01-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A card is drawn uniformly from integers 1 through 10. Given that it is at least 6, find the probability it is even.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Conditioned sample space {6,7,8,9,10}"
+      ],
+      "asked": "Find P(even | at least 6).",
+      "concept": "Conditional counting",
+      "formula": "P(A|B)=|A\\cap B|/|B|",
+      "steps": [
+        "Five equally likely values remain after conditioning.",
+        "Even values among them are 6,8,10, giving three favorable cases.",
+        "The probability is 3/5=0.6."
+      ],
+      "finalAnswer": "0.6",
+      "explanation": "The probability is 3/5=0.6.",
+      "commonMistakes": [
+        "Use the reduced sample space after conditioning."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which conditional counting applies.",
+      "Start from $ P(A|B)=|A\\cap B|/|B| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate the actual conditioned outcomes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.5999999,
+      0.6000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-01-12",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A 12 V Thevenin source with 1 Ω internal resistance supplies a positive load R. The load dissipates 16 W. Find either possible value of R in ohms; both positive solutions are accepted.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Vth=12 V",
+        "internal resistance 1 Ω",
+        "load power 16 W",
+        "R>0"
+      ],
+      "asked": "Find either positive load satisfying the power constraint.",
+      "concept": "Inverse load-power problem",
+      "formula": "P_L=144R/(1+R)^2",
+      "steps": [
+        "Set 144R/(1+R)²=16 and simplify to R²−7R+1=0.",
+        "The quadratic roots are (7−3√5)/2≈0.145898034 Ω and (7+3√5)/2≈6.854101966 Ω.",
+        "Both are positive and give the specified power. Any value between the roots does not generally solve the equation."
+      ],
+      "finalAnswer": "0.145898034 Ω OR 6.854101966 Ω",
+      "explanation": "Both are positive and give the specified power. Any value between the roots does not generally solve the equation.",
+      "commonMistakes": [
+        "The inverse power problem has two admissible positive loads; do not discard one without a domain condition."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which inverse load-power problem applies.",
+      "Start from $ P_L=144R/(1+R)^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Bisect the original load-power equation on both sides of its maximum; both positive roots checked. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-01-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "numericalTolerance": 1e-7,
+    "acceptedRanges": [
+      [
+        0.14589793375031546,
+        0.14589813375031546
+      ],
+      [
+        6.854101280839488,
+        6.854102651659881
+      ]
+    ]
+  }
+]

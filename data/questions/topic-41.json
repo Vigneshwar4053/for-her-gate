@@ -1,0 +1,784 @@
+[
+  {
+    "id": "FH-TOPIC-41-01",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A binary erasure channel outputs the correct input bit with probability 0.75 and an explicit erasure symbol with probability 0.25. Find its capacity in bits/use.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Memoryless erasure probability 0.25",
+        "erasures identifiable",
+        "binary input"
+      ],
+      "asked": "Find information retained per use at optimal input.",
+      "concept": "Erasure-channel capacity",
+      "formula": "C=(1-\\epsilon)\\log_22",
+      "steps": [
+        "With a uniform input, a successful delivery reveals one full bit.",
+        "An erasure reveals none about that bit and occurs with probability 0.25.",
+        "The retained average and capacity are (1−0.25)×1=0.75 bits/use."
+      ],
+      "finalAnswer": "0.75 bits/use",
+      "explanation": "The retained average and capacity are (1−0.25)×1=0.75 bits/use.",
+      "commonMistakes": [
+        "An erasure is distinguishable from a flipped bit, so its capacity law differs from a binary symmetric channel."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which erasure-channel capacity applies.",
+      "Start from $ C=(1-\\epsilon)\\log_22 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Average conditional information for distinguishable erasure outcomes, optimized by uniform input. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.7499999,
+      0.7500001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-41-02",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Two independent fair input bits X1,X2 are mapped deterministically to Y=X1 XOR X2. Find I((X1,X2);Y) in bits.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four equiprobable input pairs",
+        "parity output"
+      ],
+      "asked": "Find mutual information through a many-to-one mapping.",
+      "concept": "Deterministic mapping information",
+      "formula": "I(X;Y)=H(Y)-H(Y|X)",
+      "steps": [
+        "Parity is equally likely 0 or 1, so H(Y)=1 bit.",
+        "It is fixed once both input bits are known, so H(Y|X1,X2)=0.",
+        "Mutual information is 1 bit even though the pair contains 2 bits."
+      ],
+      "finalAnswer": "1 bits",
+      "explanation": "Mutual information is 1 bit even though the pair contains 2 bits.",
+      "commonMistakes": [
+        "A deterministic map need not preserve all input information when it is not one-to-one."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which deterministic mapping information applies.",
+      "Start from $ I(X;Y)=H(Y)-H(Y|X) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate parity-output PMF; deterministic mapping sets conditional output entropy to zero. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-41-03",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Four equiprobable source symbols use binary prefix labels 0,10,110,111. Find the mean code length in bits/symbol.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four codewords with lengths 1,2,3,3",
+        "probability 1/4 each"
+      ],
+      "asked": "Average codeword lengths.",
+      "concept": "Mean source-code length",
+      "formula": "\\bar L=\\sum_i p_i\\ell_i",
+      "steps": [
+        "The prefix labels have the stated four lengths.",
+        "Sum the lengths to get 9 bits across four equally likely symbols.",
+        "The mean is 9/4=2.25 bits/symbol, above entropy 2."
+      ],
+      "finalAnswer": "2.25 bits/symbol",
+      "explanation": "The mean is 9/4=2.25 bits/symbol, above entropy 2.",
+      "commonMistakes": [
+        "Prefix freedom does not imply a code is optimal for every probability distribution."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mean source-code length applies.",
+      "Start from $ \\bar L=\\sum_i p_i\\ell_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Measure actual prefix-label string lengths and probability-weight them. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      2.249999775,
+      2.250000225
+    ],
+    "numericalTolerance": 2.25e-7
+  },
+  {
+    "id": "FH-TOPIC-41-04",
+    "type": "MSQ",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which binary code-length lists can satisfy the Kraft inequality for a prefix code?",
+    "options": [
+      {
+        "id": "A",
+        "text": "1,2,2"
+      },
+      {
+        "id": "B",
+        "text": "1,1,2"
+      },
+      {
+        "id": "C",
+        "text": "2,2,2,2"
+      },
+      {
+        "id": "D",
+        "text": "1,3,3"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Finite binary code",
+        "only codeword lengths specified"
+      ],
+      "asked": "Select lists with Σ2⁻ˡ≤1.",
+      "concept": "Kraft bound",
+      "formula": "\\sum_i2^{-\\ell_i}\\le1",
+      "steps": [
+        "A sums to 1/2+1/4+1/4=1, while B sums to 1.25 and is impossible.",
+        "C sums to 4×1/4=1; D sums to 1/2+1/8+1/8=0.75.",
+        "Thus A,C,D can be realized as binary prefix-code lengths."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Thus A,C,D can be realized as binary prefix-code lengths.",
+      "commonMistakes": [
+        "A sum below 1 is allowed; it indicates unused coding-tree space."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which kraft bound applies.",
+      "Start from $ \\sum_i2^{-\\ell_i}\\le1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate every Kraft sum independently from its label. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-41-05",
+    "type": "MCQ",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which listed binary label set is prefix-free?",
+    "options": [
+      {
+        "id": "A",
+        "text": "{0,10,11}"
+      },
+      {
+        "id": "B",
+        "text": "{0,01,11}"
+      },
+      {
+        "id": "C",
+        "text": "{1,10,00}"
+      },
+      {
+        "id": "D",
+        "text": "{00,001,11}"
+      }
+    ],
+    "solution": {
+      "given": [
+        "No complete codeword may be the prefix of a different codeword"
+      ],
+      "asked": "Check all pairs for the prefix property.",
+      "concept": "Instantaneous source coding",
+      "formula": "c_i\\not\\prec c_j\\quad(i\\ne j)",
+      "steps": [
+        "In A, the word 0 is not a prefix of the words starting with 1, and the two length-2 words differ.",
+        "B contains 0 as prefix of 01; C contains 1 as prefix of 10; D contains 00 as prefix of 001.",
+        "Only A is prefix-free."
+      ],
+      "finalAnswer": "A",
+      "explanation": "Only A is prefix-free.",
+      "commonMistakes": [
+        "Check complete-codeword prefixes, not merely whether first bits are repeated."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which instantaneous source coding applies.",
+      "Start from $ c_i\\not\\prec c_j\\quad(i\\ne j) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Check every ordered pair for a complete-codeword prefix. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-TOPIC-41-06",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A Huffman code is designed for probabilities 0.4,0.3,0.2,0.1. Find its optimal average binary length in bits/symbol.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four source probabilities",
+        "optimal binary prefix tree sought"
+      ],
+      "asked": "Run smallest-weight merges.",
+      "concept": "Huffman merging",
+      "formula": "\\bar L_{Huffman}=\\text{sum of merge weights}",
+      "steps": [
+        "Merge 0.1+0.2=0.3, then the two 0.3 nodes to get 0.6.",
+        "Merge 0.4+0.6=1.0. The merge weights sum to 0.3+0.6+1=1.9.",
+        "This equals the mean length of depths 1,2,3,3 weighted by 0.4,0.3,0.2,0.1."
+      ],
+      "finalAnswer": "1.9 bits/symbol",
+      "explanation": "This equals the mean length of depths 1,2,3,3 weighted by 0.4,0.3,0.2,0.1.",
+      "commonMistakes": [
+        "Combine the smallest current nodes at each stage, including newly formed nodes."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which huffman merging applies.",
+      "Start from $ \\bar L_{Huffman}=\\text{sum of merge weights} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent priority-queue Huffman merge algorithm. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.89999981,
+      1.90000019
+    ],
+    "numericalTolerance": 1.8999999999999998e-7
+  },
+  {
+    "id": "FH-TOPIC-41-07",
+    "type": "MCQ",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an optimal binary prefix code of a finite source with at least two positive-probability symbols and entropy H, the usual length bound is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\bar L<H$ always"
+      },
+      {
+        "id": "B",
+        "text": "$\\bar L=H+1$ always"
+      },
+      {
+        "id": "C",
+        "text": "$H\\le\\bar L<H+1$"
+      },
+      {
+        "id": "D",
+        "text": "$\\bar L\\ge H+2$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Binary prefix coding",
+        "finite source",
+        "nondegenerate alphabet"
+      ],
+      "asked": "Identify the entropy coding bound.",
+      "concept": "Source-code lower/upper bounds",
+      "formula": "H\\le\\bar L_{opt}<H+1",
+      "steps": [
+        "Kraft-based coding inequalities make entropy a lower bound on expected prefix length.",
+        "A Shannon length construction achieves an average strictly below H+1 for the stated positive-probability finite source.",
+        "An optimal code cannot be worse than that construction, giving option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "An optimal code cannot be worse than that construction, giving option C.",
+      "commonMistakes": [
+        "The bound does not say an integer-length single-symbol code must attain entropy exactly."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which source-code lower/upper bounds applies.",
+      "Start from $ H\\le\\bar L_{opt}<H+1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Kraft entropy lower bound plus Shannon construction upper bound for positive-probability finite alphabet. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-41-08",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "X,Y are independent fair bits with joint probabilities 1/4 in every cell. Find I(X;Y) in bits.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Independent binary variables",
+        "uniform joint table"
+      ],
+      "asked": "Evaluate mutual information.",
+      "concept": "Independence information",
+      "formula": "I(X;Y)=\\sum_{x,y}p(x,y)\\log_2\\frac{p(x,y)}{p(x)p(y)}",
+      "steps": [
+        "Each marginal probability is 1/2.",
+        "In every cell the ratio is (1/4)/[(1/2)(1/2)]=1.",
+        "Every log term is zero, so I(X;Y)=0 bits."
+      ],
+      "finalAnswer": "0 bits",
+      "explanation": "Every log term is zero, so I(X;Y)=0 bits.",
+      "commonMistakes": [
+        "Shared binary alphabets do not imply statistical dependence."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which independence information applies.",
+      "Start from $ I(X;Y)=\\sum_{x,y}p(x,y)\\log_2\\frac{p(x,y)}{p(x)p(y)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct four-cell mutual-information sum. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-41-09",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "X is a fair bit and Y is always zero, independent of X. Find H(X|Y) in bits.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Y is constant",
+        "X has entropy 1"
+      ],
+      "asked": "Find remaining uncertainty after observing Y.",
+      "concept": "Uninformative observation",
+      "formula": "H(X|Y=0)=H(X)",
+      "steps": [
+        "The observation Y=0 occurs with certainty for either input value.",
+        "It therefore leaves the posterior distribution of X fair.",
+        "The conditional entropy remains 1 bit."
+      ],
+      "finalAnswer": "1 bits",
+      "explanation": "The conditional entropy remains 1 bit.",
+      "commonMistakes": [
+        "A constant output has zero entropy but does not force the input’s conditional entropy to zero."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which uninformative observation applies.",
+      "Start from $ H(X|Y=0)=H(X) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Conditional PMF remains fair for the sole possible observation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-41-10",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Let X be a fair bit and let Z=(X,X,X,X), four exact copies. Find H(Z) in bits.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Perfectly correlated four-bit vector",
+        "only 0000 and 1111 possible"
+      ],
+      "asked": "Find joint uncertainty.",
+      "concept": "Joint entropy with dependence",
+      "formula": "H(Z)=H(X)\\quad\\text{for an injective deterministic copy map}",
+      "steps": [
+        "Only two vectors are possible, each with probability 1/2.",
+        "Their entropy is −2×(1/2)log₂(1/2).",
+        "H(Z)=1 bit rather than four, because the components are not independent."
+      ],
+      "finalAnswer": "1 bits",
+      "explanation": "H(Z)=1 bit rather than four, because the components are not independent.",
+      "commonMistakes": [
+        "Entropy additivity requires independence, not merely a vector of four bit positions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which joint entropy with dependence applies.",
+      "Start from $ H(Z)=H(X)\\quad\\text{for an injective deterministic copy map} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate only the two nonzero-probability four-copy vectors. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-41-11",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For an AWGN channel with fixed received signal power P and white-noise spectral coefficient N0, C(B)=B log₂(1+P/(N0B)). Find lim as B→∞ of C(B)/(P/N0).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Fixed P,N0",
+        "bandwidth B increases",
+        "stated real baseband capacity convention"
+      ],
+      "asked": "Find the normalized infinite-bandwidth limit.",
+      "concept": "Power-limited capacity asymptote",
+      "formula": "\\lim_{u\\to0}\\frac{\\ln(1+u)}u=1",
+      "steps": [
+        "Let u=P/(N0B), so the normalized expression is log₂(1+u)/u.",
+        "As B→∞, u→0 and ln(1+u)/u→1.",
+        "Converting logarithm base gives limit 1/ln2≈1.442695041."
+      ],
+      "finalAnswer": "1.4426950408889634",
+      "explanation": "Converting logarithm base gives limit 1/ln2≈1.442695041.",
+      "commonMistakes": [
+        "Holding power fixed makes SNR decrease as bandwidth grows; it is not a fixed-SNR limit."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which power-limited capacity asymptote applies.",
+      "Start from $ \\lim_{u\\to0}\\frac{\\ln(1+u)}u=1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate the normalized original capacity at very large bandwidth using stable log1p. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.442694896619,
+      1.442695185158
+    ],
+    "numericalTolerance": 1.4426950408889633e-7
+  },
+  {
+    "id": "FH-TOPIC-41-12",
+    "type": "MSQ",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For finite discrete random variables with their ordinary Shannon entropies, which inequalities are always valid?",
+    "options": [
+      {
+        "id": "A",
+        "text": "H(X)≥0"
+      },
+      {
+        "id": "B",
+        "text": "I(X;Y)≤H(X)"
+      },
+      {
+        "id": "C",
+        "text": "H(X,Y)=H(X)+H(Y) for every joint distribution"
+      },
+      {
+        "id": "D",
+        "text": "H(X)≤log₂M when X has at most M possible values"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Finite alphabets",
+        "all logs base 2"
+      ],
+      "asked": "Select universal entropy bounds.",
+      "concept": "Information bounds",
+      "formula": "I(X;Y)=H(X)-H(X|Y)",
+      "steps": [
+        "Nonnegative probabilities and conditional uncertainty give H≥0 and I≤H(X).",
+        "Entropy is maximized by a uniform distribution over the available M values, yielding log₂M.",
+        "Joint entropy is additive only under independence, so C is false. Select A,B,D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Joint entropy is additive only under independence, so C is false. Select A,B,D.",
+      "commonMistakes": [
+        "Do not apply the independence equality to arbitrary correlated variables."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which information bounds applies.",
+      "Start from $ I(X;Y)=H(X)-H(X|Y) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Nonnegative discrete conditional entropy and maximum entropy of a finite support; correlated counterexample to additivity. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-41-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "topic-25",
+    "file": "data/questions/topic-25.json",
+    "title": "Boolean Algebra \u00b7 Cofactors, Parity & Identities",
+    "batch": "008"
+  },
+  {
+    "testId": "topic-26",
+    "file": "data/questions/topic-26.json",
+    "title": "Logic Gates \u00b7 CMOS Networks & Noise Margins",
+    "batch": "008"
+  },
+  {
+    "testId": "topic-27",
+    "file": "data/questions/topic-27.json",
+    "title": "Karnaugh Maps \u00b7 Adjacency & Minimal Covers",
+    "batch": "008"
+  },
+  {
+    "testId": "topic-28",
+    "file": "data/questions/topic-28.json",
+    "title": "Combinational Logic \u00b7 Arithmetic & Selection",
+    "batch": "008"
+  },
+  {
+    "testId": "topic-29",
+    "file": "data/questions/topic-29.json",
+    "title": "Sequential Logic \u00b7 State Machines & Timing",
+    "batch": "008"
+  }
+]

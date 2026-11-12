@@ -1,0 +1,587 @@
+{
+  "batch": "009",
+  "checkedAt": "2026-11-12T20:19:05.070Z",
+  "classification": "automatically-validated-and-recalculated",
+  "independentlyReviewed": false,
+  "humanReviewed": false,
+  "answerKeyVerified": false,
+  "method": "Offline numerical algorithms, exact enumerations and property checks in scripts/content/checks-009.mjs. Explanations authored by the same system; these are not an independent external or human review.",
+  "questions": [
+    {
+      "id": "FH-TOPIC-22-01",
+      "status": "passed",
+      "contentHash": "d53bc5d025a06cd1e417844dac1d95f3ab2eb458f49049baf3f4c469917f5f1b",
+      "computedValue": 4,
+      "method": "Two-branch summing-node KCL at the nonzero virtual reference",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-02",
+      "status": "passed",
+      "contentHash": "ffa546c8b4e033d21c1b7fe94dbb3f456fa0ba55b090a54d66c6581c68b5257d",
+      "computedValue": -1,
+      "method": "Numerical integration including the nonzero stored initial condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-03",
+      "status": "passed",
+      "contentHash": "06136ab183dc88281e914faffe86ec70ae136ca76c3032f9b4946191013a64e3",
+      "computedValue": -0.009999999999833333,
+      "method": "Centered input-waveform derivative followed by physical RC scaling",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-04",
+      "status": "passed",
+      "contentHash": "36ca2a3754537389ea8a1d36bca15c3f82978e638ab8fba7970992dd449b7fa7",
+      "computedValue": 2,
+      "method": "Compute both output-dependent Schmitt thresholds before subtracting",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-05",
+      "status": "passed",
+      "contentHash": "54afa56883008d40cb237321e4ca6920cc18b8629e6aabe9adde7f61483fe8b3",
+      "computedValue": "C",
+      "method": "Parallel feedback admittance inversion, then inverting nodal gain relation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-06",
+      "status": "passed",
+      "contentHash": "77f4da5e81c544f85dad88ee39b84578138a6dbcabc596f2a133389f4f75d574",
+      "computedValue": -1000,
+      "method": "Find pole by zeroing the parallel-RC denominator",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-07",
+      "status": "passed",
+      "contentHash": "ae13db21d0f7bd879ccb01ef728febb2fddd8e4e689d6a10364a0575c8cefdc7",
+      "computedValue": 1.9999999999999996,
+      "method": "Apply matched differential transfer to differential rather than common voltage",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-08",
+      "status": "passed",
+      "contentHash": "af2be43084308982f4f95929ef27420fc47fe62ef2dca760538675b3ef15ede7",
+      "computedValue": 1.4142135623730951,
+      "method": "Direct complex-frequency evaluation and norm",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-09",
+      "status": "passed",
+      "contentHash": "7865ba1edc32ed2a6ac1ac91c7d34a7a1f5e82c71da3ba1b1b4b8ca2e0e6c520",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Input-current KCL weights and explicit signed-current cancellation example",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-10",
+      "status": "passed",
+      "contentHash": "833a2fb1d43045b3aecc717f8d4fc1f975bb8a7091120448efa94e584fc08263",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Finite unsaturated output in the ideal high-gain limit; counterexamples for comparator/positive-feedback operation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-11",
+      "status": "passed",
+      "contentHash": "04db5dea5f9b2a01043b443e3ba19451afe0a8b6989f77b232ae24ccb7321595",
+      "computedValue": 0.47619047619047616,
+      "method": "Solve actual saturated circuit using resistor KCL without virtual equality",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-22-12",
+      "status": "passed",
+      "contentHash": "52163f709382a4dbab703fd63b4e622f1d27596f37de3aae44188c3eaaecf516",
+      "computedValue": -6.600080725005508e-18,
+      "method": "Integrate both consecutive pulse intervals from the prior final state",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-01",
+      "status": "passed",
+      "contentHash": "ccd8e14b29d3236971834c98e2c4577b5586dd9494a379070450a9c7c9890686",
+      "computedValue": 2,
+      "method": "Rational-root search and original-polynomial substitution; three distinct roots exhaust the cubic",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-02",
+      "status": "passed",
+      "contentHash": "7bacd75507416b70a2d904d916754bae3d08bd95dee97520bc44841d821029f2",
+      "computedValue": 2,
+      "method": "Build quartic Routh arrays at two K values and solve affine boundary entry; check remaining first-column signs",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-03",
+      "status": "passed",
+      "contentHash": "a44e54847b9b56cee052bb5d1905a8ea5b7fbed0ef75a161bb8452172a343adb",
+      "computedValue": "B",
+      "method": "Candidate pole locations; repeated negative pole yields integrable t exp(−2t)",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-04",
+      "status": "passed",
+      "contentHash": "322f2ca44a181469e7e697dc1944ec15f456dcbf3a3f2e5522980409a00b8c51",
+      "computedValue": 2,
+      "method": "Count actual adjacent sign transitions in the supplied nonzero Routh column",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-05",
+      "status": "passed",
+      "contentHash": "d1c0164fd01b92960f5df6873d97c230f90df96d5d29342c6761786fce612f69",
+      "computedValue": 3,
+      "method": "Integrate the original nilpotent state equations",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-06",
+      "status": "passed",
+      "contentHash": "14ae2b18a05ec87059b1f6f44ce21f626f7282d1373f3c73f0af03d325ffcc42",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Real monic quadratic Hurwitz theorem mapped to trace and determinant",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-07",
+      "status": "passed",
+      "contentHash": "6e627e52b1a59b567a98135f6a3b5e966f56b669cb86fa86dc76401130b502db",
+      "computedValue": -1,
+      "method": "Solve explicitly stated Nyquist count identity for stable Z=0",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-08",
+      "status": "passed",
+      "contentHash": "5ca8ff395cf26279bb644b3edeb2772055c1b26dced2309f724659236edae89b",
+      "computedValue": "D",
+      "method": "Construct hidden state xdot=x with zero measured-output coupling to demonstrate cancellation risk",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-09",
+      "status": "passed",
+      "contentHash": "1a13e6db635749a9f39751813265f88ef18efafdcc5f557d635706ec11cf6757",
+      "computedValue": 0.49999999999999933,
+      "method": "Direct impulse/input convolution at two times and recover sine/secular coefficients via linear solve",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-10",
+      "status": "passed",
+      "contentHash": "fa196596a5884326e894c1ecbae7b16fb78f28a8b1c0228ef1e15cdda83bfd39",
+      "computedValue": 2,
+      "method": "Construct full cubic Routh array, then count its first-column sign changes",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-11",
+      "status": "passed",
+      "contentHash": "aed1e656000edeb13ed3d0ce614a2156c25eb35e9b802e922f87642f638098af",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Polynomial-times-negative-exponential limit and zero-mode nondecay",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-34-12",
+      "status": "passed",
+      "contentHash": "3c466602fb63ffe4f8ec6073214e53ca146d2034efc24fa7174cb8c37c53d865",
+      "computedValue": 0,
+      "method": "Solve strict quadratic coefficient condition 2a>0 at its excluded boundary",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-01",
+      "status": "passed",
+      "contentHash": "cb25ac1937b6a2f7be010ccf9f2ed38c513ae3d9878a6be6a98fbd1d64f86e00",
+      "computedValue": 0.75,
+      "method": "Average conditional information for distinguishable erasure outcomes, optimized by uniform input",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-02",
+      "status": "passed",
+      "contentHash": "a6b573ca269844142e35748592810dc23ceea772ef29f78bc8507456eb511596",
+      "computedValue": 1,
+      "method": "Enumerate parity-output PMF; deterministic mapping sets conditional output entropy to zero",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-03",
+      "status": "passed",
+      "contentHash": "14e19a562f73e2010e642b06856b3008630057d1a0cc95dcfeab2107ecc57f62",
+      "computedValue": 2.25,
+      "method": "Measure actual prefix-label string lengths and probability-weight them",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-04",
+      "status": "passed",
+      "contentHash": "f65e8d69288eb301a5336b459df9f13c7176fb2e736d27802f1934cef7a4b7b8",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Evaluate every Kraft sum independently from its label",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-05",
+      "status": "passed",
+      "contentHash": "365a4191ae3ea8680ff3309d96bf417c3d35c949d751e94082595627f20a289d",
+      "computedValue": "A",
+      "method": "Check every ordered pair for a complete-codeword prefix",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-06",
+      "status": "passed",
+      "contentHash": "b984c21691352d696f645e304e1ea1263e506a71a286376296d9726113d06370",
+      "computedValue": 1.9000000000000001,
+      "method": "Independent priority-queue Huffman merge algorithm",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-07",
+      "status": "passed",
+      "contentHash": "750d3112682ecf203439a605316c927a04f9f81439edf6639cdd59a80fb85d3b",
+      "computedValue": "C",
+      "method": "Kraft entropy lower bound plus Shannon construction upper bound for positive-probability finite alphabet",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-08",
+      "status": "passed",
+      "contentHash": "d6599a6efa9907770d2b41e8f5c17ea0c51330340f8cef35c1618ecb77a3047e",
+      "computedValue": 0,
+      "method": "Direct four-cell mutual-information sum",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-09",
+      "status": "passed",
+      "contentHash": "78cee250a81a0a422737d8293f9335da4b0f3d167b2a5cb7dc5f4111f95ccc52",
+      "computedValue": 1,
+      "method": "Conditional PMF remains fair for the sole possible observation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-10",
+      "status": "passed",
+      "contentHash": "2e22b373daaea6c841bc3f98a823ab2eb92ac10d3f034f5df87ac09d0d34544b",
+      "computedValue": 1,
+      "method": "Enumerate only the two nonzero-probability four-copy vectors",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-11",
+      "status": "passed",
+      "contentHash": "d550bc3759777624aafe041d5308c89f52c36c81c4d1e8b6c586403f24c4d735",
+      "computedValue": 1.442695040167616,
+      "method": "Evaluate the normalized original capacity at very large bandwidth using stable log1p",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-41-12",
+      "status": "passed",
+      "contentHash": "386c84e4793f9151b59bcd08d8e40698b18e08e4c06a1b9d19b42ae8db3a675a",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Nonnegative discrete conditional entropy and maximum entropy of a finite support; correlated counterexample to additivity",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-01",
+      "status": "passed",
+      "contentHash": "2e9539fc84fe3707ccf31a5cf36bf1550b9e582d448a80fc2d543026bdc96119",
+      "computedValue": 50,
+      "method": "Telegrapher-equation distributed impedance relation with SI units",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-02",
+      "status": "passed",
+      "contentHash": "0dd6e8605d7993e255b947943cc6334cca0cb20c69758c0ea533283503876852",
+      "computedValue": 2,
+      "method": "Distributed propagation delay per unit length from original L′C′",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-03",
+      "status": "passed",
+      "contentHash": "24edd9f79cbe328a17ba7641eb07b2e265fdb5588057661f2dc11542e533e6c2",
+      "computedValue": 49.99999999999999,
+      "method": "Evaluate shorted-stub input reactance at the actual electrical length",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-04",
+      "status": "passed",
+      "contentHash": "f31f574d51b6df4a6363ab1ec3dacc86e60bdcb2b2f75027758a4d835807a825",
+      "computedValue": -50.00000000000001,
+      "method": "Evaluate open-stub input reactance using the reciprocal tangent",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-05",
+      "status": "passed",
+      "contentHash": "1a4bbbb16a799d66120f0e5fc697a1d3b7711564953a0f7bd4b60b3d5908b6bb",
+      "computedValue": 20,
+      "method": "Logarithmic conversion of voltage reflection to positive return loss",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-06",
+      "status": "passed",
+      "contentHash": "73d009b085479ed3325a010e2c8996741074f928a53e6bbaa3f50db677301e81",
+      "computedValue": 0.4,
+      "method": "Complex reflection transform evaluated by rectangular division",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-07",
+      "status": "passed",
+      "contentHash": "c2cd76074494fb73f8afe347d4e968426fb07cf71e1062682f8bd8cf5e438333",
+      "computedValue": "B",
+      "method": "Algebraic positivity bound |R−Z0|<R+Z0 for finite positive real resistances",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-08",
+      "status": "passed",
+      "contentHash": "2663aade28d80ca25a50538a75d58fdd658ee5f91eb67dde50a4cbf085cff369",
+      "computedValue": 0.1353352832366127,
+      "method": "Attenuate forward wave amplitude, then square its magnitude for power",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-09",
+      "status": "passed",
+      "contentHash": "b97e2c74b5c4e0157d78bec32818f44dfe5d8250b908034fd29c6f8e84dd90d7",
+      "computedValue": 0.8,
+      "method": "Standing-wave maxima repeat every π of βl, equivalent to half wavelength",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-10",
+      "status": "passed",
+      "contentHash": "68637cf7a99d67f13cb320765d3e29fa17567dd95c85bbd819ba1785d70335a1",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Reciprocal scattering symmetry with equal real normalization; lossy reciprocal counterexample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-11",
+      "status": "passed",
+      "contentHash": "98ba764e0633c07c66c4b2ccdcb9df0ce57ede927097179bc793f5773bebe6bc",
+      "computedValue": -1,
+      "method": "Compute double-pass complex phase rotation and extract imaginary component",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-46-12",
+      "status": "passed",
+      "contentHash": "30881cf4695df7c3342d8e31e67bf15d60726a078ce90547b6b5744b4c06101e",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Matched lossless traveling-wave solution, magnitude preservation and nonzero phase accumulation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-01",
+      "status": "passed",
+      "contentHash": "249b214933a01669f49033558de9522eedd82f08891747b9f82dae243c64f078",
+      "computedValue": 75,
+      "method": "Construct total score and total population before division",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-02",
+      "status": "passed",
+      "contentHash": "e1a4582c6008c2165f480ffb3f6a873aec8635267fb1b94a8c9bfeb8f0f81fe9",
+      "computedValue": 8,
+      "method": "Compute actual defective counts for both production days, then combine",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-03",
+      "status": "passed",
+      "contentHash": "585ad784ff6af3fd9e61affb2a28627ab943168b56b3601000c82954946915fc",
+      "computedValue": 0.5333333333333333,
+      "method": "Cancel the shared middle quantity in chained ratios",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-04",
+      "status": "passed",
+      "contentHash": "d04409cc9cb116a2a75c9922efa9197ec5bb28b285596afdce41c050f25c64b1",
+      "computedValue": 1275,
+      "method": "Explicitly sum every original integer term",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-05",
+      "status": "passed",
+      "contentHash": "4cb8b96f8c6b5153a68937c39ad50b2b3c6bb468adb8e37e64c1193717fe44de",
+      "computedValue": "D",
+      "method": "Evaluate inverse base-two exponent and compare with all numeric options",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-06",
+      "status": "passed",
+      "contentHash": "200b5b18e9ba2330c412db2a528a5fbda9f76e2861faea26bbdbfe7583843aec",
+      "computedValue": 20,
+      "method": "Enumerate increasing-index three-person subsets",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-07",
+      "status": "passed",
+      "contentHash": "a6a57572290da136ac60f3e7b84c8f8e44f00d2154ab5cfdd44ed7a33760cdca",
+      "computedValue": 0.4,
+      "method": "Enumerate all unordered two-device samples and test the defect flag",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-08",
+      "status": "passed",
+      "contentHash": "4e76935a0dfbceb34906f81086d94ee58d51712e864beb8b7449ea9040c91f4d",
+      "computedValue": 0.7853981633974483,
+      "method": "Construct actual equal-perimeter square/circle dimensions and compare their areas",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-09",
+      "status": "passed",
+      "contentHash": "1191de9a692d841eb2211024798b9170818f3b1f477a87eb0fabc6bd66392df3",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Affine central-moment algebra; explicit shifted/scaled nonconstant data checks",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-10",
+      "status": "passed",
+      "contentHash": "5c484c48ba4b72fb493a7af83b7c825fdaad2a43e545b8c901cbf156fdaa0aa0",
+      "computedValue": 54,
+      "method": "Distance/time calculation followed by meter-to-km and seconds-to-hour conversion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-11",
+      "status": "passed",
+      "contentHash": "918b2afe6a0b8c05e96b09ee676ad8b997df5e1f4abe4afb656f028d4ce7e65d",
+      "computedValue": 0.6666666666666666,
+      "method": "Enumerate the original finite sample space and apply both divisibility tests",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-50-12",
+      "status": "passed",
+      "contentHash": "6c0dd0ed0cb2f6d3012bbdd47249bd768c3abc07a7fb474c079d39d868c79ad2",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Transform representative data [8,12] with mean10 and variance4, recompute all transformed moments",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    }
+  ]
+}

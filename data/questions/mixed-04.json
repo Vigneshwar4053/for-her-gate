@@ -1,0 +1,777 @@
+[
+  {
+    "id": "FH-MIXED-04-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Find the determinant of A=[[1,2,0],[0,3,4],[0,0,−2]].",
+    "options": [],
+    "solution": {
+      "given": [
+        "Upper-triangular matrix with diagonal 1,3,−2"
+      ],
+      "asked": "Find determinant.",
+      "concept": "Triangular determinant",
+      "formula": "\\det A=\\prod_i a_{ii}",
+      "steps": [
+        "An upper-triangular determinant is the product of its diagonal entries.",
+        "Off-diagonal entries 2 and 4 do not affect that product.",
+        "1×3×(−2)=−6."
+      ],
+      "finalAnswer": "-6",
+      "explanation": "1×3×(−2)=−6.",
+      "commonMistakes": [
+        "A determinant can be negative even when most matrix entries are positive."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which triangular determinant applies.",
+      "Start from $ \\det A=\\prod_i a_{ii} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Recursive determinant expansion instead of triangular shortcut. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      -6.0000006,
+      -5.9999994
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-MIXED-04-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A source-free series circuit has L=0.5 H, R=2 Ω and initial current 4 A. Find its total resistor energy dissipation as t→∞, in joules.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Initial inductor current 4 A",
+        "no independent sources",
+        "R positive"
+      ],
+      "asked": "Find total heat after complete decay.",
+      "concept": "Energy conservation",
+      "formula": "W_{R,total}=\\tfrac12 LI_0^2",
+      "steps": [
+        "The inductor initially stores ½×0.5×4²=4 J.",
+        "Positive resistance causes current to decay to zero, leaving no magnetic energy.",
+        "With no source or other storage, all initial energy becomes resistor heat: 4 J."
+      ],
+      "finalAnswer": "4 J",
+      "explanation": "With no source or other storage, all initial energy becomes resistor heat: 4 J.",
+      "commonMistakes": [
+        "The resistor value changes dissipation rate, not total initial stored energy."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which energy conservation applies.",
+      "Start from $ W_{R,total}=\\tfrac12 LI_0^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate actual resistor dissipation using the RL current trajectory. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-MIXED-04-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For F(A,B,C)=AB+ĀC, evaluate F when A=0, B=1, C=1.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Boolean inputs 0,1,1",
+        "OR represented by +"
+      ],
+      "asked": "Evaluate the Boolean output.",
+      "concept": "Multiplexer Boolean form",
+      "formula": "F=AB+\\bar AC",
+      "steps": [
+        "A=0 makes AB=0 and Ā=1.",
+        "The second term is 1×C=1.",
+        "OR of 0 and 1 is 1. This is a 2:1 selector controlled by A."
+      ],
+      "finalAnswer": "1",
+      "explanation": "OR of 0 and 1 is 1. This is a 2:1 selector controlled by A.",
+      "commonMistakes": [
+        "Boolean addition is OR, not ordinary integer addition."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which multiplexer boolean form applies.",
+      "Start from $ F=AB+\\bar AC $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate each Boolean product term and combine by OR. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-04-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "mosfet",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An NMOS in ideal square-law saturation has drain current 2 mA and overdrive 0.5 V. Find gm in mS.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Saturation",
+        "no channel-length modulation",
+        "ID=2 mA",
+        "Vov=0.5 V"
+      ],
+      "asked": "Find incremental transconductance.",
+      "concept": "MOS square-law slope",
+      "formula": "g_m=2I_D/V_{ov}",
+      "steps": [
+        "From ID=βVov²/2, differentiation gives gm=βVov=2ID/Vov.",
+        "Substitute 2×2 mA/0.5 V.",
+        "gm=8 mS."
+      ],
+      "finalAnswer": "8 mS",
+      "explanation": "gm=8 mS.",
+      "commonMistakes": [
+        "Do not use the BJT expression IC/VT for a MOSFET."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mos square-law slope applies.",
+      "Start from $ g_m=2I_D/V_{ov} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically differentiate the locally calibrated square-law MOS current. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      7.9999992,
+      8.0000008
+    ],
+    "numericalTolerance": 8e-7
+  },
+  {
+    "id": "FH-MIXED-04-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal op-amp is used open-loop as a comparator. If V+ > V− by a finite amount, its output moves toward:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Positive saturation"
+      },
+      {
+        "id": "B",
+        "text": "Exactly zero"
+      },
+      {
+        "id": "C",
+        "text": "A negative supply rail necessarily"
+      },
+      {
+        "id": "D",
+        "text": "An ideal virtual ground at both inputs"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Open-loop comparator",
+        "positive differential input"
+      ],
+      "asked": "Identify output polarity.",
+      "concept": "Open-loop comparator sign",
+      "formula": "V_o=A(V_+-V_-),\\quad A>0",
+      "steps": [
+        "A positive differential input creates a positive output demand.",
+        "Without negative feedback, large open-loop gain drives the output toward the positive limit.",
+        "Option A is correct; the virtual-short rule does not apply in this saturated mode."
+      ],
+      "finalAnswer": "A",
+      "explanation": "Option A is correct; the virtual-short rule does not apply in this saturated mode.",
+      "commonMistakes": [
+        "Do not use a linear-feedback constraint for an open-loop comparator."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which open-loop comparator sign applies.",
+      "Start from $ V_o=A(V_+-V_-),\\quad A>0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Positive open-loop gain sign and output-limiting condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-MIXED-04-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "state-space-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For xdot=Ax with A=[[−2,1],[0,−3]], find the slowest natural exponential decay rate magnitude in s⁻¹.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Triangular state matrix",
+        "stable real eigenvalues"
+      ],
+      "asked": "Find the least-negative pole magnitude.",
+      "concept": "Dominant state mode",
+      "formula": "\\lambda(A)=\\{-2,-3\\}",
+      "steps": [
+        "The eigenvalues of this triangular matrix are −2 and −3.",
+        "The mode e⁻²ᵗ decays more slowly than e⁻³ᵗ.",
+        "The slow decay-rate magnitude is 2 s⁻¹."
+      ],
+      "finalAnswer": "2 s⁻¹",
+      "explanation": "The slow decay-rate magnitude is 2 s⁻¹.",
+      "commonMistakes": [
+        "The smallest magnitude negative real pole dominates the long-time decay."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dominant state mode applies.",
+      "Start from $ \\lambda(A)=\\{-2,-3\\} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Characteristic roots from triangular state matrix; compare real decay exponents. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-04-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "analog-communication",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a conventional AM waveform with envelope maximum 12 V and minimum 4 V, find modulation index m.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Envelope extrema 12 and 4",
+        "nonovermodulated sinusoidal AM"
+      ],
+      "asked": "Find the modulation index from the envelope.",
+      "concept": "AM envelope measurement",
+      "formula": "m=\\frac{E_{max}-E_{min}}{E_{max}+E_{min}}",
+      "steps": [
+        "Envelope extrema are Ac(1+m) and Ac(1−m).",
+        "Their difference is 8 V and sum is 16 V.",
+        "The ratio is 8/16=0.5."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "The ratio is 8/16=0.5.",
+      "commonMistakes": [
+        "Use sum in the denominator, not the maximum alone."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which am envelope measurement applies.",
+      "Start from $ m=\\frac{E_{max}-E_{min}}{E_{max}+E_{min}} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Recover carrier envelope amplitude Ac and modulating amplitude from extrema, then ratio. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-04-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "maxwell-equations",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A TEM wave in a lossless medium has RMS magnetic field 0.02 A/m and real intrinsic impedance 200 Ω. Find average power density in W/m².",
+    "options": [],
+    "solution": {
+      "given": [
+        "RMS H=0.02 A/m",
+        "η=200 Ω"
+      ],
+      "asked": "Find average field power flow.",
+      "concept": "RMS Poynting magnitude",
+      "formula": "\\langle S\\rangle=\\eta H_{rms}^2",
+      "steps": [
+        "The RMS electric field is ηHrms=4 V/m.",
+        "Average power density for in-phase RMS fields is ErmsHrms.",
+        "The value is 4×0.02=0.08 W/m², without an extra half factor."
+      ],
+      "finalAnswer": "0.08 W/m²",
+      "explanation": "The value is 4×0.02=0.08 W/m², without an extra half factor.",
+      "commonMistakes": [
+        "RMS and peak field conventions have different prefactors."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which rms poynting magnitude applies.",
+      "Start from $ \\langle S\\rangle=\\eta H_{rms}^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Convert RMS fields to waveforms and average instantaneous Poynting product. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.0799999,
+      0.0800001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-04-09",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "flip-flops",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal JK flip-flop at its active clock edge, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "J=0,K=0 preserves Q"
+      },
+      {
+        "id": "B",
+        "text": "J=1,K=1 forces Q to 1 regardless of previous state"
+      },
+      {
+        "id": "C",
+        "text": "J=1,K=0 sets Q to 1"
+      },
+      {
+        "id": "D",
+        "text": "J=0,K=1 resets Q to 0"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal JK next-state behavior"
+      ],
+      "asked": "Select valid transition rules.",
+      "concept": "JK characteristic relation",
+      "formula": "Q^+=J\\bar Q+\\bar KQ",
+      "steps": [
+        "With J=K=0 the formula reduces to Q; with J=1,K=0 it reduces to 1.",
+        "With J=0,K=1 it becomes 0. With J=K=1 it becomes Q̄, a toggle rather than a fixed set.",
+        "Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Select A, C and D.",
+      "commonMistakes": [
+        "The J=K=1 condition toggles and depends on the previous state."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which jk characteristic relation applies.",
+      "Start from $ Q^+=J\\bar Q+\\bar KQ $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate both prior Q states for every proposed JK transition rule. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-04-10",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a real continuous-time LTI impulse response h(t), which properties separately guarantee the indicated conclusions?",
+    "options": [
+      {
+        "id": "A",
+        "text": "h(t)=0 for t<0 guarantees causality"
+      },
+      {
+        "id": "B",
+        "text": "A finite DC gain alone guarantees BIBO stability"
+      },
+      {
+        "id": "C",
+        "text": "A finite-order transfer numerator alone guarantees stability"
+      },
+      {
+        "id": "D",
+        "text": "An absolutely integrable h guarantees BIBO stability"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ordinary impulse-response functions",
+        "standard LTI definitions"
+      ],
+      "asked": "Select valid sufficient conditions.",
+      "concept": "LTI causality and norm bounds",
+      "formula": "\\|y\\|_\\infty\\le\\|h\\|_1\\|x\\|_\\infty",
+      "steps": [
+        "No response before a causal impulse can occur when h vanishes for negative time.",
+        "Absolute integrability bounds the convolution output for every bounded input.",
+        "Finite DC gain or numerator order cannot exclude unstable poles or other nonintegrable impulse behavior. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "Finite DC gain or numerator order cannot exclude unstable poles or other nonintegrable impulse behavior. Select A and D.",
+      "commonMistakes": [
+        "A single-frequency gain does not characterize the complete impulse-response norm."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which lti causality and norm bounds applies.",
+      "Start from $ \\|y\\|_\\infty\\le\\|h\\|_1\\|x\\|_\\infty $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Convolution support proof and L1/L∞ norm inequality; finite-DC unstable counterexample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-04-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A bag contains 3 red and 2 blue balls. Two balls are drawn without replacement. Find the probability both are red.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Five balls",
+        "three red",
+        "two draws without replacement"
+      ],
+      "asked": "Find the ordered two-draw red probability.",
+      "concept": "Dependent draws",
+      "formula": "P(RR)=\\frac35\\frac24",
+      "steps": [
+        "The first draw is red with probability 3/5.",
+        "Given that event, two red balls remain among four total.",
+        "Multiply to obtain (3/5)(2/4)=3/10=0.3."
+      ],
+      "finalAnswer": "0.3",
+      "explanation": "Multiply to obtain (3/5)(2/4)=3/10=0.3.",
+      "commonMistakes": [
+        "Without replacement the second probability changes."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dependent draws applies.",
+      "Start from $ P(RR)=\\frac35\\frac24 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate distinguishable balls and all ordered draws without replacement. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.2999999,
+      0.3000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-04-12",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "transfer-functions",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Two stable first-order systems H1(s)=1/(s+1) and H2(s)=2/(s+2) are cascaded. Find their overall impulse response at t=ln2.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Cascade",
+        "zero initial states",
+        "two distinct poles"
+      ],
+      "asked": "Evaluate convolution of the impulse responses.",
+      "concept": "Partial fractions for a cascade",
+      "formula": "H(s)=\\frac2{(s+1)(s+2)}=\\frac2{s+1}-\\frac2{s+2}",
+      "steps": [
+        "The overall impulse response is 2e⁻ᵗ−2e⁻²ᵗ for t≥0.",
+        "At t=ln2, the two exponential factors are 1/2 and 1/4.",
+        "The response is 2(1/2−1/4)=0.5."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "The response is 2(1/2−1/4)=0.5.",
+      "commonMistakes": [
+        "Transfer functions multiply for a cascade; time-domain responses convolve."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which partial fractions for a cascade applies.",
+      "Start from $ H(s)=\\frac2{(s+1)(s+2)}=\\frac2{s+1}-\\frac2{s+2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct two-system impulse-response convolution quadrature. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-04-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

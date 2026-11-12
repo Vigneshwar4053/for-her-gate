@@ -1,0 +1,685 @@
+[
+  {
+    "id": "FH-DIGITAL-001",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "For Boolean inputs A = 1 and B = 0, what is $A\\land B$?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "Undefined"
+      }
+    ],
+    "solution": {
+      "given": [
+        "A = 1",
+        "B = 0"
+      ],
+      "asked": "Find AND output.",
+      "concept": "Boolean AND",
+      "formula": "Y=AB",
+      "steps": [
+        "AND is 1 only when both inputs are 1.",
+        "Here B = 0.",
+        "The output is 0, corresponding to A."
+      ],
+      "finalAnswer": "A",
+      "explanation": "The output is 0, corresponding to A.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about boolean and.",
+      "Use $ Y=AB $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-001"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-DIGITAL-002",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "How many input combinations exist for a Boolean function with 3 inputs?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Number of inputs n = 3"
+      ],
+      "asked": "Count input combinations.",
+      "concept": "Truth tables",
+      "formula": "N=2^n",
+      "steps": [
+        "Each input has 2 choices.",
+        "For three independent input positions, multiply 2 × 2 × 2.",
+        "There are 8 combinations."
+      ],
+      "finalAnswer": "8",
+      "explanation": "There are 8 combinations.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about truth tables.",
+      "Use $ N=2^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-002"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      7.99999999,
+      8.00000001
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-003",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "What is the decimal value of the unsigned binary number 1011?",
+    "options": [
+      {
+        "id": "A",
+        "text": "9"
+      },
+      {
+        "id": "B",
+        "text": "10"
+      },
+      {
+        "id": "C",
+        "text": "11"
+      },
+      {
+        "id": "D",
+        "text": "13"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Unsigned binary 1011"
+      ],
+      "asked": "Convert to decimal.",
+      "concept": "Number representation",
+      "formula": "N=\\sum b_i2^i",
+      "steps": [
+        "Use place weights 8, 4, 2 and 1.",
+        "Compute 1×8 + 0×4 + 1×2 + 1×1 = 11.",
+        "The value is 11, corresponding to C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "The value is 11, corresponding to C.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about number representation.",
+      "Use $ N=\\sum b_i2^i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-003"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-DIGITAL-004",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "Which Boolean expressions equal A for every value of A?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A AND 1"
+      },
+      {
+        "id": "B",
+        "text": "A AND 0"
+      },
+      {
+        "id": "C",
+        "text": "A OR A"
+      },
+      {
+        "id": "D",
+        "text": "NOT A"
+      }
+    ],
+    "solution": {
+      "given": [
+        "A is Boolean"
+      ],
+      "asked": "Select identities.",
+      "concept": "Boolean identities",
+      "formula": "A\\cdot1=A,\\quad A+A=A",
+      "steps": [
+        "The identity law gives A AND 1 = A.",
+        "The idempotent law gives A OR A = A.",
+        "A AND 0 is always 0 and NOT A complements A. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "A AND 0 is always 0 and NOT A complements A. Select A and C.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about boolean identities.",
+      "Use $ A\\cdot1=A,\\quad A+A=A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-004"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-005",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A half-adder receives A = 1 and B = 1. Enter the carry output.",
+    "options": [],
+    "solution": {
+      "given": [
+        "A = 1, B = 1"
+      ],
+      "asked": "Find carry.",
+      "concept": "Half-adder",
+      "formula": "C=AB",
+      "steps": [
+        "A half-adder carry is A AND B.",
+        "Both inputs are 1, so 1 AND 1 = 1.",
+        "The carry output is 1 (sum output would be 0)."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The carry output is 1 (sum output would be 0).",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about half-adder.",
+      "Use $ C=AB $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-005"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      0.99999999,
+      1.00000001
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-006",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "flip-flops",
+    "difficulty": "easy",
+    "marks": 1,
+    "question": "A positive-edge-triggered D flip-flop has D = 1 at the rising edge and meets setup/hold requirements. What is the next Q?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "Previous Q always"
+      },
+      {
+        "id": "D",
+        "text": "Undefined"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Positive edge",
+        "Stable D = 1"
+      ],
+      "asked": "Find next Q.",
+      "concept": "D flip-flop",
+      "formula": "Q^+=D",
+      "steps": [
+        "A D flip-flop samples D at its active edge.",
+        "D is stable at 1 at that edge.",
+        "Next Q is 1, corresponding to B, regardless of previous Q."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Next Q is 1, corresponding to B, regardless of previous Q.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about d flip-flop.",
+      "Use $ Q^+=D $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-006"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-DIGITAL-007",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "How many distinct states can a register containing 4 binary flip-flops represent?",
+    "options": [],
+    "solution": {
+      "given": [
+        "4 binary storage elements"
+      ],
+      "asked": "Find state capacity.",
+      "concept": "Binary state encoding",
+      "formula": "N=2^n",
+      "steps": [
+        "Each flip-flop stores one binary bit.",
+        "Four independent bits have 2 × 2 × 2 × 2 patterns.",
+        "The register can represent 16 states."
+      ],
+      "finalAnswer": "16",
+      "explanation": "The register can represent 16 states.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about binary state encoding.",
+      "Use $ N=2^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-007"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      15.99999999,
+      16.00000001
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-008",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "data-converters",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An ideal unipolar 3-bit ADC covers 0 to 8 V with uniform bins. Using LSB = full-scale span / $2^n$, enter the bin width in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Span 8 V",
+        "Resolution 3 bits"
+      ],
+      "asked": "Find bin width.",
+      "concept": "Quantization",
+      "formula": "\\Delta=V_{span}/2^n",
+      "steps": [
+        "There are $2^3=8$ bins.",
+        "Divide the full-scale span by 8: 8 V / 8 = 1 V.",
+        "The defined bin width is 1 V; use 2^n rather than 2^n − 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The defined bin width is 1 V; use 2^n rather than 2^n − 1.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about quantization.",
+      "Use $ \\Delta=V_{span}/2^n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-008"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      0.99999999,
+      1.00000001
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-009",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which two-input gates output 1 for A = 1 and B = 0?",
+    "options": [
+      {
+        "id": "A",
+        "text": "OR"
+      },
+      {
+        "id": "B",
+        "text": "AND"
+      },
+      {
+        "id": "C",
+        "text": "XOR"
+      },
+      {
+        "id": "D",
+        "text": "NOR"
+      }
+    ],
+    "solution": {
+      "given": [
+        "A = 1",
+        "B = 0"
+      ],
+      "asked": "Select gates with output 1.",
+      "concept": "Logic gates",
+      "formula": "A\\oplus B=A\\bar B+\\bar A B",
+      "steps": [
+        "OR outputs 1 when at least one input is 1.",
+        "XOR outputs 1 when inputs differ.",
+        "AND outputs 0; NOR complements OR and outputs 0. Select OR and XOR."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "AND outputs 0; NOR complements OR and outputs 0. Select OR and XOR.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about logic gates.",
+      "Use $ A\\oplus B=A\\bar B+\\bar A B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-009"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-010",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "How many select lines are required by a 16-to-1 multiplexer?",
+    "options": [],
+    "solution": {
+      "given": [
+        "M = 16 inputs"
+      ],
+      "asked": "Find select-line count.",
+      "concept": "Multiplexer addressing",
+      "formula": "n=\\log_2 M",
+      "steps": [
+        "n select lines encode $2^n$ input choices.",
+        "Solve $2^n=16$.",
+        "Since $2^4=16$, four select lines are required."
+      ],
+      "finalAnswer": "4",
+      "explanation": "Since $2^4=16$, four select lines are required.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about multiplexer addressing.",
+      "Use $ n=\\log_2 M $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-010"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      3.99999999,
+      4.00000001
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-011",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "An ideal binary divide-by-8 counter is clocked at 800 Hz. Enter the divided output frequency in Hz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Input frequency 800 Hz",
+        "Division factor 8"
+      ],
+      "asked": "Find output frequency.",
+      "concept": "Frequency division",
+      "formula": "f_{out}=f_{in}/8",
+      "steps": [
+        "A divide-by-8 output repeats once per 8 clock cycles.",
+        "Divide 800 Hz by 8.",
+        "The resulting frequency is 100 Hz."
+      ],
+      "finalAnswer": "100",
+      "explanation": "The resulting frequency is 100 Hz.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about frequency division.",
+      "Use $ f_{out}=f_{in}/8 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-011"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "acceptedRange": [
+      99.99999999,
+      100.00000001
+    ]
+  },
+  {
+    "id": "FH-DIGITAL-012",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "difficulty": "medium",
+    "marks": 2,
+    "question": "Which expression equals NOT(A AND B) by De Morgan’s law?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NOT A AND NOT B"
+      },
+      {
+        "id": "B",
+        "text": "A OR B"
+      },
+      {
+        "id": "C",
+        "text": "A XOR B"
+      },
+      {
+        "id": "D",
+        "text": "NOT A OR NOT B"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Complement of A AND B"
+      ],
+      "asked": "Find equivalent expression.",
+      "concept": "De Morgan’s law",
+      "formula": "\\overline{AB}=\\bar A+\\bar B",
+      "steps": [
+        "Complementing a product changes AND into OR.",
+        "Each individual input is complemented.",
+        "NOT A OR NOT B is equivalent, corresponding to D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "NOT A OR NOT B is equivalent, corresponding to D.",
+      "commonMistakes": [
+        "Keep units consistent and check the operation before calculating."
+      ]
+    },
+    "hints": [
+      "Think about de morgan’s law.",
+      "Use $ \\overline{AB}=\\bar A+\\bar B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent executable checks in scripts/verify-batch.mjs; human expert review pending.",
+      "evidence": "data/batch-verification.json#FH-DIGITAL-012"
+    },
+    "reusePermission": "original-project-content",
+    "contentVersion": 1,
+    "correctAnswer": "D"
+  }
+]

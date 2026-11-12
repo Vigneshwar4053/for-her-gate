@@ -1,0 +1,776 @@
+[
+  {
+    "id": "FH-MIXED-06-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "vector-analysis",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For scalar field φ(x,y,z)=x²y+3z, find the z-component of its gradient at (1,2,0).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Scalar φ=x²y+3z",
+        "point (1,2,0)"
+      ],
+      "asked": "Find ∂φ/∂z.",
+      "concept": "Gradient components",
+      "formula": "\\nabla\\phi=(2xy,x^2,3)",
+      "steps": [
+        "The z derivative of x²y is zero.",
+        "Differentiating 3z with respect to z gives 3.",
+        "The z-component is therefore 3 at the specified point and everywhere else."
+      ],
+      "finalAnswer": "3",
+      "explanation": "The z-component is therefore 3 at the specified point and everywhere else.",
+      "commonMistakes": [
+        "The scalar field value and gradient component are different quantities."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which gradient components applies.",
+      "Start from $ \\nabla\\phi=(2xy,x^2,3) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Finite-difference z partial of the scalar field. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-MIXED-06-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-parameters",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A two-port has z11=5 Ω,z12=2 Ω,z21=2 Ω,z22=6 Ω. With I1=1 A and I2=−0.5 A, both currents referenced into the ports, find V2 in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Given z matrix",
+        "input-referenced signed currents 1 and −0.5"
+      ],
+      "asked": "Find z21I1+z22I2.",
+      "concept": "Two-port terminal equations",
+      "formula": "V_2=z_{21}I_1+z_{22}I_2",
+      "steps": [
+        "Use the second row of the z-parameter matrix.",
+        "V2=2×1+6×(−0.5).",
+        "This gives 2−3=−1 V relative to the specified terminal voltage reference."
+      ],
+      "finalAnswer": "-1 V",
+      "explanation": "This gives 2−3=−1 V relative to the specified terminal voltage reference.",
+      "commonMistakes": [
+        "The load-side current is negative when it leaves the two-port under the inward-current convention."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which two-port terminal equations applies.",
+      "Start from $ V_2=z_{21}I_1+z_{22}I_2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Full z-matrix multiplication with inward signed currents. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      -1.0000001,
+      -0.9999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-06-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "semiconductor-memories",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A memory stores 256 words of 16 bits each. Find its total capacity in bytes, using 8 bits per byte.",
+    "options": [],
+    "solution": {
+      "given": [
+        "256 words",
+        "16 bits/word",
+        "8 bits/byte"
+      ],
+      "asked": "Find total byte capacity.",
+      "concept": "Memory organization",
+      "formula": "C_{bytes}=N_{words}N_{bits/word}/8",
+      "steps": [
+        "The array contains 256×16=4096 bits.",
+        "Divide by 8 to convert bits to bytes.",
+        "Capacity is 512 bytes."
+      ],
+      "finalAnswer": "512 bytes",
+      "explanation": "Capacity is 512 bytes.",
+      "commonMistakes": [
+        "Word width and number of addresses are separate dimensions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which memory organization applies.",
+      "Start from $ C_{bytes}=N_{words}N_{bits/word}/8 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count bits over all words before conversion to bytes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      511.9999488,
+      512.0000512
+    ],
+    "numericalTolerance": 0.0000512
+  },
+  {
+    "id": "FH-MIXED-06-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "mos-capacitor",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal MOS oxide has capacitance per area Cox=2 mF/m² and gate area 10 μm². Find oxide capacitance in femtofarads.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Cox=2×10⁻³ F/m²",
+        "area 10×10⁻¹² m²"
+      ],
+      "asked": "Find total oxide capacitance.",
+      "concept": "Capacitance density and area",
+      "formula": "C_{ox,total}=C_{ox,area}A",
+      "steps": [
+        "Convert the gate area to 10⁻¹¹ m².",
+        "The capacitance is 2×10⁻³×10⁻¹¹=2×10⁻¹⁴ F.",
+        "Since 1 fF=10⁻¹⁵ F, the result is 20 fF."
+      ],
+      "finalAnswer": "20 fF",
+      "explanation": "Since 1 fF=10⁻¹⁵ F, the result is 20 fF.",
+      "commonMistakes": [
+        "Square-micrometer conversion includes a squared metric prefix."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which capacitance density and area applies.",
+      "Start from $ C_{ox,total}=C_{ox,area}A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Capacitance-density area product with squared unit prefix. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      19.999998,
+      20.000002
+    ],
+    "numericalTolerance": 0.000002
+  },
+  {
+    "id": "FH-MIXED-06-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal differential amplifier, the output due to equal voltages applied to both inputs is zero. This describes:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Zero differential gain"
+      },
+      {
+        "id": "B",
+        "text": "Positive feedback"
+      },
+      {
+        "id": "C",
+        "text": "Infinite output resistance"
+      },
+      {
+        "id": "D",
+        "text": "Zero common-mode gain"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Equal input excitation",
+        "ideal differential behavior"
+      ],
+      "asked": "Identify the rejected mode.",
+      "concept": "Common-mode rejection",
+      "formula": "v_d=v_1-v_2,\\quad v_{cm}=(v_1+v_2)/2",
+      "steps": [
+        "Equal inputs make vd=0 but generally leave a nonzero common-mode voltage.",
+        "A purely differential ideal amplifier responds only to vd.",
+        "Zero output from this excitation therefore specifies zero common-mode gain, option D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "Zero output from this excitation therefore specifies zero common-mode gain, option D.",
+      "commonMistakes": [
+        "Common-mode gain is different from the wanted differential gain."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which common-mode rejection applies.",
+      "Start from $ v_d=v_1-v_2,\\quad v_{cm}=(v_1+v_2)/2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Decompose equal input excitation into differential and common modes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-MIXED-06-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "state-space-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A state model has xdot=[[-1,0],[0,−4]]x and x(0)=(2,3)ᵀ. Find x1(ln2).",
+    "options": [],
+    "solution": {
+      "given": [
+        "First state starts at 2",
+        "first eigenvalue −1"
+      ],
+      "asked": "Find first-state response.",
+      "concept": "Decoupled state solution",
+      "formula": "x_1(t)=2e^{-t}",
+      "steps": [
+        "The diagonal state equation gives dx1/dt=−x1.",
+        "The initial state fixes the multiplying coefficient at 2.",
+        "At t=ln2, x1=2×1/2=1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "At t=ln2, x1=2×1/2=1.",
+      "commonMistakes": [
+        "Do not use the second state’s decay rate for the first state."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which decoupled state solution applies.",
+      "Start from $ x_1(t)=2e^{-t} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate both state differential equations with original initial vector. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-06-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For four equiprobable binary input pairs sent independently through a noiseless two-bit parallel link, find mutual information between the input pair and output pair in bits per use.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four equally likely input pairs",
+        "noiseless deterministic one-to-one output"
+      ],
+      "asked": "Find I(X;Y).",
+      "concept": "Mutual information without ambiguity",
+      "formula": "I(X;Y)=H(X)-H(X|Y)",
+      "steps": [
+        "The input pair has entropy log₂4=2 bits.",
+        "A noiseless one-to-one output identifies the pair exactly, so H(X|Y)=0.",
+        "Mutual information is 2−0=2 bits per channel use."
+      ],
+      "finalAnswer": "2 bits/use",
+      "explanation": "Mutual information is 2−0=2 bits per channel use.",
+      "commonMistakes": [
+        "Conditional entropy measures residual uncertainty, which is zero for an invertible noiseless mapping."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mutual information without ambiguity applies.",
+      "Start from $ I(X;Y)=H(X)-H(X|Y) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Noiseless output removes all conditional entropy; explicit input PMF entropy. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-06-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "electromagnetic-waves",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A normally incident wave reflects from a perfect electric conductor. Find the electric-field reflection coefficient at its surface.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Ideal PEC",
+        "tangential electric field vanishes at the surface"
+      ],
+      "asked": "Find reflected-to-incident E amplitude.",
+      "concept": "PEC boundary condition",
+      "formula": "E_i+E_r=0",
+      "steps": [
+        "The total tangential electric field at a PEC surface is zero.",
+        "The incident and reflected electric fields therefore cancel at that plane.",
+        "Er/Ei=−1, meaning full reflection with an electric-field phase reversal."
+      ],
+      "finalAnswer": "-1",
+      "explanation": "Er/Ei=−1, meaning full reflection with an electric-field phase reversal.",
+      "commonMistakes": [
+        "A full reflected power fraction of 1 does not fix the voltage/field reflection sign."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which pec boundary condition applies.",
+      "Start from $ E_i+E_r=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve the tangential electric-field boundary condition at a perfect conductor. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      -1.0000001,
+      -0.9999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-06-09",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "semiconductor-memories",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which are true for conventional ideal SRAM and DRAM bit cells?",
+    "options": [
+      {
+        "id": "A",
+        "text": "SRAM retains state while powered without periodic refresh"
+      },
+      {
+        "id": "B",
+        "text": "Conventional DRAM never needs refresh"
+      },
+      {
+        "id": "C",
+        "text": "DRAM storage relies on stored charge that leaks"
+      },
+      {
+        "id": "D",
+        "text": "An SRAM latch is a bistable storage element"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Conventional volatile semiconductor memory operation"
+      ],
+      "asked": "Select valid storage mechanisms.",
+      "concept": "SRAM and DRAM storage",
+      "formula": "Q=CV\\quad\\text{for capacitive storage}",
+      "steps": [
+        "A conventional DRAM bit is stored as charge and must be refreshed as charge leaks.",
+        "SRAM uses a powered bistable latch, so it does not require periodic refresh in normal operation.",
+        "Both are normally volatile. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Both are normally volatile. Select A, C and D.",
+      "commonMistakes": [
+        "No periodic refresh does not make an SRAM cell nonvolatile."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sram and dram storage applies.",
+      "Start from $ Q=CV\\quad\\text{for capacitive storage} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Bistable-latch versus leaking-capacitor memory mechanisms; no numeric inference claimed. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-06-10",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "vector-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For linear vector differential operators on sufficiently smooth scalar φ and vector F, which identities hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "curl(grad φ)=0"
+      },
+      {
+        "id": "B",
+        "text": "div(grad φ)=0 for every φ"
+      },
+      {
+        "id": "C",
+        "text": "grad(div F)=F for every F"
+      },
+      {
+        "id": "D",
+        "text": "div(curl F)=0"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Sufficiently smooth fields so mixed partial derivatives commute"
+      ],
+      "asked": "Select general vector-calculus identities.",
+      "concept": "Mixed-partial cancellation",
+      "formula": "\\nabla\\times\\nabla\\phi=0,\\quad\\nabla\\cdot(\\nabla\\times F)=0",
+      "steps": [
+        "The terms in curl(gradφ) cancel pairwise by equality of mixed partial derivatives.",
+        "The same cancellation occurs in divergence of a curl.",
+        "The Laplacian div(gradφ) need not vanish, and grad(divF) is not generally F. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "The Laplacian div(gradφ) need not vanish, and grad(divF) is not generally F. Select A and D.",
+      "commonMistakes": [
+        "These identities require smoothness; do not infer every field is harmonic."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mixed-partial cancellation applies.",
+      "Start from $ \\nabla\\times\\nabla\\phi=0,\\quad\\nabla\\cdot(\\nabla\\times F)=0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Symbolic mixed-partial cancellation; φ=x² and F=(1,0,0) counterexamples. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-06-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "spatial-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A square is scaled uniformly by factor 3 in both x and y. Find the ratio of the new area to the original area.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Uniform planar scale factor 3"
+      ],
+      "asked": "Find area scaling.",
+      "concept": "Spatial scaling",
+      "formula": "A_{new}/A_{old}=s^2",
+      "steps": [
+        "Each side length triples.",
+        "Area is the product of two independent lengths.",
+        "The ratio is 3×3=9."
+      ],
+      "finalAnswer": "9",
+      "explanation": "The ratio is 3×3=9.",
+      "commonMistakes": [
+        "Length, area and volume scale with different powers."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which spatial scaling applies.",
+      "Start from $ A_{new}/A_{old}=s^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Area multiplier as the determinant of the uniform-scale transformation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      8.9999991,
+      9.0000009
+    ],
+    "numericalTolerance": 9e-7
+  },
+  {
+    "id": "FH-MIXED-06-12",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "computer-organization",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A fixed 4-stage pipeline processes N=10 instructions with one instruction entering per clock and no stalls. Starting empty and completing all instructions, how many clock cycles are needed?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four equal-clock pipeline stages",
+        "ten instructions",
+        "no stalls or flushes"
+      ],
+      "asked": "Find fill plus throughput cycles.",
+      "concept": "Pipeline latency and throughput",
+      "formula": "T_{cycles}=k+N-1",
+      "steps": [
+        "The first instruction takes 4 cycles to pass all stages.",
+        "Each remaining instruction completes one cycle later.",
+        "For 9 further instructions the total is 4+9=13 cycles."
+      ],
+      "finalAnswer": "13",
+      "explanation": "For 9 further instructions the total is 4+9=13 cycles.",
+      "commonMistakes": [
+        "Steady-state throughput of one per cycle does not remove pipeline fill latency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which pipeline latency and throughput applies.",
+      "Start from $ T_{cycles}=k+N-1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate completion cycles after 4-cycle first-instruction latency. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-006.json#FH-MIXED-06-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "006",
+    "acceptedRange": [
+      12.9999987,
+      13.0000013
+    ],
+    "numericalTolerance": 0.0000012999999999999998
+  }
+]

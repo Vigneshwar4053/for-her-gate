@@ -1,0 +1,771 @@
+[
+  {
+    "id": "FH-SUBJECT-07-01",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A memoryless source has probabilities (1/2,1/4,1/4). Find its entropy in bits per symbol.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three-symbol probability mass function"
+      ],
+      "asked": "Find Shannon entropy using log base 2.",
+      "concept": "Source entropy",
+      "formula": "H=-\\sum_i p_i\\log_2p_i",
+      "steps": [
+        "The probability-1/2 symbol contributes (1/2)×1=0.5 bits.",
+        "Each probability-1/4 symbol contributes (1/4)×2=0.5 bits.",
+        "Total entropy is 0.5+0.5+0.5=1.5 bits/symbol."
+      ],
+      "finalAnswer": "1.5 bits/symbol",
+      "explanation": "Total entropy is 0.5+0.5+0.5=1.5 bits/symbol.",
+      "commonMistakes": [
+        "A three-symbol alphabet need not have entropy log₂3 unless all symbols are equally likely."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which source entropy applies.",
+      "Start from $ H=-\\sum_i p_i\\log_2p_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Weighted self-information sum using the actual source probabilities. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      1.49999985,
+      1.50000015
+    ],
+    "numericalTolerance": 1.5e-7
+  },
+  {
+    "id": "FH-SUBJECT-07-02",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal bandlimited AWGN channel has B=1 kHz and received signal-to-noise power ratio 15 (linear). Find Shannon capacity in kbit/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "B=1000 Hz",
+        "S/N=15 linear",
+        "AWGN capacity assumptions"
+      ],
+      "asked": "Find capacity.",
+      "concept": "Gaussian channel capacity",
+      "formula": "C=B\\log_2(1+S/N)",
+      "steps": [
+        "The logarithm argument is 1+15=16.",
+        "log₂16=4 bits per second per hertz.",
+        "Multiply by 1000 Hz to get 4000 bit/s=4 kbit/s."
+      ],
+      "finalAnswer": "4 kbit/s",
+      "explanation": "Multiply by 1000 Hz to get 4000 bit/s=4 kbit/s.",
+      "commonMistakes": [
+        "Use the linear SNR inside the formula; 15 is not a decibel value."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which gaussian channel capacity applies.",
+      "Start from $ C=B\\log_2(1+S/N) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate AWGN capacity with linear SNR and output-unit conversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-SUBJECT-07-03",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "analog-communication",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For conventional single-tone AM with modulation index m=0.5 and carrier power Pc=100 W, find total transmitted power in watts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Conventional full-carrier AM",
+        "m=0.5",
+        "Pc=100 W"
+      ],
+      "asked": "Find carrier-plus-sideband power.",
+      "concept": "AM power distribution",
+      "formula": "P_T=P_c(1+m^2/2)",
+      "steps": [
+        "The sideband amplitudes are each m/2 times the carrier amplitude.",
+        "Their total power is Pc m²/2=100×0.25/2=12.5 W.",
+        "Adding the 100 W carrier gives 112.5 W."
+      ],
+      "finalAnswer": "112.5 W",
+      "explanation": "Adding the 100 W carrier gives 112.5 W.",
+      "commonMistakes": [
+        "Sideband power depends on the square of modulation index."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which am power distribution applies.",
+      "Start from $ P_T=P_c(1+m^2/2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Average squared AM envelope; carrier-timescale averaging factors cancel by Pc definition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      112.49998875,
+      112.50001125
+    ],
+    "numericalTolerance": 0.000011249999999999999
+  },
+  {
+    "id": "FH-SUBJECT-07-04",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "analog-communication",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An FM signal has peak frequency deviation 5 kHz and highest message frequency 1 kHz. Using Carson’s approximation, find its bandwidth in kHz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Δf=5 kHz",
+        "highest modulating frequency fm=1 kHz"
+      ],
+      "asked": "Estimate FM occupied bandwidth by Carson’s rule.",
+      "concept": "Carson bandwidth estimate",
+      "formula": "B\\simeq2(\\Delta f+f_m)",
+      "steps": [
+        "Add peak deviation and maximum modulating frequency: 5+1=6 kHz.",
+        "Carson’s approximate total bandwidth is twice this sum.",
+        "The estimate is 12 kHz; it is not a strict finite spectral support."
+      ],
+      "finalAnswer": "12 kHz",
+      "explanation": "The estimate is 12 kHz; it is not a strict finite spectral support.",
+      "commonMistakes": [
+        "FM has infinitely many theoretical sidebands; Carson’s rule is an engineering approximation."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which carson bandwidth estimate applies.",
+      "Start from $ B\\simeq2(\\Delta f+f_m) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Carson engineering approximation, not an exact finite-bandwidth claim. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      11.9999988,
+      12.0000012
+    ],
+    "numericalTolerance": 0.0000012
+  },
+  {
+    "id": "FH-SUBJECT-07-05",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "digital-communication",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Uniform PCM uses 8 bits/sample at 8 ksample/s with no overhead. Find its raw bit rate in kbit/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "8 quantization bits per sample",
+        "8000 samples per second"
+      ],
+      "asked": "Find uncoded serial bit rate.",
+      "concept": "PCM rate",
+      "formula": "R_b=n_bf_s",
+      "steps": [
+        "Each sample contributes 8 bits.",
+        "Multiply 8 bits/sample by 8000 samples/s.",
+        "The stream rate is 64000 bit/s=64 kbit/s."
+      ],
+      "finalAnswer": "64 kbit/s",
+      "explanation": "The stream rate is 64000 bit/s=64 kbit/s.",
+      "commonMistakes": [
+        "Framing/coding overhead is excluded by the stated assumption."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which pcm rate applies.",
+      "Start from $ R_b=n_bf_s $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count eight output bits for every one of 8000 samples. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      63.9999936,
+      64.0000064
+    ],
+    "numericalTolerance": 0.0000064
+  },
+  {
+    "id": "FH-SUBJECT-07-06",
+    "type": "MCQ",
+    "subject": "communications",
+    "topic": "probability-of-error",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal coherent BPSK link in AWGN with equiprobable bits and correct carrier synchronization, the BER is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "$Q(\\sqrt{E_b/N_0})$"
+      },
+      {
+        "id": "B",
+        "text": "$Q(\\sqrt{2E_b/N_0})$"
+      },
+      {
+        "id": "C",
+        "text": "$Q(E_b/N_0)$"
+      },
+      {
+        "id": "D",
+        "text": "$e^{-2E_b/N_0}$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Coherent antipodal signaling",
+        "AWGN two-sided PSD N0/2"
+      ],
+      "asked": "Choose the BER law.",
+      "concept": "Antipodal Gaussian detection",
+      "formula": "P_b=Q\\left(\\sqrt{2E_b/N_0}\\right)",
+      "steps": [
+        "The matched-filter decision variable has means ±√Eb and noise variance N0/2 in a unit-energy basis.",
+        "Normalizing the distance from either mean to the zero threshold gives √Eb/√(N0/2).",
+        "This is √(2Eb/N0), so the Gaussian-tail error probability is option B."
+      ],
+      "finalAnswer": "B",
+      "explanation": "This is √(2Eb/N0), so the Gaussian-tail error probability is option B.",
+      "commonMistakes": [
+        "The factor 2 follows from the two-sided noise PSD convention."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which antipodal gaussian detection applies.",
+      "Start from $ P_b=Q\\left(\\sqrt{2E_b/N_0}\\right) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Gaussian decision distance √Eb divided by noise standard deviation √(N0/2). Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-SUBJECT-07-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "digital-communication",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A 16-QAM constellation carries equiprobable symbols at 1000 symbols/s. With no coding overhead, find the bit rate in bit/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "16 symbol choices",
+        "1000 symbols/s"
+      ],
+      "asked": "Find log₂(M) times symbol rate.",
+      "concept": "Bits per symbol",
+      "formula": "R_b=R_s\\log_2M",
+      "steps": [
+        "16 distinct choices encode log₂16=4 bits per symbol.",
+        "At 1000 symbols/s the data rate is 4×1000.",
+        "The uncoded rate is 4000 bit/s."
+      ],
+      "finalAnswer": "4000 bit/s",
+      "explanation": "The uncoded rate is 4000 bit/s.",
+      "commonMistakes": [
+        "Bits per second and symbols per second differ when a symbol represents several bits."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bits per symbol applies.",
+      "Start from $ R_b=R_s\\log_2M $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count bit labels per 16-point constellation and multiply by symbol clock. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      3999.9996,
+      4000.0004
+    ],
+    "numericalTolerance": 0.00039999999999999996
+  },
+  {
+    "id": "FH-SUBJECT-07-08",
+    "type": "MSQ",
+    "subject": "communications",
+    "topic": "digital-communication",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which statements hold for AWGN detection with known deterministic signals and the usual matched-filter model?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A matched filter maximizes output SNR at its design sampling instant"
+      },
+      {
+        "id": "B",
+        "text": "Maximum-likelihood and MAP rules always coincide for unequal prior probabilities"
+      },
+      {
+        "id": "C",
+        "text": "For equal priors and equal decision costs, MAP reduces to maximum likelihood"
+      },
+      {
+        "id": "D",
+        "text": "Matched-filter impulse response is proportional to a time-reversed conjugated signal template"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Known finite-energy signals",
+        "white Gaussian noise",
+        "stated prior/cost conditions"
+      ],
+      "asked": "Select valid receiver principles.",
+      "concept": "Matched filtering and Bayesian decisions",
+      "formula": "h(t)=k\\,s^*(T-t)",
+      "steps": [
+        "Cauchy–Schwarz bounds the output SNR, with equality for the reversed conjugate template.",
+        "MAP maximizes likelihood times prior (for equal costs); unequal priors generally shift its decision rule.",
+        "With equal priors and costs, maximizing the posterior reduces to maximizing likelihood. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "With equal priors and costs, maximizing the posterior reduces to maximizing likelihood. Select A, C and D.",
+      "commonMistakes": [
+        "The equivalence of ML and MAP requires the relevant prior/cost assumptions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which matched filtering and bayesian decisions applies.",
+      "Start from $ h(t)=k\\,s^*(T-t) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Cauchy–Schwarz SNR equality and posterior=likelihood×prior decision derivation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-07-09",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "error-control-coding",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A binary linear code has minimum Hamming distance dmin=5. Find the largest number of arbitrary bit errors it can always correct per codeword under nearest-codeword decoding.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Binary code with minimum distance 5"
+      ],
+      "asked": "Find guaranteed correction radius.",
+      "concept": "Hamming-distance correction bound",
+      "formula": "t=\\left\\lfloor\\frac{d_{min}-1}{2}\\right\\rfloor",
+      "steps": [
+        "Correctable error balls must not overlap between codewords.",
+        "Unique decoding of t errors requires 2t<dmin.",
+        "With dmin=5, the largest integer satisfying this is t=2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "With dmin=5, the largest integer satisfying this is t=2.",
+      "commonMistakes": [
+        "Detection capability dmin−1 differs from correction capability."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which hamming-distance correction bound applies.",
+      "Start from $ t=\\left\\lfloor\\frac{d_{min}-1}{2}\\right\\rfloor $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate integer radii satisfying nonoverlapping Hamming-ball condition 2t<dmin. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-SUBJECT-07-10",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "analog-communication",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A superheterodyne receiver uses high-side injection: fLO=fRF+fIF. For fRF=100 MHz and fIF=10 MHz, find the image frequency in MHz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "High-side LO",
+        "desired RF 100 MHz",
+        "IF 10 MHz"
+      ],
+      "asked": "Find the other positive RF that mixes to the same IF.",
+      "concept": "Superheterodyne image",
+      "formula": "f_{image}=f_{LO}+f_{IF}=f_{RF}+2f_{IF}",
+      "steps": [
+        "The LO is 100+10=110 MHz.",
+        "Both RF=LO−IF and RF=LO+IF give the same difference-frequency magnitude.",
+        "The undesired image is 110+10=120 MHz."
+      ],
+      "finalAnswer": "120 MHz",
+      "explanation": "The undesired image is 110+10=120 MHz.",
+      "commonMistakes": [
+        "For high-side injection the image is above the desired RF by twice the IF."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which superheterodyne image applies.",
+      "Start from $ f_{image}=f_{LO}+f_{IF}=f_{RF}+2f_{IF} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate other RF satisfying the actual LO difference-frequency equation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      119.999988,
+      120.000012
+    ],
+    "numericalTolerance": 0.000012
+  },
+  {
+    "id": "FH-SUBJECT-07-11",
+    "type": "MSQ",
+    "subject": "communications",
+    "topic": "random-processes",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a wide-sense stationary real process with finite second moment, which statements are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Autocorrelation is even"
+      },
+      {
+        "id": "B",
+        "text": "The power spectral density is nonnegative"
+      },
+      {
+        "id": "C",
+        "text": "Autocorrelation at zero must be zero"
+      },
+      {
+        "id": "D",
+        "text": "Autocorrelation at zero equals mean-square value"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Real WSS process",
+        "finite average power"
+      ],
+      "asked": "Select valid autocorrelation and spectral properties.",
+      "concept": "Wiener–Khinchin properties",
+      "formula": "R_X(0)=E[X^2],\\quad S_X(f)=\\mathcal F\\{R_X(\\tau)\\}",
+      "steps": [
+        "Commutativity of real scalar multiplication and stationarity give R(τ)=R(−τ).",
+        "Zero lag gives E[X²], which need not vanish.",
+        "The PSD is nonnegative because it describes spectral power. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "The PSD is nonnegative because it describes spectral power. Select A, B and D.",
+      "commonMistakes": [
+        "Autocorrelation includes mean-square power, whereas autocovariance subtracts the mean contribution."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which wiener–khinchin properties applies.",
+      "Start from $ R_X(0)=E[X^2],\\quad S_X(f)=\\mathcal F\\{R_X(\\tau)\\} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Stationary second-moment symmetry and nonnegative spectral-power measure. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-07-12",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A binary symmetric channel flips bits independently with probability p=0.25. Find its capacity in bits per channel use.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Memoryless BSC",
+        "crossover probability 1/4"
+      ],
+      "asked": "Find maximum mutual information per use.",
+      "concept": "BSC capacity",
+      "formula": "C=1-H_2(p)",
+      "steps": [
+        "The binary entropy is −0.25log₂0.25−0.75log₂0.75≈0.8112781245.",
+        "Symmetric input probability 1/2 maximizes output entropy to 1 bit.",
+        "Capacity is 1−0.8112781245≈0.1887218755 bits/use."
+      ],
+      "finalAnswer": "0.18872187554086717 bits/use",
+      "explanation": "Capacity is 1−0.8112781245≈0.1887218755 bits/use.",
+      "commonMistakes": [
+        "A raw bit per use does not mean one reliably transferable information bit per use."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bsc capacity applies.",
+      "Start from $ C=1-H_2(p) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Optimize mutual information over 10001 input Bernoulli probabilities. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-07-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.188721775541,
+      0.188721975541
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

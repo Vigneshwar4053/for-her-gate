@@ -1,0 +1,817 @@
+[
+  {
+    "id": "FH-TOPIC-27-01",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For F(A,B,C)=Σm(0,1,2,3), with A the most significant minterm bit, find the minimum number of literals in a single-product SOP implementation.",
+    "options": [],
+    "solution": {
+      "given": [
+        "ON set 0,1,2,3",
+        "remaining minterms OFF",
+        "no don’t-cares"
+      ],
+      "asked": "Find literal count after maximal grouping.",
+      "concept": "Four-cell K-map group",
+      "formula": "F=\\bar A",
+      "steps": [
+        "The four ON cells cover all combinations of B,C while A remains 0.",
+        "Those varying variables disappear from the group term.",
+        "The result Ā is one product with one literal."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The result Ā is one product with one literal.",
+      "commonMistakes": [
+        "A minterm count is different from the number of literals after minimization."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which four-cell k-map group applies.",
+      "Start from $ F=\\bar A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all 3³ Boolean cubes and exact minimum-literal cover by dynamic programming. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-27-02",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The shown map has ON minterms 0 and 2 for variables A,B,C. What product covers exactly this adjacent pair?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ĀB̄"
+      },
+      {
+        "id": "B",
+        "text": "AB"
+      },
+      {
+        "id": "C",
+        "text": "ĀC̄"
+      },
+      {
+        "id": "D",
+        "text": "BC"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Three-variable map",
+        "Gray columns BC=00,01,11,10",
+        "A=0 for both ON cells"
+      ],
+      "asked": "Identify the wraparound pair implicant.",
+      "concept": "K-map edge adjacency",
+      "formula": "m_0+m_2=\\bar A\\bar B\\bar C+\\bar AB\\bar C=\\bar A\\bar C",
+      "steps": [
+        "The first and last map columns are adjacent in Gray-code topology.",
+        "Between minterms 000 and 010 only B changes.",
+        "Drop B and retain ĀC̄, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Drop B and retain ĀC̄, option C.",
+      "commonMistakes": [
+        "Map edges wrap around; a rectangular display does not remove their adjacency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which k-map edge adjacency applies.",
+      "Start from $ m_0+m_2=\\bar A\\bar B\\bar C+\\bar AB\\bar C=\\bar A\\bar C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compare cube covers: only ĀC̄ has the exact set {0,2}. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "C",
+    "diagrams": [
+      {
+        "src": "assets/diagrams/kmap-wrap.svg",
+        "alt": "K-map rows A=0,1 and Gray columns BC=00,01,11,10; ones only at minterms 0 and 2."
+      }
+    ]
+  },
+  {
+    "id": "FH-TOPIC-27-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For F(A,B,C,D)=Σm(0,2,8,10), using ABCD as the binary minterm index, find the literal count of its maximal single implicant.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four-variable ON set 0,2,8,10"
+      ],
+      "asked": "Identify fixed bits across the four cells.",
+      "concept": "Elimination of changing variables",
+      "formula": "F=\\bar B\\bar D",
+      "steps": [
+        "The four binary indices vary A and C independently.",
+        "B=0 and D=0 remain fixed in every cell.",
+        "The covering product is B̄D̄, with 2 literals."
+      ],
+      "finalAnswer": "2",
+      "explanation": "The covering product is B̄D̄, with 2 literals.",
+      "commonMistakes": [
+        "List fixed bits using the declared minterm bit order."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which elimination of changing variables applies.",
+      "Start from $ F=\\bar B\\bar D $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all 3⁴ cubes and compute exact constrained cover cost. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-27-04",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For F(A,B,C)=Σm(0,1,3,7), which listed prime implicants are essential?",
+    "options": [
+      {
+        "id": "A",
+        "text": "ĀB̄"
+      },
+      {
+        "id": "B",
+        "text": "ĀC"
+      },
+      {
+        "id": "C",
+        "text": "BC"
+      },
+      {
+        "id": "D",
+        "text": "AC"
+      }
+    ],
+    "solution": {
+      "given": [
+        "No don’t-cares",
+        "essential means covering an ON cell not covered by another prime implicant"
+      ],
+      "asked": "Identify indispensable prime terms.",
+      "concept": "Essential prime implicants",
+      "formula": "\\text{essential prime}\\iff\\text{uniquely covers an ON minterm}",
+      "steps": [
+        "The prime terms are ĀB̄ (0,1), ĀC (1,3) and BC (3,7).",
+        "Minterm 0 is covered only by ĀB̄, and minterm 7 only by BC.",
+        "Thus A and C are essential. AC is not even an implicant because it includes OFF minterm 5."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Thus A and C are essential. AC is not even an implicant because it includes OFF minterm 5.",
+      "commonMistakes": [
+        "A large implicant is not automatically essential; unique coverage is the test."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which essential prime implicants applies.",
+      "Start from $ \\text{essential prime}\\iff\\text{uniquely covers an ON minterm} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate prime cubes, build ON coverage chart and find unique-cover primes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-27-05",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For F(A,B,C)=Σm(1,3) with don’t-care set d(5,7), find the fewest literals in an SOP implementing the specified ON/OFF requirements.",
+    "options": [],
+    "solution": {
+      "given": [
+        "ON 1,3",
+        "don’t-cares 5,7",
+        "all other cells OFF"
+      ],
+      "asked": "Use allowed don’t-cares to enlarge a group.",
+      "concept": "Don’t-care minimization",
+      "formula": "F=C\\quad\\text{is valid on every specified cell}",
+      "steps": [
+        "The two ON minterms and both don’t-cares all have C=1.",
+        "Assigning the don’t-cares high permits a four-cell group.",
+        "The single literal C covers it while all specified OFF cells have C=0."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The single literal C covers it while all specified OFF cells have C=0.",
+      "commonMistakes": [
+        "A don’t-care can be used if helpful; it is not a required ON cell."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which don’t-care minimization applies.",
+      "Start from $ F=C\\quad\\text{is valid on every specified cell} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exact implicant cover with OFF protection and optional don’t-care inclusion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-27-06",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Which column order gives cyclic Gray adjacency for a two-bit K-map coordinate?",
+    "options": [
+      {
+        "id": "A",
+        "text": "00,01,10,11"
+      },
+      {
+        "id": "B",
+        "text": "00,01,11,10"
+      },
+      {
+        "id": "C",
+        "text": "00,11,01,10"
+      },
+      {
+        "id": "D",
+        "text": "00,10,01,11"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Adjacent columns, including last-to-first, must differ in one bit"
+      ],
+      "asked": "Choose a valid cyclic Gray order.",
+      "concept": "Gray coding",
+      "formula": "d_H(c_i,c_{i+1})=1",
+      "steps": [
+        "For B, consecutive words differ once: 00→01→11→10→00.",
+        "Each transition changes one bit, including the wrap.",
+        "Other listed orders have at least one two-bit transition. Select B."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Other listed orders have at least one two-bit transition. Select B.",
+      "commonMistakes": [
+        "Ordinary binary numerical order is not the cyclic Gray sequence."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which gray coding applies.",
+      "Start from $ d_H(c_i,c_{i+1})=1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Check every cyclic neighboring pair in each proposed Gray ordering. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-27-07",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A legal eight-cell implicant is formed in a four-variable K-map. How many variables remain as literals in that product?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four variables",
+        "legal 2³-cell group"
+      ],
+      "asked": "Find the count of fixed variables.",
+      "concept": "Group size and literal count",
+      "formula": "L=n-\\log_2g",
+      "steps": [
+        "An eight-cell group lets three variables vary independently.",
+        "Of four total variables, one remains fixed.",
+        "Its implicant therefore has one literal."
+      ],
+      "finalAnswer": "1",
+      "explanation": "Its implicant therefore has one literal.",
+      "commonMistakes": [
+        "Only legal rectangular power-of-two groups have this elimination property."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which group size and literal count applies.",
+      "Start from $ L=n-\\log_2g $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count variables eliminated by three independent cube dimensions. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-27-08",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For F(A,B,C)=0 only at minterms 0 and 1, which minimal single sum term is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A+B"
+      },
+      {
+        "id": "B",
+        "text": "A+C"
+      },
+      {
+        "id": "C",
+        "text": "B+C"
+      },
+      {
+        "id": "D",
+        "text": "Ā+B̄"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Other six cells ON",
+        "ABC minterm bit order"
+      ],
+      "asked": "Find the POS sum covering the zero pair.",
+      "concept": "POS grouping of zeros",
+      "formula": "F=A+B",
+      "steps": [
+        "Zero cells 000 and 001 have A=B=0 while C varies.",
+        "A+B is zero exactly for those fixed A,B values.",
+        "It is one sum with two literals, option A."
+      ],
+      "finalAnswer": "A",
+      "explanation": "It is one sum with two literals, option A.",
+      "commonMistakes": [
+        "For POS, group zeros and use the sum term whose zero pattern matches the group."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which pos grouping of zeros applies.",
+      "Start from $ F=A+B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all eight rows and verify A+B is zero exactly at minterms 0,1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-TOPIC-27-09",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which K-map grouping rules are valid for ordinary two-level minimization?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Legal groups contain a power-of-two number of adjacent cells"
+      },
+      {
+        "id": "B",
+        "text": "Diagonal touching alone makes two cells adjacent"
+      },
+      {
+        "id": "C",
+        "text": "Groups may overlap when useful"
+      },
+      {
+        "id": "D",
+        "text": "Groups may wrap across opposite map edges"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Standard Gray-coded Karnaugh maps"
+      ],
+      "asked": "Select valid adjacency and cover rules.",
+      "concept": "K-map geometry",
+      "formula": "g\\in\\{1,2,4,8,\\ldots\\}",
+      "steps": [
+        "Groups represent Boolean cubes, so their size is a power of two.",
+        "Overlap can help cover cells with fewer literals, and opposite edges are adjacent by Gray-code wrap.",
+        "Merely diagonal contact does not provide one-bit adjacency. Select A,C,D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Merely diagonal contact does not provide one-bit adjacency. Select A,C,D.",
+      "commonMistakes": [
+        "A visually close diagonal is not a legal two-cell Boolean cube."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which k-map geometry applies.",
+      "Start from $ g\\in\\{1,2,4,8,\\ldots\\} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Boolean-cube topology: cardinality powers of two, one-bit adjacency and cyclic edges. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-27-10",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For F(A,B,C)=Σm(0,2,5,7) with no don’t-cares, find the minimum total literal count of a two-level SOP.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two pairs of ON cells",
+        "no allowable OFF coverage"
+      ],
+      "asked": "Find the minimal sum of product literal counts.",
+      "concept": "Minimal SOP cover",
+      "formula": "F=\\bar A\\bar C+AC",
+      "steps": [
+        "Minterms 0,2 form ĀC̄, and minterms 5,7 form AC.",
+        "No group can join these pairs without including an OFF cell, so two two-literal products are required.",
+        "Total literal count is 2+2=4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "Total literal count is 2+2=4.",
+      "commonMistakes": [
+        "Count total literals across all products, not only the number of products."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which minimal sop cover applies.",
+      "Start from $ F=\\bar A\\bar C+AC $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exact global SOP literal minimization over all legal cubes and covers. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-27-11",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For F=AB+ĀC implemented as two AND gates into an OR, a static-1 hazard can occur when A changes with B=C=1. How many additional product terms are sufficient for its standard hazard-free cover?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two-level SOP with unequal gate delays",
+        "only A changes",
+        "B=C=1"
+      ],
+      "asked": "Find the number of needed consensus products.",
+      "concept": "Consensus coverage for a static hazard",
+      "formula": "AB+\\bar AC\\ \\longrightarrow\\ AB+\\bar AC+BC",
+      "steps": [
+        "The ideal function stays 1, but delay mismatch can briefly make both original products zero.",
+        "The consensus term BC is independent of the changing input and remains high for the transition.",
+        "Adding that one product suffices for this stated static-1 hazard."
+      ],
+      "finalAnswer": "1",
+      "explanation": "Adding that one product suffices for this stated static-1 hazard.",
+      "commonMistakes": [
+        "Logical redundancy can be useful for transition safety even though it does not change the truth table."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which consensus coverage for a static hazard applies.",
+      "Start from $ AB+\\bar AC\\ \\longrightarrow\\ AB+\\bar AC+BC $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "One consensus cube covers both sides of the stated A transition; verify truth equivalence and transition-independent BC term. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-27-12",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about don’t-care cells in minimization are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "They may be assigned 1 when that enlarges a useful ON group"
+      },
+      {
+        "id": "B",
+        "text": "They may instead be assigned 0 if that helps the chosen implementation"
+      },
+      {
+        "id": "C",
+        "text": "Every don’t-care must appear in the final ON cover"
+      },
+      {
+        "id": "D",
+        "text": "A specified OFF minterm cannot be treated as a don’t-care without changing the problem"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ordinary incompletely specified Boolean function"
+      ],
+      "asked": "Select legitimate freedoms and constraints.",
+      "concept": "Specified versus unspecified outputs",
+      "formula": "F(x)\\text{ is unconstrained only on declared don’t-care inputs}",
+      "steps": [
+        "The output on a declared don’t-care input is not specified by the design requirements.",
+        "A minimizing implementation may use it as high or low; no rule forces its coverage.",
+        "Specified zero cells remain constraints. Select A,B,D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Specified zero cells remain constraints. Select A,B,D.",
+      "commonMistakes": [
+        "Only explicitly declared unspecified cases may be assigned freely."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which specified versus unspecified outputs applies.",
+      "Start from $ F(x)\\text{ is unconstrained only on declared don’t-care inputs} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Incomplete-specification semantics: enforce ON/OFF cells and leave only declared don’t-cares free. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-27-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  }
+]

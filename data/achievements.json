@@ -1,0 +1,90 @@
+[
+  {
+    "id": "first",
+    "title": "First Step",
+    "description": "Complete your first examination.",
+    "icon": "footprints",
+    "condition": {
+      "kind": "tests",
+      "value": 1,
+      "subject": null
+    }
+  },
+  {
+    "id": "five",
+    "title": "Quick Learner",
+    "description": "Complete 5 distinct tests.",
+    "icon": "sparkles",
+    "condition": {
+      "kind": "tests",
+      "value": 5,
+      "subject": null
+    }
+  },
+  {
+    "id": "streak",
+    "title": "Consistency Star",
+    "description": "Study on 7 consecutive days.",
+    "icon": "flame",
+    "condition": {
+      "kind": "streak",
+      "value": 7,
+      "subject": null
+    }
+  },
+  {
+    "id": "digital",
+    "title": "Circuit Queen",
+    "description": "Complete 5 Digital Circuits tests.",
+    "icon": "cpu",
+    "condition": {
+      "kind": "subject",
+      "value": 5,
+      "subject": "digital"
+    }
+  },
+  {
+    "id": "math",
+    "title": "Math Explorer",
+    "description": "Complete 5 Engineering Mathematics tests.",
+    "icon": "sigma",
+    "condition": {
+      "kind": "subject",
+      "value": 5,
+      "subject": "mathematics"
+    }
+  },
+  {
+    "id": "pyq",
+    "title": "PYQ Warrior",
+    "description": "Complete 5 full-length PYQs.",
+    "icon": "file-check",
+    "condition": {
+      "kind": "pyq",
+      "value": 5,
+      "subject": null
+    }
+  },
+  {
+    "id": "century",
+    "title": "Century Star",
+    "description": "Complete 100 distinct tests.",
+    "icon": "star",
+    "condition": {
+      "kind": "tests",
+      "value": 100,
+      "subject": null
+    }
+  },
+  {
+    "id": "champion",
+    "title": "GATE Champion",
+    "description": "Complete all 150 tests.",
+    "icon": "trophy",
+    "condition": {
+      "kind": "tests",
+      "value": 150,
+      "subject": null
+    }
+  }
+]

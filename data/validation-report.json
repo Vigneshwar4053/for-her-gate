@@ -1,0 +1,52 @@
+{
+  "generatedAt": "2026-11-12T20:22:32.235Z",
+  "totalTestSlots": 150,
+  "pyqSlots": 20,
+  "topicSlots": 80,
+  "subjectSlots": 40,
+  "mixedSlots": 10,
+  "regularTestSlots": 130,
+  "targetQuestionSlots": 2860,
+  "readyTests": 43,
+  "readyPYQs": 0,
+  "pendingTests": 107,
+  "validatedQuestions": 516,
+  "expertReviewedQuestions": 0,
+  "fulfilledQuestionSlots": 516,
+  "missingQuestionSlots": 2344,
+  "unverifiedQuestions": 0,
+  "syllabusStatus": "official-pdf-inspected",
+  "verification": "Automatic calculation/property checks; independent and human reviews remain pending.",
+  "errors": [],
+  "warnings": [
+    "Computationally checked questions are not independently or human-reviewed.",
+    "Interactive PYQ source, rights, answer and solution release gates remain enforced."
+  ],
+  "categoryReadiness": {
+    "pyq": {
+      "slots": 20,
+      "ready": 0,
+      "pending": 20
+    },
+    "topic": {
+      "slots": 80,
+      "ready": 24,
+      "pending": 56
+    },
+    "subject": {
+      "slots": 40,
+      "ready": 9,
+      "pending": 31
+    },
+    "mixed": {
+      "slots": 10,
+      "ready": 10,
+      "pending": 0
+    }
+  },
+  "readyOriginalTests": 43,
+  "pendingOriginalTests": 87,
+  "originalTargetQuestionSlots": 1560,
+  "remainingOriginalQuestionSlots": 1044,
+  "automaticallyRecalculatedQuestions": 516
+}

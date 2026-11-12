@@ -1,0 +1,777 @@
+[
+  {
+    "id": "FH-TOPIC-15-01",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "In the low-field drift model, μn=1000 cm²/(V·s) and E=+100 V/cm. Find the signed electron drift velocity along x in cm/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Positive electric field",
+        "electron mobility positive"
+      ],
+      "asked": "Find electron particle drift velocity.",
+      "concept": "Electron drift direction",
+      "formula": "v_{dn}=-\\mu_nE",
+      "steps": [
+        "Electrons have negative charge and drift opposite to the field.",
+        "Multiply mobility by field: 1000×100=10⁵ cm/s.",
+        "Include the direction sign to obtain −10⁵ cm/s."
+      ],
+      "finalAnswer": "-100000 cm/s",
+      "explanation": "Include the direction sign to obtain −10⁵ cm/s.",
+      "commonMistakes": [
+        "Conventional electron current points opposite to electron particle drift."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which electron drift direction applies.",
+      "Start from $ v_{dn}=-\\mu_nE $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Low-field particle drift with negative electron charge sign. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      -100000.01,
+      -99999.99
+    ],
+    "numericalTolerance": 0.01
+  },
+  {
+    "id": "FH-TOPIC-15-02",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A semiconductor has n=p=5×10¹⁴ cm⁻³, μn=2000 and μp=400 cm²/(V·s). At E=10 V/cm, find total drift current density in A/cm² using q=1.6×10⁻¹⁹ C.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Both carrier densities specified",
+        "uniform low field",
+        "no diffusion term requested"
+      ],
+      "asked": "Add electron and hole conventional drift currents.",
+      "concept": "Two-carrier drift conductivity",
+      "formula": "J=q(n\\mu_n+p\\mu_p)E",
+      "steps": [
+        "The weighted carrier mobility sum is 5×10¹⁴(2000+400)=1.2×10¹⁸.",
+        "Multiplying by q gives conductivity 0.192 S/cm.",
+        "Multiplying by E=10 V/cm gives J=1.92 A/cm²."
+      ],
+      "finalAnswer": "1.92 A/cm²",
+      "explanation": "Multiplying by E=10 V/cm gives J=1.92 A/cm².",
+      "commonMistakes": [
+        "Electron and hole drift currents add in the conventional current reference despite opposite particle drifts."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which two-carrier drift conductivity applies.",
+      "Start from $ J=q(n\\mu_n+p\\mu_p)E $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Sum two conventional carrier-current contributions in centimeter units. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      1.919999808,
+      1.920000192
+    ],
+    "numericalTolerance": 1.9199999999999997e-7
+  },
+  {
+    "id": "FH-TOPIC-15-03",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Minority carriers have diffusion coefficient D=25 cm²/s and lifetime τ=4 μs. Find the diffusion length in μm.",
+    "options": [],
+    "solution": {
+      "given": [
+        "D=25 cm²/s",
+        "τ=4×10⁻⁶ s"
+      ],
+      "asked": "Find √(Dτ) and convert units.",
+      "concept": "Diffusion length",
+      "formula": "L=\\sqrt{D\\tau}",
+      "steps": [
+        "Dτ=25×4×10⁻⁶=10⁻⁴ cm².",
+        "Taking its square root gives 10⁻² cm.",
+        "Multiplying by 10⁴ μm/cm gives 100 μm."
+      ],
+      "finalAnswer": "100 μm",
+      "explanation": "Multiplying by 10⁴ μm/cm gives 100 μm.",
+      "commonMistakes": [
+        "Lifetime must be in seconds before multiplication by a cm²/s coefficient."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which diffusion length applies.",
+      "Start from $ L=\\sqrt{D\\tau} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve L²=Dτ and convert centimeters to micrometers. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      99.99999,
+      100.00001
+    ],
+    "numericalTolerance": 0.000009999999999999999
+  },
+  {
+    "id": "FH-TOPIC-15-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Uniform excess carriers obey dΔn/dt=−Δn/τ after illumination stops. With τ=2 μs, find the time at which the excess density falls to one quarter, in μs.",
+    "options": [],
+    "solution": {
+      "given": [
+        "First-order recombination",
+        "initial excess positive",
+        "lifetime 2 μs"
+      ],
+      "asked": "Find quarter-life time.",
+      "concept": "Excess-carrier decay",
+      "formula": "\\Delta n(t)=\\Delta n(0)e^{-t/\\tau}",
+      "steps": [
+        "Set the decay factor to 1/4.",
+        "Taking logarithms gives t=τln4.",
+        "With τ=2 μs, t=2ln4≈2.772588722 μs."
+      ],
+      "finalAnswer": "2.772588722239781 μs",
+      "explanation": "With τ=2 μs, t=2ln4≈2.772588722 μs.",
+      "commonMistakes": [
+        "A quarter density is reached after two half-lives, not a quarter of one lifetime."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which excess-carrier decay applies.",
+      "Start from $ \\Delta n(t)=\\Delta n(0)e^{-t/\\tau} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Root finding on numerically integrated lifetime decay, time in μs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      2.772588444981,
+      2.772588999499
+    ],
+    "numericalTolerance": 2.772588722239781e-7
+  },
+  {
+    "id": "FH-TOPIC-15-05",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Uniform steady photogeneration is G=10²⁰ cm⁻³s⁻¹ and the linear excess-carrier lifetime is 1 μs. Ignoring transport, find the excess steady density in units of 10¹⁴ cm⁻³.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Uniform G",
+        "recombination Δn/τ",
+        "steady state"
+      ],
+      "asked": "Find excess generation–recombination balance.",
+      "concept": "Continuity at steady state",
+      "formula": "0=G-\\Delta n/\\tau",
+      "steps": [
+        "No spatial transport or time variation remains under the stated assumptions.",
+        "Set generation equal to recombination to obtain Δn=Gτ=10²⁰×10⁻⁶=10¹⁴ cm⁻³.",
+        "In requested scaled units, enter 1."
+      ],
+      "finalAnswer": "1 ×10¹⁴ cm⁻³",
+      "explanation": "In requested scaled units, enter 1.",
+      "commonMistakes": [
+        "The result is excess concentration, not necessarily the total equilibrium-plus-excess density."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which continuity at steady state applies.",
+      "Start from $ 0=G-\\Delta n/\\tau $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve steady generation–recombination linear balance. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-15-06",
+    "type": "MCQ",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A hole concentration decreases in the +x direction with zero electric field. The conventional hole diffusion current points:",
+    "options": [
+      {
+        "id": "A",
+        "text": "In +x"
+      },
+      {
+        "id": "B",
+        "text": "In −x"
+      },
+      {
+        "id": "C",
+        "text": "Nowhere because E=0"
+      },
+      {
+        "id": "D",
+        "text": "In a direction independent of the concentration gradient"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Positive hole charge",
+        "dp/dx<0",
+        "diffusion only"
+      ],
+      "asked": "Find the sign of hole diffusion current.",
+      "concept": "Hole diffusion sign",
+      "formula": "J_{p,diff}=-qD_p\\frac{dp}{dx}",
+      "steps": [
+        "Particles diffuse from higher to lower concentration, here in +x.",
+        "Holes carry positive charge, so their conventional current has that same direction.",
+        "The formula also gives a positive value when dp/dx<0, so A is correct."
+      ],
+      "finalAnswer": "A",
+      "explanation": "The formula also gives a positive value when dp/dx<0, so A is correct.",
+      "commonMistakes": [
+        "A zero electric field removes drift, not diffusion."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which hole diffusion sign applies.",
+      "Start from $ J_{p,diff}=-qD_p\\frac{dp}{dx} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Fick particle flux down the density gradient, times positive hole charge. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-TOPIC-15-07",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For p(x)=p0+10¹⁵exp(−x/0.001) cm⁻³ with x in cm, Dp=10 cm²/s and q=1.6×10⁻¹⁹ C, find Jp,diff(0) in A/cm².",
+    "options": [],
+    "solution": {
+      "given": [
+        "Excess-hole profile",
+        "diffusion coefficient 10",
+        "length 0.001 cm"
+      ],
+      "asked": "Differentiate the profile and calculate current.",
+      "concept": "Hole-profile diffusion current",
+      "formula": "J_p=-qD_p\\,dp/dx",
+      "steps": [
+        "At x=0, dp/dx=−10¹⁵/0.001=−10¹⁸ cm⁻⁴.",
+        "Multiply by −qDp=−1.6×10⁻¹⁹×10.",
+        "The product is +1.6 A/cm², directed along +x."
+      ],
+      "finalAnswer": "1.6 A/cm²",
+      "explanation": "The product is +1.6 A/cm², directed along +x.",
+      "commonMistakes": [
+        "The length in the exponential denominator contributes to the derivative."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which hole-profile diffusion current applies.",
+      "Start from $ J_p=-qD_p\\,dp/dx $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Centered finite-difference gradient of the original profile, then signed hole current. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      1.59999984,
+      1.60000016
+    ],
+    "numericalTolerance": 1.6e-7
+  },
+  {
+    "id": "FH-TOPIC-15-08",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A uniform sample has conductivity 1 S/cm, length 1 cm and cross-sectional area 10⁻⁴ cm². Neglect contacts. Find resistance in kΩ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "σ=1 S/cm",
+        "L=1 cm",
+        "A=10⁻⁴ cm²"
+      ],
+      "asked": "Find L/(σA).",
+      "concept": "Bulk conduction geometry",
+      "formula": "R=L/(\\sigma A)",
+      "steps": [
+        "The sample conductance is σA/L=10⁻⁴ S.",
+        "Resistance is its reciprocal, 10⁴ Ω.",
+        "Convert to kΩ to obtain 10 kΩ."
+      ],
+      "finalAnswer": "10 kΩ",
+      "explanation": "Convert to kΩ to obtain 10 kΩ.",
+      "commonMistakes": [
+        "Conductivity is a material property; conductance also depends on geometry."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bulk conduction geometry applies.",
+      "Start from $ R=L/(\\sigma A) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Apply one volt to the bulk conductance and invert to obtain kΩ. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-TOPIC-15-09",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In a fully ionized extrinsic regime, hold carrier density fixed and assume μ(T)∝T⁻³ᐟ². Find σ(600 K)/σ(300 K) in this model.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Fixed carrier density",
+        "mobility power law only",
+        "temperature doubles"
+      ],
+      "asked": "Find conductivity ratio.",
+      "concept": "Mobility-limited temperature dependence",
+      "formula": "\\sigma_2/\\sigma_1=(T_2/T_1)^{-3/2}",
+      "steps": [
+        "With density fixed, conductivity changes in direct proportion to mobility.",
+        "The temperature ratio is 2.",
+        "The model gives 2⁻³ᐟ²=1/(2√2)≈0.353553391."
+      ],
+      "finalAnswer": "0.3535533905932738",
+      "explanation": "The model gives 2⁻³ᐟ²=1/(2√2)≈0.353553391.",
+      "commonMistakes": [
+        "This model excludes intrinsic-density increase and dopant freeze-out effects."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mobility-limited temperature dependence applies.",
+      "Start from $ \\sigma_2/\\sigma_1=(T_2/T_1)^{-3/2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate the explicitly assumed mobility power-law ratio with fixed density. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.353553290593,
+      0.353553490593
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-15-10",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a 1D semiconductor region, dE/dx=10⁵ V/cm² and ε=10⁻¹² F/cm. Using q=1.6×10⁻¹⁹ C, find net positive charge concentration ρ/q in units of 10¹¹ cm⁻³.",
+    "options": [],
+    "solution": {
+      "given": [
+        "One-dimensional Poisson relation",
+        "field gradient positive"
+      ],
+      "asked": "Find net charge density then normalize by q.",
+      "concept": "Poisson charge relation",
+      "formula": "\\frac{dE}{dx}=\\rho/\\epsilon",
+      "steps": [
+        "The charge density is ε(dE/dx)=10⁻¹²×10⁵=10⁻⁷ C/cm³.",
+        "Divide by 1.6×10⁻¹⁹ C to obtain 6.25×10¹¹ cm⁻³.",
+        "Enter 6.25 in the requested units. This is net charge concentration, not automatically an electron density."
+      ],
+      "finalAnswer": "6.25 ×10¹¹ cm⁻³",
+      "explanation": "Enter 6.25 in the requested units. This is net charge concentration, not automatically an electron density.",
+      "commonMistakes": [
+        "The net charge can include fixed dopants and both carrier types."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which poisson charge relation applies.",
+      "Start from $ \\frac{dE}{dx}=\\rho/\\epsilon $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate/identify one-dimensional Poisson coefficient and normalize net charge. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      6.249999375,
+      6.250000625
+    ],
+    "numericalTolerance": 6.249999999999999e-7
+  },
+  {
+    "id": "FH-TOPIC-15-11",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about low-field semiconductor drift/diffusion models are true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A concentration gradient can produce current even when the electric field is zero"
+      },
+      {
+        "id": "B",
+        "text": "Electron particle flux and electron conventional current always point in the same direction"
+      },
+      {
+        "id": "C",
+        "text": "The Einstein relation links mobility and diffusion under nondegenerate equilibrium assumptions"
+      },
+      {
+        "id": "D",
+        "text": "A spatially uniform concentration removes its diffusion term"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Conventional current",
+        "scalar positive mobilities/diffusivities"
+      ],
+      "asked": "Select correct transport distinctions.",
+      "concept": "Particle flux versus charge current",
+      "formula": "J_n=q n\\mu_nE+qD_n\\nabla n",
+      "steps": [
+        "The gradient term can survive at zero field and vanishes for uniform density.",
+        "Multiplying electron particle flux by negative electron charge reverses its direction.",
+        "Nondegenerate equilibrium assumptions give D/μ=kT/q. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Nondegenerate equilibrium assumptions give D/μ=kT/q. Select A, C and D.",
+      "commonMistakes": [
+        "The sign convention must follow carrier charge, not just particle motion."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which particle flux versus charge current applies.",
+      "Start from $ J_n=q n\\mu_nE+qD_n\\nabla n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Signed drift/diffusion constitutive laws and stated nondegenerate Einstein assumptions. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-15-12",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For uniform linear recombination model dΔn/dt=G−Δn/τ with τ>0, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "The steady excess concentration is Gτ for constant generation"
+      },
+      {
+        "id": "B",
+        "text": "With G=0, excess density decays exponentially"
+      },
+      {
+        "id": "C",
+        "text": "τ has units of inverse seconds"
+      },
+      {
+        "id": "D",
+        "text": "The model’s homogeneous pole is −1/τ"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Constant G",
+        "lifetime τ",
+        "no transport"
+      ],
+      "asked": "Identify units and dynamics.",
+      "concept": "Linear carrier continuity",
+      "formula": "\\Delta n(t)=G\\tau+C e^{-t/\\tau}",
+      "steps": [
+        "Steady balance gives Δn=Gτ.",
+        "Setting G=0 leaves a decaying exponential with pole −1/τ.",
+        "Since t/τ is dimensionless, τ has units of time. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Since t/τ is dimensionless, τ has units of time. Select A, B and D.",
+      "commonMistakes": [
+        "Lifetime is a time, whereas recombination rate coefficient 1/τ has inverse-time units."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which linear carrier continuity applies.",
+      "Start from $ \\Delta n(t)=G\\tau+C e^{-t/\\tau} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve continuity steady balance and homogeneous exponent; lifetime dimensional check. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-TOPIC-15-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  }
+]

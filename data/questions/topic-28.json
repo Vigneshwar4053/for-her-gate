@@ -1,0 +1,763 @@
+[
+  {
+    "id": "FH-TOPIC-28-01",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A 4-bit unsigned adder receives A=9, B=6 and carry-in 1. Find its carry-out bit.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four-bit operands",
+        "total arithmetic sum includes Cin"
+      ],
+      "asked": "Find the fifth sum bit.",
+      "concept": "Unsigned carry",
+      "formula": "C_{out}=\\left\\lfloor\\frac{A+B+C_{in}}{16}\\right\\rfloor",
+      "steps": [
+        "The full sum is 9+6+1=16.",
+        "Its lower four bits are zero.",
+        "The next bit is 1, so carry-out is 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The next bit is 1, so carry-out is 1.",
+      "commonMistakes": [
+        "Carry-in must be included before deciding whether the range is exceeded."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which unsigned carry applies.",
+      "Start from $ C_{out}=\\left\\lfloor\\frac{A+B+C_{in}}{16}\\right\\rfloor $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute full unsigned addition then extract carry bit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-28-02",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In 4-bit two’s-complement addition, 7+3 produces low four bits 1010. Which flag interpretation is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "No signed overflow because 10≤15"
+      },
+      {
+        "id": "B",
+        "text": "Both operands are negative"
+      },
+      {
+        "id": "C",
+        "text": "Signed overflow occurs although unsigned carry-out is zero"
+      },
+      {
+        "id": "D",
+        "text": "The exact signed result is −6 without overflow"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Signed range −8…7",
+        "operands +7,+3"
+      ],
+      "asked": "Distinguish signed overflow from carry.",
+      "concept": "Two’s-complement overflow",
+      "formula": "V=\\bar{(a_s\\oplus b_s)}(a_s\\oplus s_s)",
+      "steps": [
+        "Two positive operands mathematically sum to 10, beyond signed maximum 7.",
+        "The retained word 1010 decodes to −6, revealing signed overflow.",
+        "Unsigned sum 10 is below 16, so no carry-out is produced. Select C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Unsigned sum 10 is below 16, so no carry-out is produced. Select C.",
+      "commonMistakes": [
+        "Carry-out and signed overflow report different range failures."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which two’s-complement overflow applies.",
+      "Start from $ V=\\bar{(a_s\\oplus b_s)}(a_s\\oplus s_s) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compare exact sum 10 against signed and unsigned four-bit ranges. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-28-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 4-bit two’s-complement subtractor computes 3−5. Find the retained unsigned bit-pattern value in decimal (0 to 15).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four-bit modular result",
+        "mathematical signed difference −2"
+      ],
+      "asked": "Find −2 modulo 16.",
+      "concept": "Modular subtraction encoding",
+      "formula": "(-2)\\bmod16=14",
+      "steps": [
+        "The arithmetic difference is −2.",
+        "Its 4-bit two’s-complement encoding is 16−2=14.",
+        "Thus the retained bits are 1110, whose unsigned pattern value is 14."
+      ],
+      "finalAnswer": "14",
+      "explanation": "Thus the retained bits are 1110, whose unsigned pattern value is 14.",
+      "commonMistakes": [
+        "The requested pattern value is unsigned even though the subtraction result is signed."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which modular subtraction encoding applies.",
+      "Start from $ (-2)\\bmod16=14 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Modular arithmetic of the retained four-bit subtraction word. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      13.9999986,
+      14.0000014
+    ],
+    "numericalTolerance": 0.0000014
+  },
+  {
+    "id": "FH-TOPIC-28-04",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A 3-to-8 active-high decoder is enabled and receives input 110₂. Find the index of its asserted output line, numbered 0 to 7.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Binary-coded decoder input",
+        "conventional output indexing"
+      ],
+      "asked": "Find the selected minterm index.",
+      "concept": "Decoder addressing",
+      "formula": "index=4A_2+2A_1+A_0",
+      "steps": [
+        "Convert the input word 110 to decimal: 4+2+0=6.",
+        "A one-hot decoder asserts the line matching that index.",
+        "Its high output is Y6."
+      ],
+      "finalAnswer": "6",
+      "explanation": "Its high output is Y6.",
+      "commonMistakes": [
+        "An enabled active-high decoder produces one high output for a valid stable input."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which decoder addressing applies.",
+      "Start from $ index=4A_2+2A_1+A_0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Decode actual three-bit input index. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      5.9999994,
+      6.0000006
+    ],
+    "numericalTolerance": 6e-7
+  },
+  {
+    "id": "FH-TOPIC-28-05",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A priority encoder has priority D3>D2>D1>D0. Inputs D3D2D1D0=0110 are applied. Find the selected index as a decimal value.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Highest asserted input has priority",
+        "lines 2 and 1 are high"
+      ],
+      "asked": "Find the highest active input index.",
+      "concept": "Priority selection",
+      "formula": "index=\\max\\{i:D_i=1\\}",
+      "steps": [
+        "D3 is low, so it is not selected.",
+        "D2 and D1 are high; D2 has higher priority.",
+        "The selected index is 2, encoded as 10₂."
+      ],
+      "finalAnswer": "2",
+      "explanation": "The selected index is 2, encoded as 10₂.",
+      "commonMistakes": [
+        "Priority encoders do not assume only one input can be asserted."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which priority selection applies.",
+      "Start from $ index=\\max\\{i:D_i=1\\} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Priority scan of all four original input lines. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-28-06",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An even-parity bit is appended to data 1011. What parity bit value is required?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Data contains three ones",
+        "total including parity must be even"
+      ],
+      "asked": "Choose the appended parity bit.",
+      "concept": "Even parity",
+      "formula": "p=\\bigoplus_i d_i",
+      "steps": [
+        "The data has an odd count of ones.",
+        "Appending 1 makes the total count four.",
+        "The required parity bit is therefore 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The required parity bit is therefore 1.",
+      "commonMistakes": [
+        "The parity convention is even, so an odd data population requires a high parity bit."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which even parity applies.",
+      "Start from $ p=\\bigoplus_i d_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "XOR-reduce all data bits to obtain the even-parity append bit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-28-07",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A full adder is constructed using two half adders and an OR. With U=A XOR B, which relations are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S=U XOR Cin"
+      },
+      {
+        "id": "B",
+        "text": "Cout=AB OR (U AND Cin)"
+      },
+      {
+        "id": "C",
+        "text": "Cout=U XOR Cin"
+      },
+      {
+        "id": "D",
+        "text": "The two half-adder carry terms are ORed"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Conventional two-half-adder realization"
+      ],
+      "asked": "Select valid intermediate/output relations.",
+      "concept": "Full-adder decomposition",
+      "formula": "S=A\\oplus B\\oplus C_{in},\\quad C_{out}=AB+(A\\oplus B)C_{in}",
+      "steps": [
+        "The first half adder gives U=A XOR B and carry AB.",
+        "The second adds U and Cin, giving sum U XOR Cin and carry U·Cin.",
+        "ORing both carry terms gives Cout. Select A,B,D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "ORing both carry terms gives Cout. Select A,B,D.",
+      "commonMistakes": [
+        "The sum bit from the second half adder is not the full-adder carry bit."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which full-adder decomposition applies.",
+      "Start from $ S=A\\oplus B\\oplus C_{in},\\quad C_{out}=AB+(A\\oplus B)C_{in} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustive full-adder truth table compared with arithmetic sum and carry. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-28-08",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 4:1 mux realizes F=A XOR B XOR C using select lines A,B in that order and data order D0…D3 for 00,01,10,11. How many data inputs must equal NOT C?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Select variables A,B",
+        "remaining variable C"
+      ],
+      "asked": "Count complemented-C cofactors.",
+      "concept": "Multiplexer function synthesis",
+      "formula": "F|_{AB}=C,\\bar C,\\bar C,C",
+      "steps": [
+        "When A,B have even parity (00 or 11), output must equal C.",
+        "When they have odd parity (01 or 10), output must be C̄.",
+        "Thus two data inputs, D1 and D2, are NOT C."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Thus two data inputs, D1 and D2, are NOT C.",
+      "commonMistakes": [
+        "Use the explicitly stated mux select ordering."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which multiplexer function synthesis applies.",
+      "Start from $ F|_{AB}=C,\\bar C,\\bar C,C $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate both C values for every mux select cofactor. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-28-09",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 3-bit equality comparator has independent uniformly random input words A and B. Find the probability its equality output is high.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Eight equally likely words per independent input"
+      ],
+      "asked": "Find P(A=B).",
+      "concept": "Comparator matching count",
+      "formula": "P(A=B)=8/(8\\cdot8)",
+      "steps": [
+        "There are 64 equally likely ordered input-word pairs.",
+        "For each of the eight A words exactly one B word matches.",
+        "Probability is 8/64=1/8."
+      ],
+      "finalAnswer": "0.125",
+      "explanation": "Probability is 8/64=1/8.",
+      "commonMistakes": [
+        "Each input is a three-bit word, not one Boolean input."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which comparator matching count applies.",
+      "Start from $ P(A=B)=8/(8\\cdot8) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all 64 independent comparator-word pairs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.1249999,
+      0.1250001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-28-10",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Why does an ordinary binary priority encoder often include a valid-output flag?",
+    "options": [
+      {
+        "id": "A",
+        "text": "To make every input simultaneous"
+      },
+      {
+        "id": "B",
+        "text": "To distinguish no asserted input from the valid lowest-priority index 0"
+      },
+      {
+        "id": "C",
+        "text": "To make the output analog"
+      },
+      {
+        "id": "D",
+        "text": "To remove all combinational delay"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Output binary code can be zero both when no input is active and when D0 alone is active"
+      ],
+      "asked": "Identify the ambiguity resolved by valid.",
+      "concept": "Encoder validity",
+      "formula": "valid=\\bigvee_i D_i",
+      "steps": [
+        "Binary index 0 is a legitimate code for the lowest input.",
+        "If no input is asserted, a default binary output of 0 would be indistinguishable without another signal.",
+        "The OR-derived valid flag resolves that distinction, option B."
+      ],
+      "finalAnswer": "B",
+      "explanation": "The OR-derived valid flag resolves that distinction, option B.",
+      "commonMistakes": [
+        "An all-zero index code does not itself establish that an input is active."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which encoder validity applies.",
+      "Start from $ valid=\\bigvee_i D_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compare no-active-input case with D0-only case: same index, different OR-valid signal. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-28-11",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a 4-bit carry-lookahead adder, define Pi=Ai XOR Bi and Gi=AiBi. Let (P0,G0)=(1,0),(P1,G1)=(1,0),(P2,G2)=(0,1),(P3,G3)=(1,0), and C0=0. Find C4.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Bit numbering starts at least-significant bit 0",
+        "valid propagate/generate pairs"
+      ],
+      "asked": "Propagate the internally generated carry.",
+      "concept": "Carry lookahead recurrence",
+      "formula": "C_{i+1}=G_i+P_iC_i",
+      "steps": [
+        "C1=0 and C2=0 because the low bits propagate an initial zero carry.",
+        "Bit 2 generates C3=1 regardless of its input carry.",
+        "Bit 3 propagates that carry, so C4=1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "Bit 3 propagates that carry, so C4=1.",
+      "commonMistakes": [
+        "Carry generation at an internal bit can determine carry-out even when carry-in is zero."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which carry lookahead recurrence applies.",
+      "Start from $ C_{i+1}=G_i+P_iC_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Iterate exact carry recurrence over the supplied valid P/G pairs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-28-12",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Using only 2-input AND gates with arbitrary fanout and no other gate type, find the minimum gate count to compute the AND of six independent input variables.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Six distinct inputs",
+        "fan-in limited to 2",
+        "no complemented logic primitives"
+      ],
+      "asked": "Find the minimum binary reduction network size.",
+      "concept": "Fan-in reduction bound",
+      "formula": "N_{gates}=n-1",
+      "steps": [
+        "A two-input gate can reduce the number of independently combined groups by at most one.",
+        "Six singleton input groups must be combined into one, requiring at least five merges.",
+        "A five-gate tree achieves it, so the minimum is 5."
+      ],
+      "finalAnswer": "5",
+      "explanation": "A five-gate tree achieves it, so the minimum is 5.",
+      "commonMistakes": [
+        "Fanout does not increase the number of independent variables a two-input reduction can merge per gate."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fan-in reduction bound applies.",
+      "Start from $ N_{gates}=n-1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Binary reduction connectivity lower bound, achieved by a five-node AND tree. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-28-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      4.9999995,
+      5.0000005
+    ],
+    "numericalTolerance": 5e-7
+  }
+]

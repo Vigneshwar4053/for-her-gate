@@ -1,0 +1,774 @@
+[
+  {
+    "id": "FH-MIXED-09-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A random variable takes values −1 and 3, each with probability 1/2. Find its standard deviation.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Two equally likely observations −1,3"
+      ],
+      "asked": "Find square root of variance.",
+      "concept": "Central second moment",
+      "formula": "\\sigma=\\sqrt{E[(X-E[X])^2]}",
+      "steps": [
+        "The mean is (−1+3)/2=1.",
+        "Both deviations from the mean have magnitude 2, giving variance 4.",
+        "Standard deviation is √4=2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Standard deviation is √4=2.",
+      "commonMistakes": [
+        "Standard deviation and variance have different units and numerical values."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which central second moment applies.",
+      "Start from $ \\sigma=\\sqrt{E[(X-E[X])^2]} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct probability-weighted centered-square calculation followed by square root. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-09-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "signals-and-systems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A pulse has amplitude 2 on 0≤t≤3 s and is zero elsewhere. Find its energy ∫|x(t)|²dt.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rectangular pulse amplitude 2",
+        "duration 3 s"
+      ],
+      "asked": "Find integrated squared magnitude.",
+      "concept": "Signal energy",
+      "formula": "E=\\int|x(t)|^2dt",
+      "steps": [
+        "The squared amplitude is 4 while the pulse is present.",
+        "Integrate that constant over duration 3.",
+        "The energy measure is 4×3=12."
+      ],
+      "finalAnswer": "12",
+      "explanation": "The energy measure is 4×3=12.",
+      "commonMistakes": [
+        "Energy integrates squared amplitude, not amplitude itself."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which signal energy applies.",
+      "Start from $ E=\\int|x(t)|^2dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate original pulse magnitude squared over actual support. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      11.9999988,
+      12.0000012
+    ],
+    "numericalTolerance": 0.0000012
+  },
+  {
+    "id": "FH-MIXED-09-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A synchronous path has minimum clock-to-Q delay 0.5 ns, minimum combinational delay 0.8 ns and hold requirement 1 ns. Ignoring skew, find its hold slack in ns.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Minimum delays 0.5,0.8 ns",
+        "capture hold time 1 ns",
+        "zero skew"
+      ],
+      "asked": "Find earliest data arrival minus required hold time.",
+      "concept": "Hold-time margin",
+      "formula": "S_{hold}=t_{cq,min}+t_{comb,min}-t_{hold}",
+      "steps": [
+        "The earliest new data arrives after 0.5+0.8=1.3 ns.",
+        "It must remain old for at least 1 ns.",
+        "Slack is 1.3−1=0.3 ns, positive under the stated convention."
+      ],
+      "finalAnswer": "0.3 ns",
+      "explanation": "Slack is 1.3−1=0.3 ns, positive under the stated convention.",
+      "commonMistakes": [
+        "Hold checking uses minimum path delays, whereas setup checking uses maximum delays."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which hold-time margin applies.",
+      "Start from $ S_{hold}=t_{cq,min}+t_{comb,min}-t_{hold} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Earliest launch/propagation timeline minus required hold interval. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.2999999,
+      0.3000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-09-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In a diode model with ideality factor 2 and VT=25 mV, what forward voltage increment multiplies I+IS by e? Give millivolts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "I+IS=IS exp[V/(ηVT)]",
+        "η=2",
+        "VT=25 mV"
+      ],
+      "asked": "Find one natural-log current e-fold voltage.",
+      "concept": "Ideality-factor exponential slope",
+      "formula": "\\Delta V=\\eta V_T\\ln(e)",
+      "steps": [
+        "The ratio of I+IS values at two biases is exp(ΔV/(ηVT)).",
+        "For ratio e the exponent must equal 1.",
+        "ΔV=2×25 mV=50 mV."
+      ],
+      "finalAnswer": "50 mV",
+      "explanation": "ΔV=2×25 mV=50 mV.",
+      "commonMistakes": [
+        "Ideality factor changes the voltage scale; it cannot be omitted."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which ideality-factor exponential slope applies.",
+      "Start from $ \\Delta V=\\eta V_T\\ln(e) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Invert exact exponential current-ratio requirement numerically in mV. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      49.999995,
+      50.000005
+    ],
+    "numericalTolerance": 0.0000049999999999999996
+  },
+  {
+    "id": "FH-MIXED-09-05",
+    "type": "MCQ",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A negative-feedback op-amp voltage follower has ideal closed-loop signal gain:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1"
+      },
+      {
+        "id": "B",
+        "text": "0"
+      },
+      {
+        "id": "C",
+        "text": "−1"
+      },
+      {
+        "id": "D",
+        "text": "Infinite"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Output connected directly to inverting input",
+        "signal at noninverting input",
+        "linear operation"
+      ],
+      "asked": "Find follower gain.",
+      "concept": "Unity feedback constraint",
+      "formula": "V_-=V_o,\\quad V_+=V_i",
+      "steps": [
+        "Linear ideal negative feedback makes V+=V−.",
+        "With the output fed directly to V−, this equates Vo to Vi.",
+        "The gain is +1, option A; high open-loop gain enables the constraint rather than becoming the closed-loop gain."
+      ],
+      "finalAnswer": "A",
+      "explanation": "The gain is +1, option A; high open-loop gain enables the constraint rather than becoming the closed-loop gain.",
+      "commonMistakes": [
+        "A voltage follower changes buffering/impedance behavior even though voltage gain is unity."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which unity feedback constraint applies.",
+      "Start from $ V_-=V_o,\\quad V_+=V_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Ideal voltage-follower feedback wiring imposes equal input and output. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-MIXED-09-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A unity-feedback loop has G(s)=12/(s+3). Find its unit-step steady-state error.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Stable loop",
+        "forward DC gain 4"
+      ],
+      "asked": "Find final error to a unit reference step.",
+      "concept": "Type-0 position error",
+      "formula": "e_{ss}=1/(1+K_p),\\quad K_p=G(0)",
+      "steps": [
+        "The DC loop gain is 12/3=4.",
+        "The step-error limit is 1/(1+4).",
+        "Steady-state error is 0.2, while the output final value is 0.8."
+      ],
+      "finalAnswer": "0.2",
+      "explanation": "Steady-state error is 0.2, while the output final value is 0.8.",
+      "commonMistakes": [
+        "Output value and tracking error sum to the unit reference but are not identical."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which type-0 position error applies.",
+      "Start from $ e_{ss}=1/(1+K_p),\\quad K_p=G(0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Final-value theorem applied to the error sensitivity. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      0.1999999,
+      0.2000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-09-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A binary memoryless source has P(0)=1 and P(1)=0. Find its entropy in bits per symbol, using 0 log₂0=0 by limit.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Deterministic source output"
+      ],
+      "asked": "Find entropy.",
+      "concept": "Zero uncertainty",
+      "formula": "H=-\\sum_i p_i\\log_2p_i",
+      "steps": [
+        "The certain outcome contributes −1log₂1=0.",
+        "The impossible outcome contributes zero by the specified limiting convention.",
+        "Total entropy is 0 bits/symbol because there is no uncertainty."
+      ],
+      "finalAnswer": "0 bits/symbol",
+      "explanation": "Total entropy is 0 bits/symbol because there is no uncertainty.",
+      "commonMistakes": [
+        "A binary alphabet alone does not force one bit of entropy."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which zero uncertainty applies.",
+      "Start from $ H=-\\sum_i p_i\\log_2p_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Deterministic PMF entropy with p log p limiting convention. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-09-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A lossless line has |Γ|=0.2. Find its reflected-to-incident power ratio as a percentage.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Same line/reference impedance for incident and reflected power waves"
+      ],
+      "asked": "Find 100|Γ|².",
+      "concept": "Power reflection fraction",
+      "formula": "P_r/P_i=|\\Gamma|^2",
+      "steps": [
+        "Voltage-wave amplitude ratio is 0.2.",
+        "Power in the same impedance is proportional to squared amplitude, so the ratio is 0.04.",
+        "As a percentage this is 4%."
+      ],
+      "finalAnswer": "4 %",
+      "explanation": "As a percentage this is 4%.",
+      "commonMistakes": [
+        "Do not interpret a 20% amplitude reflection as a 20% power reflection."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which power reflection fraction applies.",
+      "Start from $ P_r/P_i=|\\Gamma|^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Power-wave squared amplitude ratio and percent conversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-MIXED-09-09",
+    "type": "MSQ",
+    "subject": "control",
+    "topic": "state-space-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a finite-dimensional LTI state equation xdot=Ax with no input, which conditions guarantee asymptotic decay of every initial state?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Every eigenvalue of A has strictly negative real part"
+      },
+      {
+        "id": "B",
+        "text": "trace(A)<0 alone for any dimension"
+      },
+      {
+        "id": "C",
+        "text": "det(A)>0 alone for any dimension"
+      },
+      {
+        "id": "D",
+        "text": "A is diagonal with strictly negative diagonal entries"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Continuous-time unforced state dynamics"
+      ],
+      "asked": "Select sufficient conditions for every initial state.",
+      "concept": "Internal asymptotic stability",
+      "formula": "e^{At}\\to0\\iff\\operatorname{Re}\\lambda_i(A)<0\\ \\forall i",
+      "steps": [
+        "The strict spectral condition makes all exponential/polynomial state modes decay.",
+        "A negative diagonal A is a special case satisfying it.",
+        "Trace or determinant signs alone do not constrain every eigenvalue in arbitrary dimension. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "Trace or determinant signs alone do not constrain every eigenvalue in arbitrary dimension. Select A and D.",
+      "commonMistakes": [
+        "Scalar invariants alone are insufficient general stability tests."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which internal asymptotic stability applies.",
+      "Start from $ e^{At}\\to0\\iff\\operatorname{Re}\\lambda_i(A)<0\\ \\forall i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Hurwitz spectral theorem; trace-negative diag(1,−2) and det-positive diag(1,2) counterexamples. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-09-10",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which 4-bit unsigned additions produce a carry out beyond bit 3?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0011 + 0100"
+      },
+      {
+        "id": "B",
+        "text": "1111 + 0001"
+      },
+      {
+        "id": "C",
+        "text": "1000 + 0111"
+      },
+      {
+        "id": "D",
+        "text": "1010 + 1010"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Unsigned 4-bit arithmetic with carry retained separately"
+      ],
+      "asked": "Select sums exceeding 15.",
+      "concept": "Binary carry range",
+      "formula": "C_{out}=1\\iff a+b\\ge16",
+      "steps": [
+        "The decimal sums are 3+4=7, 15+1=16, 8+7=15 and 10+10=20.",
+        "Only the second and fourth exceed the 4-bit maximum 15.",
+        "Therefore B and D produce a carry out."
+      ],
+      "finalAnswer": "B, D",
+      "explanation": "Therefore B and D produce a carry out.",
+      "commonMistakes": [
+        "Unsigned carry and signed two’s-complement overflow are different flags."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which binary carry range applies.",
+      "Start from $ C_{out}=1\\iff a+b\\ge16 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute all unsigned sums and compare with 4-bit representable range. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "correctAnswer": [
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-09-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A product’s marked price is 500 units. A 10% discount is followed by a 20% tax applied to the discounted price. Find the final price.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Marked price 500",
+        "discount then tax on reduced base"
+      ],
+      "asked": "Apply ordered percentage changes.",
+      "concept": "Sequential price factors",
+      "formula": "P_f=P_0(1-d)(1+t)",
+      "steps": [
+        "The discounted price is 500×0.9=450.",
+        "Tax is 20% of 450, which is 90.",
+        "The final price is 450+90=540."
+      ],
+      "finalAnswer": "540",
+      "explanation": "The final price is 450+90=540.",
+      "commonMistakes": [
+        "The tax base is the discounted price, not the original marked price."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which sequential price factors applies.",
+      "Start from $ P_f=P_0(1-d)(1+t) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Ordered multiplicative price transformation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      539.999946,
+      540.000054
+    ],
+    "numericalTolerance": 0.000054
+  },
+  {
+    "id": "FH-MIXED-09-12",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Let f(z)=1/(z²+1). Find the imaginary part of its residue at the pole z=j.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Simple poles at ±j",
+        "residue requested at +j"
+      ],
+      "asked": "Find Im[1/(2j)].",
+      "concept": "Complex simple-pole residue",
+      "formula": "\\operatorname{Res}(f,j)=1/(2j)",
+      "steps": [
+        "Factor z²+1=(z−j)(z+j).",
+        "At z=j the residue is 1/(j+j)=1/(2j).",
+        "Rationalizing gives −j/2, so the imaginary part is −0.5."
+      ],
+      "finalAnswer": "-0.5",
+      "explanation": "Rationalizing gives −j/2, so the imaginary part is −0.5.",
+      "commonMistakes": [
+        "The reciprocal of j is −j, not +j."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex simple-pole residue applies.",
+      "Start from $ \\operatorname{Res}(f,j)=1/(2j) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct complex reciprocal of the regular factor at the simple pole. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-007.json#FH-MIXED-09-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "007",
+    "acceptedRange": [
+      -0.5000001,
+      -0.4999999
+    ],
+    "numericalTolerance": 1e-7
+  }
+]

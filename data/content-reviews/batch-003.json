@@ -1,0 +1,582 @@
+{
+  "batch": "003",
+  "checkedAt": "2026-11-12T19:32:47.352Z",
+  "classification": "automatically-validated-and-recalculated",
+  "independentlyReviewed": false,
+  "humanReviewed": false,
+  "answerKeyVerified": false,
+  "method": "Offline numerical algorithms, exact enumerations and property checks in scripts/content/checks-003.mjs. Explanations authored by the same system; these are not an independent external or human review.",
+  "questions": [
+    {
+      "id": "FH-TOPIC-07-01",
+      "status": "passed",
+      "contentHash": "bd9c031675ec82647e451077bc16ab2ba41fad73258e80d38e6759744967fbf8",
+      "computedValue": 8,
+      "method": "Nodal conductance equation, using kΩ and mA",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-02",
+      "status": "passed",
+      "contentHash": "0926a2d56ceccecd546448375b09370e1f9ddb3a317f80a7a253aecbdf3ecc1c",
+      "computedValue": 1.3333333333333333,
+      "method": "Apply 1 mA test source with independent voltage source shorted; solve port voltage",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-03",
+      "status": "passed",
+      "contentHash": "47b098457d3d4ef1ec327560db5e9a8e8d2d495e0bbbc654790e599d2a88eb86",
+      "computedValue": 3,
+      "method": "Explicit short-circuit KVL linear solve",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-04",
+      "status": "passed",
+      "contentHash": "c65f9971c424a17df9aafc07bcae9bf94ab8a8133680f98c4f5c06f62cc32e91",
+      "computedValue": "C",
+      "method": "Zero-current branch constitutive constraint; ideal-source open-circuit equivalent",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-05",
+      "status": "passed",
+      "contentHash": "f82be3c6396ed14c9974d0f4997f061897453c3946d9f18d20db4a8f345f6600",
+      "computedValue": 20,
+      "method": "Sweep 20001 load values and solve series KVL for each",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-06",
+      "status": "passed",
+      "contentHash": "279547bc700faab40499967bd2cf1d289220aeba4138f894850fb51c90214e8b",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Independent-source suppression and dependent-source test-voltage equations; law checks",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-07",
+      "status": "passed",
+      "contentHash": "0d9b5476a915d876304f3d7ee239c571e4c719d7f3ef2ca6d40533b058f18152",
+      "computedValue": 1.3333333333333333,
+      "method": "1 mA port excitation; nodal solution in V and kΩ",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-08",
+      "status": "passed",
+      "contentHash": "8bb01cc690d0115ec1a9ef554153d9d1e90b72ba3f97e6a13eac769fc2d03e9d",
+      "computedValue": 2,
+      "method": "Nodal voltage solution for parallel Norton network, then load current",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-09",
+      "status": "passed",
+      "contentHash": "14405ab645cb40667661d032a0b47501b2e93e0ca38b1f7286cbd4966d42d1d3",
+      "computedValue": 1.5,
+      "method": "Signed branch-response superposition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-10",
+      "status": "passed",
+      "contentHash": "f7c5d6abab65d92d69fc3b338d8a2a544a5a2b472a4ccb7cb949bd67637743f2",
+      "computedValue": "B",
+      "method": "Enumerated complex-load average-power comparison plus conjugate-match stationary condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-11",
+      "status": "passed",
+      "contentHash": "d82976b645a040ba904b9c5934e4b537e736645a2a73365702c9077f510e4abd",
+      "computedValue": 80,
+      "method": "Power computed from explicit series current and ideal-source work",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-07-12",
+      "status": "passed",
+      "contentHash": "69857a3a236904677d349975eebc6a1c2953911595c6a1053a007631a3962100",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Symmetric conductance matrix inverse has symmetric transfer entries; unequal driving-point example",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-01",
+      "status": "passed",
+      "contentHash": "825a94c273b3ecc1f8ac233929b453c2019ebb0b947f4dd62a1561853b0a0dd2",
+      "computedValue": 10,
+      "method": "SI prefix conversion and dimensional RC product",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-02",
+      "status": "passed",
+      "contentHash": "979eeec86bae0db286ee847763d8241e0a41402b1aaae37525972c0c75b2b280",
+      "computedValue": 4.000000000000015,
+      "method": "RK4 solve of source-free capacitor differential equation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-03",
+      "status": "passed",
+      "contentHash": "e2c8fbff7e69f91ab69567fdc62af559190e167c1bf0133279b1418fd34f76a2",
+      "computedValue": 1.9999999999999887,
+      "method": "Integrate original RL state equation for 40 time constants",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-04",
+      "status": "passed",
+      "contentHash": "6cb5a8b0cf40348a79af7267f59ee98f093c1ef6c72725e31d6428df1c4df18b",
+      "computedValue": -2,
+      "method": "Characteristic coefficient from L di/dt + R i = 0",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-05",
+      "status": "passed",
+      "contentHash": "49599541b80f0c12ba773076470263521ea8b7d404711161cd602c02b3ef4758",
+      "computedValue": "B",
+      "method": "Integrate bounded capacitor current over a shrinking interval; charge-continuity identity",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-06",
+      "status": "passed",
+      "contentHash": "d84d628c1b816b26fcd0e1b987e0df68df7d764f1ac2e22b3d70b09953172ba3",
+      "computedValue": 4,
+      "method": "Initial nodal capacitor-current balance",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-07",
+      "status": "passed",
+      "contentHash": "fb591398933e6805c0f543d62384955eb10e1143be860de095a25e46bd91cb43",
+      "computedValue": 2,
+      "method": "Coefficient matching of state-equation characteristic polynomial",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-08",
+      "status": "passed",
+      "contentHash": "54157ed1e15e0002b1aa940e70fbac6d5d2697d0f260cb79b9794600f1658d00",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Energy balance derivative and integrated state continuity; conjugate-root discriminant",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-09",
+      "status": "passed",
+      "contentHash": "16cccf964c989fbda826a691598bb56a50372364e8088005d71b0c53cf7838b1",
+      "computedValue": 1.609437912447902,
+      "method": "Bisection on an RK4 trajectory to reach 4 V",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-10",
+      "status": "passed",
+      "contentHash": "25b9835b03fb6d9c8d733daf06f698478fcf5eca83020f9bbe26d1ae8975122b",
+      "computedValue": 8,
+      "method": "Integrate capacitor voltage against differential charge C dv",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-11",
+      "status": "passed",
+      "contentHash": "8a046e2d96c35e1897d4db324870ef39b8b9975d3c5c5148c33b571569e04030",
+      "computedValue": 0.24999999944347245,
+      "method": "Dense peak search over two-mode trajectory; derivative sign checked near ln2",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-08-12",
+      "status": "passed",
+      "contentHash": "44969ec8897d2bb09cce4d5cf82d9dd66ce8e141e14bd9a1a1c76c2119b9cf5b",
+      "computedValue": "C",
+      "method": "Quadratic discriminant is zero; repeated negative root −3",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-01",
+      "status": "passed",
+      "contentHash": "81fd9aa8209a04cb81e1ff5aab83bf4836d19dc0e018aadcabaaee8c84588199",
+      "computedValue": 2,
+      "method": "Direct pulse-area quadrature",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-02",
+      "status": "passed",
+      "contentHash": "0d8bed01fecf03bf08d1fbba26a83932eb05fc66d8af9ff5075cac357d7d4877",
+      "computedValue": 0.5000000000079872,
+      "method": "Direct Fourier integral at ω=0; bounded exponential tail",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-03",
+      "status": "passed",
+      "contentHash": "03d0e9bbb9906323707475a0211fd4e2a611add045fb555d9ad40ad0827a1cfc",
+      "computedValue": "A",
+      "method": "Change-of-variable proof in original Fourier integral; numerical phase identity check",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-04",
+      "status": "passed",
+      "contentHash": "91332ac443fe1b1c03526359135ddc73f7577157d3d8db5b9ea9344ed19f12e3",
+      "computedValue": 10.999999999999973,
+      "method": "Numerically integrate the squared original periodic signal",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-05",
+      "status": "passed",
+      "contentHash": "aa8463d465a139d1e142ce55b7d5f26dcc02c11384444df8c19d1b0e54943540",
+      "computedValue": 3,
+      "method": "Compute the cosine repetition period before reciprocal conversion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-06",
+      "status": "passed",
+      "contentHash": "da86a875b8f1aeae96c01d8b498af31af0c8e90f40610f3153f45cd0648d765e",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Even/odd decomposition of Fourier kernel; sinc negative-lobe counterexample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-07",
+      "status": "passed",
+      "contentHash": "306d836637630ba28e26c8ab5580de2cde6083d62295d01a0237fa7b89c82b32",
+      "computedValue": 2.0000000081846117,
+      "method": "Numerical energy integral of scaled x(t)=exp(−|t|), scaled to original energy 6",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-08",
+      "status": "passed",
+      "contentHash": "3891149b128b115dbe88cdde2b7c613f2569750c134f613abf5d3435ab51305d",
+      "computedValue": 0.5000000000079872,
+      "method": "Time-domain energy quadrature; Parseval norm equality",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-09",
+      "status": "passed",
+      "contentHash": "708e44a27182652a3e064cdb96081096d06b6ab337c34a53ff77f33134d85ece",
+      "computedValue": "D",
+      "method": "Combining modulation and Fourier kernels gives the exact shifted argument",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-10",
+      "status": "passed",
+      "contentHash": "75f4e85e8c5e610fb378f69297577af7ae84ebbc82d2dcb2f15a254668c3a216",
+      "computedValue": 8.999999999999979,
+      "method": "Reconstruct real signal from coefficients and integrate its squared value",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-11",
+      "status": "passed",
+      "contentHash": "d69ab84973a3ca13dc5967a9d477abb78de574798a0fa8841beeb7b0ebbfd61e",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Integral substitution identities and odd/even Fourier decomposition; no copied worked solution",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-10-12",
+      "status": "passed",
+      "contentHash": "0921da2f098255699ab65d40cbf9ef10992e42701e1040c7bebec1114681204c",
+      "computedValue": 3.1415926535919425,
+      "method": "Root finding on numerical transform of the original pulse",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-01",
+      "status": "passed",
+      "contentHash": "aad691eeddb5d5fc18010519caa652ffb8bd0fd5b3fc1cd109d43e9d3fe9b3eb",
+      "computedValue": 0.49999999999999784,
+      "method": "Direct convolution quadrature",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-02",
+      "status": "passed",
+      "contentHash": "509f58f7e3f240e991f8cab8a7182ffe1a616098ed39e367c31f221539df09c1",
+      "computedValue": 1,
+      "method": "Discrete convolution summation over original support",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-03",
+      "status": "passed",
+      "contentHash": "7808721de53e14e04f02d10ae560573ef1b56e0e767785b51f8e83aa0f4d231f",
+      "computedValue": "B",
+      "method": "Causal support and absolute-integral endpoint limits for all four candidates",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-04",
+      "status": "passed",
+      "contentHash": "bcff0867c636790faf8f126faa19c1bd11d84cbbfed6ecbc7c7440ef8455a6ef",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Superposition/time-shift checks plus square nonlinearity and absolute-time counterexamples",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-05",
+      "status": "passed",
+      "contentHash": "414145979cbace7cc526caec418cd4aff40e20537cae1102c1e6f73a4c300229",
+      "computedValue": 0.25000000001262895,
+      "method": "Integrate impulse response to obtain DC gain",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-06",
+      "status": "passed",
+      "contentHash": "e924dc39464b2bb821e790d3e3f7f7fdb005525b1a3375b6fed958d689743570",
+      "computedValue": 5,
+      "method": "Delta-sifting response to the input constant at both required times",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-07",
+      "status": "passed",
+      "contentHash": "ce03129a73bf47428847cb8d8d3f2a1f0d0a4884b79f3fc3a2179f1c3c4c3a0f",
+      "computedValue": 1.9999999999997797,
+      "method": "Finite-difference derivative of unwrapped phase",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-08",
+      "status": "passed",
+      "contentHash": "3923c8d8f6cf887a72af9d54244e619aefab2fe965e33027a69eaaefdd41deec",
+      "computedValue": 0.3678794411714113,
+      "method": "Direct cascade convolution quadrature",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-09",
+      "status": "passed",
+      "contentHash": "2306cf2f882ecb56fc070f1ab045f066c55f8e3e5b736c98222d55db9b6a263a",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Test every real part of each pole set against strict negativity",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-10",
+      "status": "passed",
+      "contentHash": "11d5cb09ab12f7c6b193fc3f64ff0d1c37af5af8ed04e4167df17724bdf3328b",
+      "computedValue": 0.75,
+      "method": "Discrete shifted-impulse response sum",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-11",
+      "status": "passed",
+      "contentHash": "f64c9694ef11dd5f940890c57adecfe343ba2c19abede0bb2e021fed632e12ed",
+      "computedValue": 2,
+      "method": "Compute intersection bounds of the reflected translated supports",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-12-12",
+      "status": "passed",
+      "contentHash": "ffecfaa8f1e793826e10f5c72585e413a7a90adeb14d2d078b1906fed2d379c6",
+      "computedValue": "C",
+      "method": "Evaluate distributional convolution with advanced delta and bounded-input norm",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-01",
+      "status": "passed",
+      "contentHash": "4727d567d41cecf77d9341b83ae205f715aaaf224912bde36f32d36f483e5057",
+      "computedValue": 6000,
+      "method": "Nyquist spectral-replica spacing condition with Hz conversion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-02",
+      "status": "passed",
+      "contentHash": "f8cc93d1e441d9f98348f9ecf52fd4fb6e08e8c1c28e2da173f63cd8e737e984",
+      "computedValue": 100,
+      "method": "Modulo-frequency folding into the first Nyquist zone",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-03",
+      "status": "passed",
+      "contentHash": "4c2843833c775536e1316c1a8bed0623a92535955b3ad4c622a10a10326acdfc",
+      "computedValue": "D",
+      "method": "Strictly compare every rate with the full two-sided support width 8000 Hz",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-04",
+      "status": "passed",
+      "contentHash": "8ce0e66e43064f2ba85107bd7f9e9417c1ef640f3a9fdceff367a2aff4eafe44",
+      "computedValue": 4000,
+      "method": "SI sampling-period reciprocal",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-05",
+      "status": "passed",
+      "contentHash": "1d56697edf403caaa54033930143600834f6bae35ea8eb7da37a615daa4dfe41",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Pre-sampling spectrum-support criterion; post-sampling ambiguity counterexample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-06",
+      "status": "passed",
+      "contentHash": "eb8df5b5669f132be9175b3a8c2c3cbdc9968d1a1aa68b6b90ba5a0f770206c6",
+      "computedValue": 200,
+      "method": "Match cosine phase increment to one sixth of a discrete turn per sample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-07",
+      "status": "passed",
+      "contentHash": "6acb5d411fb3ede2e67dad2309fb9929ee850ba2af50129eed07f14220819ba7",
+      "computedValue": 5000,
+      "method": "Count sample indices on a half-open interval",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-08",
+      "status": "passed",
+      "contentHash": "8ad0af04e0385884ce4d34bd30d133c64c173d5b58de97ec169fbaec14f9395a",
+      "computedValue": 200,
+      "method": "Compute the decimated clock, then fold the tone",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-09",
+      "status": "passed",
+      "contentHash": "7fa4d8b26953d289eff3fad810f2dd41a9c6862eab7824b529f630d3e483700f",
+      "computedValue": "B",
+      "method": "Direct removable-limit evaluation at a small symmetric argument and matching to option 1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-10",
+      "status": "passed",
+      "contentHash": "d11345b7e0e80ccde2880b9a1998855d484a81086a999a0afcf60d34ac1a4fae",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Impulse-train Fourier-series multiplication and ideal-lowpass inverse transform properties",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-11",
+      "status": "passed",
+      "contentHash": "d4f2f4bc23b84631c982c263724d0ded8cf3910a370c5b2f2ab51510e2c8b703",
+      "computedValue": 1,
+      "method": "Enumerate and deduplicate both folded frequencies",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-13-12",
+      "status": "passed",
+      "contentHash": "7b212892af47feb0ce9723ac44de49c0f150b4bfb5684d0fff39ae71a4435d78",
+      "computedValue": 1,
+      "method": "Remove stopped component first, then verify the passed component is below Nyquist",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    }
+  ]
+}

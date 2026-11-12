@@ -1,0 +1,837 @@
+[
+  {
+    "id": "FH-TOPIC-01-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $A=\\begin{pmatrix}1&2&3\\\\2&4&6\\\\1&1&1\\end{pmatrix}$, find its rank.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rows (1,2,3), (2,4,6), (1,1,1)"
+      ],
+      "asked": "Find rank(A).",
+      "concept": "Row reduction",
+      "formula": "\\operatorname{rank}(A)=\\text{number of pivots}",
+      "steps": [
+        "Row 2 equals twice row 1, so eliminate it.",
+        "Subtract row 1 from row 3 to obtain (0,−1,−2).",
+        "Rows (1,2,3) and (0,−1,−2) are independent; there are two pivots and rank is 2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Rows (1,2,3) and (0,−1,−2) are independent; there are two pivots and rank is 2.",
+      "commonMistakes": [
+        "A zero determinant implies rank below 3, not necessarily rank 1."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which row reduction applies.",
+      "Start from $ \\operatorname{rank}(A)=\\text{number of pivots} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Gaussian elimination with pivoting. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-01-02",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "The system $x+y=2$, $2x+2y=k$ has infinitely many solutions for which value of k?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "4"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "Every real k"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Two linear equations",
+        "parameter k"
+      ],
+      "asked": "Determine the consistency condition.",
+      "concept": "Consistency and rank",
+      "formula": "\\operatorname{rank}(A)=\\operatorname{rank}([A|b])<n",
+      "steps": [
+        "The left side of equation 2 is twice equation 1.",
+        "Consistency therefore requires its right side to be twice 2: k = 4.",
+        "At k = 4 only one equation is independent for two unknowns, leaving infinitely many solutions."
+      ],
+      "finalAnswer": "B",
+      "explanation": "At k = 4 only one equation is independent for two unknowns, leaving infinitely many solutions.",
+      "commonMistakes": [
+        "A dependent coefficient row does not imply consistency for every right-hand side."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which consistency and rank applies.",
+      "Start from $ \\operatorname{rank}(A)=\\operatorname{rank}([A|b])<n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Augmented rank check: k=4 has rank 1; k=0,2 have augmented rank 2. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-01-03",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Let $A=\\begin{pmatrix}4&1\\\\0&-2\\end{pmatrix}$. Compute $\\operatorname{tr}(A^3)$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Upper-triangular A with diagonal 4, −2"
+      ],
+      "asked": "Find trace(A³).",
+      "concept": "Eigenvalue powers",
+      "formula": "\\operatorname{tr}(A^m)=\\sum_i\\lambda_i^m",
+      "steps": [
+        "The eigenvalues of a triangular matrix are its diagonal entries, 4 and −2.",
+        "Cubing gives 64 and −8.",
+        "The trace of A³ is their sum, 64 − 8 = 56."
+      ],
+      "finalAnswer": "56",
+      "explanation": "The trace of A³ is their sum, 64 − 8 = 56.",
+      "commonMistakes": [
+        "Do not cube trace(A); trace does not commute with nonlinear scalar operations."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which eigenvalue powers applies.",
+      "Start from $ \\operatorname{tr}(A^m)=\\sum_i\\lambda_i^m $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct matrix multiplication, not eigenvalue trace formula. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      55.9999944,
+      56.0000056
+    ],
+    "numericalTolerance": 0.0000056
+  },
+  {
+    "id": "FH-TOPIC-01-04",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $A=\\begin{pmatrix}2&1\\\\1&2\\end{pmatrix}$, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "(1,1)ᵀ is an eigenvector with eigenvalue 3"
+      },
+      {
+        "id": "B",
+        "text": "(1,−1)ᵀ has eigenvalue 3"
+      },
+      {
+        "id": "C",
+        "text": "A is positive definite"
+      },
+      {
+        "id": "D",
+        "text": "det(A) = 5"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Real symmetric A"
+      ],
+      "asked": "Select all valid eigenstructure statements.",
+      "concept": "Symmetric eigenstructure",
+      "formula": "Av=\\lambda v,\\quad A\\succ0\\iff\\lambda_i>0",
+      "steps": [
+        "Multiplication gives A(1,1)ᵀ = (3,3)ᵀ and A(1,−1)ᵀ = (1,−1)ᵀ.",
+        "The two eigenvalues are 3 and 1, both positive; A is positive definite.",
+        "Their product gives det(A) = 3. Thus only A and C hold."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Their product gives det(A) = 3. Thus only A and C hold.",
+      "commonMistakes": [
+        "Do not assign the same eigenvalue to both independent eigenvectors."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which symmetric eigenstructure applies.",
+      "Start from $ Av=\\lambda v,\\quad A\\succ0\\iff\\lambda_i>0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct eigenvector multiplication; positive leading minors; determinant expansion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-01-05",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For $A=\\begin{pmatrix}2&1\\\\1&1\\end{pmatrix}$, enter the (1,2) entry of $A^{-1}$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "A is a 2 × 2 real matrix"
+      ],
+      "asked": "Find the upper-right inverse entry.",
+      "concept": "Matrix inverse",
+      "formula": "A^{-1}=\\frac{1}{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix}",
+      "steps": [
+        "The determinant is 2×1 − 1×1 = 1, so the inverse exists.",
+        "The adjugate is [[1,−1],[−1,2]].",
+        "Division by determinant 1 leaves upper-right entry −1."
+      ],
+      "finalAnswer": "-1",
+      "explanation": "Division by determinant 1 leaves upper-right entry −1.",
+      "commonMistakes": [
+        "The off-diagonal cofactors change sign."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which matrix inverse applies.",
+      "Start from $ A^{-1}=\\frac{1}{ad-bc}\\begin{pmatrix}d&-b\\\\-c&a\\end{pmatrix} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve A x = e2; read x1 as the inverse column entry. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      -1.0000001,
+      -0.9999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-01-06",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A projection matrix $P\\in\\mathbb R^{5\\times5}$ satisfies $P^2=P$ and rank(P) = 3. Find trace(P).",
+    "options": [],
+    "solution": {
+      "given": [
+        "P² = P",
+        "rank 3",
+        "dimension 5"
+      ],
+      "asked": "Find trace(P).",
+      "concept": "Idempotent matrices",
+      "formula": "\\lambda^2=\\lambda\\ \\Rightarrow\\ \\lambda\\in\\{0,1\\}",
+      "steps": [
+        "Every eigenvalue obeys λ² = λ, hence it is 0 or 1.",
+        "An idempotent matrix is diagonalizable because its minimal polynomial has distinct roots. Rank 3 means three eigenvalues equal 1.",
+        "The other two equal 0, so trace(P) = 3."
+      ],
+      "finalAnswer": "3",
+      "explanation": "The other two equal 0, so trace(P) = 3.",
+      "commonMistakes": [
+        "Projection rank and ambient dimension are different quantities."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which idempotent matrices applies.",
+      "Start from $ \\lambda^2=\\lambda\\ \\Rightarrow\\ \\lambda\\in\\{0,1\\} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Idempotent polynomial λ(λ−1) has distinct roots; rank/trace check on canonical diag(1,1,1,0,0). Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-01-07",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which matrix is orthogonal over the real numbers?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$"
+      },
+      {
+        "id": "B",
+        "text": "$\\begin{pmatrix}2&0\\\\0&1/2\\end{pmatrix}$"
+      },
+      {
+        "id": "C",
+        "text": "$\\begin{pmatrix}0&-1\\\\1&0\\end{pmatrix}$"
+      },
+      {
+        "id": "D",
+        "text": "$\\begin{pmatrix}1&0\\\\1&0\\end{pmatrix}$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Four candidate real 2 × 2 matrices"
+      ],
+      "asked": "Choose a matrix with QᵀQ = I.",
+      "concept": "Orthogonality",
+      "formula": "Q^TQ=I",
+      "steps": [
+        "An orthogonal matrix has unit columns with zero pairwise inner product.",
+        "Candidate C has columns (0,1) and (−1,0), both unit and perpendicular.",
+        "Its QᵀQ equals I. A has nonorthogonal columns, B has nonunit columns and D is singular."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Its QᵀQ equals I. A has nonorthogonal columns, B has nonunit columns and D is singular.",
+      "commonMistakes": [
+        "Determinant ±1 is necessary but is not sufficient by itself."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which orthogonality applies.",
+      "Start from $ Q^TQ=I $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute QᵀQ for all four candidate matrices. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-01-08",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In the basis $b_1=(1,1)^T$, $b_2=(1,-1)^T$, the vector $v=(6,2)^T$ has coordinates $(c_1,c_2)$. Find $c_2$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Basis vectors (1,1), (1,−1)",
+        "v = (6,2)"
+      ],
+      "asked": "Find the second basis coordinate.",
+      "concept": "Change of basis",
+      "formula": "v=c_1b_1+c_2b_2",
+      "steps": [
+        "Equating components gives c₁+c₂ = 6 and c₁−c₂ = 2.",
+        "Subtract the second equation from the first: 2c₂ = 4.",
+        "Therefore c₂ = 2 (and c₁ = 4), reproducing v."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Therefore c₂ = 2 (and c₁ = 4), reproducing v.",
+      "commonMistakes": [
+        "Coordinates depend on the basis; do not read c₂ directly from v₂."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which change of basis applies.",
+      "Start from $ v=c_1b_1+c_2b_2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Gaussian solution of coordinate matrix. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-01-09",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A real 3 × 3 matrix has eigenvalues 1, 2, 4. Which values are necessarily correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "det(A) = 8"
+      },
+      {
+        "id": "B",
+        "text": "trace(A) = 7"
+      },
+      {
+        "id": "C",
+        "text": "rank(A) = 2"
+      },
+      {
+        "id": "D",
+        "text": "det(A⁻¹) = 1/8"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Eigenvalues 1, 2 and 4"
+      ],
+      "asked": "Select all forced matrix invariants.",
+      "concept": "Eigenvalue invariants",
+      "formula": "\\det A=\\prod_i\\lambda_i,\\quad\\operatorname{tr} A=\\sum_i\\lambda_i",
+      "steps": [
+        "The eigenvalue product is 1×2×4 = 8 and the sum is 7.",
+        "No eigenvalue is zero, so the matrix is invertible and has rank 3.",
+        "The inverse determinant is the reciprocal, 1/8. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "The inverse determinant is the reciprocal, 1/8. Select A, B and D.",
+      "commonMistakes": [
+        "Rank counts all nonzero eigenvalues with algebraic multiplicity for an invertible matrix."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which eigenvalue invariants applies.",
+      "Start from $ \\det A=\\prod_i\\lambda_i,\\quad\\operatorname{tr} A=\\sum_i\\lambda_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Eigenvalue invariant identities checked arithmetically; full-rank nonzero spectrum. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-01-10",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Let $A=\\begin{pmatrix}1&1\\\\0&1\\end{pmatrix}$. Find the (1,2) entry of $A^5$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "A = I+N with N₁₂ = 1 and all other N entries zero"
+      ],
+      "asked": "Find (A⁵)₁₂.",
+      "concept": "Nilpotent binomial expansion",
+      "formula": "(I+N)^m=I+mN\\quad(N^2=0)",
+      "steps": [
+        "Compute N² = 0, so every binomial term containing N² or higher vanishes.",
+        "Thus A⁵ = I + 5N.",
+        "Its upper-right entry is 5, even though both eigenvalues of A are 1."
+      ],
+      "finalAnswer": "5",
+      "explanation": "Its upper-right entry is 5, even though both eigenvalues of A are 1.",
+      "commonMistakes": [
+        "Repeated eigenvalues do not imply that a matrix equals the identity."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which nilpotent binomial expansion applies.",
+      "Start from $ (I+N)^m=I+mN\\quad(N^2=0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Five explicit matrix multiplications. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      4.9999995,
+      5.0000005
+    ],
+    "numericalTolerance": 5e-7
+  },
+  {
+    "id": "FH-TOPIC-01-11",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "The vectors $v_1=(1,0,1)^T$, $v_2=(0,1,1)^T$, $v_3=(1,1,k)^T$ form a basis of $\\mathbb R^3$ except at one value of k. Enter that value.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three parameterized column vectors"
+      ],
+      "asked": "Find the exceptional k.",
+      "concept": "Basis and invertibility",
+      "formula": "\\{v_i\\}\\text{ is a basis}\\iff\\det[v_1\\ v_2\\ v_3]\\ne0",
+      "steps": [
+        "The column matrix is [[1,0,1],[0,1,1],[1,1,k]].",
+        "Subtract rows 1 and 2 from row 3 to produce [0,0,k−2], so the determinant is k−2.",
+        "Dependence occurs only at k = 2; there v₃ = v₁+v₂."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Dependence occurs only at k = 2; there v₃ = v₁+v₂.",
+      "commonMistakes": [
+        "The question asks for the exceptional nonbasis value, not the set of valid values."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which basis and invertibility applies.",
+      "Start from $ \\{v_i\\}\\text{ is a basis}\\iff\\det[v_1\\ v_2\\ v_3]\\ne0 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Root of affine determinant from independent cofactor evaluations at k=0 and k=1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-01-12",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For real square matrices A and B of the same order, which equalities always hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "trace(AB) = trace(BA)"
+      },
+      {
+        "id": "B",
+        "text": "AB = BA"
+      },
+      {
+        "id": "C",
+        "text": "det(A+B) = det(A)+det(B)"
+      },
+      {
+        "id": "D",
+        "text": "det(AB) = det(A)det(B)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Arbitrary equal-order square matrices"
+      ],
+      "asked": "Select identities valid without extra assumptions.",
+      "concept": "Trace and determinant identities",
+      "formula": "\\operatorname{tr}(AB)=\\operatorname{tr}(BA),\\quad\\det(AB)=\\det A\\det B",
+      "steps": [
+        "The trace identity follows by summing aᵢⱼbⱼᵢ and interchanging indices.",
+        "Determinants are multiplicative, so D holds even when one factor is singular.",
+        "Matrix multiplication need not commute. For A = B = I₂, det(A+B) = 4 while det(A)+det(B) = 2. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "Matrix multiplication need not commute. For A = B = I₂, det(A+B) = 4 while det(A)+det(B) = 2. Select A and D.",
+      "commonMistakes": [
+        "Do not transfer scalar distributive rules to the determinant."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which trace and determinant identities applies.",
+      "Start from $ \\operatorname{tr}(AB)=\\operatorname{tr}(BA),\\quad\\det(AB)=\\det A\\det B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Trace cyclicity and determinant product theorem; noncommuting example and additive-determinant counterexample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-01-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  }
+]

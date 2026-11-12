@@ -1,0 +1,92 @@
+{
+  "checkedAt": "2026-11-13",
+  "sources": [
+    {
+      "url": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+      "status": "HTTP 503 twice; shell download also unavailable (DNS restricted)"
+    },
+    {
+      "url": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/GA_GATE2027_Syllabus.pdf",
+      "status": "inspected; 1 page"
+    },
+    {
+      "url": "https://gate2027.iitm.ac.in/question_paper_pattern",
+      "status": "inspected; current scoring confirmed"
+    },
+    {
+      "url": "https://gate2027.iitm.ac.in/",
+      "status": "inspected; general exam window confirmed, EC-specific date not confirmed"
+    },
+    {
+      "url": "https://gate2027.iitm.ac.in/download",
+      "status": "inspected; archive for 2007–2026, paper/key links for 2021–2026"
+    },
+    {
+      "url": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
+      "status": "linked by official archive; web extraction rejected size (14 MB); not transcribed"
+    },
+    {
+      "url": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
+      "status": "answer key inspected; not enough to release interactive paper"
+    },
+    {
+      "url": "https://gate2027.iitm.ac.in/download",
+      "status": "Direct EC paper/key targets recorded for 2021–2025. 2025 and 2023 papers and 2025/2024/2023 keys accessible; 2021 key was image-only; 2024, 2022, 2021 papers and 2022 key timed out. These are source discovery results, not full content verification."
+    },
+    {
+      "url": "https://gate2027.iitm.ac.in/static/doc/GATE2027_Syllabus/EC_GATE2027_Syllabus.pdf",
+      "status": "Continuation: both pages successfully inspected through web PDF extraction on 2026-11-13. Eight technical sections reconciled into data/topics.json with source section/page metadata. Earlier HTTP 503 record retained as history. Shell download remains DNS-restricted."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://web.mit.edu/people/jnt/prob.html",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://circuits.mit.edu/S26",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ece3084.ece.gatech.edu/notes/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/pages/lecture-notes/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/pages/lecture-notes/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    },
+    {
+      "url": "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/pages/lecture-notes/",
+      "status": "Primary university reference consulted for methods and/or lecture-note discovery. New questions and explanations are original; no third-party worked solution copied."
+    }
+  ],
+  "rights": "No official question text or diagrams redistributed. Archive links do not establish reuse permission.",
+  "currentSyllabusStatus": "official-pdf-inspected",
+  "currentPYQInstruction": "User confirmed no separate permission documents or licensed local copies. Keep all 20 PYQs locked. Prioritize all 130 original practice tests; local input workflow retained for future authorized sources."
+}

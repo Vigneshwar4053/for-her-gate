@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {emptyProfile,loadProfile,saveProfile,mergeProfiles,validateProfile,STORAGE_KEY} from '../js/storage.js';
+import {exportBackup,parseBackup,verifyImported} from '../js/backup.js';
+const memory=()=>{const m=new Map();return {getItem:k=>m.get(k)??null,setItem:(k,v)=>m.set(k,v)};};
+test('versioned profile saves and restores progress and sessions',()=>{const store=memory(),p=emptyProfile();p.bookmarks=['q'];p.sessions={test:{id:'saved'}};saveProfile(p,store);assert.equal(p.revision,1);assert.deepEqual(loadProfile(store).bookmarks,['q']);assert.deepEqual(loadProfile(store).sessions,p.sessions);});
+test('corrupt storage is preserved and never silently reset',()=>{const store=memory();store.setItem(STORAGE_KEY,'{corrupt');assert.throws(()=>loadProfile(store),/not been overwritten/);assert.throws(()=>saveProfile(emptyProfile(),store));assert.equal(store.getItem(STORAGE_KEY),'{corrupt');});
+test('newer unsupported schemas are rejected without overwrite',()=>{const store=memory();store.setItem(STORAGE_KEY,JSON.stringify({schemaVersion:99}));assert.throws(()=>loadProfile(store),/migration/);});
+test('cross-tab revision conflict prevents stale overwrite',()=>{const store=memory(),a=emptyProfile(),b=emptyProfile();saveProfile(a,store);assert.throws(()=>saveProfile(b,store),/another tab/);});
+test('storage quota errors are actionable and do not advance revision',()=>{const p=emptyProfile();assert.throws(()=>saveProfile(p,{getItem:()=>null,setItem:()=>{throw Error('quota');}}),/full or unavailable/);assert.equal(p.revision,0);});
+test('backup JSON roundtrip and validation',()=>{const p=emptyProfile();assert.deepEqual(parseBackup(exportBackup(p)),p);assert.throws(()=>parseBackup('{}'));assert.throws(()=>parseBackup('{'));assert.throws(()=>validateProfile({...p,profile:{theme:'invalid',displayName:'x'}}));});
+test('merging bookmarks is idempotent and does not import reward balances',()=>{const a=emptyProfile(),b=emptyProfile();a.bookmarks=['a'];b.bookmarks=['a','b'];b.rewards.hearts=999999;const p=mergeProfiles(a,b);assert.deepEqual(p.bookmarks,['a','b']);assert.equal(p.rewards.hearts,0);assert.deepEqual(mergeProfiles(p,b).bookmarks,['a','b']);});
+test('import clears claimed rewards before deterministic recalculation',async()=>{const p=emptyProfile();p.rewards.hearts=999999;const v=await verifyImported(p,[],[],[]);assert.equal(v.rewards.hearts,0);});

@@ -1,0 +1,803 @@
+[
+  {
+    "id": "FH-TOPIC-07-01",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "In the shown divider, the load at a,b is open. Find the Thevenin voltage $V_{ab}$ in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "12 V ideal source",
+        "upper resistance 2 kΩ",
+        "lower resistance 4 kΩ",
+        "open output"
+      ],
+      "asked": "Find the open-circuit port voltage.",
+      "concept": "Thevenin voltage",
+      "formula": "V_{th}=V_s\\frac{R_2}{R_1+R_2}",
+      "steps": [
+        "No load current is drawn, so the 2 kΩ and 4 kΩ resistors form a series divider.",
+        "The source current is 12/(2+4)=2 mA.",
+        "The voltage at a relative to b is (2 mA)(4 kΩ)=8 V."
+      ],
+      "finalAnswer": "8 V",
+      "explanation": "The voltage at a relative to b is (2 mA)(4 kΩ)=8 V.",
+      "commonMistakes": [
+        "Do not short the output when finding the open-circuit voltage."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which thevenin voltage applies.",
+      "Start from $ V_{th}=V_s\\frac{R_2}{R_1+R_2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Nodal conductance equation, using kΩ and mA. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      7.9999992,
+      8.0000008
+    ],
+    "numericalTolerance": 8e-7,
+    "diagrams": [
+      {
+        "src": "assets/diagrams/thevenin-divider.svg",
+        "alt": "12 V source drives 2 kΩ to port a; 4 kΩ connects a to common b; output open."
+      }
+    ]
+  },
+  {
+    "id": "FH-TOPIC-07-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For the same explicitly defined network, a 12 V source drives 2 kΩ to port a, and 4 kΩ connects a to ground b. Find the Thevenin resistance seen at a,b in kΩ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Independent ideal voltage source",
+        "R₁=2 kΩ",
+        "R₂=4 kΩ"
+      ],
+      "asked": "Find the deactivated-source port resistance.",
+      "concept": "Source suppression",
+      "formula": "R_{th}=R_1\\parallel R_2",
+      "steps": [
+        "Deactivate the independent voltage source by replacing it with a short circuit.",
+        "Both resistors then connect between a and b in parallel.",
+        "Rth=(2×4)/(2+4)=4/3 kΩ."
+      ],
+      "finalAnswer": "1.3333333333333333 kΩ",
+      "explanation": "Rth=(2×4)/(2+4)=4/3 kΩ.",
+      "commonMistakes": [
+        "An ideal voltage source becomes a short, not an open, when suppressed."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which source suppression applies.",
+      "Start from $ R_{th}=R_1\\parallel R_2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Apply 1 mA test source with independent voltage source shorted; solve port voltage. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.3333332,
+      1.333333466667
+    ],
+    "numericalTolerance": 1.333333333333333e-7
+  },
+  {
+    "id": "FH-TOPIC-07-03",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A Thevenin equivalent has $V_{th}=18$ V and $R_{th}=6$ Ω. Find its Norton current in amperes.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Vth=18 V",
+        "Rth=6 Ω"
+      ],
+      "asked": "Find the equivalent short-circuit current.",
+      "concept": "Thevenin–Norton conversion",
+      "formula": "I_N=V_{th}/R_{th}",
+      "steps": [
+        "The Norton current equals the short-circuit port current.",
+        "Shorting a 6 Ω Thevenin source gives current 18/6.",
+        "Hence IN=3 A, with the equivalent resistance unchanged at 6 Ω."
+      ],
+      "finalAnswer": "3 A",
+      "explanation": "Hence IN=3 A, with the equivalent resistance unchanged at 6 Ω.",
+      "commonMistakes": [
+        "The Norton resistance equals Rth; it does not become zero."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which thevenin–norton conversion applies.",
+      "Start from $ I_N=V_{th}/R_{th} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Explicit short-circuit KVL linear solve. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-07-04",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "When applying superposition to a linear circuit containing an independent current source, how is that source suppressed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Replace it with a short"
+      },
+      {
+        "id": "B",
+        "text": "Replace it with its current value as resistance"
+      },
+      {
+        "id": "C",
+        "text": "Replace it with an open"
+      },
+      {
+        "id": "D",
+        "text": "Delete all resistors in its branch"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal independent current source",
+        "linear circuit"
+      ],
+      "asked": "Choose the zero-source replacement.",
+      "concept": "Superposition source suppression",
+      "formula": "I_s=0\\ \\Rightarrow\\ \\text{open circuit}",
+      "steps": [
+        "Superposition sets all but one independent source to zero.",
+        "Zero current through an ideal current-source branch means the branch is open.",
+        "Replace the suppressed independent current source with an open circuit; dependent sources remain active."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Replace the suppressed independent current source with an open circuit; dependent sources remain active.",
+      "commonMistakes": [
+        "An ideal current source is suppressed differently from an ideal voltage source."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which superposition source suppression applies.",
+      "Start from $ I_s=0\\ \\Rightarrow\\ \\text{open circuit} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Zero-current branch constitutive constraint; ideal-source open-circuit equivalent. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-07-05",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A load resistor is connected to a 20 V Thevenin source with 5 Ω series resistance. What maximum load power can be obtained in watts?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Vth=20 V",
+        "Rth=5 Ω",
+        "positive resistive load"
+      ],
+      "asked": "Find the largest load power.",
+      "concept": "Maximum power transfer",
+      "formula": "P_L=\\frac{V_{th}^2R_L}{(R_{th}+R_L)^2}",
+      "steps": [
+        "Differentiating with respect to RL gives a maximum at RL=Rth=5 Ω.",
+        "At this load the current is 20/(5+5)=2 A.",
+        "The load power is I²RL=4×5=20 W."
+      ],
+      "finalAnswer": "20 W",
+      "explanation": "The load power is I²RL=4×5=20 W.",
+      "commonMistakes": [
+        "The condition maximizes power, not source-to-load efficiency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which maximum power transfer applies.",
+      "Start from $ P_L=\\frac{V_{th}^2R_L}{(R_{th}+R_L)^2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Sweep 20001 load values and solve series KVL for each. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      19.999998,
+      20.000002
+    ],
+    "numericalTolerance": 0.000002
+  },
+  {
+    "id": "FH-TOPIC-07-06",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a linear network used in Thevenin-resistance determination, which statements are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Independent voltage sources are set to zero voltage"
+      },
+      {
+        "id": "B",
+        "text": "Dependent sources are always removed"
+      },
+      {
+        "id": "C",
+        "text": "A test source may be needed when dependent sources are present"
+      },
+      {
+        "id": "D",
+        "text": "All current sources, including dependent ones, must be opened"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Linear networks may contain controlled sources"
+      ],
+      "asked": "Select valid resistance-computation rules.",
+      "concept": "Test-source method",
+      "formula": "R_{th}=V_{test}/I_{test}",
+      "steps": [
+        "Only independent sources are suppressed; a zero-voltage source becomes a short.",
+        "Dependent-source constitutive relations remain in force. A test source measures the resulting port V/I when needed.",
+        "Thus A and C hold. Removing a controlled source changes the original network."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "Thus A and C hold. Removing a controlled source changes the original network.",
+      "commonMistakes": [
+        "Do not suppress a source merely because it is drawn as a source symbol."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which test-source method applies.",
+      "Start from $ R_{th}=V_{test}/I_{test} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Independent-source suppression and dependent-source test-voltage equations; law checks. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-07-07",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A port has a 2 kΩ resistor in parallel with a dependent current source $i_d=0.25v$ mA, directed from the port to ground when port voltage v is in volts. Find the input resistance in kΩ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Port shunt resistor 2 kΩ",
+        "dependent sink current 0.25v mA"
+      ],
+      "asked": "Find Vtest/Itest.",
+      "concept": "Dependent-source port resistance",
+      "formula": "I_{test}=V_{test}/R+gV_{test}",
+      "steps": [
+        "Apply a 1 V test source, with current defined entering the network.",
+        "The resistor draws 0.5 mA and the dependent source draws 0.25 mA, giving total 0.75 mA.",
+        "Rin=1 V/0.75 mA=4/3 kΩ."
+      ],
+      "finalAnswer": "1.3333333333333333 kΩ",
+      "explanation": "Rin=1 V/0.75 mA=4/3 kΩ.",
+      "commonMistakes": [
+        "The direction of the controlled current determines whether its conductance adds or subtracts."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which dependent-source port resistance applies.",
+      "Start from $ I_{test}=V_{test}/R+gV_{test} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "1 mA port excitation; nodal solution in V and kΩ. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.3333332,
+      1.333333466667
+    ],
+    "numericalTolerance": 1.333333333333333e-7
+  },
+  {
+    "id": "FH-TOPIC-07-08",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A Norton source of 6 A feeds a 3 Ω internal shunt resistor and a 6 Ω load. Find the load current in amperes.",
+    "options": [],
+    "solution": {
+      "given": [
+        "IN=6 A",
+        "internal resistance 3 Ω",
+        "load 6 Ω"
+      ],
+      "asked": "Find load-branch current.",
+      "concept": "Norton current division",
+      "formula": "I_L=I_N\\frac{R_N}{R_N+R_L}",
+      "steps": [
+        "The two resistors share a port voltage and divide source current inversely with resistance.",
+        "IL=6×3/(3+6).",
+        "This is 2 A; the remaining 4 A flows in the 3 Ω branch, satisfying KCL."
+      ],
+      "finalAnswer": "2 A",
+      "explanation": "This is 2 A; the remaining 4 A flows in the 3 Ω branch, satisfying KCL.",
+      "commonMistakes": [
+        "The resistance in the current-divider numerator is the other branch resistance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which norton current division applies.",
+      "Start from $ I_L=I_N\\frac{R_N}{R_N+R_L} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Nodal voltage solution for parallel Norton network, then load current. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-07-09",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "With two independent sources in a linear circuit, their separate contributions to a branch current are 2 A and −0.5 A in the same reference direction. Find the total current in amperes.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Source contributions 2 A and −0.5 A"
+      ],
+      "asked": "Sum branch-current responses with sign.",
+      "concept": "Superposition of responses",
+      "formula": "i=i_1+i_2",
+      "steps": [
+        "Linearity permits addition of signed current responses.",
+        "Use the specified common reference direction: 2+(−0.5).",
+        "The total is 1.5 A in the positive direction."
+      ],
+      "finalAnswer": "1.5 A",
+      "explanation": "The total is 1.5 A in the positive direction.",
+      "commonMistakes": [
+        "Source contributions are signed; subtracting a negative value again changes the physics."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which superposition of responses applies.",
+      "Start from $ i=i_1+i_2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Signed branch-response superposition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.49999985,
+      1.50000015
+    ],
+    "numericalTolerance": 1.5e-7
+  },
+  {
+    "id": "FH-TOPIC-07-10",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A sinusoidal Thevenin source has internal impedance $Z_{th}=3+j4$ Ω. Which unconstrained complex load impedance maximizes average load power?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$3+j4$ Ω"
+      },
+      {
+        "id": "B",
+        "text": "$3-j4$ Ω"
+      },
+      {
+        "id": "C",
+        "text": "$5$ Ω"
+      },
+      {
+        "id": "D",
+        "text": "$-3+j4$ Ω"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Positive source resistance",
+        "reactive load matching allowed"
+      ],
+      "asked": "Choose the conjugately matched load.",
+      "concept": "AC maximum power transfer",
+      "formula": "Z_L=Z_{th}^*",
+      "steps": [
+        "Average load power depends on the real load resistance and total impedance magnitude.",
+        "Choosing load reactance −4 Ω cancels the source reactance; resistance 3 Ω then matches the source resistance.",
+        "The optimum is ZL=3−j4 Ω, not a negative-resistance load."
+      ],
+      "finalAnswer": "B",
+      "explanation": "The optimum is ZL=3−j4 Ω, not a negative-resistance load.",
+      "commonMistakes": [
+        "Complex conjugation changes only the sign of the imaginary component."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which ac maximum power transfer applies.",
+      "Start from $ Z_L=Z_{th}^* $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerated complex-load average-power comparison plus conjugate-match stationary condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-07-11",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A 10 V Thevenin source with 2 Ω resistance drives an 8 Ω load. Find the efficiency $100P_L/P_{source}$ in percent.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Vth=10 V",
+        "series Rth=2 Ω",
+        "RL=8 Ω",
+        "ideal DC source"
+      ],
+      "asked": "Find the source-to-load efficiency.",
+      "concept": "Power partition in an equivalent source",
+      "formula": "\\eta=\\frac{R_L}{R_{th}+R_L}",
+      "steps": [
+        "The source current is 10/(2+8)=1 A.",
+        "The load absorbs 8 W and the ideal source supplies 10 W.",
+        "Efficiency is 100×8/10=80%. Maximum-power matching would instead give 50% here."
+      ],
+      "finalAnswer": "80",
+      "explanation": "Efficiency is 100×8/10=80%. Maximum-power matching would instead give 50% here.",
+      "commonMistakes": [
+        "Maximum-power transfer and maximum efficiency are different design targets."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which power partition in an equivalent source applies.",
+      "Start from $ \\eta=\\frac{R_L}{R_{th}+R_L} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Power computed from explicit series current and ideal-source work. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      79.999992,
+      80.000008
+    ],
+    "numericalTolerance": 0.000008
+  },
+  {
+    "id": "FH-TOPIC-07-12",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "In a passive linear bilateral network containing only resistors, a 1 A test current into port 1 produces 2 V at open port 2. Which conclusions follow from reciprocity?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A 1 A test current into port 2 produces 2 V at open port 1"
+      },
+      {
+        "id": "B",
+        "text": "The driving-point resistance of port 1 must be 2 Ω"
+      },
+      {
+        "id": "C",
+        "text": "The two driving-point resistances must be identical"
+      },
+      {
+        "id": "D",
+        "text": "The open-circuit transfer resistances z12 and z21 are equal"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Linear bilateral resistive two-port",
+        "other port open in each test"
+      ],
+      "asked": "Apply reciprocity to transfer resistance.",
+      "concept": "Reciprocity",
+      "formula": "z_{12}=z_{21}",
+      "steps": [
+        "The given experiment specifies z21=V2/I1=2 Ω with I2=0.",
+        "Reciprocity makes z12 also 2 Ω, so reversing the current/voltage ports gives 2 V.",
+        "It imposes equality of transfer parameters, not equality of the driving-point parameters z11 and z22. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "It imposes equality of transfer parameters, not equality of the driving-point parameters z11 and z22. Select A and D.",
+      "commonMistakes": [
+        "Do not replace a transfer resistance by a driving-point resistance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which reciprocity applies.",
+      "Start from $ z_{12}=z_{21} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Symmetric conductance matrix inverse has symmetric transfer entries; unequal driving-point example. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-07-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  }
+]

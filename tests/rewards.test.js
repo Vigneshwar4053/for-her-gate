@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {deriveRewards,levelFor} from '../js/rewards-engine.js';
+import {achievements} from '../js/achievements.js';
+const read=n=>JSON.parse(readFileSync(new URL('../data/'+n+'.json',import.meta.url))),config=read('rewards'),messages=read('messages');
+const attempt=(id='1',testId='test',at=1000)=>({id,testId,submittedAt:at,valid:true,subject:'digital',category:'subject',day:new Date(at).toISOString().slice(0,10),result:{rows:[{questionId:'q',status:'correct'}],percentage:80,correct:1,incorrect:0}});
+test('first question, test and >=80% score grant configured Hearts',()=>{assert.equal(deriveRewards([attempt()],config,messages).hearts,55);});
+test('duplicate attempts and retries do not duplicate reward events or messages',()=>{const a=attempt();const r=deriveRewards([a,a,attempt('2')],config,messages);assert.equal(r.hearts,55);assert.equal(r.milestones.length,1);assert.equal(new Set(r.events.map(e=>e.id)).size,r.events.length);});
+test('80% uses scored marks percentage rather than answer accuracy',()=>{const a=attempt();a.result.percentage=79.999;a.result.accuracy=100;assert.equal(deriveRewards([a],config,messages).hearts,25);});
+test('invalid and empty submissions grant no Hearts',()=>{assert.equal(deriveRewards([{...attempt(),valid:false}],config,messages).hearts,0);});
+test('5 distinct tests milestone and achievements use distinct IDs',()=>{const as=Array.from({length:5},(_,i)=>attempt(String(i),'test'+i,1000+i));const r=deriveRewards(as,config,messages);assert.equal(r.hearts,5+5*50+100);const b=achievements(as,read('achievements'));assert.ok(b.find(b=>b.id==='five').unlocked);assert.ok(b.find(b=>b.id==='digital').unlocked);assert.ok(!b.find(b=>b.id==='champion').unlocked);});
+test('7 consecutive local study days unlock streak reward once',()=>{const as=Array.from({length:8},(_,i)=>{const at=new Date(2026,0,i+1,12).getTime();return {...attempt(String(i),'same',at),day:`2026-01-${String(i+1).padStart(2,'0')}`};});const r=deriveRewards(as,config,messages);assert.equal(r.events.filter(e=>e.id==='streak:7').length,1);});
+test('question revision can grant a unique correct reward but never complete an exam',()=>{const a={...attempt(),kind:'revision'};assert.equal(deriveRewards([a],config,messages).hearts,5);assert.ok(!achievements([a],read('achievements')).find(b=>b.id==='first').unlocked);});
+test('level thresholds are cumulative earned Hearts',()=>{assert.equal(levelFor(0,config.levels).current.name,'Little Spark');assert.equal(levelFor(100,config.levels).current.name,'Rising Star');assert.equal(levelFor(5000,config.levels).progress,100);assert.equal(levelFor(5000,config.levels).next,undefined);});

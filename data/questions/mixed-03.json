@@ -1,0 +1,781 @@
+[
+  {
+    "id": "FH-MIXED-03-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "If X and Y are independent, Var(X)=2 and Var(Y)=3, find Var(2X−Y).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Independent variables",
+        "variances 2 and 3"
+      ],
+      "asked": "Find the variance of a weighted difference.",
+      "concept": "Variance scaling and addition",
+      "formula": "\\operatorname{Var}(aX+bY)=a^2\\operatorname{Var}(X)+b^2\\operatorname{Var}(Y)",
+      "steps": [
+        "Independence makes covariance zero.",
+        "The weights are squared, so (2)²×2+(−1)²×3.",
+        "The variance is 8+3=11."
+      ],
+      "finalAnswer": "11",
+      "explanation": "The variance is 8+3=11.",
+      "commonMistakes": [
+        "A minus sign on a variable does not produce a negative variance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which variance scaling and addition applies.",
+      "Start from $ \\operatorname{Var}(aX+bY)=a^2\\operatorname{Var}(X)+b^2\\operatorname{Var}(Y) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Variance bilinearity with independently vanishing covariance. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      10.9999989,
+      11.0000011
+    ],
+    "numericalTolerance": 0.0000011
+  },
+  {
+    "id": "FH-MIXED-03-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Two equal 2 kΩ resistors form a DC divider from 8 V to ground. An additional 2 kΩ load is connected from midpoint to ground. Find the loaded midpoint voltage in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Top 2 kΩ",
+        "bottom 2 kΩ",
+        "load 2 kΩ in parallel with bottom"
+      ],
+      "asked": "Find the loaded divider voltage.",
+      "concept": "Loading of a voltage divider",
+      "formula": "V_o=V_s\\frac{R_{bottom}\\parallel R_L}{R_{top}+R_{bottom}\\parallel R_L}",
+      "steps": [
+        "The lower resistor and load combine to 1 kΩ.",
+        "The source sees 2 kΩ in series with 1 kΩ, total 3 kΩ.",
+        "The loaded output is 8×1/3=8/3 V, below the unloaded 4 V."
+      ],
+      "finalAnswer": "2.6666666666666665 V",
+      "explanation": "The loaded output is 8×1/3=8/3 V, below the unloaded 4 V.",
+      "commonMistakes": [
+        "A finite load changes the divider’s effective lower resistance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which loading of a voltage divider applies.",
+      "Start from $ V_o=V_s\\frac{R_{bottom}\\parallel R_L}{R_{top}+R_{bottom}\\parallel R_L} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Loaded-divider KCL with both ground shunt conductances. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      2.6666664,
+      2.666666933333
+    ],
+    "numericalTolerance": 2.666666666666666e-7
+  },
+  {
+    "id": "FH-MIXED-03-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A positive-edge D flip-flop has setup time 2 ns and hold time 1 ns around a clock edge at t=10 ns. D is stable from t=7 ns to t=12 ns. Does it satisfy both constraints? Enter 1 for yes, 0 for no.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Clock at 10 ns",
+        "required setup 2 ns and hold 1 ns",
+        "data stable over [7,12] ns"
+      ],
+      "asked": "Assess the specified stability window.",
+      "concept": "Flip-flop timing aperture",
+      "formula": "[t_c-t_{setup},t_c+t_{hold}]=[8,11]\\ \\text{ns}",
+      "steps": [
+        "The required valid-data interval is from 8 to 11 ns.",
+        "The supplied stable interval [7,12] contains it completely.",
+        "Both constraints are met, so enter 1. This only assesses the stated deterministic timing bounds."
+      ],
+      "finalAnswer": "1",
+      "explanation": "Both constraints are met, so enter 1. This only assesses the stated deterministic timing bounds.",
+      "commonMistakes": [
+        "Check the post-edge hold interval as well as the pre-edge setup interval."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which flip-flop timing aperture applies.",
+      "Start from $ [t_c-t_{setup},t_c+t_{hold}]=[8,11]\\ \\text{ns} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compare actual data stability interval against the full setup/hold aperture. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-03-04",
+    "type": "MCQ",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal PN diode at a fixed temperature and ideality factor 1, increasing forward bias by VT ln2 changes I+IS by a factor:",
+    "options": [
+      {
+        "id": "A",
+        "text": "1/2"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "ln2"
+      },
+      {
+        "id": "D",
+        "text": "2"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Exact Shockley law",
+        "fixed IS and VT"
+      ],
+      "asked": "Find the exponential-current scaling.",
+      "concept": "Diode exponential ratio",
+      "formula": "I+I_S=I_Se^{V/V_T}",
+      "steps": [
+        "Writing I+IS removes the −1 term exactly.",
+        "A bias increase VTln2 multiplies the exponential by exp(ln2).",
+        "The scaling factor is 2, option D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "The scaling factor is 2, option D.",
+      "commonMistakes": [
+        "The statement is exact for I+IS; current I itself only approximately doubles at large forward bias."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which diode exponential ratio applies.",
+      "Start from $ I+I_S=I_Se^{V/V_T} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exponential ratio from two biases, retaining the exact I+IS expression. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-MIXED-03-05",
+    "type": "NAT",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "An unloaded ideal voltage amplifier has gain −20 and a 10 mV input signal amplitude. Find the output signal amplitude magnitude in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Gain −20",
+        "input amplitude 0.010 V",
+        "linear unsaturated operation"
+      ],
+      "asked": "Find output magnitude.",
+      "concept": "Small-signal gain",
+      "formula": "|v_o|=|A_v||v_i|",
+      "steps": [
+        "The negative gain indicates a phase inversion, not a negative amplitude magnitude.",
+        "Multiply 20 by 0.010 V.",
+        "The output amplitude magnitude is 0.2 V."
+      ],
+      "finalAnswer": "0.2 V",
+      "explanation": "The output amplitude magnitude is 0.2 V.",
+      "commonMistakes": [
+        "Separate signal magnitude from phase inversion."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which small-signal gain applies.",
+      "Start from $ |v_o|=|A_v||v_i| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Signed gain applied first; magnitude taken at the end. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.1999999,
+      0.2000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-03-06",
+    "type": "NAT",
+    "subject": "control",
+    "topic": "time-response",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a closed-loop system with poles −2±j3, find the undamped natural frequency ωn in rad/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Complex pole pair with real part −2 and imaginary parts ±3"
+      ],
+      "asked": "Find pole radius.",
+      "concept": "Second-order pole geometry",
+      "formula": "\\omega_n=\\sqrt{\\sigma^2+\\omega_d^2}",
+      "steps": [
+        "The standard pole form is −ζωn±jωn√(1−ζ²).",
+        "Its magnitude is ωn.",
+        "√(2²+3²)=√13≈3.605551275 rad/s."
+      ],
+      "finalAnswer": "3.605551275463989 rad/s",
+      "explanation": "√(2²+3²)=√13≈3.605551275 rad/s.",
+      "commonMistakes": [
+        "The imaginary part alone is the damped oscillation frequency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which second-order pole geometry applies.",
+      "Start from $ \\omega_n=\\sqrt{\\sigma^2+\\omega_d^2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/16-30-feedback-control-systems-fall-2010/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Radius of the two conjugate characteristic poles. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      3.605550914909,
+      3.605551636019
+    ],
+    "numericalTolerance": 3.605551275463989e-7
+  },
+  {
+    "id": "FH-MIXED-03-07",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "information-theory",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A memoryless channel uses four equiprobable, perfectly distinguishable symbols. Find its capacity in bits per channel use.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Noiseless four-symbol alphabet"
+      ],
+      "asked": "Find maximum information per use.",
+      "concept": "Noiseless discrete-channel capacity",
+      "formula": "C=\\log_2M",
+      "steps": [
+        "A noiseless symbol identifies one of four possibilities without ambiguity.",
+        "Equal probabilities maximize entropy.",
+        "Capacity is log₂4=2 bits/use."
+      ],
+      "finalAnswer": "2 bits/use",
+      "explanation": "Capacity is log₂4=2 bits/use.",
+      "commonMistakes": [
+        "Capacity here is per channel use, not a rate per second."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which noiseless discrete-channel capacity applies.",
+      "Start from $ C=\\log_2M $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Maximum discrete entropy over four perfectly distinguishable outcomes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-MIXED-03-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A short-circuited lossless line is exactly one quarter wavelength long. In the ideal limit, what is the magnitude of its input admittance in siemens?",
+    "options": [],
+    "solution": {
+      "given": [
+        "ZL=0",
+        "line length λ/4",
+        "lossless ideal limit"
+      ],
+      "asked": "Find |Yin| at the quarter-wave transformed short.",
+      "concept": "Quarter-wave short-to-open conversion",
+      "formula": "Z_{in}=jZ_0\\tan(\\beta l)",
+      "steps": [
+        "At l=λ/4, βl=π/2 and the input impedance tends to an open circuit.",
+        "The corresponding input admittance tends to zero.",
+        "Thus its magnitude is 0 S in the stated ideal limit."
+      ],
+      "finalAnswer": "0 S",
+      "explanation": "Thus its magnitude is 0 S in the stated ideal limit.",
+      "commonMistakes": [
+        "A quarter-wave line transforms a short to an open, rather than preserving the termination."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which quarter-wave short-to-open conversion applies.",
+      "Start from $ Z_{in}=jZ_0\\tan(\\beta l) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Quarter-wave short: admittance cotangent limit tends to zero. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-MIXED-03-09",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which are valid implications for a real square matrix A with det(A)≠0?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A has a unique inverse"
+      },
+      {
+        "id": "B",
+        "text": "Ax=b has a unique solution for every b"
+      },
+      {
+        "id": "C",
+        "text": "A must be symmetric"
+      },
+      {
+        "id": "D",
+        "text": "The null space of A contains only the zero vector"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Nonsingular square matrix"
+      ],
+      "asked": "Select all consequences of invertibility.",
+      "concept": "Invertible matrix theorem",
+      "formula": "\\det A\\ne0\\iff\\operatorname{rank}A=n",
+      "steps": [
+        "Full rank gives an inverse and trivial homogeneous null space.",
+        "Every right-hand side then has the solution x=A⁻¹b, uniquely.",
+        "Symmetry is unrelated; an invertible triangular nonsymmetric matrix is a counterexample. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Symmetry is unrelated; an invertible triangular nonsymmetric matrix is a counterexample. Select A, B and D.",
+      "commonMistakes": [
+        "Nonsingularity does not imply orthogonality or symmetry."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which invertible matrix theorem applies.",
+      "Start from $ \\det A\\ne0\\iff\\operatorname{rank}A=n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Invertible-matrix equivalences; nonsymmetric invertible example rejects C. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-03-10",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For ideal logic, which statements about a full adder are true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "It adds three one-bit inputs A,B,Cin"
+      },
+      {
+        "id": "B",
+        "text": "Its carry output is A XOR B XOR Cin"
+      },
+      {
+        "id": "C",
+        "text": "Its sum output is A XOR B XOR Cin"
+      },
+      {
+        "id": "D",
+        "text": "Its carry is 1 when at least two input bits are 1"
+      }
+    ],
+    "solution": {
+      "given": [
+        "One-bit full adder with sum and carry outputs"
+      ],
+      "asked": "Select valid output descriptions.",
+      "concept": "Full-adder logic",
+      "formula": "S=A\\oplus B\\oplus C_{in},\\quad C_{out}=AB+AC_{in}+BC_{in}",
+      "steps": [
+        "The arithmetic total ranges from 0 to 3 and equals S+2Cout.",
+        "The sum is the parity bit; carry marks totals 2 or 3.",
+        "Thus A,C,D hold, whereas assigning XOR to carry is wrong."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Thus A,C,D hold, whereas assigning XOR to carry is wrong.",
+      "commonMistakes": [
+        "A full adder differs from a half adder by its carry-in input."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which full-adder logic applies.",
+      "Start from $ S=A\\oplus B\\oplus C_{in},\\quad C_{out}=AB+AC_{in}+BC_{in} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustive eight-row full-adder truth-table evaluation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-MIXED-03-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A tank initially contains 20 L of a 30% solution. How many liters of pure water must be added to reduce the concentration to 20%, assuming additive volumes?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Initial solute 30% of 20 L",
+        "added liquid has no solute"
+      ],
+      "asked": "Find added water volume.",
+      "concept": "Mixture conservation",
+      "formula": "0.3(20)=0.2(20+x)",
+      "steps": [
+        "The solute amount remains 6 L-equivalent after dilution.",
+        "The new total volume must be 6/0.2=30 L.",
+        "Add 30−20=10 L of water."
+      ],
+      "finalAnswer": "10 L",
+      "explanation": "Add 30−20=10 L of water.",
+      "commonMistakes": [
+        "The percentage denominator changes while the solute amount is conserved."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mixture conservation applies.",
+      "Start from $ 0.3(20)=0.2(20+x) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Conserve solute while solving for additional water volume. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      9.999999,
+      10.000001
+    ],
+    "numericalTolerance": 0.000001
+  },
+  {
+    "id": "FH-MIXED-03-12",
+    "type": "NAT",
+    "subject": "communications",
+    "topic": "noise",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Two matched amplifier stages use the same reference noise temperature. Stage 1 has power gain 10 dB and noise figure 3 dB; stage 2 has noise figure 10 dB. Find the total noise factor as a linear ratio.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Matched cascade",
+        "G1=10 dB",
+        "NF1=3 dB",
+        "NF2=10 dB",
+        "common reference temperature"
+      ],
+      "asked": "Find the linear cascade noise factor.",
+      "concept": "Friis cascade noise",
+      "formula": "F_{tot}=F_1+(F_2-1)/G_1",
+      "steps": [
+        "Convert power quantities to linear ratios: G1=10, F1=10^0.3≈1.995262315 and F2=10.",
+        "Refer the second stage’s added noise to the input by dividing F2−1=9 by the first-stage gain 10.",
+        "Ftotal≈1.995262315+0.9=2.895262315."
+      ],
+      "finalAnswer": "2.8952623149688796",
+      "explanation": "Ftotal≈1.995262315+0.9=2.895262315.",
+      "commonMistakes": [
+        "Friis arithmetic uses linear power gain and linear noise factors, not their decibel values."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which friis cascade noise applies.",
+      "Start from $ F_{tot}=F_1+(F_2-1)/G_1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-450-principles-of-digital-communications-i-fall-2006/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Build output noise budget including input thermal noise and each added-noise contribution; divide by total gain. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-MIXED-03-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      2.895262025443,
+      2.895262604495
+    ],
+    "numericalTolerance": 2.8952623149688796e-7
+  }
+]

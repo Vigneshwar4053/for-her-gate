@@ -1,0 +1,777 @@
+[
+  {
+    "id": "FH-SUBJECT-03-01",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "In a nondegenerate semiconductor at thermal equilibrium, n0=10¹⁶ cm⁻³ and ni=10¹⁰ cm⁻³. Find p0 in cm⁻³.",
+    "options": [],
+    "solution": {
+      "given": [
+        "n₀=10¹⁶ cm⁻³",
+        "nᵢ=10¹⁰ cm⁻³",
+        "thermal equilibrium"
+      ],
+      "asked": "Find minority-hole concentration.",
+      "concept": "Mass-action law",
+      "formula": "n_0p_0=n_i^2",
+      "steps": [
+        "Square the intrinsic concentration: ni²=10²⁰ cm⁻⁶.",
+        "Divide by n₀=10¹⁶ cm⁻³.",
+        "The hole concentration is p₀=10⁴ cm⁻³."
+      ],
+      "finalAnswer": "10000 cm⁻³",
+      "explanation": "The hole concentration is p₀=10⁴ cm⁻³.",
+      "commonMistakes": [
+        "Mass action applies at equilibrium; it need not hold for excess carriers under injection."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mass-action law applies.",
+      "Start from $ n_0p_0=n_i^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Solve equilibrium product equation for unknown concentration. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      9999.999,
+      10000.001
+    ],
+    "numericalTolerance": 0.001
+  },
+  {
+    "id": "FH-SUBJECT-03-02",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Ignoring holes, a semiconductor has n=10¹⁵ cm⁻³ and electron mobility 1000 cm²/(V·s). Using q=1.6×10⁻¹⁹ C, find conductivity in S/cm.",
+    "options": [],
+    "solution": {
+      "given": [
+        "n=10¹⁵ cm⁻³",
+        "μn=1000 cm²/(V·s)",
+        "hole conduction neglected"
+      ],
+      "asked": "Find electron conductivity.",
+      "concept": "Drift conductivity",
+      "formula": "\\sigma=q n\\mu_n",
+      "steps": [
+        "Electron drift current density is qnμnE, so conductivity is its coefficient of E.",
+        "Multiply 1.6×10⁻¹⁹×10¹⁵×1000.",
+        "The result is 0.16 S/cm; the units follow the centimeter-based input data."
+      ],
+      "finalAnswer": "0.16",
+      "explanation": "The result is 0.16 S/cm; the units follow the centimeter-based input data.",
+      "commonMistakes": [
+        "Do not accidentally report S/m without converting the centimeter units."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which drift conductivity applies.",
+      "Start from $ \\sigma=q n\\mu_n $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute drift current for a 2 V/cm test field and divide by the field. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.1599999,
+      0.1600001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-03-03",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "At a temperature where thermal voltage VT=0.025 V, electron mobility is 1200 cm²/(V·s). Find the diffusion coefficient in cm²/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "VT=0.025 V",
+        "μn=1200 cm²/(V·s)",
+        "nondegenerate carriers"
+      ],
+      "asked": "Find Dn.",
+      "concept": "Einstein relation",
+      "formula": "D_n/\\mu_n=V_T",
+      "steps": [
+        "In a nondegenerate semiconductor, diffusion and mobility obey the Einstein relation.",
+        "Multiply mobility by thermal voltage: 1200×0.025.",
+        "Dn=30 cm²/s."
+      ],
+      "finalAnswer": "30 cm²/s",
+      "explanation": "Dn=30 cm²/s.",
+      "commonMistakes": [
+        "The thermal voltage multiplies mobility; it is not a dimensionless temperature."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which einstein relation applies.",
+      "Start from $ D_n/\\mu_n=V_T $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate nondegenerate Einstein proportionality with dimensional inputs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      29.999997,
+      30.000003
+    ],
+    "numericalTolerance": 0.000003
+  },
+  {
+    "id": "FH-SUBJECT-03-04",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal diode has saturation current 1 nA, ideality factor 1 and VT=25 mV. At forward voltage V=VT ln(1001), find the current in μA.",
+    "options": [],
+    "solution": {
+      "given": [
+        "IS=1 nA",
+        "η=1",
+        "exponential argument ln(1001)"
+      ],
+      "asked": "Find exact diode current including the −1 term.",
+      "concept": "Shockley diode law",
+      "formula": "I=I_S(e^{V/V_T}-1)",
+      "steps": [
+        "At the specified voltage, the exponential is exactly 1001.",
+        "Subtract 1 to obtain the multiplier 1000.",
+        "I=1000 nA=1 μA."
+      ],
+      "finalAnswer": "1 μA",
+      "explanation": "I=1000 nA=1 μA.",
+      "commonMistakes": [
+        "Keeping the −1 term matters when an exact exponential value is supplied."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which shockley diode law applies.",
+      "Start from $ I=I_S(e^{V/V_T}-1) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically evaluate the full diode exponential law including −1. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-03-05",
+    "type": "MCQ",
+    "subject": "devices",
+    "topic": "bjt",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An NPN BJT in forward-active operation has common-base current gain α=0.98. Its common-emitter current gain β is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "0.98"
+      },
+      {
+        "id": "B",
+        "text": "1.02"
+      },
+      {
+        "id": "C",
+        "text": "49"
+      },
+      {
+        "id": "D",
+        "text": "98"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Forward-active transistor",
+        "α=IC/IE"
+      ],
+      "asked": "Convert α to β=IC/IB.",
+      "concept": "BJT current-gain definitions",
+      "formula": "\\beta=\\alpha/(1-\\alpha)",
+      "steps": [
+        "Emitter current is IC+IB, so α=β/(β+1).",
+        "Rearranging gives β=α/(1−α).",
+        "At α=0.98, β=0.98/0.02=49, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "At α=0.98, β=0.98/0.02=49, option C.",
+      "commonMistakes": [
+        "β and α have different denominators; β is not 1/α."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bjt current-gain definitions applies.",
+      "Start from $ \\beta=\\alpha/(1-\\alpha) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Normalize emitter current to 1 A: IC=.98, IB=.02, then compute IC/IB. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-SUBJECT-03-06",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "bjt",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A forward-active BJT carries IC=1 mA at VT=25 mV. Find its small-signal transconductance in mS.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Collector current 1 mA",
+        "thermal voltage 25 mV"
+      ],
+      "asked": "Find gm.",
+      "concept": "BJT exponential linearization",
+      "formula": "g_m=I_C/V_T",
+      "steps": [
+        "The derivative of IC with respect to VBE in the exponential model is IC/VT.",
+        "Divide 0.001 A by 0.025 V to get 0.04 S.",
+        "Multiplying by 1000 gives gm=40 mS."
+      ],
+      "finalAnswer": "40 mS",
+      "explanation": "Multiplying by 1000 gives gm=40 mS.",
+      "commonMistakes": [
+        "Use the collector current, not base current, in this expression."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bjt exponential linearization applies.",
+      "Start from $ g_m=I_C/V_T $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Finite-difference slope of the local exponential collector-current curve. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      39.999996,
+      40.000004
+    ],
+    "numericalTolerance": 0.000004
+  },
+  {
+    "id": "FH-SUBJECT-03-07",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "mosfet",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "An ideal long-channel NMOS has β=1 mA/V², VTH=1 V, VGS=3 V and VDS=3 V. With ID=β(VGS−VTH)²/2 in saturation and no channel-length modulation, find ID in mA.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Long-channel square-law model",
+        "β=1 mA/V²",
+        "overdrive 2 V",
+        "VDS=3 V"
+      ],
+      "asked": "Find current after checking the region.",
+      "concept": "MOSFET region and square law",
+      "formula": "V_{DS}\\ge V_{GS}-V_{TH},\\quad I_D=\\frac\\beta2(V_{GS}-V_{TH})^2",
+      "steps": [
+        "The overdrive is 3−1=2 V. Since VDS=3≥2 V, the assumed saturation model applies.",
+        "Substitute ID=(1/2)×(2)² in mA.",
+        "The drain current is 2 mA."
+      ],
+      "finalAnswer": "2 mA",
+      "explanation": "The drain current is 2 mA.",
+      "commonMistakes": [
+        "The factor 1/2 depends on the β definition; the problem explicitly specifies it."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mosfet region and square law applies.",
+      "Start from $ V_{DS}\\ge V_{GS}-V_{TH},\\quad I_D=\\frac\\beta2(V_{GS}-V_{TH})^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Square-law saturation charge integration; verify VDS exceeds overdrive. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-SUBJECT-03-08",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "optoelectronic-devices",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about ideal semiconductor/optoelectronic operation are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Direct band gaps permit radiative interband transitions without phonon momentum assistance"
+      },
+      {
+        "id": "B",
+        "text": "An equilibrium PN junction has a nonzero net terminal current at zero external bias"
+      },
+      {
+        "id": "C",
+        "text": "A photodiode can convert incident photons into collected electron–hole pairs"
+      },
+      {
+        "id": "D",
+        "text": "A reverse-biased junction can have nonzero depletion capacitance"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Equilibrium junctions",
+        "basic optoelectronic mechanisms"
+      ],
+      "asked": "Select all physically valid statements.",
+      "concept": "Band structure, equilibrium and charge storage",
+      "formula": "C_j=\\frac{dQ}{dV}",
+      "steps": [
+        "A direct transition can conserve crystal momentum without requiring a phonon, supporting radiative recombination.",
+        "At equilibrium drift and diffusion currents balance, so the net external current is zero.",
+        "Photogeneration can be collected, and depletion charge varies with voltage, giving junction capacitance. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Photogeneration can be collected, and depletion charge varies with voltage, giving junction capacitance. Select A, C and D.",
+      "commonMistakes": [
+        "Zero DC junction current does not imply zero differential capacitance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which band structure, equilibrium and charge storage applies.",
+      "Start from $ C_j=\\frac{dQ}{dV} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct-gap momentum condition, equilibrium drift/diffusion balance, photon generation and differential charge storage. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-03-09",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For a one-sided abrupt p⁺n junction, use εs=10⁻¹² F/cm, ND=10¹⁶ cm⁻³, q=1.6×10⁻¹⁹ C and total depletion potential ψ=0.8 V. Find W≈sqrt(2εsψ/(qND)) in μm.",
+    "options": [],
+    "solution": {
+      "given": [
+        "p-side much more heavily doped",
+        "stated depletion approximation",
+        "total potential 0.8 V"
+      ],
+      "asked": "Find the depletion width in micrometers.",
+      "concept": "One-sided depletion approximation",
+      "formula": "W\\simeq\\sqrt{\\frac{2\\epsilon_s\\psi}{qN_D}}",
+      "steps": [
+        "The ratio inside the square root is (2×10⁻¹²×0.8)/(1.6×10⁻¹⁹×10¹⁶)=10⁻⁹ cm².",
+        "The square root is 3.16227766×10⁻⁵ cm.",
+        "Since 1 cm=10⁴ μm, W≈0.316227766 μm."
+      ],
+      "finalAnswer": "0.31622776601683794 μm",
+      "explanation": "Since 1 cm=10⁴ μm, W≈0.316227766 μm.",
+      "commonMistakes": [
+        "ψ is the total junction potential; do not add another built-in voltage to it."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which one-sided depletion approximation applies.",
+      "Start from $ W\\simeq\\sqrt{\\frac{2\\epsilon_s\\psi}{qN_D}} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically integrate linear depletion field and bisect width to meet ψ=.8 V. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.316227666017,
+      0.316227866017
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-03-10",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "An electron concentration gradient is dn/dx=−10¹⁸ cm⁻⁴. With Dn=25 cm²/s and q=1.6×10⁻¹⁹ C, find the electron diffusion current density in A/cm².",
+    "options": [],
+    "solution": {
+      "given": [
+        "Dn=25 cm²/s",
+        "concentration decreases with x"
+      ],
+      "asked": "Find signed electron diffusion current density.",
+      "concept": "Diffusion current sign",
+      "formula": "J_{n,diff}=qD_n\\frac{dn}{dx}",
+      "steps": [
+        "Electron particle flux is −Dn dn/dx, but electron charge is −q.",
+        "Their product gives conventional current qDn dn/dx.",
+        "Substitution gives 1.6×10⁻¹⁹×25×(−10¹⁸)=−4 A/cm²."
+      ],
+      "finalAnswer": "-4 A/cm²",
+      "explanation": "Substitution gives 1.6×10⁻¹⁹×25×(−10¹⁸)=−4 A/cm².",
+      "commonMistakes": [
+        "Electron particle-flow direction and conventional electron-current direction are opposite."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which diffusion current sign applies.",
+      "Start from $ J_{n,diff}=qD_n\\frac{dn}{dx} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Calculate electron particle diffusion flux first, then multiply by signed electron charge. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      -4.0000004,
+      -3.9999996
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-SUBJECT-03-11",
+    "type": "NAT",
+    "subject": "devices",
+    "topic": "optoelectronic-devices",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A photodiode has quantum efficiency 0.8 and receives 1 mW of photons each of energy 2 eV. Using q=1.6×10⁻¹⁹ C and 1 eV=1.6×10⁻¹⁹ J, find the photocurrent magnitude in mA.",
+    "options": [],
+    "solution": {
+      "given": [
+        "η=0.8",
+        "incident power 10⁻³ W",
+        "photon energy 3.2×10⁻¹⁹ J"
+      ],
+      "asked": "Find collected photon-generated current.",
+      "concept": "Quantum efficiency",
+      "formula": "I_{ph}=\\eta qP/(h\\nu)",
+      "steps": [
+        "The photon arrival rate is 10⁻³/(3.2×10⁻¹⁹)=3.125×10¹⁵ s⁻¹.",
+        "Multiplying by efficiency 0.8 gives 2.5×10¹⁵ collected electrons/s.",
+        "Multiplying by q gives 4×10⁻⁴ A=0.4 mA."
+      ],
+      "finalAnswer": "0.4 mA",
+      "explanation": "Multiplying by q gives 4×10⁻⁴ A=0.4 mA.",
+      "commonMistakes": [
+        "Quantum efficiency multiplies the photon rate, not the photon energy."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which quantum efficiency applies.",
+      "Start from $ I_{ph}=\\eta qP/(h\\nu) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Photon counting and quantum-efficiency charge collection, SI-to-mA conversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "acceptedRange": [
+      0.3999999,
+      0.4000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-03-12",
+    "type": "MSQ",
+    "subject": "devices",
+    "topic": "mos-capacitor",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal MOS capacitor with a p-type substrate, which statements hold as gate voltage is varied?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A sufficiently negative gate attracts holes into accumulation"
+      },
+      {
+        "id": "B",
+        "text": "A positive gate immediately makes the substrate more p-type"
+      },
+      {
+        "id": "C",
+        "text": "A sufficiently positive gate can form an electron inversion layer"
+      },
+      {
+        "id": "D",
+        "text": "The oxide must conduct DC current for a static field to exist"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal insulating oxide",
+        "p-type body",
+        "conventional gate bias reference"
+      ],
+      "asked": "Identify accumulation and inversion mechanisms.",
+      "concept": "MOS electrostatics",
+      "formula": "Q_G+Q_S=0\\quad\\text{for ideal planar charge balance}",
+      "steps": [
+        "A negative gate is balanced by positive semiconductor charge, attracting majority holes into accumulation.",
+        "A positive gate repels holes, then can attract a minority-electron inversion layer at sufficiently strong bias.",
+        "The oxide sustains an electric field without steady conduction. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "The oxide sustains an electric field without steady conduction. Select A and C.",
+      "commonMistakes": [
+        "A capacitor supports static electric fields without a DC conduction path."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mos electrostatics applies.",
+      "Start from $ Q_G+Q_S=0\\quad\\text{for ideal planar charge balance} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-012-microelectronic-devices-and-circuits-fall-2009/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "MOS charge-sign electrostatics and ideal insulator DC boundary condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-004.json#FH-SUBJECT-03-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "004",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  }
+]

@@ -1,0 +1,813 @@
+[
+  {
+    "id": "FH-TOPIC-05-01",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A fair die is rolled. Conditional on an even result, find the probability that the result exceeds 3.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Fair die",
+        "conditioning event {2,4,6}"
+      ],
+      "asked": "Find P(result>3 | even).",
+      "concept": "Conditional probability",
+      "formula": "P(A|B)=P(A\\cap B)/P(B)",
+      "steps": [
+        "Given an even result, the equally likely sample space becomes {2,4,6}.",
+        "Outcomes greater than 3 in that set are {4,6}.",
+        "The conditional probability is 2/3."
+      ],
+      "finalAnswer": "0.6666666666666666",
+      "explanation": "The conditional probability is 2/3.",
+      "commonMistakes": [
+        "Do not retain all six outcomes after conditioning."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which conditional probability applies.",
+      "Start from $ P(A|B)=P(A\\cap B)/P(B) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate conditioned equally likely outcomes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.666666566667,
+      0.666666766667
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-05-02",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For independent Bernoulli trials with success probability 0.2, find the probability of exactly two successes in three trials.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three independent trials",
+        "p=0.2",
+        "two successes"
+      ],
+      "asked": "Find a binomial probability.",
+      "concept": "Binomial law",
+      "formula": "P(X=k)=\\binom nk p^k(1-p)^{n-k}",
+      "steps": [
+        "There are C(3,2)=3 placements of the two successes.",
+        "Each arrangement has probability (0.2)²(0.8)=0.032.",
+        "Multiplying gives 3×0.032=0.096."
+      ],
+      "finalAnswer": "0.096",
+      "explanation": "Multiplying gives 3×0.032=0.096.",
+      "commonMistakes": [
+        "Include the number of possible success positions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which binomial law applies.",
+      "Start from $ P(X=k)=\\binom nk p^k(1-p)^{n-k} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all 8 independent Bernoulli outcome strings. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.0959999,
+      0.0960001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-05-03",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Let X be Poisson with mean 2. Find $P(X=0)$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Poisson parameter λ=2"
+      ],
+      "asked": "Find the zero-count probability.",
+      "concept": "Poisson distribution",
+      "formula": "P(X=k)=e^{-\\lambda}\\lambda^k/k!",
+      "steps": [
+        "Use k=0 in the Poisson mass function.",
+        "λ⁰=1 and 0!=1.",
+        "The probability is e⁻² ≈ 0.1353352832."
+      ],
+      "finalAnswer": "0.1353352832366127",
+      "explanation": "The probability is e⁻² ≈ 0.1353352832.",
+      "commonMistakes": [
+        "A zero count can have positive probability even when the mean is nonzero."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which poisson distribution applies.",
+      "Start from $ P(X=k)=e^{-\\lambda}\\lambda^k/k! $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Poisson zero-event survival e−λ; direct evaluation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.135335183237,
+      0.135335383237
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-05-04",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For an exponential lifetime with rate 0.5 s⁻¹, find its mean in seconds.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rate λ=0.5 s⁻¹"
+      ],
+      "asked": "Find the mean lifetime.",
+      "concept": "Exponential mean",
+      "formula": "E[X]=1/\\lambda",
+      "steps": [
+        "The exponential density is λe⁻λˣ for x≥0.",
+        "Integrating x times this density gives 1/λ.",
+        "Substitution gives 1/0.5=2 seconds."
+      ],
+      "finalAnswer": "2 s",
+      "explanation": "Substitution gives 1/0.5=2 seconds.",
+      "commonMistakes": [
+        "Do not confuse rate (per second) with mean time (seconds)."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which exponential mean applies.",
+      "Start from $ E[X]=1/\\lambda $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerical first-moment integration with negligible exponential tail. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-05-05",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "If E[X]=3 and E[X²]=13, find Var(X).",
+    "options": [],
+    "solution": {
+      "given": [
+        "First moment 3",
+        "second raw moment 13"
+      ],
+      "asked": "Find the variance.",
+      "concept": "Central and raw moments",
+      "formula": "\\operatorname{Var}(X)=E[X^2]-E[X]^2",
+      "steps": [
+        "The squared mean is 3²=9.",
+        "Subtract it from the second raw moment.",
+        "Var(X)=13−9=4, a nonnegative value as required."
+      ],
+      "finalAnswer": "4",
+      "explanation": "Var(X)=13−9=4, a nonnegative value as required.",
+      "commonMistakes": [
+        "E[X²] is not the same as E[X]²."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which central and raw moments applies.",
+      "Start from $ \\operatorname{Var}(X)=E[X^2]-E[X]^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Raw-to-central moment algebra. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-05-06",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about independent random variables X and Y with finite second moments hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "E[XY] = E[X]E[Y]"
+      },
+      {
+        "id": "B",
+        "text": "Cov(X,Y) = 0"
+      },
+      {
+        "id": "C",
+        "text": "Var(X+Y) = Var(X)Var(Y)"
+      },
+      {
+        "id": "D",
+        "text": "Var(X−Y) = Var(X)+Var(Y)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Independent variables",
+        "finite second moments"
+      ],
+      "asked": "Select all valid moment identities.",
+      "concept": "Independence and covariance",
+      "formula": "\\operatorname{Var}(X\\pm Y)=\\operatorname{Var}(X)+\\operatorname{Var}(Y)\\pm2\\operatorname{Cov}(X,Y)",
+      "steps": [
+        "Independence makes the mixed expectation factorize, giving zero covariance.",
+        "The covariance terms in both sum and difference variance formulas vanish.",
+        "Variances add, rather than multiply, so A, B and D hold."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Variances add, rather than multiply, so A, B and D hold.",
+      "commonMistakes": [
+        "Zero covariance alone does not imply independence in general."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which independence and covariance applies.",
+      "Start from $ \\operatorname{Var}(X\\pm Y)=\\operatorname{Var}(X)+\\operatorname{Var}(Y)\\pm2\\operatorname{Cov}(X,Y) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Product joint-PMF enumeration plus general expectation factorization. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-05-07",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "A disease has prevalence 0.01. A test is positive with probability 0.9 in diseased people and 0.1 in healthy people. Find P(disease | positive).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Prevalence 0.01",
+        "sensitivity 0.9",
+        "false-positive rate 0.1"
+      ],
+      "asked": "Find the positive predictive probability.",
+      "concept": "Bayes theorem",
+      "formula": "P(D|+) = \\frac{P(+|D)P(D)}{P(+|D)P(D)+P(+|D^c)P(D^c)}",
+      "steps": [
+        "True-positive probability is 0.9×0.01=0.009.",
+        "Total positive probability is 0.009+0.1×0.99=0.108.",
+        "The required conditional probability is 0.009/0.108=1/12≈0.0833333333."
+      ],
+      "finalAnswer": "0.08333333333333333",
+      "explanation": "The required conditional probability is 0.009/0.108=1/12≈0.0833333333.",
+      "commonMistakes": [
+        "Sensitivity is P(positive | disease), not P(disease | positive)."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which bayes theorem applies.",
+      "Start from $ P(D|+) = \\frac{P(+|D)P(D)}{P(+|D)P(D)+P(+|D^c)P(D^c)} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Frequency-table construction: 100 diseased/9900 healthy out of 10000, 90+990 positives. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.083333233333,
+      0.083333433333
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-05-08",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A random variable X is uniform on [−2,4]. Find its variance.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Uniform density over an interval of width 6"
+      ],
+      "asked": "Find Var(X).",
+      "concept": "Uniform distribution moments",
+      "formula": "\\operatorname{Var}(X)=(b-a)^2/12",
+      "steps": [
+        "The mean is (−2+4)/2=1.",
+        "The width is 4−(−2)=6.",
+        "The variance is 6²/12=3; translating the interval does not change it."
+      ],
+      "finalAnswer": "3",
+      "explanation": "The variance is 6²/12=3; translating the interval does not change it.",
+      "commonMistakes": [
+        "Variance depends on interval width, not on the midpoint."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which uniform distribution moments applies.",
+      "Start from $ \\operatorname{Var}(X)=(b-a)^2/12 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate squared centered displacement against the uniform density. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-05-09",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Let X take values 0,1,2 with probabilities 1/4,1/2,1/4. Find $E[(X-1)^2]$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three values and their probabilities"
+      ],
+      "asked": "Find the expected squared centered value.",
+      "concept": "Discrete expectation",
+      "formula": "E[g(X)]=\\sum_x g(x)P(X=x)",
+      "steps": [
+        "The transformed values (x−1)² are 1,0,1.",
+        "Weight them by 1/4,1/2,1/4 respectively.",
+        "The result is 1/4+0+1/4=1/2."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "The result is 1/4+0+1/4=1/2.",
+      "commonMistakes": [
+        "Apply the function before averaging; g(E[X]) is generally different."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which discrete expectation applies.",
+      "Start from $ E[g(X)]=\\sum_x g(x)P(X=x) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate transformed values weighted by PMF. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-05-10",
+    "type": "MCQ",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a standard normal Z, which probability equals P(Z > 1)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P(Z > −1)"
+      },
+      {
+        "id": "B",
+        "text": "P(Z < 1)"
+      },
+      {
+        "id": "C",
+        "text": "P(|Z| < 1)"
+      },
+      {
+        "id": "D",
+        "text": "P(Z < −1)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Standard normal density symmetric about 0"
+      ],
+      "asked": "Use symmetry to identify equal tail probabilities.",
+      "concept": "Normal symmetry",
+      "formula": "\\phi(z)=\\phi(-z)",
+      "steps": [
+        "The density at z equals the density at −z.",
+        "Reflecting the upper tail (1,∞) through zero gives the lower tail (−∞,−1).",
+        "Their areas are equal, so D is correct. The other regions include additional central probability."
+      ],
+      "finalAnswer": "D",
+      "explanation": "Their areas are equal, so D is correct. The other regions include additional central probability.",
+      "commonMistakes": [
+        "The equality relates opposite tails, not a tail and a central interval."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which normal symmetry applies.",
+      "Start from $ \\phi(z)=\\phi(-z) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Gaussian reflection substitution z→−z; numerical tail-area agreement. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-05-11",
+    "type": "NAT",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For jointly distributed X,Y with Var(X)=4, Var(Y)=9 and Cov(X,Y)=3, find the correlation coefficient.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Variances 4 and 9",
+        "covariance 3"
+      ],
+      "asked": "Find Pearson correlation.",
+      "concept": "Normalized covariance",
+      "formula": "\\rho_{XY}=\\frac{\\operatorname{Cov}(X,Y)}{\\sigma_X\\sigma_Y}",
+      "steps": [
+        "The standard deviations are √4=2 and √9=3.",
+        "Their product is 6.",
+        "Correlation is 3/6=0.5, within [−1,1]."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "Correlation is 3/6=0.5, within [−1,1].",
+      "commonMistakes": [
+        "Normalize by standard deviations, not by variances."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which normalized covariance applies.",
+      "Start from $ \\rho_{XY}=\\frac{\\operatorname{Cov}(X,Y)}{\\sigma_X\\sigma_Y} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Covariance normalized by root product of variances. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-05-12",
+    "type": "MSQ",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For an exponential random variable X with rate λ > 0, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$P(X>s+t|X>s)=P(X>t)$ for s,t≥0"
+      },
+      {
+        "id": "B",
+        "text": "$E[X]=\\lambda$"
+      },
+      {
+        "id": "C",
+        "text": "$\\operatorname{Var}(X)=1/\\lambda^2$"
+      },
+      {
+        "id": "D",
+        "text": "$P(X<0)>0$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Nonnegative exponential variable",
+        "rate λ"
+      ],
+      "asked": "Select all valid distribution properties.",
+      "concept": "Memorylessness and moments",
+      "formula": "P(X>x)=e^{-\\lambda x}\\quad(x\\ge0)",
+      "steps": [
+        "Dividing the survival probabilities at s+t and s gives e⁻λᵗ, proving memorylessness.",
+        "Integrating the density gives mean 1/λ and variance 1/λ².",
+        "The distribution has support x≥0, so P(X<0)=0. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "The distribution has support x≥0, so P(X<0)=0. Select A and C.",
+      "commonMistakes": [
+        "The parameter λ is a rate, and negative lifetimes have zero probability."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which memorylessness and moments applies.",
+      "Start from $ P(X>x)=e^{-\\lambda x}\\quad(x\\ge0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/",
+      "https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/",
+      "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/",
+      "https://ocw.mit.edu/courses/18-04-complex-variables-with-applications-spring-2018/resources/lecture-notes/",
+      "https://web.mit.edu/people/jnt/prob.html"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Survival-ratio algebra, integrated second central moment and support condition. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-002.json#FH-TOPIC-05-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "002",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  }
+]

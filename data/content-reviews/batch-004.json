@@ -1,0 +1,587 @@
+{
+  "batch": "004",
+  "checkedAt": "2026-11-12T19:41:50.875Z",
+  "classification": "automatically-validated-and-recalculated",
+  "independentlyReviewed": false,
+  "humanReviewed": false,
+  "answerKeyVerified": false,
+  "method": "Offline numerical algorithms, exact enumerations and property checks in scripts/content/checks-004.mjs. Explanations authored by the same system; these are not an independent external or human review.",
+  "questions": [
+    {
+      "id": "FH-SUBJECT-03-01",
+      "status": "passed",
+      "contentHash": "f13e980befc1999df6ec5fefa5d6dd9d2e69e4937349e8ca656f781d98971985",
+      "computedValue": 10000,
+      "method": "Solve equilibrium product equation for unknown concentration",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-02",
+      "status": "passed",
+      "contentHash": "803ff04acf4d1222ff88288442aedb85e58238e7fa9d4b6ff0a736b82a453b89",
+      "computedValue": 0.15999999999999998,
+      "method": "Compute drift current for a 2 V/cm test field and divide by the field",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-03",
+      "status": "passed",
+      "contentHash": "0817687156f390c6fcc280a83b751c94abdf208b22552ab581bef00a319de0b9",
+      "computedValue": 30,
+      "method": "Evaluate nondegenerate Einstein proportionality with dimensional inputs",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-04",
+      "status": "passed",
+      "contentHash": "12c3d9c2b1a3432ba9c3649270cafdaab045213ae6b9669dae877af762f9f0a3",
+      "computedValue": 1,
+      "method": "Numerically evaluate the full diode exponential law including −1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-05",
+      "status": "passed",
+      "contentHash": "aa1b58971ee3d1de1faf7df3f4a20467260f6602110423e24b63b7be4668c27a",
+      "computedValue": "C",
+      "method": "Normalize emitter current to 1 A: IC=.98, IB=.02, then compute IC/IB",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-06",
+      "status": "passed",
+      "contentHash": "8999b87014189a65546641fccd36d667a5560fc0570885572bd74eced7f98e61",
+      "computedValue": 40.00000001071289,
+      "method": "Finite-difference slope of the local exponential collector-current curve",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-07",
+      "status": "passed",
+      "contentHash": "1f332e7ca3d354344631db06d1364d37eeb6b8008f8fec37458cfdfe9701e50f",
+      "computedValue": 2,
+      "method": "Square-law saturation charge integration; verify VDS exceeds overdrive",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-08",
+      "status": "passed",
+      "contentHash": "f62b462c1abaf930bf748dd539147fecec66e6a6a1548d53e075f7d558f3a669",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Direct-gap momentum condition, equilibrium drift/diffusion balance, photon generation and differential charge storage",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-09",
+      "status": "passed",
+      "contentHash": "2d91c5d15012c552ed2459535f19b04dfca59549fc9c7442cfe431f3562138e5",
+      "computedValue": 0.3162277660168379,
+      "method": "Numerically integrate linear depletion field and bisect width to meet ψ=.8 V",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-10",
+      "status": "passed",
+      "contentHash": "5ca194bd2223084dbf52d7f13b6e75326bc104358bd26b365ffb5f2f6543290d",
+      "computedValue": -4,
+      "method": "Calculate electron particle diffusion flux first, then multiply by signed electron charge",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-11",
+      "status": "passed",
+      "contentHash": "f6a3bddf010f961c9165a9074201bc0c4f367b83b136d7a7d1c2a66984a5837c",
+      "computedValue": 0.39999999999999997,
+      "method": "Photon counting and quantum-efficiency charge collection, SI-to-mA conversion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-03-12",
+      "status": "passed",
+      "contentHash": "66589804076dbfc3e774d1b43e8b9efa2bf179bf3516c1adde742c3e9837e772",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "MOS charge-sign electrostatics and ideal insulator DC boundary condition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-01",
+      "status": "passed",
+      "contentHash": "3446173232be45f21608f369e778ac5675fa7eb4f8a2d7190002c59f8490c022",
+      "computedValue": -3,
+      "method": "Solve ideal feedback constraint and summing-node KCL as a two-variable system",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-02",
+      "status": "passed",
+      "contentHash": "7acf8b51fae5d1e59d4d649f219f6f432e58c9edbd27c01d70ade13f6348b519",
+      "computedValue": -6.000000000000001,
+      "method": "Nodal KCL with both independent signal sources",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-03",
+      "status": "passed",
+      "contentHash": "040117cf73fe10065afb526020ab5ff947ae125eee4148cca65680d1139347a1",
+      "computedValue": -0.10000000000000601,
+      "method": "Integrate ideal integrator state equation using RK4",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-04",
+      "status": "passed",
+      "contentHash": "05c2a886f8a118eab61c78853d8f6671b859e481a533c6d72535ad95dd652f8e",
+      "computedValue": -100,
+      "method": "One-volt vbe test: collector nodal KCL and controlled-current source",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-05",
+      "status": "passed",
+      "contentHash": "a8c03d81680c83689b5f7704e1aca9811c51473bde5b391765f0115f001ab357",
+      "computedValue": -10,
+      "method": "Differential symmetry constraint and collector controlled-current KCL",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-06",
+      "status": "passed",
+      "contentHash": "09e9f5fb824b65e81383300d7693cd24a6a715308b0adabce144f1688d9572dd",
+      "computedValue": 9.900990099009901,
+      "method": "Solve vo=A(vi−βvo) at vi=1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-07",
+      "status": "passed",
+      "contentHash": "213ffe7b80724ddf738186319924eabe209fb9a71e5f962774ccbba0e39a70c2",
+      "computedValue": "C",
+      "method": "Distance between crossover phase −135° and critical phase −180°",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-08",
+      "status": "passed",
+      "contentHash": "8a580e9673081179f0abafcdb7b91b6b2d11de6db15dfb89f0d987fdced94d9a",
+      "computedValue": 1591.5494309189535,
+      "method": "Zero-imaginary-part frequency condition of equal-RC Wien transfer",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-09",
+      "status": "passed",
+      "contentHash": "810dbece41f7826a3261f159a34a1f1dd74fd5d852b14c5625e6885c1320ced4",
+      "computedValue": "B",
+      "method": "Numerically integrate actual clipped sinusoid over the entire period",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-10",
+      "status": "passed",
+      "contentHash": "a30bf62bd3c8ae91ddd53749cf375ab4053f27356a628749bd5e51bf774450ce",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Ideal input-admittance limit and Vo=A(V+−V−) finite-output limit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-11",
+      "status": "passed",
+      "contentHash": "0fc7a20a95079d6b3a0f4f2a89ca9154e7669882993ac1c9bdb70ca86c2ca7be",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Feedback fractional-error expression and voltage-divider loading monotonicity",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-04-12",
+      "status": "passed",
+      "contentHash": "11a074d389ed7b367602b5242da6c9f7f90e8e53c6d1c874e9635925106a20f7",
+      "computedValue": 50,
+      "method": "Dominant-pole approximate noise-gain/crossover equality; stated approximation only",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-01",
+      "status": "passed",
+      "contentHash": "529fc0569bc2d49a098ada8dc608145e4674adbc9d0bc4720e73626bfe54b595",
+      "computedValue": -12,
+      "method": "Closed-loop denominator coefficient from the feedback KCL/block relation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-02",
+      "status": "passed",
+      "contentHash": "d2efbb70fa12776785f72f1803ec4cc5eac10720a0b926cfd5ce5a4958c65548",
+      "computedValue": 6,
+      "method": "Construct Routh first-column entries; zero of third entry gives upper boundary",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-03",
+      "status": "passed",
+      "contentHash": "506a9f8b62e2a0b535009d53f725166810d7b2a33b89631b61edc76a13a32cf8",
+      "computedValue": 0.1,
+      "method": "Final-value error limit for the specified stable type-1 velocity constant",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-04",
+      "status": "passed",
+      "contentHash": "c62c6ca512d1b4a933a0d2a863cc7a26ef2ac82fb0ba008ed79302aa1202f623",
+      "computedValue": "D",
+      "method": "High-frequency magnitude slope measured between frequencies a decade apart",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-05",
+      "status": "passed",
+      "contentHash": "e3dc4eccc9d503396834c3a9b60436331f7c6af8eebf387f4a55cc25dad87db0",
+      "computedValue": -1,
+      "method": "Sum of two open-loop poles divided by excess-pole count",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-06",
+      "status": "passed",
+      "contentHash": "a34172042376dd17efb2bbcf956119cee04808322f651701ff2b28209e804a5a",
+      "computedValue": 0.25,
+      "method": "Numerically integrate both original diagonal state equations",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-07",
+      "status": "passed",
+      "contentHash": "7916936c36b59230d1c99a7fc54a739e1fe59d20211524f96b21e3924cbcf6f1",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Construct controllability and observability matrices, pivot ranks and characteristic roots",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-08",
+      "status": "passed",
+      "contentHash": "35f170734cf09fe67a626ea48317ac845953dc8e31ccaa51dea6bde45da9856e",
+      "computedValue": 4,
+      "method": "Solve the scalar magnitude multiplier bringing the phase-crossover point to unity",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-09",
+      "status": "passed",
+      "contentHash": "dfb5c7691def0d857763e5c00ec659f2a061411a9681fb3d2026b1787d249eb8",
+      "computedValue": "A",
+      "method": "Zero-frequency limits of all four listed controller terms",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-10",
+      "status": "passed",
+      "contentHash": "4223e8e11a5323795235b02acad1707016575662b7af481d78b82bcded566795",
+      "computedValue": 4.999999999930561,
+      "method": "Long-time integration of the actual first-order step-response state equation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-11",
+      "status": "passed",
+      "contentHash": "a64db67e7c82438092ff4735d9f75cdf3ff9582eaa277aa37f1772267f095ed3",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Sensitivity algebra and explicit exponentially growing internal-state counterexample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-06-12",
+      "status": "passed",
+      "contentHash": "9601c45f1c153d739adb0f0f0b594979e33327647df793e3b8c62db0e5a06538",
+      "computedValue": 4,
+      "method": "Compute imaginary characteristic-root component from the second-order discriminant",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-01",
+      "status": "passed",
+      "contentHash": "22d64bbe9aeae4892768ad4e6a388316218d5df51b6b5485536391d9fd9362dc",
+      "computedValue": 1.5,
+      "method": "Weighted self-information sum using the actual source probabilities",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-02",
+      "status": "passed",
+      "contentHash": "dc3ce822ee1127a2e234dab1b8f690be484d6dadbe976f0fe2a3702a13d37917",
+      "computedValue": 4,
+      "method": "Evaluate AWGN capacity with linear SNR and output-unit conversion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-03",
+      "status": "passed",
+      "contentHash": "444fa898a2c351100b9d475600fe82a38923760938387affce298ceee7aa58f1",
+      "computedValue": 112.50000000000024,
+      "method": "Average squared AM envelope; carrier-timescale averaging factors cancel by Pc definition",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-04",
+      "status": "passed",
+      "contentHash": "e853746a14787fe7ee46c708c93b017e4726a4945c9d05090704949db8c0051e",
+      "computedValue": 12,
+      "method": "Carson engineering approximation, not an exact finite-bandwidth claim",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-05",
+      "status": "passed",
+      "contentHash": "7f46fa5320927e11b62fbf9f4d5c79f159f8fa936e1b2220a71a5518685fb8cd",
+      "computedValue": 64,
+      "method": "Count eight output bits for every one of 8000 samples",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-06",
+      "status": "passed",
+      "contentHash": "fffe082b27ade4bc2e6038d507178f540571cd7ae40c35dbfb1552da56d16abe",
+      "computedValue": "B",
+      "method": "Gaussian decision distance √Eb divided by noise standard deviation √(N0/2)",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-07",
+      "status": "passed",
+      "contentHash": "7ee40bbd33e06c0dd61bad3758c6ca6d58048494c7630e8412655f147f85da39",
+      "computedValue": 4000,
+      "method": "Count bit labels per 16-point constellation and multiply by symbol clock",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-08",
+      "status": "passed",
+      "contentHash": "d7efb9aac182cc94f0b24fe50edfe1a5048707721907bef10896513514842c19",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Cauchy–Schwarz SNR equality and posterior=likelihood×prior decision derivation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-09",
+      "status": "passed",
+      "contentHash": "050115308acf4b2fb2e2eef5372fc047b420f5fdc88094a74b226a2e44a83b5b",
+      "computedValue": 2,
+      "method": "Enumerate integer radii satisfying nonoverlapping Hamming-ball condition 2t<dmin",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-10",
+      "status": "passed",
+      "contentHash": "a8add19d69c77a08ba689c3399a9b12046671fb850449a2d31bf2f0bd953b25b",
+      "computedValue": 120,
+      "method": "Enumerate other RF satisfying the actual LO difference-frequency equation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-11",
+      "status": "passed",
+      "contentHash": "030067b982048f306d29de0d04448112c5c7ea99687557e255dcc72fa24c9089",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Stationary second-moment symmetry and nonnegative spectral-power measure",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-07-12",
+      "status": "passed",
+      "contentHash": "93f078332afc3cd28be636fdedcb6b1295f55b630d493d01ed43189f760b43a6",
+      "computedValue": 0.18872187554086717,
+      "method": "Optimize mutual information over 10001 input Bernoulli probabilities",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-01",
+      "status": "passed",
+      "contentHash": "075bb72a62e46fde740e3d6fbb4e37ed99ec34789f7248df01e33e0e90366a06",
+      "computedValue": 0.3333333333333335,
+      "method": "Solve electric and magnetic boundary continuity with incident amplitude 1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-02",
+      "status": "passed",
+      "contentHash": "c2f929994ab1939c8f6eb62ed292886bcb7fcee26b03bb7f0872399ccfe6faee",
+      "computedValue": 3,
+      "method": "Ratio of constructive and destructive traveling-wave envelope extrema",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-03",
+      "status": "passed",
+      "contentHash": "5567353e4e9ac36ee398f3e79dcc84f16c0835ba0aa889d3c1c529473802afa4",
+      "computedValue": 50,
+      "method": "Solve quarter-wave real input-impedance equation for positive section impedance",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-04",
+      "status": "passed",
+      "contentHash": "ec93fdb5ade8d68416ee860acd67e9b92d24e7d4b0413d2f5eff356f3ea9f015",
+      "computedValue": 1.5,
+      "method": "Wave-equation εμ coefficient determines phase speed; scale requested units",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-05",
+      "status": "passed",
+      "contentHash": "4d543daf0a4696d066ee2b0eb39fe4e36c7536494fb29291b553b5120eaa6eed",
+      "computedValue": 0.4999999999999995,
+      "method": "Direct average of E(t)H(t) over one period using peak waveforms",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-06",
+      "status": "passed",
+      "contentHash": "89b8e6f1eddc8aa28208524006e8cba2d8c1584a3f2109873f35b5d39dc47829",
+      "computedValue": "B",
+      "method": "Cartesian cross product ex×ey=ez; evaluate field orientation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-07",
+      "status": "passed",
+      "contentHash": "817e9fddd4ea199f922f549e4e67b07007c260bd5b685ec010aeb286ffe48661",
+      "computedValue": 0.5,
+      "method": "Skin-effect diffusion relation gives inverse-square-root frequency scaling",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-08",
+      "status": "passed",
+      "contentHash": "f4b1b766a9b13c9545182423a3f91ae6a21504d1c84f14678eecd57b360e5d2c",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Integral Maxwell equations on shrinking pillbox/loop with no free surface sources",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-09",
+      "status": "passed",
+      "contentHash": "f46129476f5f60d32ee2165e9d8da143abcf4e8fd5efef8446c7a5c2ef90f110",
+      "computedValue": 5,
+      "method": "TE10 transverse-wavenumber condition β²=k²−(π/a)² at β=0",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-10",
+      "status": "passed",
+      "contentHash": "43a6a4130b006326ef86e14cab2a9bfde5220a6c12431974948c802f5e5ce5f8",
+      "computedValue": 91.25,
+      "method": "Compute radiated and loss powers at unit peak current, then their ratio",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-11",
+      "status": "passed",
+      "contentHash": "82ab9666bce6065b66735e2ea0a2fa0780d78d84bb2e2fe0b1b0d9683f2eca05",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Power-wave norm conservation for all incident vectors yields unitary scattering matrix",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-SUBJECT-08-12",
+      "status": "passed",
+      "contentHash": "9498e9cd4aac25bd7b45b6d53c41bf1c1155247741b1b465ba0ae3a8e1bcd4a1",
+      "computedValue": 1.3333333333333335,
+      "method": "Solve simultaneous E/H boundary continuity for reflected and transmitted amplitudes",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    }
+  ]
+}

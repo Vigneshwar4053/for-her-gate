@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "subject-02",
+    "file": "data/questions/subject-02.json",
+    "title": "Networks & Signals \u00b7 Multi-Topic Reasoning",
+    "batch": "005"
+  },
+  {
+    "testId": "subject-09",
+    "file": "data/questions/subject-09.json",
+    "title": "General Aptitude \u00b7 Quantitative & Logical Reasoning",
+    "batch": "005"
+  },
+  {
+    "testId": "mixed-01",
+    "file": "data/questions/mixed-01.json",
+    "title": "Mixed Revision \u00b7 Systems & Signals",
+    "batch": "005"
+  },
+  {
+    "testId": "mixed-02",
+    "file": "data/questions/mixed-02.json",
+    "title": "Mixed Revision \u00b7 Models & Measurements",
+    "batch": "005"
+  },
+  {
+    "testId": "mixed-03",
+    "file": "data/questions/mixed-03.json",
+    "title": "Mixed Revision \u00b7 Design Checks & Invariants",
+    "batch": "005"
+  }
+]

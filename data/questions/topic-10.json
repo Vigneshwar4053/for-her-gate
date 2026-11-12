@@ -1,0 +1,792 @@
+[
+  {
+    "id": "FH-TOPIC-10-01",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Use $X(\\omega)=\\int_{-\\infty}^{\\infty}x(t)e^{-j\\omega t}dt$. For x(t)=1 on −1≤t≤1 and zero elsewhere, find X(0).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Unit rectangular pulse of duration 2",
+        "angular-frequency Fourier convention"
+      ],
+      "asked": "Find the DC transform value.",
+      "concept": "Fourier transform at zero",
+      "formula": "X(0)=\\int x(t)dt",
+      "steps": [
+        "At ω=0 the complex exponential equals 1.",
+        "The transform is therefore the pulse area.",
+        "Height 1 times width 2 gives X(0)=2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Height 1 times width 2 gives X(0)=2.",
+      "commonMistakes": [
+        "X(0) is area, not the signal value x(0)."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fourier transform at zero applies.",
+      "Start from $ X(0)=\\int x(t)dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct pulse-area quadrature. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-10-02",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For $x(t)=e^{-2t}u(t)$ and the same angular-frequency Fourier convention, find $|X(0)|$.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Causal real exponential with rate 2"
+      ],
+      "asked": "Find transform magnitude at zero.",
+      "concept": "Exponential Fourier transform",
+      "formula": "X(\\omega)=\\frac1{2+j\\omega}",
+      "steps": [
+        "Integrate e⁻⁽²⁺ʲω⁾ᵗ over t≥0.",
+        "The integral equals 1/(2+jω).",
+        "At zero frequency this is real 1/2, whose magnitude is 0.5."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "At zero frequency this is real 1/2, whose magnitude is 0.5.",
+      "commonMistakes": [
+        "The pole location and the DC magnitude are reciprocal quantities."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which exponential fourier transform applies.",
+      "Start from $ X(\\omega)=\\frac1{2+j\\omega} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Direct Fourier integral at ω=0; bounded exponential tail. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-10-03",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "If y(t)=x(t−3) and x has transform X(ω), which transform is correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$e^{-j3\\omega}X(\\omega)$"
+      },
+      {
+        "id": "B",
+        "text": "$e^{j3\\omega}X(\\omega)$"
+      },
+      {
+        "id": "C",
+        "text": "$X(\\omega-3)$"
+      },
+      {
+        "id": "D",
+        "text": "$3X(\\omega)$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Time delay 3 units",
+        "standard angular-frequency convention"
+      ],
+      "asked": "Find the delayed transform.",
+      "concept": "Time-shift property",
+      "formula": "x(t-t_0)\\longleftrightarrow e^{-j\\omega t_0}X(\\omega)",
+      "steps": [
+        "Substitute τ=t−3 in the Fourier integral.",
+        "The exponential splits into e⁻ʲωτ times e⁻ʲ³ω.",
+        "The remaining integral is X(ω), so A is correct."
+      ],
+      "finalAnswer": "A",
+      "explanation": "The remaining integral is X(ω), so A is correct.",
+      "commonMistakes": [
+        "A delay adds negative linear phase and does not shift the spectrum in frequency."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which time-shift property applies.",
+      "Start from $ x(t-t_0)\\longleftrightarrow e^{-j\\omega t_0}X(\\omega) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Change-of-variable proof in original Fourier integral; numerical phase identity check. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-TOPIC-10-04",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "The signal $x(t)=3+2\\cos(4t)$ is periodic. Find its average power over a period.",
+    "options": [],
+    "solution": {
+      "given": [
+        "DC level 3",
+        "sinusoidal amplitude 2",
+        "nonzero frequency"
+      ],
+      "asked": "Find period-averaged squared amplitude.",
+      "concept": "Power of orthogonal Fourier components",
+      "formula": "P=|a_0|^2+\\frac{A^2}{2}",
+      "steps": [
+        "Squaring gives 9+12cos(4t)+4cos²(4t).",
+        "Over one period, the cosine averages to 0 and cos² averages to 1/2.",
+        "The power is 9+4/2=11."
+      ],
+      "finalAnswer": "11",
+      "explanation": "The power is 9+4/2=11.",
+      "commonMistakes": [
+        "Do not add sinusoidal amplitudes and square the resulting number."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which power of orthogonal fourier components applies.",
+      "Start from $ P=|a_0|^2+\\frac{A^2}{2} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerically integrate the squared original periodic signal. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      10.9999989,
+      11.0000011
+    ],
+    "numericalTolerance": 0.0000011
+  },
+  {
+    "id": "FH-TOPIC-10-05",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "For $x(t)=\\cos(6\\pi t)$, find the fundamental frequency in hertz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Angular frequency 6π rad/s"
+      ],
+      "asked": "Convert angular frequency to cycles per second.",
+      "concept": "Frequency units",
+      "formula": "f_0=\\omega_0/(2\\pi)",
+      "steps": [
+        "One cycle corresponds to 2π radians.",
+        "Divide 6π rad/s by 2π rad/cycle.",
+        "The fundamental frequency is 3 Hz."
+      ],
+      "finalAnswer": "3 Hz",
+      "explanation": "The fundamental frequency is 3 Hz.",
+      "commonMistakes": [
+        "Do not treat rad/s and Hz as identical units."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which frequency units applies.",
+      "Start from $ f_0=\\omega_0/(2\\pi) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute the cosine repetition period before reciprocal conversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      2.9999997,
+      3.0000003
+    ],
+    "numericalTolerance": 3e-7
+  },
+  {
+    "id": "FH-TOPIC-10-06",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a real, even, absolutely integrable continuous-time signal x(t), which properties hold for its Fourier transform X(ω)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "X(ω) is real"
+      },
+      {
+        "id": "B",
+        "text": "X(ω) is necessarily nonnegative"
+      },
+      {
+        "id": "C",
+        "text": "X(ω) is even"
+      },
+      {
+        "id": "D",
+        "text": "X(−ω) = X*(ω)"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Real even integrable signal",
+        "standard Fourier transform"
+      ],
+      "asked": "Select all necessary transform symmetries.",
+      "concept": "Fourier symmetry",
+      "formula": "X(\\omega)=\\int x(t)\\cos\\omega t\\,dt-j\\int x(t)\\sin\\omega t\\,dt",
+      "steps": [
+        "The sine integrand is odd and integrates to zero, so X is real.",
+        "Cosine is even in ω, so X is even; reality of x also yields conjugate symmetry.",
+        "The rectangular pulse has a sinc transform with negative lobes, disproving nonnegativity. Select A, C and D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "The rectangular pulse has a sinc transform with negative lobes, disproving nonnegativity. Select A, C and D.",
+      "commonMistakes": [
+        "Real-valued spectrum does not mean nonnegative spectrum."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fourier symmetry applies.",
+      "Start from $ X(\\omega)=\\int x(t)\\cos\\omega t\\,dt-j\\int x(t)\\sin\\omega t\\,dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Even/odd decomposition of Fourier kernel; sinc negative-lobe counterexample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-10-07",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "If x(t) has energy E=6, find the energy of y(t)=x(3t).",
+    "options": [],
+    "solution": {
+      "given": [
+        "Finite energy 6",
+        "time scaling factor 3"
+      ],
+      "asked": "Find the scaled energy.",
+      "concept": "Time scaling of energy",
+      "formula": "E_y=\\int|x(at)|^2dt=E_x/|a|",
+      "steps": [
+        "Substitute τ=3t, so dt=dτ/3.",
+        "The integral becomes one third of the original energy.",
+        "Hence Ey=6/3=2."
+      ],
+      "finalAnswer": "2",
+      "explanation": "Hence Ey=6/3=2.",
+      "commonMistakes": [
+        "Compressing time decreases the duration and therefore the energy at fixed amplitude."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which time scaling of energy applies.",
+      "Start from $ E_y=\\int|x(at)|^2dt=E_x/|a| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Numerical energy integral of scaled x(t)=exp(−|t|), scaled to original energy 6. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-10-08",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $x(t)=e^{-t}u(t)$, find $\\int |X(\\omega)|^2d\\omega/(2\\pi)$ under the standard angular-frequency convention.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Causal exponential of unit rate",
+        "Parseval normalization 1/(2π)"
+      ],
+      "asked": "Find the frequency-domain energy.",
+      "concept": "Parseval identity",
+      "formula": "\\frac1{2\\pi}\\int|X(\\omega)|^2d\\omega=\\int|x(t)|^2dt",
+      "steps": [
+        "The time-domain squared magnitude is e⁻²ᵗ for t≥0.",
+        "Its integral is [−e⁻²ᵗ/2] from 0 to infinity.",
+        "This gives 1/2, equal to the normalized spectral energy."
+      ],
+      "finalAnswer": "0.5",
+      "explanation": "This gives 1/2, equal to the normalized spectral energy.",
+      "commonMistakes": [
+        "The 1/(2π) factor depends on the Fourier convention and is given explicitly."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which parseval identity applies.",
+      "Start from $ \\frac1{2\\pi}\\int|X(\\omega)|^2d\\omega=\\int|x(t)|^2dt $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Time-domain energy quadrature; Parseval norm equality. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      0.4999999,
+      0.5000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-10-09",
+    "type": "MCQ",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For $y(t)=e^{j5t}x(t)$, which relation holds?",
+    "options": [
+      {
+        "id": "A",
+        "text": "$Y(\\omega)=X(5\\omega)$"
+      },
+      {
+        "id": "B",
+        "text": "$Y(\\omega)=e^{-j5\\omega}X(\\omega)$"
+      },
+      {
+        "id": "C",
+        "text": "$Y(\\omega)=X(\\omega+5)$"
+      },
+      {
+        "id": "D",
+        "text": "$Y(\\omega)=X(\\omega-5)$"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Complex modulation by eʲ⁵ᵗ"
+      ],
+      "asked": "Find the shifted spectrum.",
+      "concept": "Frequency translation",
+      "formula": "e^{j\\omega_ct}x(t)\\longleftrightarrow X(\\omega-\\omega_c)",
+      "steps": [
+        "Combine the modulation exponential with the Fourier kernel.",
+        "eʲ⁵ᵗe⁻ʲωᵗ=e⁻ʲ⁽ω⁻⁵⁾ᵗ.",
+        "The original transform is evaluated at ω−5, giving D."
+      ],
+      "finalAnswer": "D",
+      "explanation": "The original transform is evaluated at ω−5, giving D.",
+      "commonMistakes": [
+        "Modulation shifts frequency; delay multiplies by a phase factor."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which frequency translation applies.",
+      "Start from $ e^{j\\omega_ct}x(t)\\longleftrightarrow X(\\omega-\\omega_c) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Combining modulation and Fourier kernels gives the exact shifted argument. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": "D"
+  },
+  {
+    "id": "FH-TOPIC-10-10",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A periodic signal has complex Fourier-series coefficients c0=1, c1=c−1=2, and all others zero. Find its average power.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Complex coefficients 1,2,2",
+        "remaining coefficients zero"
+      ],
+      "asked": "Find power using series coefficients.",
+      "concept": "Fourier-series Parseval theorem",
+      "formula": "P=\\sum_k|c_k|^2",
+      "steps": [
+        "Complex exponentials are orthogonal over the fundamental period.",
+        "Square and sum the three nonzero coefficient magnitudes.",
+        "Power is 1²+2²+2²=9."
+      ],
+      "finalAnswer": "9",
+      "explanation": "Power is 1²+2²+2²=9.",
+      "commonMistakes": [
+        "Both positive and negative frequency coefficients contribute."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fourier-series parseval theorem applies.",
+      "Start from $ P=\\sum_k|c_k|^2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Reconstruct real signal from coefficients and integrate its squared value. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      8.9999991,
+      9.0000009
+    ],
+    "numericalTolerance": 9e-7
+  },
+  {
+    "id": "FH-TOPIC-10-11",
+    "type": "MSQ",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Assume x and y and the relevant transforms exist. Which statements hold under $X(\\omega)=\\int x(t)e^{-j\\omega t}dt$?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Time convolution transforms to X(ω)Y(ω)"
+      },
+      {
+        "id": "B",
+        "text": "Time reversal x(−t) transforms to X(−ω)"
+      },
+      {
+        "id": "C",
+        "text": "Time multiplication transforms to X(ω)Y(ω) without convolution"
+      },
+      {
+        "id": "D",
+        "text": "A real odd integrable signal has a purely imaginary transform"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Standard Fourier convention",
+        "integrable signals where required"
+      ],
+      "asked": "Select correct transform properties.",
+      "concept": "Convolution and parity",
+      "formula": "x*y\\longleftrightarrow XY,\\quad xy\\longleftrightarrow\\frac1{2\\pi}(X*Y)",
+      "steps": [
+        "Substitution in the convolution integral separates it into a product of transforms.",
+        "Reversing the time variable reverses the frequency variable.",
+        "Multiplication requires spectral convolution; for a real odd signal the cosine part vanishes and only the imaginary sine part remains. Select A, B and D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "Multiplication requires spectral convolution; for a real odd signal the cosine part vanishes and only the imaginary sine part remains. Select A, B and D.",
+      "commonMistakes": [
+        "Multiplication and convolution are dual operations and must not be interchanged."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which convolution and parity applies.",
+      "Start from $ x*y\\longleftrightarrow XY,\\quad xy\\longleftrightarrow\\frac1{2\\pi}(X*Y) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integral substitution identities and odd/even Fourier decomposition; no copied worked solution. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-10-12",
+    "type": "NAT",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "For the even pulse x(t)=1 when |t|≤1 and zero otherwise, find the smallest positive zero of X(ω), in rad/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Centered width-2 pulse",
+        "angular-frequency transform"
+      ],
+      "asked": "Find the first strictly positive spectral zero.",
+      "concept": "Rectangular-pulse transform zeros",
+      "formula": "X(\\omega)=2\\sin\\omega/\\omega",
+      "steps": [
+        "Integrating the even pulse gives 2sin(ω)/ω.",
+        "Nonzero roots occur at integer multiples of π.",
+        "At ω=0 the removable limit is 2, so the first positive zero is π rad/s."
+      ],
+      "finalAnswer": "3.141592653589793 rad/s",
+      "explanation": "At ω=0 the removable limit is 2, so the first positive zero is π rad/s.",
+      "commonMistakes": [
+        "The zero at the numerator’s origin cancels with the denominator; it is not a spectral null."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which rectangular-pulse transform zeros applies.",
+      "Start from $ X(\\omega)=2\\sin\\omega/\\omega $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://circuits.mit.edu/S26",
+      "https://ece3084.ece.gatech.edu/notes/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Root finding on numerical transform of the original pulse. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-003.json#FH-TOPIC-10-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "003",
+    "acceptedRange": [
+      3.141592339431,
+      3.141592967749
+    ],
+    "numericalTolerance": 3.141592653589793e-7
+  }
+]

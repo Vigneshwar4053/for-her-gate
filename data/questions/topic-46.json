@@ -1,0 +1,767 @@
+[
+  {
+    "id": "FH-TOPIC-46-01",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A lossless line has per-unit-length L′=250 nH/m and C′=100 pF/m. Find its characteristic impedance in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Lossless distributed line",
+        "L′=250×10⁻⁹ H/m",
+        "C′=100×10⁻¹² F/m"
+      ],
+      "asked": "Find √(L′/C′).",
+      "concept": "Distributed-line impedance",
+      "formula": "Z_0=\\sqrt{L^\\prime/C^\\prime}",
+      "steps": [
+        "The ratio is (250×10⁻⁹)/(100×10⁻¹²)=2500 Ω².",
+        "Take its positive square root.",
+        "Z0=50 Ω."
+      ],
+      "finalAnswer": "50 Ω",
+      "explanation": "Z0=50 Ω.",
+      "commonMistakes": [
+        "The impedance uses a ratio, whereas propagation speed uses the product."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which distributed-line impedance applies.",
+      "Start from $ Z_0=\\sqrt{L^\\prime/C^\\prime} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Telegrapher-equation distributed impedance relation with SI units. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      49.999995,
+      50.000005
+    ],
+    "numericalTolerance": 0.0000049999999999999996
+  },
+  {
+    "id": "FH-TOPIC-46-02",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For the same stated lossless parameters L′=250 nH/m and C′=100 pF/m, find propagation speed in units of 10⁸ m/s.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Distributed inductance and capacitance",
+        "no losses"
+      ],
+      "asked": "Find reciprocal √(L′C′).",
+      "concept": "Telegrapher wave speed",
+      "formula": "v_p=1/\\sqrt{L^\\prime C^\\prime}",
+      "steps": [
+        "The product is 2.5×10⁻¹⁷ s²/m².",
+        "Its square root is 5×10⁻⁹ s/m.",
+        "Speed is 2×10⁸ m/s, so enter 2 in requested units."
+      ],
+      "finalAnswer": "2 ×10⁸ m/s",
+      "explanation": "Speed is 2×10⁸ m/s, so enter 2 in requested units.",
+      "commonMistakes": [
+        "The units of the product’s square root are delay per length."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which telegrapher wave speed applies.",
+      "Start from $ v_p=1/\\sqrt{L^\\prime C^\\prime} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Distributed propagation delay per unit length from original L′C′. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-46-03",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A lossless short-circuited line has Z0=50 Ω and length λ/8. Find the imaginary part of Zin in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Short termination",
+        "βl=π/4"
+      ],
+      "asked": "Find Im(jZ0tanβl).",
+      "concept": "Shorted-stub impedance",
+      "formula": "Z_{in}=jZ_0\\tan(\\beta l)",
+      "steps": [
+        "At λ/8 the electrical length is π/4.",
+        "tan(π/4)=1, giving Zin=j50 Ω.",
+        "Its imaginary part is +50 Ω, inductive under the stated phasor convention."
+      ],
+      "finalAnswer": "50 Ω",
+      "explanation": "Its imaginary part is +50 Ω, inductive under the stated phasor convention.",
+      "commonMistakes": [
+        "A shorted stub need not look like a short away from zero or half-wavelength lengths."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which shorted-stub impedance applies.",
+      "Start from $ Z_{in}=jZ_0\\tan(\\beta l) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate shorted-stub input reactance at the actual electrical length. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      49.999995,
+      50.000005
+    ],
+    "numericalTolerance": 0.0000049999999999999996
+  },
+  {
+    "id": "FH-TOPIC-46-04",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A lossless open-circuited line has Z0=50 Ω and length λ/8. Find the imaginary part of Zin in ohms.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Open termination",
+        "βl=π/4"
+      ],
+      "asked": "Find the open-stub reactance sign.",
+      "concept": "Open-stub impedance",
+      "formula": "Z_{in}=-jZ_0\\cot(\\beta l)",
+      "steps": [
+        "The open termination produces the cotangent form.",
+        "cot(π/4)=1, so Zin=−j50 Ω.",
+        "The imaginary part is −50 Ω, capacitive."
+      ],
+      "finalAnswer": "-50 Ω",
+      "explanation": "The imaginary part is −50 Ω, capacitive.",
+      "commonMistakes": [
+        "Open and shorted stubs have different reactance functions and signs."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which open-stub impedance applies.",
+      "Start from $ Z_{in}=-jZ_0\\cot(\\beta l) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate open-stub input reactance using the reciprocal tangent. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -50.000005,
+      -49.999995
+    ],
+    "numericalTolerance": 0.0000049999999999999996
+  },
+  {
+    "id": "FH-TOPIC-46-05",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A line has |Γ|=0.1 at the load. Find return loss −20log₁₀|Γ| in dB.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Reflection amplitude 0.1",
+        "positive return-loss convention"
+      ],
+      "asked": "Convert reflection coefficient to return loss.",
+      "concept": "Mismatch logarithmic measure",
+      "formula": "RL=-20\\log_{10}|\\Gamma|",
+      "steps": [
+        "log₁₀0.1=−1.",
+        "Multiply by −20.",
+        "Return loss is 20 dB; higher positive return loss means smaller reflection."
+      ],
+      "finalAnswer": "20 dB",
+      "explanation": "Return loss is 20 dB; higher positive return loss means smaller reflection.",
+      "commonMistakes": [
+        "Return loss is positive under this convention, while 20log|Γ| is negative."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which mismatch logarithmic measure applies.",
+      "Start from $ RL=-20\\log_{10}|\\Gamma| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Logarithmic conversion of voltage reflection to positive return loss. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      19.999998,
+      20.000002
+    ],
+    "numericalTolerance": 0.000002
+  },
+  {
+    "id": "FH-TOPIC-46-06",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A lossless line has normalized load zL=1+j relative to real Z0. Find the imaginary part of ΓL.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Normalized complex load 1+j"
+      ],
+      "asked": "Compute (zL−1)/(zL+1).",
+      "concept": "Smith-plane reflection mapping",
+      "formula": "\\Gamma=(z-1)/(z+1)",
+      "steps": [
+        "The ratio is j/(2+j).",
+        "Multiply numerator and denominator by 2−j to obtain (1+2j)/5.",
+        "The imaginary part is 2/5=0.4, while the real part is 0.2."
+      ],
+      "finalAnswer": "0.4",
+      "explanation": "The imaginary part is 2/5=0.4, while the real part is 0.2.",
+      "commonMistakes": [
+        "Normalize to the reference impedance before using the normalized Smith-chart map."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which smith-plane reflection mapping applies.",
+      "Start from $ \\Gamma=(z-1)/(z+1) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Complex reflection transform evaluated by rectangular division. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.3999999,
+      0.4000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-46-07",
+    "type": "MCQ",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For an ideal passive resistive load ZL>0 on a lossless real-Z0 line, its reflection coefficient lies:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Outside the unit circle necessarily"
+      },
+      {
+        "id": "B",
+        "text": "On the real axis strictly between −1 and +1"
+      },
+      {
+        "id": "C",
+        "text": "Only at +1"
+      },
+      {
+        "id": "D",
+        "text": "Only on the imaginary axis"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Finite strictly positive real ZL and Z0"
+      ],
+      "asked": "Locate its Smith-plane point.",
+      "concept": "Passive-resistance reflection locus",
+      "formula": "\\Gamma=(R_L-Z_0)/(R_L+Z_0)",
+      "steps": [
+        "The ratio of real quantities is real.",
+        "Since both resistances are positive, the numerator magnitude is strictly less than the denominator.",
+        "Thus −1<Γ<1 on the real axis, option B."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Thus −1<Γ<1 on the real axis, option B.",
+      "commonMistakes": [
+        "The endpoints correspond to zero or infinite resistance limits, excluded here."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which passive-resistance reflection locus applies.",
+      "Start from $ \\Gamma=(R_L-Z_0)/(R_L+Z_0) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Algebraic positivity bound |R−Z0|<R+Z0 for finite positive real resistances. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-TOPIC-46-08",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A forward traveling voltage wave decays as e⁻ᵅˡ on a matched lossy line. If α=0.1 Np/m and l=10 m, find output/input power ratio.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Matched line",
+        "equal real power-wave normalization",
+        "voltage attenuation e⁻¹"
+      ],
+      "asked": "Square the amplitude attenuation.",
+      "concept": "Voltage versus power attenuation",
+      "formula": "P_{out}/P_{in}=e^{-2\\alpha l}",
+      "steps": [
+        "The voltage amplitude attenuation is e⁻¹.",
+        "Power is proportional to its squared magnitude in the same normalization.",
+        "The power ratio is e⁻²≈0.1353352832."
+      ],
+      "finalAnswer": "0.1353352832366127",
+      "explanation": "The power ratio is e⁻²≈0.1353352832.",
+      "commonMistakes": [
+        "A nepers-per-meter amplitude attenuation doubles its exponent when converted to power."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which voltage versus power attenuation applies.",
+      "Start from $ P_{out}/P_{in}=e^{-2\\alpha l} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Attenuate forward wave amplitude, then square its magnitude for power. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.135335183237,
+      0.135335383237
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-46-09",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Adjacent voltage maxima on a lossless standing-wave line are measured 0.4 m apart. Find the guided wavelength in meters.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Consecutive standing-wave maxima spacing 0.4 m"
+      ],
+      "asked": "Find twice the measured spacing.",
+      "concept": "Standing-wave spatial periodicity",
+      "formula": "\\Delta l_{max}=\\lambda/2",
+      "steps": [
+        "The standing-wave envelope repeats each half wavelength.",
+        "The measured adjacent-maxima separation is 0.4 m.",
+        "Therefore λ=2×0.4=0.8 m."
+      ],
+      "finalAnswer": "0.8 m",
+      "explanation": "Therefore λ=2×0.4=0.8 m.",
+      "commonMistakes": [
+        "Neighboring maximum and minimum are λ/4 apart; two maxima are λ/2 apart."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which standing-wave spatial periodicity applies.",
+      "Start from $ \\Delta l_{max}=\\lambda/2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Standing-wave maxima repeat every π of βl, equivalent to half wavelength. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      0.7999999,
+      0.8000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-46-10",
+    "type": "MSQ",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For a reciprocal two-port using identical real reference impedances, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "S12=S21"
+      },
+      {
+        "id": "B",
+        "text": "S11=S22 follows from reciprocity alone"
+      },
+      {
+        "id": "C",
+        "text": "Reciprocity constrains transmission symmetry"
+      },
+      {
+        "id": "D",
+        "text": "Every reciprocal two-port is lossless"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Normalized linear two-port scattering parameters"
+      ],
+      "asked": "Select reciprocal-network consequences.",
+      "concept": "Scattering reciprocity",
+      "formula": "S^T=S",
+      "steps": [
+        "Reciprocity gives equality of forward and reverse transmission parameters under the stated normalization.",
+        "It does not force identical input/output reflection coefficients; that requires additional symmetry.",
+        "A reciprocal resistor network can dissipate power, so losslessness is not automatic. Select A,C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "A reciprocal resistor network can dissipate power, so losslessness is not automatic. Select A,C.",
+      "commonMistakes": [
+        "Reciprocal, symmetric and lossless are distinct properties."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which scattering reciprocity applies.",
+      "Start from $ S^T=S $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Reciprocal scattering symmetry with equal real normalization; lossy reciprocal counterexample. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-46-11",
+    "type": "NAT",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "On a lossless line, the reflection coefficient at distance l toward the generator is Γin=ΓL exp(−j2βl). For ΓL=1 and l=λ/8, find Im Γin.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Reference moves toward generator",
+        "specified phase relation",
+        "ΓL=1"
+      ],
+      "asked": "Evaluate the rotated reflection coefficient.",
+      "concept": "Round-trip reflection phase",
+      "formula": "2\\beta l=2(2\\pi/\\lambda)(\\lambda/8)=\\pi/2",
+      "steps": [
+        "The round-trip phase rotation is −π/2.",
+        "Multiplying ΓL=1 by e⁻ʲπᐟ² yields −j.",
+        "The imaginary part is −1."
+      ],
+      "finalAnswer": "-1",
+      "explanation": "The imaginary part is −1.",
+      "commonMistakes": [
+        "The reflection coefficient accumulates twice the one-way propagation phase."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which round-trip reflection phase applies.",
+      "Start from $ 2\\beta l=2(2\\pi/\\lambda)(\\lambda/8)=\\pi/2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute double-pass complex phase rotation and extract imaginary component. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "acceptedRange": [
+      -1.0000001,
+      -0.9999999
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-46-12",
+    "type": "MSQ",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which statements about an ideal matched lossless line section are true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Its input impedance equals Z0 for any length when terminated in Z0"
+      },
+      {
+        "id": "B",
+        "text": "Its transmitted-wave magnitude is unchanged along the section"
+      },
+      {
+        "id": "C",
+        "text": "It introduces zero phase delay at every frequency regardless of length"
+      },
+      {
+        "id": "D",
+        "text": "The line can introduce propagation delay without reflecting a wave"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Uniform lossless line",
+        "matched termination"
+      ],
+      "asked": "Select matching versus propagation effects.",
+      "concept": "Matched traveling waves",
+      "formula": "\\Gamma_L=0,\\quad V^+(l)=V^+(0)e^{-j\\beta l}",
+      "steps": [
+        "A matched load removes the backward wave, leaving the same V/I ratio Z0 everywhere.",
+        "Losslessness preserves traveling-wave magnitude.",
+        "The phase factor can still produce delay, so phase need not be zero. Select A,B,D."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "The phase factor can still produce delay, so phase need not be zero. Select A,B,D.",
+      "commonMistakes": [
+        "Absence of reflection is not absence of propagation time."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which matched traveling waves applies.",
+      "Start from $ \\Gamma_L=0,\\quad V^+(l)=V^+(0)e^{-j\\beta l} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-fall-2005/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Matched lossless traveling-wave solution, magnitude preservation and nonzero phase accumulation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-009.json#FH-TOPIC-46-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "009",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  }
+]

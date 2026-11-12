@@ -1,0 +1,587 @@
+{
+  "batch": "007",
+  "checkedAt": "2026-11-12T19:59:27.836Z",
+  "classification": "automatically-validated-and-recalculated",
+  "independentlyReviewed": false,
+  "humanReviewed": false,
+  "answerKeyVerified": false,
+  "method": "Offline numerical algorithms, exact enumerations and property checks in scripts/content/checks-007.mjs. Explanations authored by the same system; these are not an independent external or human review.",
+  "questions": [
+    {
+      "id": "FH-TOPIC-14-01",
+      "status": "passed",
+      "contentHash": "8dfd8f7f20991222c3350c1159c573890647b2a3b49ca3a6089aeb6b1789211f",
+      "computedValue": 10.000000000000002,
+      "method": "Evaluate Boltzmann density ratio at the stated dimensionless Fermi shift",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-02",
+      "status": "passed",
+      "contentHash": "ef265d0c136c04eb36e269319c0cd613889a9f52f59adff86803d6709ac6677b",
+      "computedValue": 2,
+      "method": "Bracket physical positive solution of simultaneous neutrality and mass action",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-03",
+      "status": "passed",
+      "contentHash": "e61321eb3e26aadabfa390bdc057cb9c85e3e4f71e16762b8a518f534c9f97c8",
+      "computedValue": 9.07998595249697,
+      "method": "Effective-density geometric mean and numerical activation exponential",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-04",
+      "status": "passed",
+      "contentHash": "23328301fe78d0fc4f6f72773d162e591a54fbb539e447482e3c46de668a16ae",
+      "computedValue": "B",
+      "method": "Fermi–Dirac occupation at zero energy offset is 1/(1+exp0)",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-05",
+      "status": "passed",
+      "contentHash": "41905e75e100584213fd0d32efba1f2a9a25e3467afd139c124f677522f4ba98",
+      "computedValue": 0.25000000000000006,
+      "method": "Evaluate the full Fermi–Dirac denominator, without Boltzmann approximation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-06",
+      "status": "passed",
+      "contentHash": "b96e20d5ae31a43fced456892a2e633e3ccce78a1c80db7310d9ee81e3d1d073",
+      "computedValue": 3,
+      "method": "Charge-neutrality balance including ionized compensation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-07",
+      "status": "passed",
+      "contentHash": "f0fb669cbc5fd00093abb02d83278e08c0994320af9b72ded682efca5fd95bc6",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Ideal band-state definitions, direct-gap wavevector relation and pair generation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-08",
+      "status": "passed",
+      "contentHash": "32f96fd90a877eff9d7167694d50d0998b55e71d44abdcbc8379a9f70f90a369",
+      "computedValue": 1,
+      "method": "Photon threshold energy using the explicitly provided hc unit relation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-09",
+      "status": "passed",
+      "contentHash": "648118cee2982f646f2fa154af58e66c1fc463100a5947b04b63bdf3b3e0e6e8",
+      "computedValue": 0.11973442483569036,
+      "method": "Numerically invert electron concentration versus Fermi-level voltage",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-10",
+      "status": "passed",
+      "contentHash": "7b88a4051a6039562f609e25c8410bb0ec7002efbc44e4b78ebe824c4203968d",
+      "computedValue": "C",
+      "method": "Mobile conduction electrons versus fixed ionized donor charge distinction",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-11",
+      "status": "passed",
+      "contentHash": "1c539616c084637aa80381cf59927a44cfe106d38edd5fb6e6fca890826a0bee",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Reduce exact neutrality equation only under ionization, compensation and minority approximations",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-14-12",
+      "status": "passed",
+      "contentHash": "8fe63acf7a61106f021a1f6b01bce34b252454eb4431f94502b562786b5450ae",
+      "computedValue": 0.25,
+      "method": "Hole Boltzmann factor under the same Fermi shift; product-conservation check",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-01",
+      "status": "passed",
+      "contentHash": "6fbe86b3b5a0de1ed9ce8cb266e9877c848c222920ce700c98f6419a7a96f856",
+      "computedValue": -100000,
+      "method": "Low-field particle drift with negative electron charge sign",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-02",
+      "status": "passed",
+      "contentHash": "993e3f0ed3ad3e8837cd21b3c014f6665a97038bf5ada0a5ebb3256259e4762a",
+      "computedValue": 1.9199999999999997,
+      "method": "Sum two conventional carrier-current contributions in centimeter units",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-03",
+      "status": "passed",
+      "contentHash": "b280d5ee2edbd4800ba4f7768182c790d36b62fca1f78cd65b813a1be66e27ec",
+      "computedValue": 100,
+      "method": "Solve L²=Dτ and convert centimeters to micrometers",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-04",
+      "status": "passed",
+      "contentHash": "65d40f9706dcbb6604bfa77750a093a50e0acfd15648e5d46da67a5131d533cd",
+      "computedValue": 2.7725887222410233,
+      "method": "Root finding on numerically integrated lifetime decay, time in μs",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-05",
+      "status": "passed",
+      "contentHash": "897ee4d90d9faae3aadb16d248579bc4f8566ef33e7ea69de9c07c249220be1b",
+      "computedValue": 1,
+      "method": "Solve steady generation–recombination linear balance",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-06",
+      "status": "passed",
+      "contentHash": "aef143adb21c356a8bcc01e9cf26de0dca95ac0bdd3cf623f6e5bf492c5480c3",
+      "computedValue": "A",
+      "method": "Fick particle flux down the density gradient, times positive hole charge",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-07",
+      "status": "passed",
+      "contentHash": "809eba1e5a1008e3c5834e08f63d7dd6a5df24dec7345a2c1ddfe69358598b6b",
+      "computedValue": 1.5999999999999999,
+      "method": "Centered finite-difference gradient of the original profile, then signed hole current",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-08",
+      "status": "passed",
+      "contentHash": "d9a7132f833645ab9b46982995174ce6802dbefd41ea154b5c3f3ae55f7a6684",
+      "computedValue": 10,
+      "method": "Apply one volt to the bulk conductance and invert to obtain kΩ",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-09",
+      "status": "passed",
+      "contentHash": "efd8fd61aa8b231c1d4592f46a05f40f44991c487a5d218977f0b36d82b0047b",
+      "computedValue": 0.3535533905932738,
+      "method": "Evaluate the explicitly assumed mobility power-law ratio with fixed density",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-10",
+      "status": "passed",
+      "contentHash": "efd2f81b9b2671a08e3344a97383a8b6b53052b6fc0742a4f011789e5a063d7e",
+      "computedValue": 6.25,
+      "method": "Integrate/identify one-dimensional Poisson coefficient and normalize net charge",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-11",
+      "status": "passed",
+      "contentHash": "6303ded5bee7c2849f58428e9dec58b2216db57944f4568be26ab45fa534d2f2",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Signed drift/diffusion constitutive laws and stated nondegenerate Einstein assumptions",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-15-12",
+      "status": "passed",
+      "contentHash": "14776482e4fb634982bc24676ce881376be54be5296d0e430df0702a22bedee2",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Solve continuity steady balance and homogeneous exponent; lifetime dimensional check",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-01",
+      "status": "passed",
+      "contentHash": "7666a7aed80eba5b22eaf7c771b1fe84411e0c97f07cfff69dd3d70a56d2ccbf",
+      "computedValue": 1,
+      "method": "Permittivity-area-width dimensional capacitance calculation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-02",
+      "status": "passed",
+      "contentHash": "f45b0545060690cc268c2612c4eb3cd24e28c6f029fa74461edd4a7e7583011c",
+      "computedValue": 0.5,
+      "method": "Evaluate the given abrupt-junction depletion-capacitance ratio",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-03",
+      "status": "passed",
+      "contentHash": "81bc2f93751318a00e677ab708cf58f709eb8cda456bd21ad7c2abd9c81a15e9",
+      "computedValue": 230.2610091744129,
+      "method": "Numerically invert the original diode current law with voltage measured in mV",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-04",
+      "status": "passed",
+      "contentHash": "976ab26d67ae66114b6377209c05b9960fbbd3ab1a5a3e870c9a8d41ca1633a3",
+      "computedValue": 0.1,
+      "method": "Enforce equal-magnitude integrated dopant charges on both sides",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-05",
+      "status": "passed",
+      "contentHash": "1460534bd2616a11fe76943646ba27de3df6bad3be7f779cd1035c371194be97",
+      "computedValue": 0.7483401552230649,
+      "method": "Invert Boltzmann built-in concentration ratio numerically",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-06",
+      "status": "passed",
+      "contentHash": "f4d81a1678910d2af7e162d9b09149dfb36af6fba40f48b4622dbe46cb8fe673",
+      "computedValue": "D",
+      "method": "Equilibrium electrochemical balance with nonzero drift/diffusion components",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-07",
+      "status": "passed",
+      "contentHash": "b96a540dbfa27685280ac8c239c4f863537572a0e614edd890e82887ccb2e4b1",
+      "computedValue": 400.00000010731367,
+      "method": "Finite-difference stored charge Q(V) in the explicitly stated high-forward-bias model",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-08",
+      "status": "passed",
+      "contentHash": "ee5617160d967d07ddfc2a1707621f429fc6f8664b64c20bef7c7e2997b1fdf3",
+      "computedValue": -0.9999546000702375,
+      "method": "Full signed exponential reverse-current evaluation, not the approximate −IS limit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-09",
+      "status": "passed",
+      "contentHash": "9efb7ffc0287b3eda7c393328756a3c0b00265799f80d0ebb5c94599c944b313",
+      "computedValue": 4,
+      "method": "Integrate triangular current in mA/ns; 1 mA·ns equals 1 pC",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-10",
+      "status": "passed",
+      "contentHash": "8883ec00c430ad794a6528e2bbeb15676c7180c754861eae01ef04ebcbf7bb37",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Abrupt-junction Poisson depletion scaling and fixed-charge versus mobile-conduction distinction",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-11",
+      "status": "passed",
+      "contentHash": "ef52a1d70492c073fa8fa9b0aa037a88e5d17509c07d6b36b9519f8b25ccccce",
+      "computedValue": 1,
+      "method": "Simultaneous total-width and dopant-charge constraints",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-16-12",
+      "status": "passed",
+      "contentHash": "d9411ccd5ee3249a080c588a1b3bc663ea6d15184c4affd3915943702f03856e",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Uniform equilibrium Fermi-level condition and drift/diffusion cancellation; no external power source",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-01",
+      "status": "passed",
+      "contentHash": "d869928e01485aeba4be53c8c66836604742f6fa2138cd1b0a095c9dedc22b85",
+      "computedValue": 2,
+      "method": "Direct probability-weighted centered-square calculation followed by square root",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-02",
+      "status": "passed",
+      "contentHash": "68c6e342917cbbde4361ca2d533e38eb05a800a25efd9db9ed6a1bfc908afe74",
+      "computedValue": 12,
+      "method": "Integrate original pulse magnitude squared over actual support",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-03",
+      "status": "passed",
+      "contentHash": "6f2fd861d6035c9cccea7744b2384f16f1bedaedde7b7c57a96a2672cf43f4ac",
+      "computedValue": 0.30000000000000004,
+      "method": "Earliest launch/propagation timeline minus required hold interval",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-04",
+      "status": "passed",
+      "contentHash": "252a9d3b1ee0be06a91dff79d1ee7675eec8329b7c21db3ff4a14511bce4826b",
+      "computedValue": 49.999999999999986,
+      "method": "Invert exact exponential current-ratio requirement numerically in mV",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-05",
+      "status": "passed",
+      "contentHash": "6c523c7d5878f36ae7758b0a7dcd6ebe24e082593b6e4a556a383497de205498",
+      "computedValue": "A",
+      "method": "Ideal voltage-follower feedback wiring imposes equal input and output",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-06",
+      "status": "passed",
+      "contentHash": "3ecb25e96d62ed51ad84c717e90f44af8b9ed2bcce02aceefd4234214bde60ce",
+      "computedValue": 0.2,
+      "method": "Final-value theorem applied to the error sensitivity",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-07",
+      "status": "passed",
+      "contentHash": "776a98e4264268640029d486af3edf7c85e67ff617b9e576b8d0c55b48171ace",
+      "computedValue": 0,
+      "method": "Deterministic PMF entropy with p log p limiting convention",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-08",
+      "status": "passed",
+      "contentHash": "b97c0ffddb41d480484d0a766cdb9772e13577aa1d26bbebd6b401056db612d0",
+      "computedValue": 4,
+      "method": "Power-wave squared amplitude ratio and percent conversion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-09",
+      "status": "passed",
+      "contentHash": "244473b29297c7989081690f45a6d8404a2f4db7f6b70d72a2752dbf22037bba",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Hurwitz spectral theorem; trace-negative diag(1,−2) and det-positive diag(1,2) counterexamples",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-10",
+      "status": "passed",
+      "contentHash": "77ce29bdad50f6bcf10636d1c67005952c2f7115608952b9eb52d4e6af287d6f",
+      "computedValue": [
+        "B",
+        "D"
+      ],
+      "method": "Compute all unsigned sums and compare with 4-bit representable range",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-11",
+      "status": "passed",
+      "contentHash": "3319b4cc72886729015385c66925b5c0afd9b69e014624692e305dd11df44655",
+      "computedValue": 540,
+      "method": "Ordered multiplicative price transformation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-09-12",
+      "status": "passed",
+      "contentHash": "ef9ef3545824303dafd83a53191eb8feaa81abcd57b070eb4790bf8abe08fcbc",
+      "computedValue": -0.5,
+      "method": "Direct complex reciprocal of the regular factor at the simple pole",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-01",
+      "status": "passed",
+      "contentHash": "abce32af707a24b5fb1c33468c3d272794999fe1c94a6e9eae2f735697f094a2",
+      "computedValue": 2,
+      "method": "Construct rank-2 3×4 representative and verify rank/nullity dimensions",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-02",
+      "status": "passed",
+      "contentHash": "69ff0d608d713b65493afb9f97b13cb0ca509b30ede6a6a654fe9b9a4858f136",
+      "computedValue": 0.3333333333603081,
+      "method": "Numerical Laplace integral of original signal times kernel",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-03",
+      "status": "passed",
+      "contentHash": "de5d231cf4ca7dda89fbc046c73f7fcde9a45538f8063209010f9be69a8a0299",
+      "computedValue": 104,
+      "method": "Convert instruction size from bits to byte-address increments",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-04",
+      "status": "passed",
+      "contentHash": "238b612e151f45decddc32f96ee0fe449c96aeec58fc68e81360d1b237a32010",
+      "computedValue": 4,
+      "method": "Ratio of two square-law currents at overdrives 2 and 1 with common coefficient",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-05",
+      "status": "passed",
+      "contentHash": "c8cd26a550a6f9ede0bc5fabda3d4c3a07e800030d64874b26849a599fc6ebd8",
+      "computedValue": "C",
+      "method": "Asymptotic cancellation of A in A/(1+Aβ) at large stable loop gain",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-06",
+      "status": "passed",
+      "contentHash": "ec227287881a84e7cac14471ef4ee7f31c86d17363a144a6c9b902ceda9e260b",
+      "computedValue": -2,
+      "method": "Check numerator vanishes and denominator does not at the proposed finite zero",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-07",
+      "status": "passed",
+      "contentHash": "f887e331a790448654309e9233f177e917a08422d16f88d3a91d26a5c3c632d8",
+      "computedValue": 6,
+      "method": "Count two independent bit labels per four-phase symbol",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-08",
+      "status": "passed",
+      "contentHash": "36708a7de431c82c25c1d6c89b7e93b66714744ff017c29764d0a58420121905",
+      "computedValue": 3,
+      "method": "Relative εμ wave-speed ratio",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-09",
+      "status": "passed",
+      "contentHash": "bfb2d9ff648d2c30156f9f431743a86fa6abf419be782d87dac5fe9c3f4ce16d",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Causal ROC geometry and unit-circle inclusion; counterexample stable nonminimum-phase zeros",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-10",
+      "status": "passed",
+      "contentHash": "69b2d99ce7cb08525ddced1536ed0c2205964a0ea105cf284e0fbfa02cf64934",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Fermat interior-extremum theorem with x³ stationary nonextremum counterexample",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-11",
+      "status": "passed",
+      "contentHash": "08caad61a743e4111ec8ccd08d64f11f443c85c825e1ac1efaf75b97d0359081",
+      "computedValue": 0.5904900000000002,
+      "method": "Multiply independent component-success probabilities in a series-reliability model",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-MIXED-10-12",
+      "status": "passed",
+      "contentHash": "2b0992aafe9871e9fbc8ee9a6002c45d904dcc3fa87faa8bc798fc10fbb2e4a8",
+      "computedValue": 10,
+      "method": "Velocity-constant limit K/2 and positive-coefficient closed-loop stability check",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    }
+  ]
+}

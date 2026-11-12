@@ -1,0 +1,277 @@
+{
+  "batch": "original-foundations-001",
+  "checkedAt": "2026-11-13",
+  "method": "Independent numerical calculations and exhaustive Boolean truth tables; step-by-step derivations inspected during authoring. Not an external expert audit.",
+  "questions": [
+    {
+      "id": "FH-MATHEMATICS-001",
+      "status": "passed",
+      "contentHash": "98173bf128297a06bd8f5faa3064f471fa065e86fd930b8114779c8beff7226c",
+      "independentValue": 5,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-002",
+      "status": "passed",
+      "contentHash": "7f43416a35401d50511eab747959cf0b8f889c52c3fd981fc7e8f987d536490e",
+      "independentValue": 3,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-003",
+      "status": "passed",
+      "contentHash": "32432af454193558469011505b28112d7b50cf2ae44da1195789a0f4beaf0155",
+      "independentValue": [
+        2,
+        5
+      ],
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-004",
+      "status": "passed",
+      "contentHash": "dae11b8b125f70f705901af870a88d3ad47c9f436d173bfcfc9730eac29db879",
+      "independentValue": 12.00000000021184,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-005",
+      "status": "passed",
+      "contentHash": "3f33f48e105aa0c189850a719d548d7b9a0c43687c04e51ba5ad6f4e4df5a1be",
+      "independentValue": 1.9999999999999996,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-006",
+      "status": "passed",
+      "contentHash": "0a19d9a13ff756e28b02a0bb2befe149a1b5964e3155ac53b419ab40242e5f7e",
+      "independentValue": 0.5,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-007",
+      "status": "passed",
+      "contentHash": "71eba7a2a1931a0f5190629137ee036a32390014f1a0945ab4e0183c35b6ed72",
+      "independentValue": 1,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-008",
+      "status": "passed",
+      "contentHash": "fc238587fd95abaeb2c54f546081b61e20b9703cff69df90fe12fc9457e77a49",
+      "independentValue": 5,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-009",
+      "status": "passed",
+      "contentHash": "d62c3b6e326d25757cf480e946f5c3c2fe66fcf618622cd9f170334381ea3b97",
+      "independentValue": 3,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-010",
+      "status": "passed",
+      "contentHash": "452dd57fac74507ab190cf1ded994797d804080dd8cc0c9a232672b56f417bce",
+      "independentValue": 5,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-011",
+      "status": "passed",
+      "contentHash": "2b0d50e7de99213c4947f40555b3bc84a22e6909250dbc7730c87dd359fdcf8f",
+      "independentValue": 4,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-MATHEMATICS-012",
+      "status": "passed",
+      "contentHash": "97fb3599917e220e93dc0ced91c569325f358e623802ff1f748119da1bc273e7",
+      "independentValue": [
+        -1,
+        1
+      ],
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-001",
+      "status": "passed",
+      "contentHash": "e3918080f1abfb3ae805859edc5ce71dd8ac88c272bde39317a39fc579b1bf10",
+      "independentValue": 0,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-002",
+      "status": "passed",
+      "contentHash": "46a3e06aa387c5232f9e57abadcbb7384e1b6d5e7ca207628cab4f295c1b543e",
+      "independentValue": 8,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-003",
+      "status": "passed",
+      "contentHash": "5efcda84aaa6cfba5a88c902dc67cf44c741dd29d9d9d106a022295ff2a2c2f2",
+      "independentValue": 11,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-004",
+      "status": "passed",
+      "contentHash": "ed4d388b46ec14ea1666b713379b4b5b586177db678e026462de0443fc3a26d1",
+      "independentValue": [
+        "A",
+        "C"
+      ],
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-005",
+      "status": "passed",
+      "contentHash": "298be7afb336eb707229a366b7c9426f3b98af02e2f006109049ba513c835849",
+      "independentValue": 1,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-006",
+      "status": "passed",
+      "contentHash": "260fe834c61eee52960f1a423b5792db0981418d83781d11d20f76c073da97d8",
+      "independentValue": 1,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-007",
+      "status": "passed",
+      "contentHash": "7eeae4a7da7435dda9fc306373df3ae1cbbf0dff03cd92a4a41a965660337fc9",
+      "independentValue": 16,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-008",
+      "status": "passed",
+      "contentHash": "260efe4cc696a9c0ff84faa4f7bb596354a986ede03bc13e0e50b02a7bc2e989",
+      "independentValue": 1,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-009",
+      "status": "passed",
+      "contentHash": "977108b015819c07ebc91040690fee3d0bfd419722e71f066f2cbd9dce8d6d7f",
+      "independentValue": [
+        "A",
+        "C"
+      ],
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-010",
+      "status": "passed",
+      "contentHash": "4e41d07091010421afd9391eba9facebf71886d322ce432bce5f81df127ad337",
+      "independentValue": 4,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-011",
+      "status": "passed",
+      "contentHash": "d8447cbd48e3526c9b117112aed63930a442694c6c939c9da25aeb0df07330fa",
+      "independentValue": 100,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-DIGITAL-012",
+      "status": "passed",
+      "contentHash": "73a9a166a7b687c312ea6ca51cdec5350c210f89cb84da1e4a2f7398f92d7ae4",
+      "independentValue": "D",
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-001",
+      "status": "passed",
+      "contentHash": "8d43ea45362fd6cbd29c8f5435e3f279e9e54a34fcd78993049b689b0ae2807f",
+      "independentValue": 2,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-002",
+      "status": "passed",
+      "contentHash": "280d2fdd319dfb27f8fd819889341a383588a0ff9f0cb48440306adddc1eaf7c",
+      "independentValue": 12,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-003",
+      "status": "passed",
+      "contentHash": "2d572326e300dff787b227f72827c2eee2eedf81e756a8fc8533b6538458351a",
+      "independentValue": 3,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-004",
+      "status": "passed",
+      "contentHash": "d568590b8dbfd008449d21ef938307f289394cc1b505ddbf21c867e5195200d4",
+      "independentValue": 20,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-005",
+      "status": "passed",
+      "contentHash": "ebcf0c0b2325017693aff4d9de6e3fbe87476d88af1334ac74b33faa3f7d7513",
+      "independentValue": 6,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-006",
+      "status": "passed",
+      "contentHash": "a4ad074d60bd8ff2bd161f222e1eb587b37b8adc5ccbe168588e92b7d83039a0",
+      "independentValue": [
+        "A",
+        "D"
+      ],
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-007",
+      "status": "passed",
+      "contentHash": "4fb542d482414de82ed7faa7e3331b76ec41327af4e05933f05d615b10c919de",
+      "independentValue": 4,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-008",
+      "status": "passed",
+      "contentHash": "9e2d592e07d19fc7078000114d198ad9af3435217fac599ac4373cedc66fcdac",
+      "independentValue": 6,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-009",
+      "status": "passed",
+      "contentHash": "0532cf79d5647162d11260c50c68434d8bd30701d76370829a8040a6542f5f8a",
+      "independentValue": 8.999999999999998,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-010",
+      "status": "passed",
+      "contentHash": "c48a3751daffb3b296c163b992b14fdf86a162b9fa56d06b291ab9712e9ac6b4",
+      "independentValue": 2,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-011",
+      "status": "passed",
+      "contentHash": "f23a34471044e0c167c3479edb10d91a27798568d2cabced5779cde2b7f36e1b",
+      "independentValue": 2,
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    },
+    {
+      "id": "FH-NETWORKS-012",
+      "status": "passed",
+      "contentHash": "564285b3cec32f2fb3f17d44a92b57cfa6cc38e3161a682e66dee9e61179ea2b",
+      "independentValue": [
+        "B",
+        "C"
+      ],
+      "solutionReview": "Arithmetic, governing law and substitutions inspected; computational result checked. Human expert review pending."
+    }
+  ]
+}

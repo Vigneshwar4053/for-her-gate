@@ -1,0 +1,592 @@
+{
+  "batch": "008",
+  "checkedAt": "2026-11-12T20:07:28.784Z",
+  "classification": "automatically-validated-and-recalculated",
+  "independentlyReviewed": false,
+  "humanReviewed": false,
+  "answerKeyVerified": false,
+  "method": "Offline numerical algorithms, exact enumerations and property checks in scripts/content/checks-008.mjs. Explanations authored by the same system; these are not an independent external or human review.",
+  "questions": [
+    {
+      "id": "FH-TOPIC-25-01",
+      "status": "passed",
+      "contentHash": "84b9f6c5ce2a54d31027f3e6442ebcfee8d899c1ebdbbaa5b8b43099ed556c17",
+      "computedValue": "C",
+      "method": "Enumerate all four input pairs for original expression and every simplification option",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-02",
+      "status": "passed",
+      "contentHash": "88b7a38256f8c2167b803f6b515931a006f14d21de3eb1359d0cbb93c36b5b5e",
+      "computedValue": 4,
+      "method": "Exhaustive eight-row odd-parity truth table",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-03",
+      "status": "passed",
+      "contentHash": "95f1757a2982a42781eaf4bda85c4b6e241e0a82fc4129ea9258439f72f26e0a",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Exhaustive equivalence check for every proposed De Morgan expression",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-04",
+      "status": "passed",
+      "contentHash": "772668be4446e9d18f165b9c31a0df60e44a795f16378f16a953363210326637",
+      "computedValue": 2,
+      "method": "Enumerate both free cofactor inputs with A fixed to 1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-05",
+      "status": "passed",
+      "contentHash": "aa275047cdf384b85c3f9fde744ee3c4c6c547baa3691cd03e5cab4ea295548f",
+      "computedValue": "B",
+      "method": "Structural AND/OR operator interchange, without applying variable complements",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-06",
+      "status": "passed",
+      "contentHash": "ad02f26d74687813fae48f30e7c4c836917a36e12e6b7a6588ac13f8dca1b8ea",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Exhaustively test both values of A and all eight distributive combinations",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-07",
+      "status": "passed",
+      "contentHash": "02d89105effcd78bc6c8f780b17ac218b16550efe28cc3ce61cf3fb5c7e02d14",
+      "computedValue": 2,
+      "method": "Enumerate high cases of the original product of sums",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-08",
+      "status": "passed",
+      "contentHash": "e35901569101c38db2d613978a992db44b8871fba4e112394d273c6cdf8e9439",
+      "computedValue": 2,
+      "method": "Enumerate all three-input assignments and apply the gated-XOR function",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-09",
+      "status": "passed",
+      "contentHash": "d0ec2b7c5698044a7001326bb012b2cb43cca6ad772ed0d6ddf43d705ebe4f8b",
+      "computedValue": "D",
+      "method": "Remove each proposed product and compare all eight truth-table rows",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-10",
+      "status": "passed",
+      "contentHash": "5de7f6fa9c935025c22bca4e0a84428a4df8deb7d84abb1153b1ae535a7cc284",
+      "computedValue": 1,
+      "method": "Enumerate OFF rows after union of the specified minterms",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-11",
+      "status": "passed",
+      "contentHash": "9be648bb0b3339e9e2268e25bc4da7850524dbfe17d34c1105e002198c25418d",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Shannon identity verified for every possible two-cofactor output pair and both selector values",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-25-12",
+      "status": "passed",
+      "contentHash": "0ed9026de89b7b745a7874f88ec69ca4dbc67b99ebc00230ca05edfa8dda496e",
+      "computedValue": 2,
+      "method": "Compare OR and AND output bits in a common four-row ordering",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-01",
+      "status": "passed",
+      "contentHash": "51c21e867b8e0f3174da3f13789652eb23105eb8c57c9a2916b0af7df058dfc4",
+      "computedValue": "A",
+      "method": "Exhaustively evaluate series-NMOS path and dual pull-up for both inputs",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-02",
+      "status": "passed",
+      "contentHash": "3e8b067513ed4a1788faf19bf77d904f9dd008919fd1652b7f214ded0c1bc08d",
+      "computedValue": 4,
+      "method": "Count one controlled device per input in each specified complementary network",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-03",
+      "status": "passed",
+      "contentHash": "4f4353da4804668fd1fe9da5b2bd64f111e7a50ab43c7ef048c7265988396f9d",
+      "computedValue": 1.7999999999999998,
+      "method": "Evaluate worst-case high-level threshold separation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-04",
+      "status": "passed",
+      "contentHash": "6d8c1d86e151009d0e55f453b74869dff0bf020c26fe669dadcb7ce0fbf6fdc7",
+      "computedValue": 0.8,
+      "method": "Evaluate worst-case low-level threshold separation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-05",
+      "status": "passed",
+      "contentHash": "fb502605db60df63cd694099c94aa212ab4e28be3020f7bbd0dbd90838b06ade",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Complementary path truth table and capacitor charging energy; ideal leakage assumption explicit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-06",
+      "status": "passed",
+      "contentHash": "b3d1bc47b9d4128cda73e7bf144bdfbf12835bf8d8a73f06c91473481c6e3c28",
+      "computedValue": 0.288,
+      "method": "Count charging events per second and multiply supply energy per event",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-07",
+      "status": "passed",
+      "contentHash": "85f13933caac82959cc980264c12a1fe60262647447957804651db83ec3fb62b",
+      "computedValue": "C",
+      "method": "Truth table of the complement of parallel-A/B then series-C pull-down conduction",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-08",
+      "status": "passed",
+      "contentHash": "5ffa67ab6073d7676c43a0b756d8b0ef09cdedd3115d7540601bb8df8a554732",
+      "computedValue": 4,
+      "method": "Series-switch voltage/current ratio for the specified constant ON resistances",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-09",
+      "status": "passed",
+      "contentHash": "aedcc843693729b711780e9cd5242bd2617e6b3a88d7bae53c329678944ced19",
+      "computedValue": 2,
+      "method": "Sum explicit parallel branch conductances",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-10",
+      "status": "passed",
+      "contentHash": "781d2d4c75c10d60a748c99c0b478894b21f1be839db73de9b0a9451f9205719",
+      "computedValue": [
+        "A",
+        "D"
+      ],
+      "method": "Construct NOT,AND,OR using only NAND or only NOR and exhaustively verify gate constructions; AND/OR-only monotonicity rejects inversion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-11",
+      "status": "passed",
+      "contentHash": "2623d93c318405751cbd30f74f89fe19c63f021887cf5cb7a913d7470edd8d1c",
+      "computedValue": 0,
+      "method": "Propagate the actual input through all three inverter states",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-26-12",
+      "status": "passed",
+      "contentHash": "fd9400c7ef021081df2be61728b9eeb6e244042dd38daba53f946555cac1e92d",
+      "computedValue": 7,
+      "method": "Exhaustive 16-row complex-gate pull-down count",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-01",
+      "status": "passed",
+      "contentHash": "698d202e57b161f329095c2b0a9613c8273230446d93311c6c43d725864433ff",
+      "computedValue": 1,
+      "method": "Enumerate all 3³ Boolean cubes and exact minimum-literal cover by dynamic programming",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-02",
+      "status": "passed",
+      "contentHash": "0e8a37595662e9268654183d9528aa7b34b95f8b4d19e0a7d037ac776cb55f77",
+      "computedValue": "C",
+      "method": "Compare cube covers: only ĀC̄ has the exact set {0,2}",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-03",
+      "status": "passed",
+      "contentHash": "f30f6f3e601f6d9dfe2d17e2dfdfef3a0af03601db0bad340371e36fda24d6ac",
+      "computedValue": 2,
+      "method": "Enumerate all 3⁴ cubes and compute exact constrained cover cost",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-04",
+      "status": "passed",
+      "contentHash": "cc5abda7ce65576b242320ac8447c3d40bf4f1d24516f9b39a4e9c7e91541855",
+      "computedValue": [
+        "A",
+        "C"
+      ],
+      "method": "Enumerate prime cubes, build ON coverage chart and find unique-cover primes",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-05",
+      "status": "passed",
+      "contentHash": "f5dd8254df024f9ce82ea135b81c9d2cd89e6a410ba69392f0f1557c4c19a97f",
+      "computedValue": 1,
+      "method": "Exact implicant cover with OFF protection and optional don’t-care inclusion",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-06",
+      "status": "passed",
+      "contentHash": "a3ba7e4604fc09cf3d8e66c14c41c2a17489a090fbc3426c66724759d6faff20",
+      "computedValue": "B",
+      "method": "Check every cyclic neighboring pair in each proposed Gray ordering",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-07",
+      "status": "passed",
+      "contentHash": "f839102f299858005c4895e6ccefae044ca1a04226f99f59c075a23c16d69ab4",
+      "computedValue": 1,
+      "method": "Count variables eliminated by three independent cube dimensions",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-08",
+      "status": "passed",
+      "contentHash": "a01181ed8b01e8d22db8ea9d488b38d8ea91436cd314a53aa6e03a293d653c49",
+      "computedValue": "A",
+      "method": "Enumerate all eight rows and verify A+B is zero exactly at minterms 0,1",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-09",
+      "status": "passed",
+      "contentHash": "47e7c67cbb59bb8101e0c6fae55995f395c12e2e8bb89c779ac97adb3c5bd569",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Boolean-cube topology: cardinality powers of two, one-bit adjacency and cyclic edges",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-10",
+      "status": "passed",
+      "contentHash": "7202fd18b829dceb799801d538b79e07cbb2e95491320d64a72a21e65904cc79",
+      "computedValue": 4,
+      "method": "Exact global SOP literal minimization over all legal cubes and covers",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-11",
+      "status": "passed",
+      "contentHash": "22dd6c4cdfa80f0ee314c4cf12011d1b135d769be30d6cf0339485ff0a5891a7",
+      "computedValue": 1,
+      "method": "One consensus cube covers both sides of the stated A transition; verify truth equivalence and transition-independent BC term",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-27-12",
+      "status": "passed",
+      "contentHash": "0641a9446f343b6ccc56b981b50a5255afc260fb82ab63cd1bfe4245071f230b",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Incomplete-specification semantics: enforce ON/OFF cells and leave only declared don’t-cares free",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-01",
+      "status": "passed",
+      "contentHash": "02a8c65373e1b650c4da73a5132df10ada6e414dc4397a2c6ea88a4df14273f2",
+      "computedValue": 1,
+      "method": "Compute full unsigned addition then extract carry bit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-02",
+      "status": "passed",
+      "contentHash": "d72a3d9c2858aa83bb157d0bdd9c9e538a2f7cb1d51645217580081c3d6835cc",
+      "computedValue": "C",
+      "method": "Compare exact sum 10 against signed and unsigned four-bit ranges",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-03",
+      "status": "passed",
+      "contentHash": "4e061d38fd3264c2858cd8b55ba155ce06a680779ab6cfe8acbf6acdedb9a63f",
+      "computedValue": 14,
+      "method": "Modular arithmetic of the retained four-bit subtraction word",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-04",
+      "status": "passed",
+      "contentHash": "268ce7db29453bacfcb5898e9de194923e4e120413dc5a8d265cc5374250c539",
+      "computedValue": 6,
+      "method": "Decode actual three-bit input index",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-05",
+      "status": "passed",
+      "contentHash": "851d3e76dd8746db8de4981157ab981ec1802b93087d5f135de0ae7f6ec10628",
+      "computedValue": 2,
+      "method": "Priority scan of all four original input lines",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-06",
+      "status": "passed",
+      "contentHash": "bc94bc0fbfc9efc8262d1d19e03e1f86565838d008422e9465a4bfc6310d3b59",
+      "computedValue": 1,
+      "method": "XOR-reduce all data bits to obtain the even-parity append bit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-07",
+      "status": "passed",
+      "contentHash": "035c8ff711f4d94989f256cbf3d56ac46f96f998c004b6c45bc6e17d244d3c60",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Exhaustive full-adder truth table compared with arithmetic sum and carry",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-08",
+      "status": "passed",
+      "contentHash": "aa441b22ecad7526f325928601536da75bc51d94dfea5abf62c0186535077fab",
+      "computedValue": 2,
+      "method": "Evaluate both C values for every mux select cofactor",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-09",
+      "status": "passed",
+      "contentHash": "fc9aecf7dd0e5db5d94b5974cc145cc69623118ae0e135fbd09995d93b77ddc0",
+      "computedValue": 0.125,
+      "method": "Enumerate all 64 independent comparator-word pairs",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-10",
+      "status": "passed",
+      "contentHash": "757945fe70cb90fa2fa536eff4ddf32626545b2db94c1442bc59d70715ce1843",
+      "computedValue": "B",
+      "method": "Compare no-active-input case with D0-only case: same index, different OR-valid signal",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-11",
+      "status": "passed",
+      "contentHash": "8b2766af8fafea0a205e8b3bc804d46d5fc5bd94821e3fbd16143110fd8ef557",
+      "computedValue": 1,
+      "method": "Iterate exact carry recurrence over the supplied valid P/G pairs",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-28-12",
+      "status": "passed",
+      "contentHash": "c8b1864eea4d939bca1e3576fa7db4470c50d787f0a7643d8e743e1219df6c31",
+      "computedValue": 5,
+      "method": "Binary reduction connectivity lower bound, achieved by a five-node AND tree",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-01",
+      "status": "passed",
+      "contentHash": "f0ab35046dd971ebc4fa04015b597134556434e07b0daa1392a1a3fafaaac580",
+      "computedValue": 4,
+      "method": "Enumerate available binary-state capacities until ten states fit",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-02",
+      "status": "passed",
+      "contentHash": "0484ee0b4b845f9347537a697fed58371adb2b71eb3ca3f318f262ef1f9b6958",
+      "computedValue": 1,
+      "method": "Simulate all three modulo-8 state transitions",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-03",
+      "status": "passed",
+      "contentHash": "4f4fb4c47e8901e32bd9236e4785d007fad14c675ee73e7c745bb104c50efd7a",
+      "computedValue": 0,
+      "method": "Simulate T flip-flop with its actual toggle-enable sequence",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-04",
+      "status": "passed",
+      "contentHash": "97381a567e6727b809173c01cbdff3cdad082d54e875133c0ef20fdf71fc4126",
+      "computedValue": "A",
+      "method": "Classify transparency throughout active level versus instantaneous edge sampling",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-05",
+      "status": "passed",
+      "contentHash": "105ef89430008e9356f95a53f296101ca311be9f5afb298ee40fff2ff663fffc",
+      "computedValue": 4,
+      "method": "Bit-level simultaneous shift-register simulation",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-06",
+      "status": "passed",
+      "contentHash": "316046e1ba764072922c5acc3213dd834762895c5df573d341525478f8741713",
+      "computedValue": 1,
+      "method": "Iterate all five specified FSM updates",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-07",
+      "status": "passed",
+      "contentHash": "81e4be20ed611fb1305cd34698e15198c50349d9b0adbbfc20da93168109c2bf",
+      "computedValue": [
+        "A",
+        "C",
+        "D"
+      ],
+      "method": "Register-to-register latest/earliest arrival timing definitions and shared-clock model",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-08",
+      "status": "passed",
+      "contentHash": "90f95bfb8d7a8dd0e4edb0a3dde9c90cd09f898587e78f79e0ee97d80a8985ff",
+      "computedValue": 250,
+      "method": "Construct minimum setup period in ns then convert reciprocal to MHz",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-09",
+      "status": "passed",
+      "contentHash": "74d601b3cf4f3c4678d99b89818207cd103aa17f3b43cd36ff3bf27422a5c94d",
+      "computedValue": "C",
+      "method": "Count the unused part of eight encodings after assigning six states",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-10",
+      "status": "passed",
+      "contentHash": "38f036a8fc4f4b1a3014cd4fe5686266ed0c9b7bc0280e411732fd47b8beac4e",
+      "computedValue": 0,
+      "method": "Simulate state transitions before evaluating the Moore output",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-11",
+      "status": "passed",
+      "contentHash": "cb10e0f3e8232859775ef98bc8c435408fbfbc666cd5ef69a9145d56ecafdaf9",
+      "computedValue": [
+        "A",
+        "B",
+        "D"
+      ],
+      "method": "Output function dependencies, including a direct-input Mealy counterexample to edge-only changes",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    {
+      "id": "FH-TOPIC-29-12",
+      "status": "passed",
+      "contentHash": "faf54601eb8c0902cb842eb5e78b6d808dff9415fefa08efa8c7096c57ee0688",
+      "computedValue": 5.2,
+      "method": "Explicit launch-to-capture timeline with later capture skew added to available time",
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    }
+  ]
+}

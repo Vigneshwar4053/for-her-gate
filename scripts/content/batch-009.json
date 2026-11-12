@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "topic-22",
+    "file": "data/questions/topic-22.json",
+    "title": "Op-Amp Circuits \u00b7 References, Dynamics & Limits",
+    "batch": "009"
+  },
+  {
+    "testId": "topic-34",
+    "file": "data/questions/topic-34.json",
+    "title": "Stability \u00b7 Routh, Nyquist & Internal Modes",
+    "batch": "009"
+  },
+  {
+    "testId": "topic-41",
+    "file": "data/questions/topic-41.json",
+    "title": "Information Theory \u00b7 Codes, Uncertainty & Limits",
+    "batch": "009"
+  },
+  {
+    "testId": "topic-46",
+    "file": "data/questions/topic-46.json",
+    "title": "Transmission Lines \u00b7 Waves, Loss & Networks",
+    "batch": "009"
+  },
+  {
+    "testId": "topic-50",
+    "file": "data/questions/topic-50.json",
+    "title": "Quantitative Aptitude \u00b7 Ratios, Data & Counting",
+    "batch": "009"
+  }
+]

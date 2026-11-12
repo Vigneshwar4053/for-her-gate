@@ -1,0 +1,781 @@
+[
+  {
+    "id": "FH-TOPIC-26-01",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A complementary static CMOS gate has two NMOS transistors in series in the pull-down network and the dual PMOS network. Its function is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "NAND"
+      },
+      {
+        "id": "B",
+        "text": "NOR"
+      },
+      {
+        "id": "C",
+        "text": "AND without an inverter"
+      },
+      {
+        "id": "D",
+        "text": "XOR"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Two-input conventional complementary CMOS",
+        "NMOS controlled by A,B"
+      ],
+      "asked": "Identify the output logic function.",
+      "concept": "CMOS pull-down interpretation",
+      "formula": "Y=\\overline{AB}",
+      "steps": [
+        "A path to ground exists only if both A and B are high.",
+        "The output is then low; for the other input states the dual pull-up makes it high.",
+        "This is NAND, option A."
+      ],
+      "finalAnswer": "A",
+      "explanation": "This is NAND, option A.",
+      "commonMistakes": [
+        "The pull-down conduction condition is the complement of the output-high function."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cmos pull-down interpretation applies.",
+      "Start from $ Y=\\overline{AB} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustively evaluate series-NMOS path and dual pull-up for both inputs. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-TOPIC-26-02",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A conventional static CMOS two-input NOR uses a complementary pull-up/pull-down pair of networks. How many MOS transistors are required, excluding output buffers?",
+    "options": [],
+    "solution": {
+      "given": [
+        "One PMOS and one NMOS per independent input in the conventional two-input NOR topology"
+      ],
+      "asked": "Count transistors in both networks.",
+      "concept": "CMOS NOR topology",
+      "formula": "N_{MOS}=N_{NMOS}+N_{PMOS}",
+      "steps": [
+        "The pull-down has two parallel NMOS devices, one per input.",
+        "Its dual pull-up has two series PMOS devices.",
+        "Total count is 2+2=4, with no extra output buffer included."
+      ],
+      "finalAnswer": "4",
+      "explanation": "Total count is 2+2=4, with no extra output buffer included.",
+      "commonMistakes": [
+        "The count is for the explicitly stated conventional topology, not every possible transistor logic family."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cmos nor topology applies.",
+      "Start from $ N_{MOS}=N_{NMOS}+N_{PMOS} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count one controlled device per input in each specified complementary network. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-26-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A logic family specifies VOH,min=4.8 V and VIH,min=3.0 V. Find the high noise margin in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Guaranteed high output 4.8 V",
+        "required high input 3.0 V"
+      ],
+      "asked": "Find NMH.",
+      "concept": "High-state noise margin",
+      "formula": "NM_H=V_{OH,min}-V_{IH,min}",
+      "steps": [
+        "The receiving input accepts a high down to 3.0 V.",
+        "The driving output guarantees at least 4.8 V.",
+        "Their separation gives high noise margin 4.8−3.0=1.8 V."
+      ],
+      "finalAnswer": "1.8 V",
+      "explanation": "Their separation gives high noise margin 4.8−3.0=1.8 V.",
+      "commonMistakes": [
+        "Use guaranteed minimum output-high voltage and minimum accepted input-high threshold."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which high-state noise margin applies.",
+      "Start from $ NM_H=V_{OH,min}-V_{IH,min} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate worst-case high-level threshold separation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.79999982,
+      1.80000018
+    ],
+    "numericalTolerance": 1.8e-7
+  },
+  {
+    "id": "FH-TOPIC-26-04",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For VOL,max=0.2 V and VIL,max=1.0 V, find the low noise margin in volts.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Worst-case low output 0.2 V",
+        "maximum recognized low input 1.0 V"
+      ],
+      "asked": "Find NML.",
+      "concept": "Low-state noise margin",
+      "formula": "NM_L=V_{IL,max}-V_{OL,max}",
+      "steps": [
+        "The receiving input remains low up to 1.0 V.",
+        "The driver’s worst-case low is 0.2 V.",
+        "The allowed positive disturbance is 1.0−0.2=0.8 V."
+      ],
+      "finalAnswer": "0.8 V",
+      "explanation": "The allowed positive disturbance is 1.0−0.2=0.8 V.",
+      "commonMistakes": [
+        "The subtraction order differs from the high-margin formula."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which low-state noise margin applies.",
+      "Start from $ NM_L=V_{IL,max}-V_{OL,max} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate worst-case low-level threshold separation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.7999999,
+      0.8000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-26-05",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "For ideal complementary static CMOS with no leakage and stable rail-to-rail inputs, which statements hold?",
+    "options": [
+      {
+        "id": "A",
+        "text": "There is no steady DC path between supply rails in a valid static state"
+      },
+      {
+        "id": "B",
+        "text": "Both pull-up and pull-down must conduct strongly in every stable state"
+      },
+      {
+        "id": "C",
+        "text": "Charging capacitance consumes dynamic energy when the output switches"
+      },
+      {
+        "id": "D",
+        "text": "The pull-up and pull-down implement complementary conduction conditions"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ideal static CMOS",
+        "leakage and transition overlap excluded from steady-state claim"
+      ],
+      "asked": "Select valid static/dynamic power descriptions.",
+      "concept": "Complementary switching",
+      "formula": "P_{dyn}=\\alpha C_LV_{DD}^2f",
+      "steps": [
+        "The complementary networks connect the settled output to one rail while breaking the path to the other.",
+        "Switching charges and discharges capacitance, consuming dynamic energy despite the ideal zero static conduction.",
+        "Thus A,C,D hold; simultaneous strong conduction is not the desired stable state."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Thus A,C,D hold; simultaneous strong conduction is not the desired stable state.",
+      "commonMistakes": [
+        "Zero ideal static power is not zero switching power."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complementary switching applies.",
+      "Start from $ P_{dyn}=\\alpha C_LV_{DD}^2f $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Complementary path truth table and capacitor charging energy; ideal leakage assumption explicit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-26-06",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Using P=αCVDD²f with α defined as the number of 0→1 charging events per clock cycle, C=10 fF, VDD=1.2 V, f=100 MHz and α=0.2, find dynamic power in μW.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Specified charging-event activity",
+        "C=10⁻¹⁴ F",
+        "f=10⁸ Hz"
+      ],
+      "asked": "Find dynamic switching power.",
+      "concept": "CMOS capacitive power",
+      "formula": "P=\\alpha C V_{DD}^2f",
+      "steps": [
+        "VDD²=1.44 V² and C f=10⁻⁶ F/s.",
+        "Multiplying by α=0.2 gives 2.88×10⁻⁷ W.",
+        "This is 0.288 μW under the explicitly given activity convention."
+      ],
+      "finalAnswer": "0.288 μW",
+      "explanation": "This is 0.288 μW under the explicitly given activity convention.",
+      "commonMistakes": [
+        "Activity conventions can differ by a factor of two; use the charging-event definition supplied."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cmos capacitive power applies.",
+      "Start from $ P=\\alpha C V_{DD}^2f $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count charging events per second and multiply supply energy per event. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.2879999,
+      0.2880001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-26-07",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A static CMOS pull-down network conducts when (A OR B) AND C is 1. The dual pull-up network is correctly implemented. What is output Y?",
+    "options": [
+      {
+        "id": "A",
+        "text": "(A OR B) AND C"
+      },
+      {
+        "id": "B",
+        "text": "A OR (B AND C)"
+      },
+      {
+        "id": "C",
+        "text": "NOT[(A OR B) AND C]"
+      },
+      {
+        "id": "D",
+        "text": "A XOR B XOR C"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Complementary static CMOS",
+        "specified pull-down conduction"
+      ],
+      "asked": "Find output-high Boolean condition.",
+      "concept": "Complex gate inversion",
+      "formula": "Y=\\overline{(A+B)C}",
+      "steps": [
+        "When the pull-down condition is true, the output is connected to ground.",
+        "The complementary pull-up covers the remaining valid input states.",
+        "Thus the output is the complement of the conduction condition, option C."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Thus the output is the complement of the conduction condition, option C.",
+      "commonMistakes": [
+        "A pull-down expression describes when Y is low, not when Y is high."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex gate inversion applies.",
+      "Start from $ Y=\\overline{(A+B)C} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Truth table of the complement of parallel-A/B then series-C pull-down conduction. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-26-08",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "In a gate’s conducting pull-down path, two identical ON NMOS switches are in series, each modeled by 2 kΩ. Find their total resistance in kΩ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Only one series path",
+        "ideal resistor ON models",
+        "each 2 kΩ"
+      ],
+      "asked": "Find series ON resistance.",
+      "concept": "Gate switch-resistance model",
+      "formula": "R_{eq}=R_1+R_2",
+      "steps": [
+        "The same discharge current passes through both switches in series.",
+        "Their voltage drops add.",
+        "The path resistance is 2+2=4 kΩ in this stated simplified model."
+      ],
+      "finalAnswer": "4 kΩ",
+      "explanation": "The path resistance is 2+2=4 kΩ in this stated simplified model.",
+      "commonMistakes": [
+        "Series transistor ON resistance is not the parallel combination."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which gate switch-resistance model applies.",
+      "Start from $ R_{eq}=R_1+R_2 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Series-switch voltage/current ratio for the specified constant ON resistances. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-26-09",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Three identical ON switch branches of 6 kΩ each connect an output node to ground in parallel. Find the equivalent pull-down resistance in kΩ.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three equal parallel ON branches",
+        "no other paths"
+      ],
+      "asked": "Find parallel path resistance.",
+      "concept": "Parallel CMOS discharge paths",
+      "formula": "G_{eq}=\\sum_i1/R_i",
+      "steps": [
+        "Each branch contributes conductance 1/6 in reciprocal kΩ.",
+        "Three branches give total conductance 3/6=1/2.",
+        "The equivalent resistance is its reciprocal, 2 kΩ."
+      ],
+      "finalAnswer": "2 kΩ",
+      "explanation": "The equivalent resistance is its reciprocal, 2 kΩ.",
+      "commonMistakes": [
+        "Multiple conducting parallel branches reduce the discharge resistance."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which parallel cmos discharge paths applies.",
+      "Start from $ G_{eq}=\\sum_i1/R_i $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Sum explicit parallel branch conductances. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-TOPIC-26-10",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which two-input gate choices are functionally complete by themselves, allowing repeated instances and tied inputs as needed?",
+    "options": [
+      {
+        "id": "A",
+        "text": "NAND"
+      },
+      {
+        "id": "B",
+        "text": "AND"
+      },
+      {
+        "id": "C",
+        "text": "OR"
+      },
+      {
+        "id": "D",
+        "text": "NOR"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Unrestricted composition of the chosen gate type",
+        "tied inputs permitted"
+      ],
+      "asked": "Select universal gate primitives.",
+      "concept": "Functional completeness",
+      "formula": "\\bar A=\\operatorname{NAND}(A,A)=\\operatorname{NOR}(A,A)",
+      "steps": [
+        "NAND can produce inversion, then AND and OR through De Morgan constructions.",
+        "NOR has the dual construction.",
+        "AND-only and OR-only circuits cannot produce inversion of a free input. Select A and D."
+      ],
+      "finalAnswer": "A, D",
+      "explanation": "AND-only and OR-only circuits cannot produce inversion of a free input. Select A and D.",
+      "commonMistakes": [
+        "Completeness is about composing gates, not a single gate implementing every function directly."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which functional completeness applies.",
+      "Start from $ \\bar A=\\operatorname{NAND}(A,A)=\\operatorname{NOR}(A,A) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct NOT,AND,OR using only NAND or only NOR and exhaustively verify gate constructions; AND/OR-only monotonicity rejects inversion. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-26-11",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A three-inverter chain has ideal Boolean input A. Find its output when A=1.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Three cascaded ideal NOT gates"
+      ],
+      "asked": "Propagate the bit through each stage.",
+      "concept": "Inversion parity",
+      "formula": "\\bar{\\bar{\\bar A}}=\\bar A",
+      "steps": [
+        "The first stage changes 1 to 0.",
+        "The second returns it to 1, and the third changes it to 0.",
+        "Output is 0; an odd number of inversions complements the input."
+      ],
+      "finalAnswer": "0",
+      "explanation": "Output is 0; an odd number of inversions complements the input.",
+      "commonMistakes": [
+        "Count logic inversions rather than assuming every buffer chain preserves polarity."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which inversion parity applies.",
+      "Start from $ \\bar{\\bar{\\bar A}}=\\bar A $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Propagate the actual input through all three inverter states. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-26-12",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "An AOI22 CMOS gate implements Y=NOT(AB+CD). Of the 16 input combinations, how many make Y=0?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four independent Boolean inputs",
+        "two AND terms feeding an inversion"
+      ],
+      "asked": "Count the union of two conduction conditions.",
+      "concept": "Complex-gate inclusion–exclusion",
+      "formula": "\\#(AB+CD)=\\#(AB)+\\#(CD)-\\#(ABCD)",
+      "steps": [
+        "AB=1 fixes A,B and leaves C,D free, covering 4 words. CD=1 likewise covers 4.",
+        "The all-one word belongs to both sets and must be subtracted once.",
+        "The pull-down count is 4+4−1=7, so Y=0 on 7 words."
+      ],
+      "finalAnswer": "7",
+      "explanation": "The pull-down count is 4+4−1=7, so Y=0 on 7 words.",
+      "commonMistakes": [
+        "Counting the two products separately double-counts their overlap."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which complex-gate inclusion–exclusion applies.",
+      "Start from $ \\#(AB+CD)=\\#(AB)+\\#(CD)-\\#(ABCD) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Exhaustive 16-row complex-gate pull-down count. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-26-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      6.9999993,
+      7.0000007
+    ],
+    "numericalTolerance": 7e-7
+  }
+]

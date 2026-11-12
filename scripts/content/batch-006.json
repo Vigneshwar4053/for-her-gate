@@ -1,0 +1,32 @@
+[
+  {
+    "testId": "mixed-04",
+    "file": "data/questions/mixed-04.json",
+    "title": "Mixed Revision \u00b7 Energy, Logic & State",
+    "batch": "006"
+  },
+  {
+    "testId": "mixed-05",
+    "file": "data/questions/mixed-05.json",
+    "title": "Mixed Revision \u00b7 Frequency, Codes & Geometry",
+    "batch": "006"
+  },
+  {
+    "testId": "mixed-06",
+    "file": "data/questions/mixed-06.json",
+    "title": "Mixed Revision \u00b7 Fields, Memory & Dynamics",
+    "batch": "006"
+  },
+  {
+    "testId": "mixed-07",
+    "file": "data/questions/mixed-07.json",
+    "title": "Mixed Revision \u00b7 Detection, Bias & Transformations",
+    "batch": "006"
+  },
+  {
+    "testId": "mixed-08",
+    "file": "data/questions/mixed-08.json",
+    "title": "Mixed Revision \u00b7 Conservation & Constraints",
+    "batch": "006"
+  }
+]

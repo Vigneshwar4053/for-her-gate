@@ -1,0 +1,781 @@
+[
+  {
+    "id": "FH-TOPIC-29-01",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "How many flip-flops are minimally required to encode 10 distinct finite-state-machine states in binary?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Ten states",
+        "ordinary fixed binary encoding"
+      ],
+      "asked": "Find the smallest n with 2ⁿ≥10.",
+      "concept": "State encoding capacity",
+      "formula": "n=\\lceil\\log_2M\\rceil",
+      "steps": [
+        "Three bits encode only eight states, fewer than ten.",
+        "Four bits encode sixteen states.",
+        "The smallest adequate count is 4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "The smallest adequate count is 4.",
+      "commonMistakes": [
+        "Unused binary patterns are allowed in a minimal-width state encoding."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which state encoding capacity applies.",
+      "Start from $ n=\\lceil\\log_2M\\rceil $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate available binary-state capacities until ten states fit. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-29-02",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A synchronous 3-bit up-counter starts at 110₂ and increments modulo 8 on each rising edge. Find the decimal state after 3 edges.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Initial state 6",
+        "three modulo-8 increments"
+      ],
+      "asked": "Find (6+3) mod8.",
+      "concept": "Modulo counter evolution",
+      "formula": "q_k=(q_0+k)\\bmod8",
+      "steps": [
+        "The states after successive edges are 111,000,001.",
+        "This wraps through zero on the second edge.",
+        "The third state is 001, decimal 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The third state is 001, decimal 1.",
+      "commonMistakes": [
+        "The modulus comes from the three-bit state width."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which modulo counter evolution applies.",
+      "Start from $ q_k=(q_0+k)\\bmod8 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Simulate all three modulo-8 state transitions. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-29-03",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A T flip-flop starts at Q=0. Its T values at three active edges are 1,0,1. Find the final Q.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Initial state zero",
+        "toggle-enable sequence 1,0,1"
+      ],
+      "asked": "Track every active-edge transition.",
+      "concept": "T flip-flop update",
+      "formula": "Q^+=Q\\oplus T",
+      "steps": [
+        "The first high T toggles Q to 1.",
+        "T=0 on the second edge preserves 1.",
+        "The last high T toggles it back to 0."
+      ],
+      "finalAnswer": "0",
+      "explanation": "The last high T toggles it back to 0.",
+      "commonMistakes": [
+        "A low T preserves the state rather than resetting it."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which t flip-flop update applies.",
+      "Start from $ Q^+=Q\\oplus T $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Simulate T flip-flop with its actual toggle-enable sequence. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-29-04",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A latch is enabled whenever its gate signal is high. While the gate remains high, its ideal Q follows D. This device is:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Level sensitive"
+      },
+      {
+        "id": "B",
+        "text": "Positive-edge triggered only"
+      },
+      {
+        "id": "C",
+        "text": "A combinational NOT gate"
+      },
+      {
+        "id": "D",
+        "text": "A counter by itself"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Transparent behavior during an enable level"
+      ],
+      "asked": "Classify the storage element.",
+      "concept": "Latch versus flip-flop",
+      "formula": "Q=D\\quad\\text{while enable is active}",
+      "steps": [
+        "Transparency persists throughout the active level, not only at one instant.",
+        "That is the defining ideal level-sensitive latch behavior.",
+        "Option A is correct; an edge-triggered flip-flop samples only near its active edge."
+      ],
+      "finalAnswer": "A",
+      "explanation": "Option A is correct; an edge-triggered flip-flop samples only near its active edge.",
+      "commonMistakes": [
+        "Do not substitute edge-triggered timing assumptions for a transparent latch."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which latch versus flip-flop applies.",
+      "Start from $ Q=D\\quad\\text{while enable is active} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Classify transparency throughout active level versus instantaneous edge sampling. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "A"
+  },
+  {
+    "id": "FH-TOPIC-29-05",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A serial shift register starts Q3Q2Q1Q0=1001. On each edge, Q3←Q2, Q2←Q1, Q1←Q0, Q0←Din. With Din=0 on two edges, find the final word as an unsigned decimal.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Four-bit register",
+        "explicit simultaneous next-state wiring",
+        "two zero input bits"
+      ],
+      "asked": "Apply both shifts using old-state values.",
+      "concept": "Synchronous shift-register updates",
+      "formula": "(Q_3,Q_2,Q_1,Q_0)^+=(Q_2,Q_1,Q_0,D_{in})",
+      "steps": [
+        "After the first edge 1001 becomes 0010.",
+        "After the second edge it becomes 0100.",
+        "The final unsigned value is 4."
+      ],
+      "finalAnswer": "4",
+      "explanation": "The final unsigned value is 4.",
+      "commonMistakes": [
+        "All flip-flops update from the previous state simultaneously; do not ripple in-place through the assignment list."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which synchronous shift-register updates applies.",
+      "Start from $ (Q_3,Q_2,Q_1,Q_0)^+=(Q_2,Q_1,Q_0,D_{in}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Bit-level simultaneous shift-register simulation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-TOPIC-29-06",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A synchronous FSM has states 0,1,2 and transition qnext=(q+1) mod3 independent of input. Starting at 2, find its state after 5 clock edges.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Modulo-3 transition",
+        "initial state 2"
+      ],
+      "asked": "Apply five transitions.",
+      "concept": "Finite-state transition iteration",
+      "formula": "q_k=(q_0+k)\\bmod3",
+      "steps": [
+        "Five updates add 5 to the initial index 2.",
+        "Reduce 7 modulo 3.",
+        "The state is 1."
+      ],
+      "finalAnswer": "1",
+      "explanation": "The state is 1.",
+      "commonMistakes": [
+        "State labels here are defined numerically by the transition rule; no unused fourth codeword is visited."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which finite-state transition iteration applies.",
+      "Start from $ q_k=(q_0+k)\\bmod3 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Iterate all five specified FSM updates. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      0.9999999,
+      1.0000001
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-29-07",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about synchronous sequential circuits are correct?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Flip-flops use a common logical capture clock in the ideal synchronous model"
+      },
+      {
+        "id": "B",
+        "text": "Combinational logic can never lie between two registers"
+      },
+      {
+        "id": "C",
+        "text": "Setup constraints limit maximum path delay for a chosen clock period"
+      },
+      {
+        "id": "D",
+        "text": "Hold constraints involve earliest new-data arrival after a capture edge"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Ordinary edge-triggered synchronous circuit",
+        "ideal common clock model"
+      ],
+      "asked": "Select valid timing/model descriptions.",
+      "concept": "Register-to-register timing",
+      "formula": "T_{clk}\\ge t_{cq,max}+t_{comb,max}+t_{setup}",
+      "steps": [
+        "A common capture-clock abstraction defines synchronous state updates.",
+        "Combinational functions commonly connect register outputs to later register inputs.",
+        "Setup checks the latest arrival before the next edge, while hold checks the earliest post-edge change. Select A,C,D."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Setup checks the latest arrival before the next edge, while hold checks the earliest post-edge change. Select A,C,D.",
+      "commonMistakes": [
+        "Setup and hold constrain different delay extremes."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which register-to-register timing applies.",
+      "Start from $ T_{clk}\\ge t_{cq,max}+t_{comb,max}+t_{setup} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Register-to-register latest/earliest arrival timing definitions and shared-clock model. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-29-08",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A setup-limited path has tcq,max=0.8 ns, combinational delay 3 ns, setup 0.2 ns and zero skew. Find the maximum clock frequency in MHz.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Total timing path components in ns"
+      ],
+      "asked": "Convert minimum period into frequency.",
+      "concept": "Synchronous maximum clock rate",
+      "formula": "f_{max}=1/(t_{cq,max}+t_{comb,max}+t_{setup})",
+      "steps": [
+        "The minimum clock period is 0.8+3+0.2=4 ns.",
+        "Its reciprocal is 1/(4×10⁻⁹)=250×10⁶ Hz.",
+        "The maximum setup-limited frequency is 250 MHz, assuming hold and other constraints also pass."
+      ],
+      "finalAnswer": "250 MHz",
+      "explanation": "The maximum setup-limited frequency is 250 MHz, assuming hold and other constraints also pass.",
+      "commonMistakes": [
+        "The reciprocal of a nanosecond value is in gigahertz before conversion."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which synchronous maximum clock rate applies.",
+      "Start from $ f_{max}=1/(t_{cq,max}+t_{comb,max}+t_{setup}) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Construct minimum setup period in ns then convert reciprocal to MHz. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      249.999975,
+      250.000025
+    ],
+    "numericalTolerance": 0.000024999999999999998
+  },
+  {
+    "id": "FH-TOPIC-29-09",
+    "type": "MCQ",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A modulo-6 synchronous counter uses a 3-bit encoding and visits exactly six valid states. How many of the eight binary patterns remain unused?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "6"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Three storage bits",
+        "exactly six reachable intended states"
+      ],
+      "asked": "Count unused encodings.",
+      "concept": "Encoding slack",
+      "formula": "N_{unused}=2^3-6",
+      "steps": [
+        "Three bits provide eight encodings.",
+        "Six are assigned to the intended state cycle.",
+        "Two remain unused; their recovery behavior still needs a design decision."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Two remain unused; their recovery behavior still needs a design decision.",
+      "commonMistakes": [
+        "Unused states are possible even in a minimum-width encoding."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which encoding slack applies.",
+      "Start from $ N_{unused}=2^3-6 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Count the unused part of eight encodings after assigning six states. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-TOPIC-29-10",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A Moore-machine output is y=1 only in state S2. Transitions under input 1 cycle S0→S1→S2→S0. Starting in S0 and applying four 1 inputs at successive clocks, find y after the fourth clock.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Moore output depends on current state",
+        "cyclic transitions on input1"
+      ],
+      "asked": "Track state then evaluate output.",
+      "concept": "Moore timing convention",
+      "formula": "y_k=g(q_k)",
+      "steps": [
+        "The state sequence after clocks is S1,S2,S0,S1.",
+        "After the fourth clock the machine is in S1, not S2.",
+        "Thus output y=0."
+      ],
+      "finalAnswer": "0",
+      "explanation": "Thus output y=0.",
+      "commonMistakes": [
+        "For a Moore machine evaluate the state reached at the requested time, not the next input directly."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which moore timing convention applies.",
+      "Start from $ y_k=g(q_k) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Simulate state transitions before evaluating the Moore output. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      -1e-7,
+      1e-7
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-TOPIC-29-11",
+    "type": "MSQ",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Which statements distinguish ordinary Moore and Mealy FSM output models?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A Moore output is a function of state alone"
+      },
+      {
+        "id": "B",
+        "text": "A Mealy output can depend on current state and current input"
+      },
+      {
+        "id": "C",
+        "text": "A Mealy output is forbidden from ever changing between clock edges"
+      },
+      {
+        "id": "D",
+        "text": "A Moore output may change when its encoded state changes"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Conventional combinational output logic with synchronous state storage"
+      ],
+      "asked": "Select correct output dependencies.",
+      "concept": "FSM output definitions",
+      "formula": "y_{Moore}=g(q),\\quad y_{Mealy}=g(q,x)",
+      "steps": [
+        "Moore and Mealy models differ in whether input appears in the output function.",
+        "A Mealy combinational output may respond to an input change before the next state clock.",
+        "A Moore output can change when state storage changes; hence A,B,D hold. Real implementations may register outputs for additional timing control."
+      ],
+      "finalAnswer": "A, B, D",
+      "explanation": "A Moore output can change when state storage changes; hence A,B,D hold. Real implementations may register outputs for additional timing control.",
+      "commonMistakes": [
+        "The abstract dependency model does not by itself guarantee a glitch-free physical output."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which fsm output definitions applies.",
+      "Start from $ y_{Moore}=g(q),\\quad y_{Mealy}=g(q,x) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Output function dependencies, including a direct-input Mealy counterexample to edge-only changes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "correctAnswer": [
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-TOPIC-29-12",
+    "type": "NAT",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "difficulty": "hard",
+    "difficultyRationale": "Requires a parameter or domain condition, multiple representations, or a nontrivial combination of concepts.",
+    "marks": 2,
+    "question": "Two positive-edge registers use the same period T with capture clock arriving 0.3 ns later than the launch clock. Let tcq,max=1 ns, combinational delay=4 ns and setup=0.5 ns. Ignoring all other uncertainty, find the minimum setup-limited T in ns.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Positive capture skew +0.3 ns",
+        "max path 1+4 ns",
+        "setup 0.5 ns"
+      ],
+      "asked": "Include clock skew with the correct sign.",
+      "concept": "Setup with useful capture skew",
+      "formula": "T\\ge t_{cq,max}+t_{comb,max}+t_{setup}-t_{skew}",
+      "steps": [
+        "The capture edge occurs at T+0.3 ns relative to the launch edge.",
+        "Data arrives at 1+4=5 ns and must precede that edge by 0.5 ns.",
+        "Thus 5+0.5≤T+0.3, giving T≥5.2 ns. Hold impact must be checked separately."
+      ],
+      "finalAnswer": "5.2 ns",
+      "explanation": "Thus 5+0.5≤T+0.3, giving T≥5.2 ns. Hold impact must be checked separately.",
+      "commonMistakes": [
+        "A later capture clock helps setup but can worsen hold."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which setup with useful capture skew applies.",
+      "Start from $ T\\ge t_{cq,max}+t_{comb,max}+t_{setup}-t_{skew} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Explicit launch-to-capture timeline with later capture skew added to available time. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-008.json#FH-TOPIC-29-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "008",
+    "acceptedRange": [
+      5.19999948,
+      5.20000052
+    ],
+    "numericalTolerance": 5.2e-7
+  }
+]

@@ -1,0 +1,781 @@
+[
+  {
+    "id": "FH-SUBJECT-09-01",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "A quantity increases by 20% and then decreases by 20%. Find the net percentage decrease from its original value.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Successive multiplicative changes +20% and −20%"
+      ],
+      "asked": "Find the net decrease percentage.",
+      "concept": "Successive percentages",
+      "formula": "\\frac{Q_f}{Q_0}=(1+0.2)(1-0.2)",
+      "steps": [
+        "Take an initial quantity of 100 units.",
+        "It first becomes 120 and then 120×0.8=96.",
+        "The final value is 4 units below 100, a 4% decrease."
+      ],
+      "finalAnswer": "4",
+      "explanation": "The final value is 4 units below 100, a 4% decrease.",
+      "commonMistakes": [
+        "The two percentages use different bases and do not cancel."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which successive percentages applies.",
+      "Start from $ \\frac{Q_f}{Q_0}=(1+0.2)(1-0.2) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Explicit sequential percentage transformation starting from 100. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-01",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      3.9999996,
+      4.0000004
+    ],
+    "numericalTolerance": 4e-7
+  },
+  {
+    "id": "FH-SUBJECT-09-02",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A and B finish a job alone in 6 and 3 hours respectively. At constant independent work rates, find their completion time together in hours.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rates 1/6 and 1/3 job per hour"
+      ],
+      "asked": "Find the reciprocal combined rate.",
+      "concept": "Work rates",
+      "formula": "1/T=1/T_A+1/T_B",
+      "steps": [
+        "Add the independent rates: 1/6+1/3=1/2 job/hour.",
+        "The whole job therefore takes 1/(1/2) hours.",
+        "Combined completion time is 2 hours."
+      ],
+      "finalAnswer": "2 hours",
+      "explanation": "Combined completion time is 2 hours.",
+      "commonMistakes": [
+        "Add work rates, not completion times."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which work rates applies.",
+      "Start from $ 1/T=1/T_A+1/T_B $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Add conserved work rates before taking reciprocal. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-02",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-SUBJECT-09-03",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "How many distinct arrangements of the letters in LEVEL are possible?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Five letters",
+        "L repeated twice",
+        "E repeated twice",
+        "V once"
+      ],
+      "asked": "Count distinct letter permutations.",
+      "concept": "Permutations with repetitions",
+      "formula": "N=\\frac{5!}{2!2!}",
+      "steps": [
+        "If the five positions were all distinct there would be 5!=120 permutations.",
+        "Exchanging the identical L letters or identical E letters does not create a new arrangement.",
+        "Divide by 2!×2!=4 to get 30."
+      ],
+      "finalAnswer": "30",
+      "explanation": "Divide by 2!×2!=4 to get 30.",
+      "commonMistakes": [
+        "Do not divide by an additional 2 for V, which occurs only once."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which permutations with repetitions applies.",
+      "Start from $ N=\\frac{5!}{2!2!} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all positional permutations and deduplicate actual strings. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-03",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      29.999997,
+      30.000003
+    ],
+    "numericalTolerance": 0.000003
+  },
+  {
+    "id": "FH-SUBJECT-09-04",
+    "type": "MCQ",
+    "subject": "aptitude",
+    "topic": "analytical-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "All members of set A belong to set B. No member of B belongs to C. Which conclusion necessarily follows?",
+    "options": [
+      {
+        "id": "A",
+        "text": "All C belong to A"
+      },
+      {
+        "id": "B",
+        "text": "Some A belong to C"
+      },
+      {
+        "id": "C",
+        "text": "No A belongs to C"
+      },
+      {
+        "id": "D",
+        "text": "Some B must belong to A"
+      }
+    ],
+    "solution": {
+      "given": [
+        "A⊆B",
+        "B∩C empty",
+        "sets may be empty"
+      ],
+      "asked": "Choose the logically entailed conclusion.",
+      "concept": "Set-based deduction",
+      "formula": "A\\subseteq B,\\ B\\cap C=\\varnothing\\Rightarrow A\\cap C=\\varnothing",
+      "steps": [
+        "Any hypothetical member of A is also a member of B.",
+        "Since no B member can be in C, that same member cannot be in C.",
+        "Thus A and C are disjoint. The premises do not assert that A is nonempty, so an existential conclusion is not forced."
+      ],
+      "finalAnswer": "C",
+      "explanation": "Thus A and C are disjoint. The premises do not assert that A is nonempty, so an existential conclusion is not forced.",
+      "commonMistakes": [
+        "Universal statements do not necessarily assert existence."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which set-based deduction applies.",
+      "Start from $ A\\subseteq B,\\ B\\cap C=\\varnothing\\Rightarrow A\\cap C=\\varnothing $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Set-subset/disjoint deduction; check empty-set and nonempty counterexamples to existential alternatives. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-04",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": "C"
+  },
+  {
+    "id": "FH-SUBJECT-09-05",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "analytical-aptitude",
+    "difficulty": "easy",
+    "difficultyRationale": "Direct application of one governing relationship after identifying the given conditions.",
+    "marks": 1,
+    "question": "Find the next term in the sequence 2, 6, 12, 20, 30 if its rule is aₙ=n(n+1) for n≥1.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rule explicitly specified as n(n+1)"
+      ],
+      "asked": "Compute the sixth term.",
+      "concept": "Numerical relations",
+      "formula": "a_6=6(6+1)",
+      "steps": [
+        "The listed five terms correspond to n=1 through n=5.",
+        "The next index is 6.",
+        "a6=6×7=42; its increment from 30 is 12."
+      ],
+      "finalAnswer": "42",
+      "explanation": "a6=6×7=42; its increment from 30 is 12.",
+      "commonMistakes": [
+        "A finite list alone does not determine a unique rule; use the rule stated in the question."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which numerical relations applies.",
+      "Start from $ a_6=6(6+1) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate the explicitly specified sequence law at its next index. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-05",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      41.9999958,
+      42.0000042
+    ],
+    "numericalTolerance": 0.0000042
+  },
+  {
+    "id": "FH-SUBJECT-09-06",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "A right circular cylinder has radius 2 cm and height 3 cm. Find its volume divided by π, in cm³.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Radius 2 cm",
+        "height 3 cm"
+      ],
+      "asked": "Find V/π.",
+      "concept": "Cylinder volume",
+      "formula": "V=\\pi r^2h",
+      "steps": [
+        "The base area is π×2²=4π cm².",
+        "Multiply by height 3 cm to get 12π cm³.",
+        "The requested value V/π is 12 cm³."
+      ],
+      "finalAnswer": "12 cm³",
+      "explanation": "The requested value V/π is 12 cm³.",
+      "commonMistakes": [
+        "The prompt asks for volume divided by π, not the full decimal volume."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which cylinder volume applies.",
+      "Start from $ V=\\pi r^2h $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Integrate constant cross-sectional area divided by π along cylinder height. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-06",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      11.9999988,
+      12.0000012
+    ],
+    "numericalTolerance": 0.0000012
+  },
+  {
+    "id": "FH-SUBJECT-09-07",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "In a class of 40 students, 25 study subject A, 20 study B and 10 study both. How many study neither?",
+    "options": [],
+    "solution": {
+      "given": [
+        "Population 40",
+        "|A|=25",
+        "|B|=20",
+        "|A∩B|=10"
+      ],
+      "asked": "Find the complement of A∪B.",
+      "concept": "Inclusion–exclusion",
+      "formula": "|A\\cup B|=|A|+|B|-|A\\cap B|",
+      "steps": [
+        "Adding 25+20 counts the 10 students in both subjects twice.",
+        "Subtract their overlap once: union size 35.",
+        "The number studying neither is 40−35=5."
+      ],
+      "finalAnswer": "5",
+      "explanation": "The number studying neither is 40−35=5.",
+      "commonMistakes": [
+        "Do not subtract the overlap twice when forming the union."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which inclusion–exclusion applies.",
+      "Start from $ |A\\cup B|=|A|+|B|-|A\\cap B| $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Inclusion–exclusion accounting of membership counts. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-07",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      4.9999995,
+      5.0000005
+    ],
+    "numericalTolerance": 5e-7
+  },
+  {
+    "id": "FH-SUBJECT-09-08",
+    "type": "MSQ",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Which statements about the positive numbers a=2, b=8 are true?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Their arithmetic mean is 5"
+      },
+      {
+        "id": "B",
+        "text": "Their geometric mean is 5"
+      },
+      {
+        "id": "C",
+        "text": "Their geometric mean is 4"
+      },
+      {
+        "id": "D",
+        "text": "Their harmonic mean is 3.2"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Two positive observations 2 and 8"
+      ],
+      "asked": "Calculate and compare the three means.",
+      "concept": "Arithmetic, geometric and harmonic means",
+      "formula": "AM=\\frac{a+b}{2},\\quad GM=\\sqrt{ab},\\quad HM=\\frac2{1/a+1/b}",
+      "steps": [
+        "AM=(2+8)/2=5 and GM=√16=4.",
+        "HM=2/(1/2+1/8)=2/(5/8)=16/5=3.2.",
+        "Select A, C and D; the values also satisfy AM≥GM≥HM."
+      ],
+      "finalAnswer": "A, C, D",
+      "explanation": "Select A, C and D; the values also satisfy AM≥GM≥HM.",
+      "commonMistakes": [
+        "These different means answer different aggregation questions."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which arithmetic, geometric and harmonic means applies.",
+      "Start from $ AM=\\frac{a+b}{2},\\quad GM=\\sqrt{ab},\\quad HM=\\frac2{1/a+1/b} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Compute every named mean with original observations. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-08",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "FH-SUBJECT-09-09",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Two fair six-sided dice are rolled independently. Find the probability that their sum equals 7.",
+    "options": [],
+    "solution": {
+      "given": [
+        "36 equally likely ordered pairs of die outcomes"
+      ],
+      "asked": "Find P(sum=7).",
+      "concept": "Counting ordered outcomes",
+      "formula": "P(E)=N_E/N_S",
+      "steps": [
+        "The pairs are (1,6),(2,5),(3,4),(4,3),(5,2),(6,1).",
+        "There are 6 favorable ordered pairs out of 36.",
+        "Probability is 6/36=1/6."
+      ],
+      "finalAnswer": "0.16666666666666666",
+      "explanation": "Probability is 6/36=1/6.",
+      "commonMistakes": [
+        "The two dice form ordered outcomes, even when the sum ignores order."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which counting ordered outcomes applies.",
+      "Start from $ P(E)=N_E/N_S $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Enumerate all 36 ordered dice outcomes. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-09",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      0.166666566667,
+      0.166666766667
+    ],
+    "numericalTolerance": 1e-7
+  },
+  {
+    "id": "FH-SUBJECT-09-10",
+    "type": "MCQ",
+    "subject": "aptitude",
+    "topic": "verbal-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Choose the grammatically correct sentence for the stated singular subject “Each of the instruments”.",
+    "options": [
+      {
+        "id": "A",
+        "text": "Each of the instruments are calibrated."
+      },
+      {
+        "id": "B",
+        "text": "Each of the instruments is calibrated."
+      },
+      {
+        "id": "C",
+        "text": "Each of the instruments were calibrated tomorrow."
+      },
+      {
+        "id": "D",
+        "text": "Each of the instruments have calibrated."
+      }
+    ],
+    "solution": {
+      "given": [
+        "Subject headed by singular distributive pronoun Each"
+      ],
+      "asked": "Select correct subject–verb agreement.",
+      "concept": "Subject–verb agreement",
+      "formula": "\\text{Each}\\ \\longrightarrow\\ \\text{singular finite verb}",
+      "steps": [
+        "The grammatical head of the subject is Each, not instruments inside the of-phrase.",
+        "A singular present-tense subject takes is in this passive construction.",
+        "Therefore “Each of the instruments is calibrated” is correct. The other options have agreement or tense/structure errors."
+      ],
+      "finalAnswer": "B",
+      "explanation": "Therefore “Each of the instruments is calibrated” is correct. The other options have agreement or tense/structure errors.",
+      "commonMistakes": [
+        "Do not make the verb agree with a nearby plural noun inside a prepositional phrase."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which subject–verb agreement applies.",
+      "Start from $ \\text{Each}\\ \\longrightarrow\\ \\text{singular finite verb} $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Singular distributive subject head “Each” controls finite-verb agreement; language-rule review, not a numeric check. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-10",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": "B"
+  },
+  {
+    "id": "FH-SUBJECT-09-11",
+    "type": "NAT",
+    "subject": "aptitude",
+    "topic": "spatial-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Point P=(2,1) is rotated by 90° counterclockwise about the origin, then translated by (3,−1). Find the final x-coordinate.",
+    "options": [],
+    "solution": {
+      "given": [
+        "Rotation first",
+        "translation second",
+        "Cartesian coordinates"
+      ],
+      "asked": "Find the x-coordinate after both transformations.",
+      "concept": "Planar rotation and translation",
+      "formula": "(x,y)\\xrightarrow{90^\\circ\\ CCW}(-y,x)",
+      "steps": [
+        "Rotating (2,1) gives (−1,2).",
+        "Add the translation vector (3,−1) to obtain (2,1).",
+        "The final x-coordinate is 2. Rotation and translation generally do not commute."
+      ],
+      "finalAnswer": "2",
+      "explanation": "The final x-coordinate is 2. Rotation and translation generally do not commute.",
+      "commonMistakes": [
+        "Apply transformations in the specified order."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which planar rotation and translation applies.",
+      "Start from $ (x,y)\\xrightarrow{90^\\circ\\ CCW}(-y,x) $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Matrix rotation followed by explicit translation. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-11",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "acceptedRange": [
+      1.9999998,
+      2.0000002
+    ],
+    "numericalTolerance": 2e-7
+  },
+  {
+    "id": "FH-SUBJECT-09-12",
+    "type": "MSQ",
+    "subject": "aptitude",
+    "topic": "analytical-aptitude",
+    "difficulty": "medium",
+    "difficultyRationale": "Requires selecting the governing relationship and combining two or more reasoning or calculation steps.",
+    "marks": 2,
+    "question": "Three jobs A,B,C must be ordered. A must precede B, and C must not be first. Which complete orders satisfy both constraints?",
+    "options": [
+      {
+        "id": "A",
+        "text": "A B C"
+      },
+      {
+        "id": "B",
+        "text": "C A B"
+      },
+      {
+        "id": "C",
+        "text": "A C B"
+      },
+      {
+        "id": "D",
+        "text": "B A C"
+      }
+    ],
+    "solution": {
+      "given": [
+        "Three distinct jobs",
+        "two precedence/position constraints"
+      ],
+      "asked": "Select every feasible full ordering.",
+      "concept": "Constraint-based ordering",
+      "formula": "\\operatorname{pos}(A)<\\operatorname{pos}(B),\\quad\\operatorname{pos}(C)\\ne1",
+      "steps": [
+        "A B C places A before B and C third, so it is valid.",
+        "C A B violates the first-position rule, whereas A C B satisfies both rules.",
+        "B A C violates A-before-B. Select A and C."
+      ],
+      "finalAnswer": "A, C",
+      "explanation": "B A C violates A-before-B. Select A and C.",
+      "commonMistakes": [
+        "Check every constraint independently for each proposed order."
+      ]
+    },
+    "hints": [
+      "Identify the conditions under which constraint-based ordering applies.",
+      "Start from $ \\operatorname{pos}(A)<\\operatorname{pos}(B),\\quad\\operatorname{pos}(C)\\ne1 $."
+    ],
+    "sourceType": "original",
+    "sourceUrl": null,
+    "sourceYear": null,
+    "sourceReferences": [
+      "https://ocw.mit.edu/courses/6-041sc-probabilistic-systems-analysis-and-applied-probability-fall-2013/"
+    ],
+    "reusePermission": "original-project-content",
+    "verified": true,
+    "verification": {
+      "status": "computationally-checked",
+      "answer": "checked",
+      "solution": "checked",
+      "method": "Evaluate precedence and position constraints for every candidate order. Arithmetic checked by executable calculation/property fixtures; same-system solution review only.",
+      "evidence": "data/content-reviews/batch-005.json#FH-SUBJECT-09-12",
+      "automaticallyValidated": true,
+      "answerKeyVerified": false,
+      "independentlyReviewed": false,
+      "humanReviewed": false
+    },
+    "contentVersion": 1,
+    "contentBatch": "005",
+    "correctAnswer": [
+      "A",
+      "C"
+    ]
+  }
+]

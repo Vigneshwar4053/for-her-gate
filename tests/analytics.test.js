@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {aggregate,streaks,filterAttempts,recommendations,localDay} from '../js/analytics.js';
+import {mistakeNotebook} from '../js/mistakes.js';
+const a=(at,status='correct')=>({id:String(at),testId:'test',submittedAt:at,day:localDay(at),valid:true,category:'subject',subject:'math',responses:{q:'A'},timeByQuestion:{q:10000},result:{correct:status==='correct'?1:0,incorrect:status==='incorrect'?1:0,rows:[{questionId:'q',subject:'math',topic:'algebra',status}],accuracy:status==='correct'?100:0}});
+test('empty statistics contain real zeros and no fictitious activity',()=>{const x=aggregate([]);assert.equal(x.accuracy,0);assert.equal(x.completed,0);assert.deepEqual(x.daily,{});});
+test('aggregate accuracy and measurable subject/topic time',()=>{const x=aggregate([a(1000),a(2000,'incorrect'),a(3000,'unattempted')]);assert.equal(x.attempted,2);assert.equal(x.accuracy,50);assert.equal(x.completed,1);assert.equal(x.subjects.math.correct,1);assert.equal(x.topics.algebra.averageSeconds,10);});
+test('revisions contribute question activity without completing full tests',()=>{const x=aggregate([{...a(1000),kind:'revision'}]);assert.equal(x.completed,0);assert.equal(x.attempted,1);});
+test('filters isolate date, subject, topic and category',()=>{const as=[a(1000),{...a(2000),category:'pyq'}];assert.equal(filterAttempts(as,{category:'pyq'}).length,1);assert.equal(aggregate(as,{subject:'missing'}).attempted,0);assert.equal(aggregate(as,{topic:'missing'}).attempted,0);assert.equal(filterAttempts(as,{days:7},10000000000).length,0);});
+test('streaks respect consecutive local dates and yesterday grace',()=>{const now=new Date(2026,2,10,12).getTime();const as=[7,8,9].map(d=>a(new Date(2026,2,d,12).getTime()));assert.equal(streaks(as,now).current,3);assert.equal(streaks(as,now+86400000).current,0);assert.equal(streaks(as,now).best,3);});
+test('weak-topic recommendations require actual errors and available tests',()=>{const rec=recommendations([a(1000,'incorrect')],[{status:'ready',topic:'algebra',id:'ready'}]);assert.equal(rec[0].test.id,'ready');assert.equal(recommendations([a(1000)],[]).length,0);});
+test('notebook records repeated mistakes and later improvement',()=>{const rows=mistakeNotebook([a(1000,'incorrect'),a(2000,'incorrect'),a(3000)],['q'],['q']);assert.equal(rows[0].count,2);assert.ok(rows[0].recovered);assert.ok(rows[0].revised);assert.equal(rows[0].userAnswer,'A');});

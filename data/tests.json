@@ -1,0 +1,3845 @@
+[
+  {
+    "id": "pyq-2007",
+    "title": "GATE EC 2007",
+    "category": "pyq",
+    "year": 2007,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2008",
+    "title": "GATE EC 2008",
+    "category": "pyq",
+    "year": 2008,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2009",
+    "title": "GATE EC 2009",
+    "category": "pyq",
+    "year": 2009,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2010",
+    "title": "GATE EC 2010",
+    "category": "pyq",
+    "year": 2010,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2011",
+    "title": "GATE EC 2011",
+    "category": "pyq",
+    "year": 2011,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2012",
+    "title": "GATE EC 2012",
+    "category": "pyq",
+    "year": 2012,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2013",
+    "title": "GATE EC 2013",
+    "category": "pyq",
+    "year": 2013,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2014",
+    "title": "GATE EC 2014",
+    "category": "pyq",
+    "year": 2014,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2015",
+    "title": "GATE EC 2015",
+    "category": "pyq",
+    "year": 2015,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2016",
+    "title": "GATE EC 2016",
+    "category": "pyq",
+    "year": 2016,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2017",
+    "title": "GATE EC 2017",
+    "category": "pyq",
+    "year": 2017,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2018",
+    "title": "GATE EC 2018",
+    "category": "pyq",
+    "year": 2018,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2019",
+    "title": "GATE EC 2019",
+    "category": "pyq",
+    "year": 2019,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2020",
+    "title": "GATE EC 2020",
+    "category": "pyq",
+    "year": 2020,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": null,
+      "answerKeyUrl": null,
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending"
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2021",
+    "title": "GATE EC 2021",
+    "category": "pyq",
+    "year": 2021,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": "https://gate2027.iitm.ac.in/static/doc/download/2021/ec_2021.pdf",
+      "answerKeyUrl": "https://gate2027.iitm.ac.in/static/doc/download/Answer_keys2021/ec_2021.pdf",
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending",
+      "linkProvenance": "Linked by the official 2027 download page on 2026-11-13. Some PDF fetches timed out; this does not verify paper content."
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2022",
+    "title": "GATE EC 2022",
+    "category": "pyq",
+    "year": 2022,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": "https://gate2027.iitm.ac.in/static/doc/download/2022/ec_2022.pdf",
+      "answerKeyUrl": "https://gate2027.iitm.ac.in/static/doc/download/Answer_keys2022/ec_2022.pdf",
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending",
+      "linkProvenance": "Linked by the official 2027 download page on 2026-11-13. Some PDF fetches timed out; this does not verify paper content."
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2023",
+    "title": "GATE EC 2023",
+    "category": "pyq",
+    "year": 2023,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": "https://gate2027.iitm.ac.in/static/doc/download/2023/ec_2023.pdf",
+      "answerKeyUrl": "https://gate2027.iitm.ac.in/static/doc/download/Answer_keys2023/EC_ANS_GATE2023.pdf",
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending",
+      "linkProvenance": "Linked by the official 2027 download page on 2026-11-13. Some PDF fetches timed out; this does not verify paper content."
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2024",
+    "title": "GATE EC 2024",
+    "category": "pyq",
+    "year": 2024,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": "https://gate2027.iitm.ac.in/static/doc/download/2024/EC24S7.pdf",
+      "answerKeyUrl": "https://gate2027.iitm.ac.in/static/doc/download/2024/ECFinalAnswerKey.pdf",
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending",
+      "linkProvenance": "Linked by the official 2027 download page on 2026-11-13. Some PDF fetches timed out; this does not verify paper content."
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2025",
+    "title": "GATE EC 2025",
+    "category": "pyq",
+    "year": 2025,
+    "paperCode": "EC",
+    "session": null,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": "https://gate2027.iitm.ac.in/static/doc/download/2025/EC2025.pdf",
+      "answerKeyUrl": "https://gate2027.iitm.ac.in/static/doc/download/2025_Key/EC_Keys.pdf",
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "pending",
+      "linkProvenance": "Linked by the official 2027 download page on 2026-11-13. Some PDF fetches timed out; this does not verify paper content."
+    },
+    "pendingReason": "Full paper transcription, diagrams, original format, answer/solution verification and redistribution review required."
+  },
+  {
+    "id": "pyq-2026",
+    "title": "GATE EC 2026",
+    "category": "pyq",
+    "year": 2026,
+    "paperCode": "EC",
+    "session": 7,
+    "targetQuestions": 65,
+    "targetMarks": 100,
+    "durationMinutes": 180,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "historical",
+      "verified": false
+    },
+    "historical": {
+      "verified": false,
+      "actualQuestionCount": null,
+      "actualMarks": null,
+      "note": "Original count, session, sections and marking await paper-by-paper inspection; 65/100 is the catalogue target only."
+    },
+    "source": {
+      "paperUrl": "https://gate2026.iitg.ac.in/doc/download/2026/QPs/EC.pdf",
+      "answerKeyUrl": "https://gate2026.iitg.ac.in/doc/download/2026/Keys/EC_Keys.pdf",
+      "archiveUrl": "https://gate2027.iitm.ac.in/download",
+      "reusePermission": "unresolved",
+      "questionVerification": "pending",
+      "answerVerification": "key-metadata-inspected",
+      "researchFile": "data/content-reviews/pyq-2026-source-review.json"
+    },
+    "pendingReason": "Official key metadata inspected (65 questions / 100 marks, session 7). Original paper fetches fail size limit; reproduction permission unresolved; full explanations/diagrams pending; Q64 multiple-range support implemented but source/solution/rights gates remain."
+  },
+  {
+    "id": "topic-01",
+    "title": "Linear Algebra · Rank, Eigenstructure & Linear Systems",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-01-01",
+      "FH-TOPIC-01-02",
+      "FH-TOPIC-01-03",
+      "FH-TOPIC-01-04",
+      "FH-TOPIC-01-05",
+      "FH-TOPIC-01-06",
+      "FH-TOPIC-01-07",
+      "FH-TOPIC-01-08",
+      "FH-TOPIC-01-09",
+      "FH-TOPIC-01-10",
+      "FH-TOPIC-01-11",
+      "FH-TOPIC-01-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-01.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "linear-algebra"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "002"
+  },
+  {
+    "id": "topic-02",
+    "title": "Calculus · Limits, Extrema & Integration",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-02-01",
+      "FH-TOPIC-02-02",
+      "FH-TOPIC-02-03",
+      "FH-TOPIC-02-04",
+      "FH-TOPIC-02-05",
+      "FH-TOPIC-02-06",
+      "FH-TOPIC-02-07",
+      "FH-TOPIC-02-08",
+      "FH-TOPIC-02-09",
+      "FH-TOPIC-02-10",
+      "FH-TOPIC-02-11",
+      "FH-TOPIC-02-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-02.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "calculus"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "002"
+  },
+  {
+    "id": "topic-03",
+    "title": "Differential Equations · Initial Values & Boundary Conditions",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-03-01",
+      "FH-TOPIC-03-02",
+      "FH-TOPIC-03-03",
+      "FH-TOPIC-03-04",
+      "FH-TOPIC-03-05",
+      "FH-TOPIC-03-06",
+      "FH-TOPIC-03-07",
+      "FH-TOPIC-03-08",
+      "FH-TOPIC-03-09",
+      "FH-TOPIC-03-10",
+      "FH-TOPIC-03-11",
+      "FH-TOPIC-03-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-03.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "differential-equations"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "002"
+  },
+  {
+    "id": "topic-04",
+    "title": "Complex Analysis · Analyticity, Contours & Series",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-04-01",
+      "FH-TOPIC-04-02",
+      "FH-TOPIC-04-03",
+      "FH-TOPIC-04-04",
+      "FH-TOPIC-04-05",
+      "FH-TOPIC-04-06",
+      "FH-TOPIC-04-07",
+      "FH-TOPIC-04-08",
+      "FH-TOPIC-04-09",
+      "FH-TOPIC-04-10",
+      "FH-TOPIC-04-11",
+      "FH-TOPIC-04-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-04.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "complex-analysis"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "002"
+  },
+  {
+    "id": "topic-05",
+    "title": "Probability · Conditioning, Distributions & Moments",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-05-01",
+      "FH-TOPIC-05-02",
+      "FH-TOPIC-05-03",
+      "FH-TOPIC-05-04",
+      "FH-TOPIC-05-05",
+      "FH-TOPIC-05-06",
+      "FH-TOPIC-05-07",
+      "FH-TOPIC-05-08",
+      "FH-TOPIC-05-09",
+      "FH-TOPIC-05-10",
+      "FH-TOPIC-05-11",
+      "FH-TOPIC-05-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-05.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "probability-and-statistics"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "002"
+  },
+  {
+    "id": "topic-06",
+    "title": "Circuit Analysis · Foundations",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-NETWORKS-001",
+      "FH-NETWORKS-002",
+      "FH-NETWORKS-003",
+      "FH-NETWORKS-004",
+      "FH-NETWORKS-005",
+      "FH-NETWORKS-006",
+      "FH-NETWORKS-007",
+      "FH-NETWORKS-008",
+      "FH-NETWORKS-009",
+      "FH-NETWORKS-010",
+      "FH-NETWORKS-011",
+      "FH-NETWORKS-012"
+    ],
+    "questionFiles": [
+      "data/questions/networks.json"
+    ],
+    "difficulty": "easy",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "circuit-analysis"
+    ],
+    "verification": "computationally-checked"
+  },
+  {
+    "id": "topic-07",
+    "title": "Network Theorems · Equivalents, Sources & Power",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-07-01",
+      "FH-TOPIC-07-02",
+      "FH-TOPIC-07-03",
+      "FH-TOPIC-07-04",
+      "FH-TOPIC-07-05",
+      "FH-TOPIC-07-06",
+      "FH-TOPIC-07-07",
+      "FH-TOPIC-07-08",
+      "FH-TOPIC-07-09",
+      "FH-TOPIC-07-10",
+      "FH-TOPIC-07-11",
+      "FH-TOPIC-07-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-07.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "network-theorems"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "003"
+  },
+  {
+    "id": "topic-08",
+    "title": "Transients · Initial Conditions, Poles & Energy",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-08-01",
+      "FH-TOPIC-08-02",
+      "FH-TOPIC-08-03",
+      "FH-TOPIC-08-04",
+      "FH-TOPIC-08-05",
+      "FH-TOPIC-08-06",
+      "FH-TOPIC-08-07",
+      "FH-TOPIC-08-08",
+      "FH-TOPIC-08-09",
+      "FH-TOPIC-08-10",
+      "FH-TOPIC-08-11",
+      "FH-TOPIC-08-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-08.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "transient-analysis"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "003"
+  },
+  {
+    "id": "topic-09",
+    "title": "Laplace Transform · Practice 1",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "laplace-transform",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-10",
+    "title": "Fourier Analysis · Spectra, Symmetry & Parseval",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-10-01",
+      "FH-TOPIC-10-02",
+      "FH-TOPIC-10-03",
+      "FH-TOPIC-10-04",
+      "FH-TOPIC-10-05",
+      "FH-TOPIC-10-06",
+      "FH-TOPIC-10-07",
+      "FH-TOPIC-10-08",
+      "FH-TOPIC-10-09",
+      "FH-TOPIC-10-10",
+      "FH-TOPIC-10-11",
+      "FH-TOPIC-10-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-10.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "fourier-transform"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "003"
+  },
+  {
+    "id": "topic-11",
+    "title": "Signals and Systems · Practice 1",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "signals-and-systems",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-12",
+    "title": "LTI Systems · Convolution, Stability & Delay",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-12-01",
+      "FH-TOPIC-12-02",
+      "FH-TOPIC-12-03",
+      "FH-TOPIC-12-04",
+      "FH-TOPIC-12-05",
+      "FH-TOPIC-12-06",
+      "FH-TOPIC-12-07",
+      "FH-TOPIC-12-08",
+      "FH-TOPIC-12-09",
+      "FH-TOPIC-12-10",
+      "FH-TOPIC-12-11",
+      "FH-TOPIC-12-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-12.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "lti-systems"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "003"
+  },
+  {
+    "id": "topic-13",
+    "title": "Sampling · Reconstruction & Aliasing",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "sampling",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-13-01",
+      "FH-TOPIC-13-02",
+      "FH-TOPIC-13-03",
+      "FH-TOPIC-13-04",
+      "FH-TOPIC-13-05",
+      "FH-TOPIC-13-06",
+      "FH-TOPIC-13-07",
+      "FH-TOPIC-13-08",
+      "FH-TOPIC-13-09",
+      "FH-TOPIC-13-10",
+      "FH-TOPIC-13-11",
+      "FH-TOPIC-13-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-13.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "sampling"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "003"
+  },
+  {
+    "id": "topic-14",
+    "title": "Semiconductor Physics · Bands & Equilibrium",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "semiconductor-physics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-14-01",
+      "FH-TOPIC-14-02",
+      "FH-TOPIC-14-03",
+      "FH-TOPIC-14-04",
+      "FH-TOPIC-14-05",
+      "FH-TOPIC-14-06",
+      "FH-TOPIC-14-07",
+      "FH-TOPIC-14-08",
+      "FH-TOPIC-14-09",
+      "FH-TOPIC-14-10",
+      "FH-TOPIC-14-11",
+      "FH-TOPIC-14-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-14.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "semiconductor-physics"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "007"
+  },
+  {
+    "id": "topic-15",
+    "title": "Carrier Transport · Currents, Lifetime & Fields",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "carrier-transport",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-15-01",
+      "FH-TOPIC-15-02",
+      "FH-TOPIC-15-03",
+      "FH-TOPIC-15-04",
+      "FH-TOPIC-15-05",
+      "FH-TOPIC-15-06",
+      "FH-TOPIC-15-07",
+      "FH-TOPIC-15-08",
+      "FH-TOPIC-15-09",
+      "FH-TOPIC-15-10",
+      "FH-TOPIC-15-11",
+      "FH-TOPIC-15-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-15.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "carrier-transport"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "007"
+  },
+  {
+    "id": "topic-16",
+    "title": "PN Junctions · Depletion, Bias & Charge Storage",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "pn-junctions",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-16-01",
+      "FH-TOPIC-16-02",
+      "FH-TOPIC-16-03",
+      "FH-TOPIC-16-04",
+      "FH-TOPIC-16-05",
+      "FH-TOPIC-16-06",
+      "FH-TOPIC-16-07",
+      "FH-TOPIC-16-08",
+      "FH-TOPIC-16-09",
+      "FH-TOPIC-16-10",
+      "FH-TOPIC-16-11",
+      "FH-TOPIC-16-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-16.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "pn-junctions"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "007"
+  },
+  {
+    "id": "topic-17",
+    "title": "Diodes · Practice 1",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "diodes",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-18",
+    "title": "BJT · Practice 1",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "bjt",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-19",
+    "title": "MOSFET · Practice 1",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "mosfet",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-20",
+    "title": "Diode Circuits · Practice 1",
+    "category": "topic",
+    "subject": "analog",
+    "topic": "diode-circuits",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-21",
+    "title": "Amplifiers · Practice 1",
+    "category": "topic",
+    "subject": "analog",
+    "topic": "amplifiers",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-22",
+    "title": "Op-Amp Circuits · References, Dynamics & Limits",
+    "category": "topic",
+    "subject": "analog",
+    "topic": "operational-amplifiers",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-22-01",
+      "FH-TOPIC-22-02",
+      "FH-TOPIC-22-03",
+      "FH-TOPIC-22-04",
+      "FH-TOPIC-22-05",
+      "FH-TOPIC-22-06",
+      "FH-TOPIC-22-07",
+      "FH-TOPIC-22-08",
+      "FH-TOPIC-22-09",
+      "FH-TOPIC-22-10",
+      "FH-TOPIC-22-11",
+      "FH-TOPIC-22-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-22.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "operational-amplifiers"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "009"
+  },
+  {
+    "id": "topic-23",
+    "title": "Feedback · Practice 1",
+    "category": "topic",
+    "subject": "analog",
+    "topic": "feedback",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-24",
+    "title": "Oscillators · Practice 1",
+    "category": "topic",
+    "subject": "analog",
+    "topic": "oscillators",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-25",
+    "title": "Boolean Algebra · Cofactors, Parity & Identities",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "boolean-algebra",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-25-01",
+      "FH-TOPIC-25-02",
+      "FH-TOPIC-25-03",
+      "FH-TOPIC-25-04",
+      "FH-TOPIC-25-05",
+      "FH-TOPIC-25-06",
+      "FH-TOPIC-25-07",
+      "FH-TOPIC-25-08",
+      "FH-TOPIC-25-09",
+      "FH-TOPIC-25-10",
+      "FH-TOPIC-25-11",
+      "FH-TOPIC-25-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-25.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "boolean-algebra"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "008"
+  },
+  {
+    "id": "topic-26",
+    "title": "Logic Gates · CMOS Networks & Noise Margins",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "logic-gates",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-26-01",
+      "FH-TOPIC-26-02",
+      "FH-TOPIC-26-03",
+      "FH-TOPIC-26-04",
+      "FH-TOPIC-26-05",
+      "FH-TOPIC-26-06",
+      "FH-TOPIC-26-07",
+      "FH-TOPIC-26-08",
+      "FH-TOPIC-26-09",
+      "FH-TOPIC-26-10",
+      "FH-TOPIC-26-11",
+      "FH-TOPIC-26-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-26.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "logic-gates"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "008"
+  },
+  {
+    "id": "topic-27",
+    "title": "Karnaugh Maps · Adjacency & Minimal Covers",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "karnaugh-maps",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-27-01",
+      "FH-TOPIC-27-02",
+      "FH-TOPIC-27-03",
+      "FH-TOPIC-27-04",
+      "FH-TOPIC-27-05",
+      "FH-TOPIC-27-06",
+      "FH-TOPIC-27-07",
+      "FH-TOPIC-27-08",
+      "FH-TOPIC-27-09",
+      "FH-TOPIC-27-10",
+      "FH-TOPIC-27-11",
+      "FH-TOPIC-27-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-27.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "karnaugh-maps"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "008"
+  },
+  {
+    "id": "topic-28",
+    "title": "Combinational Logic · Arithmetic & Selection",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "combinational-circuits",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-28-01",
+      "FH-TOPIC-28-02",
+      "FH-TOPIC-28-03",
+      "FH-TOPIC-28-04",
+      "FH-TOPIC-28-05",
+      "FH-TOPIC-28-06",
+      "FH-TOPIC-28-07",
+      "FH-TOPIC-28-08",
+      "FH-TOPIC-28-09",
+      "FH-TOPIC-28-10",
+      "FH-TOPIC-28-11",
+      "FH-TOPIC-28-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-28.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "combinational-circuits"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "008"
+  },
+  {
+    "id": "topic-29",
+    "title": "Sequential Logic · State Machines & Timing",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "sequential-circuits",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-29-01",
+      "FH-TOPIC-29-02",
+      "FH-TOPIC-29-03",
+      "FH-TOPIC-29-04",
+      "FH-TOPIC-29-05",
+      "FH-TOPIC-29-06",
+      "FH-TOPIC-29-07",
+      "FH-TOPIC-29-08",
+      "FH-TOPIC-29-09",
+      "FH-TOPIC-29-10",
+      "FH-TOPIC-29-11",
+      "FH-TOPIC-29-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-29.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "sequential-circuits"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "008"
+  },
+  {
+    "id": "topic-30",
+    "title": "Flip-Flops · Practice 1",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "flip-flops",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-31",
+    "title": "Data Converters · Practice 1",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "data-converters",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-32",
+    "title": "Transfer Functions · Practice 1",
+    "category": "topic",
+    "subject": "control",
+    "topic": "transfer-functions",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-33",
+    "title": "Time Response · Practice 1",
+    "category": "topic",
+    "subject": "control",
+    "topic": "time-response",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-34",
+    "title": "Stability · Routh, Nyquist & Internal Modes",
+    "category": "topic",
+    "subject": "control",
+    "topic": "stability",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-34-01",
+      "FH-TOPIC-34-02",
+      "FH-TOPIC-34-03",
+      "FH-TOPIC-34-04",
+      "FH-TOPIC-34-05",
+      "FH-TOPIC-34-06",
+      "FH-TOPIC-34-07",
+      "FH-TOPIC-34-08",
+      "FH-TOPIC-34-09",
+      "FH-TOPIC-34-10",
+      "FH-TOPIC-34-11",
+      "FH-TOPIC-34-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-34.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "stability"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "009"
+  },
+  {
+    "id": "topic-35",
+    "title": "Root Locus · Practice 1",
+    "category": "topic",
+    "subject": "control",
+    "topic": "root-locus",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-36",
+    "title": "Frequency Response · Practice 1",
+    "category": "topic",
+    "subject": "control",
+    "topic": "frequency-response",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-37",
+    "title": "State-Space Analysis · Practice 1",
+    "category": "topic",
+    "subject": "control",
+    "topic": "state-space-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-38",
+    "title": "Analog Communication · Practice 1",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "analog-communication",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-39",
+    "title": "Digital Communication · Practice 1",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "digital-communication",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-40",
+    "title": "Modulation · Practice 1",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "modulation",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-41",
+    "title": "Information Theory · Codes, Uncertainty & Limits",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "information-theory",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-41-01",
+      "FH-TOPIC-41-02",
+      "FH-TOPIC-41-03",
+      "FH-TOPIC-41-04",
+      "FH-TOPIC-41-05",
+      "FH-TOPIC-41-06",
+      "FH-TOPIC-41-07",
+      "FH-TOPIC-41-08",
+      "FH-TOPIC-41-09",
+      "FH-TOPIC-41-10",
+      "FH-TOPIC-41-11",
+      "FH-TOPIC-41-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-41.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "information-theory"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "009"
+  },
+  {
+    "id": "topic-42",
+    "title": "Noise · Practice 1",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "noise",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-43",
+    "title": "Probability of Error · Practice 1",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "probability-of-error",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-44",
+    "title": "Maxwell Equations · Practice 1",
+    "category": "topic",
+    "subject": "electromagnetics",
+    "topic": "maxwell-equations",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-45",
+    "title": "Electromagnetic Waves · Practice 1",
+    "category": "topic",
+    "subject": "electromagnetics",
+    "topic": "electromagnetic-waves",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-46",
+    "title": "Transmission Lines · Waves, Loss & Networks",
+    "category": "topic",
+    "subject": "electromagnetics",
+    "topic": "transmission-lines",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-46-01",
+      "FH-TOPIC-46-02",
+      "FH-TOPIC-46-03",
+      "FH-TOPIC-46-04",
+      "FH-TOPIC-46-05",
+      "FH-TOPIC-46-06",
+      "FH-TOPIC-46-07",
+      "FH-TOPIC-46-08",
+      "FH-TOPIC-46-09",
+      "FH-TOPIC-46-10",
+      "FH-TOPIC-46-11",
+      "FH-TOPIC-46-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-46.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "transmission-lines"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "009"
+  },
+  {
+    "id": "topic-47",
+    "title": "Wave Propagation · Practice 1",
+    "category": "topic",
+    "subject": "electromagnetics",
+    "topic": "wave-propagation",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-48",
+    "title": "Antennas · Practice 1",
+    "category": "topic",
+    "subject": "electromagnetics",
+    "topic": "antennas",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-49",
+    "title": "Verbal Aptitude · Practice 1",
+    "category": "topic",
+    "subject": "aptitude",
+    "topic": "verbal-aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-50",
+    "title": "Quantitative Aptitude · Ratios, Data & Counting",
+    "category": "topic",
+    "subject": "aptitude",
+    "topic": "quantitative-aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-TOPIC-50-01",
+      "FH-TOPIC-50-02",
+      "FH-TOPIC-50-03",
+      "FH-TOPIC-50-04",
+      "FH-TOPIC-50-05",
+      "FH-TOPIC-50-06",
+      "FH-TOPIC-50-07",
+      "FH-TOPIC-50-08",
+      "FH-TOPIC-50-09",
+      "FH-TOPIC-50-10",
+      "FH-TOPIC-50-11",
+      "FH-TOPIC-50-12"
+    ],
+    "questionFiles": [
+      "data/questions/topic-50.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "quantitative-aptitude"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "009"
+  },
+  {
+    "id": "topic-51",
+    "title": "Analytical Aptitude · Practice 1",
+    "category": "topic",
+    "subject": "aptitude",
+    "topic": "analytical-aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-52",
+    "title": "Spatial Aptitude · Practice 1",
+    "category": "topic",
+    "subject": "aptitude",
+    "topic": "spatial-aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-53",
+    "title": "Linear Algebra · Practice 2",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "linear-algebra",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-54",
+    "title": "Calculus · Practice 2",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "calculus",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-55",
+    "title": "Differential Equations · Practice 2",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "differential-equations",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-56",
+    "title": "Complex Analysis · Practice 2",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "complex-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-57",
+    "title": "Probability and Statistics · Practice 2",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "probability-and-statistics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-58",
+    "title": "Circuit Analysis · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "circuit-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-59",
+    "title": "Network Theorems · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "network-theorems",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-60",
+    "title": "Transient Analysis · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "transient-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-61",
+    "title": "Laplace Transform · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "laplace-transform",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-62",
+    "title": "Fourier Transform · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "fourier-transform",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-63",
+    "title": "Signals and Systems · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "signals-and-systems",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-64",
+    "title": "LTI Systems · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "lti-systems",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-65",
+    "title": "Sampling · Practice 2",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "sampling",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-66",
+    "title": "Waveguides Fibers · Practice 1",
+    "category": "topic",
+    "subject": "electromagnetics",
+    "topic": "waveguides-fibers",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-67",
+    "title": "Error Control Coding · Practice 1",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "error-control-coding",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-68",
+    "title": "Random Processes · Practice 1",
+    "category": "topic",
+    "subject": "communications",
+    "topic": "random-processes",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-69",
+    "title": "Compensators · Practice 1",
+    "category": "topic",
+    "subject": "control",
+    "topic": "compensators",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-70",
+    "title": "Control Components · Practice 1",
+    "category": "topic",
+    "subject": "control",
+    "topic": "control-components",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-71",
+    "title": "Computer Organization · Practice 1",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "computer-organization",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-72",
+    "title": "Semiconductor Memories · Practice 1",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "semiconductor-memories",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-73",
+    "title": "Number Representations · Practice 1",
+    "category": "topic",
+    "subject": "digital",
+    "topic": "number-representations",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-74",
+    "title": "Optoelectronic Devices · Practice 1",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "optoelectronic-devices",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-75",
+    "title": "Mos Capacitor · Practice 1",
+    "category": "topic",
+    "subject": "devices",
+    "topic": "mos-capacitor",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-76",
+    "title": "Digital Filter Design · Practice 1",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "digital-filter-design",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-77",
+    "title": "Discrete Time Transforms · Practice 1",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "discrete-time-transforms",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-78",
+    "title": "Network Parameters · Practice 1",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "network-parameters",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-79",
+    "title": "Ac Steady State · Practice 1",
+    "category": "topic",
+    "subject": "networks",
+    "topic": "ac-steady-state",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "topic-80",
+    "title": "Vector Analysis · Practice 1",
+    "category": "topic",
+    "subject": "mathematics",
+    "topic": "vector-analysis",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-01",
+    "title": "Mathematics · Foundations",
+    "category": "subject",
+    "subject": "mathematics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MATHEMATICS-001",
+      "FH-MATHEMATICS-002",
+      "FH-MATHEMATICS-003",
+      "FH-MATHEMATICS-004",
+      "FH-MATHEMATICS-005",
+      "FH-MATHEMATICS-006",
+      "FH-MATHEMATICS-007",
+      "FH-MATHEMATICS-008",
+      "FH-MATHEMATICS-009",
+      "FH-MATHEMATICS-010",
+      "FH-MATHEMATICS-011",
+      "FH-MATHEMATICS-012"
+    ],
+    "questionFiles": [
+      "data/questions/mathematics.json"
+    ],
+    "difficulty": "easy",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "linear-algebra",
+      "calculus",
+      "probability-and-statistics",
+      "complex-analysis",
+      "differential-equations"
+    ],
+    "verification": "computationally-checked"
+  },
+  {
+    "id": "subject-02",
+    "title": "Networks & Signals · Multi-Topic Reasoning",
+    "category": "subject",
+    "subject": "networks",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-SUBJECT-02-01",
+      "FH-SUBJECT-02-02",
+      "FH-SUBJECT-02-03",
+      "FH-SUBJECT-02-04",
+      "FH-SUBJECT-02-05",
+      "FH-SUBJECT-02-06",
+      "FH-SUBJECT-02-07",
+      "FH-SUBJECT-02-08",
+      "FH-SUBJECT-02-09",
+      "FH-SUBJECT-02-10",
+      "FH-SUBJECT-02-11",
+      "FH-SUBJECT-02-12"
+    ],
+    "questionFiles": [
+      "data/questions/subject-02.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "circuit-analysis",
+      "ac-steady-state",
+      "network-parameters",
+      "laplace-transform",
+      "digital-filter-design",
+      "discrete-time-transforms",
+      "transient-analysis"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "005"
+  },
+  {
+    "id": "subject-03",
+    "title": "Electronic Devices · Transport, Junctions & Transistors",
+    "category": "subject",
+    "subject": "devices",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-SUBJECT-03-01",
+      "FH-SUBJECT-03-02",
+      "FH-SUBJECT-03-03",
+      "FH-SUBJECT-03-04",
+      "FH-SUBJECT-03-05",
+      "FH-SUBJECT-03-06",
+      "FH-SUBJECT-03-07",
+      "FH-SUBJECT-03-08",
+      "FH-SUBJECT-03-09",
+      "FH-SUBJECT-03-10",
+      "FH-SUBJECT-03-11",
+      "FH-SUBJECT-03-12"
+    ],
+    "questionFiles": [
+      "data/questions/subject-03.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "semiconductor-physics",
+      "carrier-transport",
+      "pn-junctions",
+      "bjt",
+      "mosfet",
+      "optoelectronic-devices",
+      "mos-capacitor"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "004"
+  },
+  {
+    "id": "subject-04",
+    "title": "Analog Circuits · Amplifiers, Feedback & Waveforms",
+    "category": "subject",
+    "subject": "analog",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-SUBJECT-04-01",
+      "FH-SUBJECT-04-02",
+      "FH-SUBJECT-04-03",
+      "FH-SUBJECT-04-04",
+      "FH-SUBJECT-04-05",
+      "FH-SUBJECT-04-06",
+      "FH-SUBJECT-04-07",
+      "FH-SUBJECT-04-08",
+      "FH-SUBJECT-04-09",
+      "FH-SUBJECT-04-10",
+      "FH-SUBJECT-04-11",
+      "FH-SUBJECT-04-12"
+    ],
+    "questionFiles": [
+      "data/questions/subject-04.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "operational-amplifiers",
+      "amplifiers",
+      "feedback",
+      "oscillators",
+      "diode-circuits"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "004"
+  },
+  {
+    "id": "subject-05",
+    "title": "Digital Circuits · Foundations",
+    "category": "subject",
+    "subject": "digital",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-DIGITAL-001",
+      "FH-DIGITAL-002",
+      "FH-DIGITAL-003",
+      "FH-DIGITAL-004",
+      "FH-DIGITAL-005",
+      "FH-DIGITAL-006",
+      "FH-DIGITAL-007",
+      "FH-DIGITAL-008",
+      "FH-DIGITAL-009",
+      "FH-DIGITAL-010",
+      "FH-DIGITAL-011",
+      "FH-DIGITAL-012"
+    ],
+    "questionFiles": [
+      "data/questions/digital.json"
+    ],
+    "difficulty": "easy",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "boolean-algebra",
+      "logic-gates",
+      "combinational-circuits",
+      "flip-flops",
+      "sequential-circuits",
+      "data-converters"
+    ],
+    "verification": "computationally-checked"
+  },
+  {
+    "id": "subject-06",
+    "title": "Control Systems · Stability, Error & State Models",
+    "category": "subject",
+    "subject": "control",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-SUBJECT-06-01",
+      "FH-SUBJECT-06-02",
+      "FH-SUBJECT-06-03",
+      "FH-SUBJECT-06-04",
+      "FH-SUBJECT-06-05",
+      "FH-SUBJECT-06-06",
+      "FH-SUBJECT-06-07",
+      "FH-SUBJECT-06-08",
+      "FH-SUBJECT-06-09",
+      "FH-SUBJECT-06-10",
+      "FH-SUBJECT-06-11",
+      "FH-SUBJECT-06-12"
+    ],
+    "questionFiles": [
+      "data/questions/subject-06.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "transfer-functions",
+      "stability",
+      "time-response",
+      "frequency-response",
+      "root-locus",
+      "state-space-analysis",
+      "compensators"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "004"
+  },
+  {
+    "id": "subject-07",
+    "title": "Communications · Information, Modulation & Detection",
+    "category": "subject",
+    "subject": "communications",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-SUBJECT-07-01",
+      "FH-SUBJECT-07-02",
+      "FH-SUBJECT-07-03",
+      "FH-SUBJECT-07-04",
+      "FH-SUBJECT-07-05",
+      "FH-SUBJECT-07-06",
+      "FH-SUBJECT-07-07",
+      "FH-SUBJECT-07-08",
+      "FH-SUBJECT-07-09",
+      "FH-SUBJECT-07-10",
+      "FH-SUBJECT-07-11",
+      "FH-SUBJECT-07-12"
+    ],
+    "questionFiles": [
+      "data/questions/subject-07.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "information-theory",
+      "analog-communication",
+      "digital-communication",
+      "probability-of-error",
+      "error-control-coding",
+      "random-processes"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "004"
+  },
+  {
+    "id": "subject-08",
+    "title": "Electromagnetics · Lines, Waves & Fields",
+    "category": "subject",
+    "subject": "electromagnetics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-SUBJECT-08-01",
+      "FH-SUBJECT-08-02",
+      "FH-SUBJECT-08-03",
+      "FH-SUBJECT-08-04",
+      "FH-SUBJECT-08-05",
+      "FH-SUBJECT-08-06",
+      "FH-SUBJECT-08-07",
+      "FH-SUBJECT-08-08",
+      "FH-SUBJECT-08-09",
+      "FH-SUBJECT-08-10",
+      "FH-SUBJECT-08-11",
+      "FH-SUBJECT-08-12"
+    ],
+    "questionFiles": [
+      "data/questions/subject-08.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "transmission-lines",
+      "wave-propagation",
+      "maxwell-equations",
+      "electromagnetic-waves",
+      "waveguides-fibers",
+      "antennas"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "004"
+  },
+  {
+    "id": "subject-09",
+    "title": "General Aptitude · Quantitative & Logical Reasoning",
+    "category": "subject",
+    "subject": "aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-SUBJECT-09-01",
+      "FH-SUBJECT-09-02",
+      "FH-SUBJECT-09-03",
+      "FH-SUBJECT-09-04",
+      "FH-SUBJECT-09-05",
+      "FH-SUBJECT-09-06",
+      "FH-SUBJECT-09-07",
+      "FH-SUBJECT-09-08",
+      "FH-SUBJECT-09-09",
+      "FH-SUBJECT-09-10",
+      "FH-SUBJECT-09-11",
+      "FH-SUBJECT-09-12"
+    ],
+    "questionFiles": [
+      "data/questions/subject-09.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "quantitative-aptitude",
+      "analytical-aptitude",
+      "verbal-aptitude",
+      "spatial-aptitude"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "005"
+  },
+  {
+    "id": "subject-10",
+    "title": "Engineering Mathematics · Set 2",
+    "category": "subject",
+    "subject": "mathematics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-11",
+    "title": "Networks, Signals and Systems · Set 2",
+    "category": "subject",
+    "subject": "networks",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-12",
+    "title": "Electronic Devices · Set 2",
+    "category": "subject",
+    "subject": "devices",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-13",
+    "title": "Analog Circuits · Set 2",
+    "category": "subject",
+    "subject": "analog",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-14",
+    "title": "Digital Circuits · Set 2",
+    "category": "subject",
+    "subject": "digital",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-15",
+    "title": "Control Systems · Set 2",
+    "category": "subject",
+    "subject": "control",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-16",
+    "title": "Communications · Set 2",
+    "category": "subject",
+    "subject": "communications",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-17",
+    "title": "Electromagnetics · Set 2",
+    "category": "subject",
+    "subject": "electromagnetics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-18",
+    "title": "General Aptitude · Set 2",
+    "category": "subject",
+    "subject": "aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-19",
+    "title": "Engineering Mathematics · Set 3",
+    "category": "subject",
+    "subject": "mathematics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-20",
+    "title": "Networks, Signals and Systems · Set 3",
+    "category": "subject",
+    "subject": "networks",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-21",
+    "title": "Electronic Devices · Set 3",
+    "category": "subject",
+    "subject": "devices",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-22",
+    "title": "Analog Circuits · Set 3",
+    "category": "subject",
+    "subject": "analog",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-23",
+    "title": "Digital Circuits · Set 3",
+    "category": "subject",
+    "subject": "digital",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-24",
+    "title": "Control Systems · Set 3",
+    "category": "subject",
+    "subject": "control",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-25",
+    "title": "Communications · Set 3",
+    "category": "subject",
+    "subject": "communications",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-26",
+    "title": "Electromagnetics · Set 3",
+    "category": "subject",
+    "subject": "electromagnetics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-27",
+    "title": "General Aptitude · Set 3",
+    "category": "subject",
+    "subject": "aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-28",
+    "title": "Engineering Mathematics · Set 4",
+    "category": "subject",
+    "subject": "mathematics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-29",
+    "title": "Networks, Signals and Systems · Set 4",
+    "category": "subject",
+    "subject": "networks",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-30",
+    "title": "Electronic Devices · Set 4",
+    "category": "subject",
+    "subject": "devices",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-31",
+    "title": "Analog Circuits · Set 4",
+    "category": "subject",
+    "subject": "analog",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-32",
+    "title": "Digital Circuits · Set 4",
+    "category": "subject",
+    "subject": "digital",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-33",
+    "title": "Control Systems · Set 4",
+    "category": "subject",
+    "subject": "control",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-34",
+    "title": "Communications · Set 4",
+    "category": "subject",
+    "subject": "communications",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-35",
+    "title": "Electromagnetics · Set 4",
+    "category": "subject",
+    "subject": "electromagnetics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-36",
+    "title": "General Aptitude · Set 4",
+    "category": "subject",
+    "subject": "aptitude",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-37",
+    "title": "Engineering Mathematics · Set 5",
+    "category": "subject",
+    "subject": "mathematics",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-38",
+    "title": "Networks, Signals and Systems · Set 5",
+    "category": "subject",
+    "subject": "networks",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-39",
+    "title": "Electronic Devices · Set 5",
+    "category": "subject",
+    "subject": "devices",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "subject-40",
+    "title": "Analog Circuits · Set 5",
+    "category": "subject",
+    "subject": "analog",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "pending",
+    "questionIds": [],
+    "questionFiles": [],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": "Question batch awaiting validation."
+  },
+  {
+    "id": "mixed-01",
+    "title": "Mixed Revision · Systems & Signals",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-01-01",
+      "FH-MIXED-01-02",
+      "FH-MIXED-01-03",
+      "FH-MIXED-01-04",
+      "FH-MIXED-01-05",
+      "FH-MIXED-01-06",
+      "FH-MIXED-01-07",
+      "FH-MIXED-01-08",
+      "FH-MIXED-01-09",
+      "FH-MIXED-01-10",
+      "FH-MIXED-01-11",
+      "FH-MIXED-01-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-01.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "linear-algebra",
+      "circuit-analysis",
+      "sequential-circuits",
+      "mosfet",
+      "operational-amplifiers",
+      "time-response",
+      "information-theory",
+      "transmission-lines",
+      "boolean-algebra",
+      "stability",
+      "quantitative-aptitude",
+      "network-theorems"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "005"
+  },
+  {
+    "id": "mixed-02",
+    "title": "Mixed Revision · Models & Measurements",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-02-01",
+      "FH-MIXED-02-02",
+      "FH-MIXED-02-03",
+      "FH-MIXED-02-04",
+      "FH-MIXED-02-05",
+      "FH-MIXED-02-06",
+      "FH-MIXED-02-07",
+      "FH-MIXED-02-08",
+      "FH-MIXED-02-09",
+      "FH-MIXED-02-10",
+      "FH-MIXED-02-11",
+      "FH-MIXED-02-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-02.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "calculus",
+      "ac-steady-state",
+      "number-representations",
+      "bjt",
+      "operational-amplifiers",
+      "time-response",
+      "data-converters",
+      "analog-communication",
+      "wave-propagation",
+      "transmission-lines",
+      "quantitative-aptitude",
+      "lti-systems"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "005"
+  },
+  {
+    "id": "mixed-03",
+    "title": "Mixed Revision · Design Checks & Invariants",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-03-01",
+      "FH-MIXED-03-02",
+      "FH-MIXED-03-03",
+      "FH-MIXED-03-04",
+      "FH-MIXED-03-05",
+      "FH-MIXED-03-06",
+      "FH-MIXED-03-07",
+      "FH-MIXED-03-08",
+      "FH-MIXED-03-09",
+      "FH-MIXED-03-10",
+      "FH-MIXED-03-11",
+      "FH-MIXED-03-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-03.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "probability-and-statistics",
+      "circuit-analysis",
+      "sequential-circuits",
+      "pn-junctions",
+      "amplifiers",
+      "time-response",
+      "information-theory",
+      "transmission-lines",
+      "linear-algebra",
+      "combinational-circuits",
+      "quantitative-aptitude",
+      "noise"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "005"
+  },
+  {
+    "id": "mixed-04",
+    "title": "Mixed Revision · Energy, Logic & State",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-04-01",
+      "FH-MIXED-04-02",
+      "FH-MIXED-04-03",
+      "FH-MIXED-04-04",
+      "FH-MIXED-04-05",
+      "FH-MIXED-04-06",
+      "FH-MIXED-04-07",
+      "FH-MIXED-04-08",
+      "FH-MIXED-04-09",
+      "FH-MIXED-04-10",
+      "FH-MIXED-04-11",
+      "FH-MIXED-04-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-04.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "linear-algebra",
+      "transient-analysis",
+      "boolean-algebra",
+      "mosfet",
+      "operational-amplifiers",
+      "state-space-analysis",
+      "analog-communication",
+      "maxwell-equations",
+      "flip-flops",
+      "lti-systems",
+      "quantitative-aptitude",
+      "transfer-functions"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "006"
+  },
+  {
+    "id": "mixed-05",
+    "title": "Mixed Revision · Frequency, Codes & Geometry",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-05-01",
+      "FH-MIXED-05-02",
+      "FH-MIXED-05-03",
+      "FH-MIXED-05-04",
+      "FH-MIXED-05-05",
+      "FH-MIXED-05-06",
+      "FH-MIXED-05-07",
+      "FH-MIXED-05-08",
+      "FH-MIXED-05-09",
+      "FH-MIXED-05-10",
+      "FH-MIXED-05-11",
+      "FH-MIXED-05-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-05.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "calculus",
+      "ac-steady-state",
+      "number-representations",
+      "optoelectronic-devices",
+      "amplifiers",
+      "time-response",
+      "error-control-coding",
+      "transmission-lines",
+      "quantitative-aptitude",
+      "fourier-transform"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "006"
+  },
+  {
+    "id": "mixed-06",
+    "title": "Mixed Revision · Fields, Memory & Dynamics",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-06-01",
+      "FH-MIXED-06-02",
+      "FH-MIXED-06-03",
+      "FH-MIXED-06-04",
+      "FH-MIXED-06-05",
+      "FH-MIXED-06-06",
+      "FH-MIXED-06-07",
+      "FH-MIXED-06-08",
+      "FH-MIXED-06-09",
+      "FH-MIXED-06-10",
+      "FH-MIXED-06-11",
+      "FH-MIXED-06-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-06.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "vector-analysis",
+      "network-parameters",
+      "semiconductor-memories",
+      "mos-capacitor",
+      "amplifiers",
+      "state-space-analysis",
+      "information-theory",
+      "electromagnetic-waves",
+      "spatial-aptitude",
+      "computer-organization"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "006"
+  },
+  {
+    "id": "mixed-07",
+    "title": "Mixed Revision · Detection, Bias & Transformations",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-07-01",
+      "FH-MIXED-07-02",
+      "FH-MIXED-07-03",
+      "FH-MIXED-07-04",
+      "FH-MIXED-07-05",
+      "FH-MIXED-07-06",
+      "FH-MIXED-07-07",
+      "FH-MIXED-07-08",
+      "FH-MIXED-07-09",
+      "FH-MIXED-07-10",
+      "FH-MIXED-07-11",
+      "FH-MIXED-07-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-07.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "complex-analysis",
+      "lti-systems",
+      "combinational-circuits",
+      "bjt",
+      "amplifiers",
+      "transfer-functions",
+      "probability-of-error",
+      "electromagnetic-waves",
+      "error-control-coding",
+      "signals-and-systems",
+      "quantitative-aptitude",
+      "differential-equations"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "006"
+  },
+  {
+    "id": "mixed-08",
+    "title": "Mixed Revision · Conservation & Constraints",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-08-01",
+      "FH-MIXED-08-02",
+      "FH-MIXED-08-03",
+      "FH-MIXED-08-04",
+      "FH-MIXED-08-05",
+      "FH-MIXED-08-06",
+      "FH-MIXED-08-07",
+      "FH-MIXED-08-08",
+      "FH-MIXED-08-09",
+      "FH-MIXED-08-10",
+      "FH-MIXED-08-11",
+      "FH-MIXED-08-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-08.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "vector-analysis",
+      "circuit-analysis",
+      "sequential-circuits",
+      "carrier-transport",
+      "amplifiers",
+      "root-locus",
+      "digital-communication",
+      "antennas",
+      "operational-amplifiers",
+      "maxwell-equations",
+      "quantitative-aptitude",
+      "linear-algebra"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "006"
+  },
+  {
+    "id": "mixed-09",
+    "title": "Mixed Revision · Moments, Timing & Matching",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-09-01",
+      "FH-MIXED-09-02",
+      "FH-MIXED-09-03",
+      "FH-MIXED-09-04",
+      "FH-MIXED-09-05",
+      "FH-MIXED-09-06",
+      "FH-MIXED-09-07",
+      "FH-MIXED-09-08",
+      "FH-MIXED-09-09",
+      "FH-MIXED-09-10",
+      "FH-MIXED-09-11",
+      "FH-MIXED-09-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-09.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "probability-and-statistics",
+      "signals-and-systems",
+      "sequential-circuits",
+      "pn-junctions",
+      "operational-amplifiers",
+      "time-response",
+      "information-theory",
+      "transmission-lines",
+      "state-space-analysis",
+      "combinational-circuits",
+      "quantitative-aptitude",
+      "complex-analysis"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "007"
+  },
+  {
+    "id": "mixed-10",
+    "title": "Mixed Revision · Broad ECE Checkpoint",
+    "category": "mixed",
+    "targetQuestions": 12,
+    "durationMinutes": 20,
+    "status": "ready",
+    "questionIds": [
+      "FH-MIXED-10-01",
+      "FH-MIXED-10-02",
+      "FH-MIXED-10-03",
+      "FH-MIXED-10-04",
+      "FH-MIXED-10-05",
+      "FH-MIXED-10-06",
+      "FH-MIXED-10-07",
+      "FH-MIXED-10-08",
+      "FH-MIXED-10-09",
+      "FH-MIXED-10-10",
+      "FH-MIXED-10-11",
+      "FH-MIXED-10-12"
+    ],
+    "questionFiles": [
+      "data/questions/mixed-10.json"
+    ],
+    "difficulty": "mixed",
+    "scoring": {
+      "mode": "current"
+    },
+    "pendingReason": null,
+    "coveredTopics": [
+      "linear-algebra",
+      "laplace-transform",
+      "computer-organization",
+      "mosfet",
+      "feedback",
+      "transfer-functions",
+      "digital-communication",
+      "wave-propagation",
+      "discrete-time-transforms",
+      "calculus",
+      "quantitative-aptitude",
+      "time-response"
+    ],
+    "verification": "computationally-checked",
+    "contentBatch": "007"
+  }
+]
